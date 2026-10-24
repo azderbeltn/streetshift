@@ -4,7 +4,7 @@ Sources (fetched 2026-10-24), each page fetched as markdown from docs.convex.dev
 Every section below is a verbatim copy of the page named in its "Source:" line.
 
 ## KEY FACTS (summary written by the doc fetcher)
-- Package: `npm install convex`. Dev: `npx convex dev` (first run logs in via browser, creates deployment, writes `CONVEX_DEPLOYMENT` and `VITE_CONVEX_URL` to `.env.local`).
+- Package: `npm install convex` (current npm version **1.48.0** on 2026-10-24). Dev: `npx convex dev` (first run logs in via browser, creates deployment, writes `CONVEX_DEPLOYMENT` and `VITE_CONVEX_URL` to `.env.local`).
 - Server functions live in `convex/` and import from `./_generated/server` (`query`, `mutation`, `action`, `internalQuery`, `internalMutation`, `internalAction`, `httpAction`); validators from `convex/values` (`v`); schema via `defineSchema`/`defineTable` from `convex/server`.
 - Node runtime actions: put `"use node";` at top of the file; that file may contain only actions.
 - Scheduling: `ctx.scheduler.runAfter(ms, internal.x.y, args)` / `runAt`; crons in `convex/crons.ts` with `cronJobs()`.

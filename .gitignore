@@ -17,3 +17,6 @@ cache/
 /data/cache/
 .pytest_cache/
 .DS_Store
+/data/raw/
+/sim/assets/**/trips_*.json
+/data/processed/reviews_*.json

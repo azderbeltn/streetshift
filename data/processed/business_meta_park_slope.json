@@ -1,0 +1,2972 @@
+{
+ "ChIJfSDI36lbwokRP7nJwtJOaqI": {
+  "placeId": "ChIJfSDI36lbwokRP7nJwtJOaqI",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 74.1,
+  "segmentDistanceM": 12.8,
+  "address": "158 Berkeley Pl, Brooklyn, NY 11217",
+  "categories": [
+   "Coffee shop",
+   "Espresso bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cafe%20Regular&query_place_id=ChIJfSDI36lbwokRP7nJwtJOaqI",
+  "description": "A colorful mural anchors this antiques-chic, Euro-style cafe supplying coffee drinks & pastries.",
+  "price": "$1–10",
+  "reviewsScraped": 0
+ },
+ "ChIJiR3qewBbwokRldwsgJLmXv8": {
+  "placeId": "ChIJiR3qewBbwokRldwsgJLmXv8",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 33.4,
+  "segmentDistanceM": 8.3,
+  "address": "200 Garfield Pl, Brooklyn, NY 11215",
+  "categories": [
+   "Pizza Takeout"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Impasto&query_place_id=ChIJiR3qewBbwokRldwsgJLmXv8",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ6bYg1QZbwokRzrmuQnM4NI4": {
+  "placeId": "ChIJ6bYg1QZbwokRzrmuQnM4NI4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 15.4,
+  "segmentDistanceM": 15.4,
+  "address": "152 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Chinese restaurant",
+   "Delivery Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Szechuan%20Delight&query_place_id=ChIJ6bYg1QZbwokRzrmuQnM4NI4",
+  "description": "A lengthy menu of Chinese standards is the draw at this Park Slope alternative to Chinatown.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ6fRwX7lbwokRqWhDXGGKMkI": {
+  "placeId": "ChIJ6fRwX7lbwokRqWhDXGGKMkI",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 29.4,
+  "segmentDistanceM": 9.6,
+  "address": "665 President St, Brooklyn, NY 11215",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Enso%20Cafe&query_place_id=ChIJ6fRwX7lbwokRqWhDXGGKMkI",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJoz0b4FxbwokRRszUeb9DQyo": {
+  "placeId": "ChIJoz0b4FxbwokRRszUeb9DQyo",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 102.5,
+  "segmentDistanceM": 21.5,
+  "address": "72 7th Ave Left Store, Brooklyn, NY 11217",
+  "categories": [
+   "Coffee shop",
+   "Bakery",
+   "Cafe",
+   "Coffee store",
+   "Dim sum restaurant",
+   "Southeast Asian restaurant",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=HOM%20Cafe%20%26%20Wine&query_place_id=ChIJoz0b4FxbwokRRszUeb9DQyo",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ_z7l68xbwokRagM49ezOrQM": {
+  "placeId": "ChIJ_z7l68xbwokRagM49ezOrQM",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 13.4,
+  "segmentDistanceM": 13.4,
+  "address": "97 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Coffee shop",
+   "Bar",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Art%20Collective%20Cafe&query_place_id=ChIJ_z7l68xbwokRagM49ezOrQM",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJuzIB6apbwokRioK4wiPbDLo": {
+  "placeId": "ChIJuzIB6apbwokRioK4wiPbDLo",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 20.0,
+  "segmentDistanceM": 12.0,
+  "address": "206 Garfield Pl, Brooklyn, NY 11215",
+  "categories": [
+   "Cafe",
+   "Cocktail bar",
+   "Gourmet grocery store",
+   "Italian grocery store",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Un%20Posto%20Italiano&query_place_id=ChIJuzIB6apbwokRioK4wiPbDLo",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJQxoTbQBbwokRXeXHjHitX18": {
+  "placeId": "ChIJQxoTbQBbwokRXeXHjHitX18",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 18.0,
+  "segmentDistanceM": 13.2,
+  "address": "170 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Lincoln%20Station%20Park%20Slope&query_place_id=ChIJQxoTbQBbwokRXeXHjHitX18",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 55
+ },
+ "ChIJyeMVBgBbwokR1CcPBiFWNBE": {
+  "placeId": "ChIJyeMVBgBbwokR1CcPBiFWNBE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 14.6,
+  "segmentDistanceM": 14.6,
+  "address": "203 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Coffee shop",
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cafe%20By%20The%20Girls%2C%20Colombian%20Coffee&query_place_id=ChIJyeMVBgBbwokR1CcPBiFWNBE",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJjzFJSXJbwokRe5sQHKEXgxY": {
+  "placeId": "ChIJjzFJSXJbwokRe5sQHKEXgxY",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 24.9,
+  "segmentDistanceM": 18.9,
+  "address": "158 7th Ave Ste B, Brooklyn, NY 11215",
+  "categories": [
+   "Health food restaurant",
+   "Deli",
+   "Vegan restaurant",
+   "Vegetarian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Electric%20Beets&query_place_id=ChIJjzFJSXJbwokRe5sQHKEXgxY",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ019PkNdbwokR_mDePAsnQBs": {
+  "placeId": "ChIJ019PkNdbwokR_mDePAsnQBs",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 16.3,
+  "segmentDistanceM": 10.9,
+  "address": "156 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Hungry%20Ghost%20Coffee&query_place_id=ChIJ019PkNdbwokR_mDePAsnQBs",
+  "description": null,
+  "price": "$1–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ-4iBawBbwokRpV1sAEg9Oaw": {
+  "placeId": "ChIJ-4iBawBbwokRpV1sAEg9Oaw",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 22.9,
+  "segmentDistanceM": 18.4,
+  "address": "247 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Commissioner&query_place_id=ChIJ-4iBawBbwokRpV1sAEg9Oaw",
+  "description": "Local haunt serving cocktails & beer in an old-school setup with dart boards & a shuffleboard table.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJO-zmbABbwokRoqY4AA13eME": {
+  "placeId": "ChIJO-zmbABbwokRoqY4AA13eME",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 17.9,
+  "segmentDistanceM": 16.8,
+  "address": "243 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Bar",
+   "Brewpub"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=High%20Dive&query_place_id=ChIJO-zmbABbwokRoqY4AA13eME",
+  "description": "Vintage decor & '90s rock posters set an easygoing mood at this mod taproom with a summer patio.",
+  "price": "$1–60",
+  "reviewsScraped": 60
+ },
+ "ChIJ73I0hmNbwokRTIQYtQC-97k": {
+  "placeId": "ChIJ73I0hmNbwokRTIQYtQC-97k",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 17.8,
+  "segmentDistanceM": 17.8,
+  "address": "221 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Cocktail bar",
+   "Bar",
+   "Event venue",
+   "Restaurant",
+   "Tapas bar",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Bar%20Louise&query_place_id=ChIJ73I0hmNbwokRTIQYtQC-97k",
+  "description": null,
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJ43tYfapbwokRnkJq38aBk_M": {
+  "placeId": "ChIJ43tYfapbwokRnkJq38aBk_M",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 46.1,
+  "segmentDistanceM": 19.3,
+  "address": "702 Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Bar",
+   "Bocce ball court",
+   "Comedy club",
+   "Dance club",
+   "Event venue",
+   "Karaoke",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Union%20Hall&query_place_id=ChIJ43tYfapbwokRnkJq38aBk_M",
+  "description": "This bar/lounge features librarylike decor, plus 2 bocce courts & a basement performance space.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJN9syi6pbwokRRw7fnBgSVoc": {
+  "placeId": "ChIJN9syi6pbwokRRw7fnBgSVoc",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 52.4,
+  "segmentDistanceM": 17.3,
+  "address": "196 5th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Cocktail bar",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Blueprint&query_place_id=ChIJN9syi6pbwokRRw7fnBgSVoc",
+  "description": "Quiet, upscale bar/lounge offering meticulously mixed cocktails & bites like cheeses & charcuterie.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJGXpCLCBbwokRxde676hBzgA": {
+  "placeId": "ChIJGXpCLCBbwokRxde676hBzgA",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 215.8,
+  "segmentDistanceM": 20.5,
+  "address": "182 8th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Roofing supply store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Arimax%20ArimaxRoofing&query_place_id=ChIJGXpCLCBbwokRxde676hBzgA",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJ300IJU5ZwokRRxRmdHyGLNQ": {
+  "placeId": "ChIJ300IJU5ZwokRRxRmdHyGLNQ",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 16.6,
+  "address": "78 Prospect Park W, Brooklyn, NY 11215",
+  "categories": [
+   "Jewelry store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=DEVA&query_place_id=ChIJ300IJU5ZwokRRxRmdHyGLNQ",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 12
+ },
+ "ChIJCaHnKABbwokRvU6OjXLIdfA": {
+  "placeId": "ChIJCaHnKABbwokRvU6OjXLIdfA",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 25.2,
+  "segmentDistanceM": 13.3,
+  "address": "341 2nd St, Brooklyn, NY 11215",
+  "categories": [
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=LoFI%20Bar&query_place_id=ChIJCaHnKABbwokRvU6OjXLIdfA",
+  "description": null,
+  "price": "$30–40",
+  "reviewsScraped": 60
+ },
+ "ChIJTbF-JgdbwokRJ_kR9HNoIXc": {
+  "placeId": "ChIJTbF-JgdbwokRJ_kR9HNoIXc",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 26.5,
+  "segmentDistanceM": 26.5,
+  "address": "133 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Optician"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Eye%20Shoppe%20On%20Seventh&query_place_id=ChIJTbF-JgdbwokRJ_kR9HNoIXc",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJY4euWgFbwokRBL1cYvn2mg4": {
+  "placeId": "ChIJY4euWgFbwokRBL1cYvn2mg4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 23.7,
+  "segmentDistanceM": 11.0,
+  "address": "189 7th Ave #6, Brooklyn, NY 11215",
+  "categories": [
+   "Pharmacy"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Gagliardotoo%20Salvatore&query_place_id=ChIJY4euWgFbwokRBL1cYvn2mg4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJlRWQT_ZbwokR8GJAq_4wg4A": {
+  "placeId": "ChIJlRWQT_ZbwokR8GJAq_4wg4A",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 11.6,
+  "segmentDistanceM": 11.6,
+  "address": "217 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Pet groomer",
+   "Pet store",
+   "Pet supply store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Woof%20Gang%20Bakery%20%26%20Grooming%20Park%20Slope&query_place_id=ChIJlRWQT_ZbwokR8GJAq_4wg4A",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJnUdiawZbwokRwTz2NPaoWkE": {
+  "placeId": "ChIJnUdiawZbwokRwTz2NPaoWkE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 25.2,
+  "address": "323 Garfield Pl, Brooklyn, NY 11215",
+  "categories": [
+   "Video production service"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Solid%20Brands&query_place_id=ChIJnUdiawZbwokRwTz2NPaoWkE",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 6
+ },
+ "ChIJW2Nw1QZbwokRLYoLpnRPKS4": {
+  "placeId": "ChIJW2Nw1QZbwokRLYoLpnRPKS4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 13.3,
+  "segmentDistanceM": 13.3,
+  "address": "148 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Optician"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Eyes%20On%20The%20Slope%20Opticians&query_place_id=ChIJW2Nw1QZbwokRLYoLpnRPKS4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 1
+ },
+ "ChIJJ5KKmrRbwokR1g57u3M8NDM": {
+  "placeId": "ChIJJ5KKmrRbwokR1g57u3M8NDM",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 14.4,
+  "segmentDistanceM": 14.4,
+  "address": "169 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Pet supply store",
+   "Pet store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Just%20Food%20For%20Dogs&query_place_id=ChIJJ5KKmrRbwokR1g57u3M8NDM",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 14
+ },
+ "ChIJ__8rMwFbwokRAYQptFm762E": {
+  "placeId": "ChIJ__8rMwFbwokRAYQptFm762E",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 17.8,
+  "segmentDistanceM": 17.8,
+  "address": "169 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=hellokoku&query_place_id=ChIJ__8rMwFbwokRAYQptFm762E",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJL4A8JgdbwokRVntzkx0ypFc": {
+  "placeId": "ChIJL4A8JgdbwokRVntzkx0ypFc",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 22.4,
+  "segmentDistanceM": 22.4,
+  "address": "137 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Pizza restaurant",
+   "Bakery",
+   "Breakfast restaurant",
+   "Italian restaurant",
+   "Pizza Takeout"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Numero%2028%20Pizzeria&query_place_id=ChIJL4A8JgdbwokRVntzkx0ypFc",
+  "description": "Casual chain restaurant specializing in wood-fired, Neapolitan pizza, plus classic Italian dishes.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJleDfjaRbwokR6B-qUY3Qk90": {
+  "placeId": "ChIJleDfjaRbwokR6B-qUY3Qk90",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 15.4,
+  "segmentDistanceM": 15.4,
+  "address": "169 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Açaí shop",
+   "Gluten-free restaurant",
+   "Health food restaurant",
+   "Health food store",
+   "Juice shop",
+   "Kosher restaurant",
+   "Organic restaurant",
+   "Vegan restaurant",
+   "Vegetarian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Oakberry%20Acai&query_place_id=ChIJleDfjaRbwokR6B-qUY3Qk90",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 41
+ },
+ "ChIJ49C9pmJbwokRv8RhLuQlDPM": {
+  "placeId": "ChIJ49C9pmJbwokRv8RhLuQlDPM",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 110.7,
+  "segmentDistanceM": 20.0,
+  "address": "527 2nd St, Brooklyn, NY 11215",
+  "categories": [
+   "Home goods store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Peb&query_place_id=ChIJ49C9pmJbwokRv8RhLuQlDPM",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 1
+ },
+ "ChIJYevDLABbwokRDDYEnrQPq2E": {
+  "placeId": "ChIJYevDLABbwokRDDYEnrQPq2E",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 17.8,
+  "segmentDistanceM": 17.8,
+  "address": "169 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Pet supply store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=JFFD%20Pantry%20Park%20Slope&query_place_id=ChIJYevDLABbwokRDDYEnrQPq2E",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJw2UvEr9awokRSh8_gykzX6Y": {
+  "placeId": "ChIJw2UvEr9awokRSh8_gykzX6Y",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 14.1,
+  "segmentDistanceM": 14.1,
+  "address": "153 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Stationery store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mr.%20Boddington's%20Studio&query_place_id=ChIJw2UvEr9awokRSh8_gykzX6Y",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 20
+ },
+ "ChIJY4euWgFbwokRCUxKCIwr0wE": {
+  "placeId": "ChIJY4euWgFbwokRCUxKCIwr0wE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 24.0,
+  "segmentDistanceM": 10.8,
+  "address": "189 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Pharmacy"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Pure%20Essentials&query_place_id=ChIJY4euWgFbwokRCUxKCIwr0wE",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 10
+ },
+ "ChIJs7r_Vh1bwokRYhqp1dHTvjc": {
+  "placeId": "ChIJs7r_Vh1bwokRYhqp1dHTvjc",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 18.0,
+  "segmentDistanceM": 13.1,
+  "address": "154 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Home goods store",
+   "Antique furniture store",
+   "Carpet cleaning service",
+   "Carpet wholesaler",
+   "Furniture store",
+   "Furniture wholesaler",
+   "Jewelry store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Artesana%20Home&query_place_id=ChIJs7r_Vh1bwokRYhqp1dHTvjc",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 18
+ },
+ "ChIJb4yCaAdbwokRxEm3-p6I-5M": {
+  "placeId": "ChIJb4yCaAdbwokRxEm3-p6I-5M",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 14.7,
+  "segmentDistanceM": 14.7,
+  "address": "95 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Convenience store",
+   "Candy store",
+   "Comic book store",
+   "Lottery shop",
+   "Magazine store",
+   "Newsstand",
+   "Tobacco shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Park%20Slope%20Candy%20Shop&query_place_id=ChIJb4yCaAdbwokRxEm3-p6I-5M",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 4
+ },
+ "ChIJOfLERwFbwokR2fhyDJKgslw": {
+  "placeId": "ChIJOfLERwFbwokR2fhyDJKgslw",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 29.3,
+  "segmentDistanceM": 28.2,
+  "address": "180 7th Avenue between 1st and, 2nd St, Brooklyn, NY 11215",
+  "categories": [
+   "Flea market"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=P.S.%20321%20Flea%20Market&query_place_id=ChIJOfLERwFbwokR2fhyDJKgslw",
+  "description": "Small outdoor market with about 20 vendors selling antiques, collectibles & food on summer weekends.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ3SdHSQFbwokRdrf0xUs8h3I": {
+  "placeId": "ChIJ3SdHSQFbwokRdrf0xUs8h3I",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 25.8,
+  "segmentDistanceM": 25.8,
+  "address": "181 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Pizza restaurant",
+   "American restaurant",
+   "Caterer",
+   "Dessert restaurant",
+   "Family restaurant",
+   "Gluten-free restaurant",
+   "Italian restaurant",
+   "Pasta shop",
+   "Sandwich shop",
+   "Vegetarian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Pino's%20La%20Forchetta&query_place_id=ChIJ3SdHSQFbwokRdrf0xUs8h3I",
+  "description": "Formica booths & neon adorn this utilitarian pizza staple also serving Italian entrees & heros.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJCSXq0gZbwokRUJUWfByMguQ": {
+  "placeId": "ChIJCSXq0gZbwokRUJUWfByMguQ",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 12.3,
+  "segmentDistanceM": 12.3,
+  "address": "161 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Frozen yogurt shop",
+   "Dessert shop",
+   "Ice cream shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Pinkberry&query_place_id=ChIJCSXq0gZbwokRUJUWfByMguQ",
+  "description": "Counter-serve frozen yogurt chain offering many toppings, plus smoothies & shakes in a sleek space.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJCUBFPAdbwokRO-sCVM6oG7g": {
+  "placeId": "ChIJCUBFPAdbwokRO-sCVM6oG7g",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 25.0,
+  "segmentDistanceM": 25.0,
+  "address": "121 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Men's clothing store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=fig.&query_place_id=ChIJCUBFPAdbwokRO-sCVM6oG7g",
+  "description": "Classic men's boutique offering modern clothing & accessories by international designers.",
+  "price": null,
+  "reviewsScraped": 23
+ },
+ "ChIJicYXWwFbwokRUzOvfmr5Ieo": {
+  "placeId": "ChIJicYXWwFbwokRUzOvfmr5Ieo",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 14.6,
+  "segmentDistanceM": 14.6,
+  "address": "193 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Hardware store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Tarzian%20Hardware&query_place_id=ChIJicYXWwFbwokRUzOvfmr5Ieo",
+  "description": "Family-run hardware store providing a wide selection of home repair & gardening supplies since 1921.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJJa4MQy9bwokRYlsrDtbVhf8": {
+  "placeId": "ChIJJa4MQy9bwokRYlsrDtbVhf8",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 16.4,
+  "segmentDistanceM": 16.4,
+  "address": "204 Garfield Pl, Brooklyn, NY 11215",
+  "categories": [
+   "Cannabis store",
+   "Cannabis club",
+   "Delivery service",
+   "Smoke shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Awake%20Cannabis%20Club&query_place_id=ChIJJa4MQy9bwokRYlsrDtbVhf8",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJhwY6KFJbwokRPlCnWDMsnGo": {
+  "placeId": "ChIJhwY6KFJbwokRPlCnWDMsnGo",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 18.2,
+  "segmentDistanceM": 18.2,
+  "address": "211 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Wine store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Amaro%20Spirits%20%26%20Wine&query_place_id=ChIJhwY6KFJbwokRPlCnWDMsnGo",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJbfGdph1bwokR6iqmB4_9VcE": {
+  "placeId": "ChIJbfGdph1bwokR6iqmB4_9VcE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 20.1,
+  "segmentDistanceM": 20.1,
+  "address": "151 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Comic book store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Slope%20Comic%20%26%20Collectibles&query_place_id=ChIJbfGdph1bwokR6iqmB4_9VcE",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 27
+ },
+ "ChIJmcJlCKpbwokRYS_QqdVx01A": {
+  "placeId": "ChIJmcJlCKpbwokRYS_QqdVx01A",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 220.5,
+  "segmentDistanceM": 13.9,
+  "address": "754-756 Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Grocery store",
+   "Supermarket"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Union%20Market&query_place_id=ChIJmcJlCKpbwokRYS_QqdVx01A",
+  "description": "Local chain highlighting natural & organic fare, such as produce, meat, bread & prepared foods.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJaTZZKAdbwokRez1vAWfuNJk": {
+  "placeId": "ChIJaTZZKAdbwokRez1vAWfuNJk",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 22.6,
+  "segmentDistanceM": 22.6,
+  "address": "141 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Wine store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Shawn%20Fine%20Wine%20%26%20Spirits&query_place_id=ChIJaTZZKAdbwokRez1vAWfuNJk",
+  "description": "Longtime storefront with a wood-paneled facade offering 500-plus wines & small-batch spirits.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJZ8aLkElbwokR3GfVWdH9shc": {
+  "placeId": "ChIJZ8aLkElbwokR3GfVWdH9shc",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 21.7,
+  "segmentDistanceM": 20.5,
+  "address": "256 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sesilya%20Restaurant%20%26%20Bakery&query_place_id=ChIJZ8aLkElbwokR3GfVWdH9shc",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 12
+ },
+ "ChIJPVgHPAdbwokR77qZfQTSSd4": {
+  "placeId": "ChIJPVgHPAdbwokR77qZfQTSSd4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 21.4,
+  "segmentDistanceM": 21.4,
+  "address": "119 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Women's clothing store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=KIWI&query_place_id=ChIJPVgHPAdbwokR77qZfQTSSd4",
+  "description": "Chic store selling a hand-picked selection of globally sourced designer clothing & accessories.",
+  "price": null,
+  "reviewsScraped": 26
+ },
+ "ChIJ5VuisgNbwokRdmV4nsdnrvU": {
+  "placeId": "ChIJ5VuisgNbwokRdmV4nsdnrvU",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 140.0,
+  "segmentDistanceM": 17.9,
+  "address": "267 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Book store",
+   "Cafe",
+   "Children's book store",
+   "Hobby store",
+   "Toy store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Barnes%20%26%20Noble&query_place_id=ChIJ5VuisgNbwokRdmV4nsdnrvU",
+  "description": "Bookseller chain stocking housebrand eReader, plus a broad selection of titles for adults & kids.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ_WYPMQFbwokRZ_XlzmHos-w": {
+  "placeId": "ChIJ_WYPMQFbwokRZ_XlzmHos-w",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 15.8,
+  "segmentDistanceM": 15.8,
+  "address": "168 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Grocery store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Hipster%20Deli%20Grocery%20CORP.&query_place_id=ChIJ_WYPMQFbwokRZ_XlzmHos-w",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 41
+ },
+ "ChIJkfFIm3pbwokR4TBPXKyGpkc": {
+  "placeId": "ChIJkfFIm3pbwokR4TBPXKyGpkc",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 13.3,
+  "segmentDistanceM": 13.3,
+  "address": "171 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Ice cream shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Heap's%20Ice%20Cream&query_place_id=ChIJkfFIm3pbwokR4TBPXKyGpkc",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ96622albwokRQShPgke9QNI": {
+  "placeId": "ChIJ96622albwokRQShPgke9QNI",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 69.6,
+  "segmentDistanceM": 12.6,
+  "address": "75 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Gourmet grocery store",
+   "Beer store",
+   "Cheese shop",
+   "Deli",
+   "Grocery delivery service",
+   "Ice cream shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=7%20Ave%20Gourmet&query_place_id=ChIJ96622albwokRQShPgke9QNI",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJb7fxEwBbwokRARhGJhH2728": {
+  "placeId": "ChIJb7fxEwBbwokRARhGJhH2728",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 22.5,
+  "segmentDistanceM": 19.5,
+  "address": "264 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Dessert shop",
+   "Cake shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Buttermilk%20Bakeshop&query_place_id=ChIJb7fxEwBbwokRARhGJhH2728",
+  "description": "Quaint bakery offering cookies, cupcakes & other desserts along with custom cakes & cooking classes.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJAeDtW0JbwokRGb0N6oXj40Y": {
+  "placeId": "ChIJAeDtW0JbwokRGb0N6oXj40Y",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 24.4,
+  "segmentDistanceM": 22.4,
+  "address": "310 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Bakery",
+   "Breakfast restaurant",
+   "Brunch restaurant",
+   "Coffee shop",
+   "Lunch restaurant",
+   "Pastry shop",
+   "Sandwich shop",
+   "Wi-Fi spot"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Simple%20Loaf%20Bakehouse&query_place_id=ChIJAeDtW0JbwokRGb0N6oXj40Y",
+  "description": "Cozy bakery offering handmade baked goods both sweet & savory paired with coffee & tea.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJIcVs1QZbwokR4HqKXQhDQ9E": {
+  "placeId": "ChIJIcVs1QZbwokR4HqKXQhDQ9E",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 18.8,
+  "segmentDistanceM": 18.8,
+  "address": "150 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Grocery store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=D'Vine%20Taste&query_place_id=ChIJIcVs1QZbwokR4HqKXQhDQ9E",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJO3SN2qlbwokRL6fb3NdhfXo": {
+  "placeId": "ChIJO3SN2qlbwokRL6fb3NdhfXo",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 143.2,
+  "segmentDistanceM": 16.2,
+  "address": "60 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Bakery",
+   "Breakfast restaurant",
+   "Brunch restaurant",
+   "Cafe",
+   "Cake shop",
+   "Coffee shop",
+   "Cupcake shop",
+   "Dessert shop",
+   "Lunch restaurant",
+   "Pastry shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cousin%20John's%20Cafe%20%26%20Bakery&query_place_id=ChIJO3SN2qlbwokRL6fb3NdhfXo",
+  "description": "Cozy spot serving breakfast & lunch, with an open kitchen turning out pastries, cakes & breads.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJwT_GAZJbwokRzSXcqkqBJho": {
+  "placeId": "ChIJwT_GAZJbwokRzSXcqkqBJho",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 14.6,
+  "segmentDistanceM": 14.6,
+  "address": "162 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Pastry shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Showroom%20Bakehouse&query_place_id=ChIJwT_GAZJbwokRzSXcqkqBJho",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJwTNrQABbwokRXsYK68oQ31Q": {
+  "placeId": "ChIJwTNrQABbwokRXsYK68oQ31Q",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 77.5,
+  "segmentDistanceM": 26.5,
+  "address": "873 Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Barbecue restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Willard's%20Garden&query_place_id=ChIJwTNrQABbwokRXsYK68oQ31Q",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJi7GYiqtbwokRy3YJbKxXM0w": {
+  "placeId": "ChIJi7GYiqtbwokRy3YJbKxXM0w",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 66.1,
+  "segmentDistanceM": 13.9,
+  "address": "837 Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Cafe",
+   "Coffee shop",
+   "Live music venue"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": true,
+  "url": "https://www.google.com/maps/search/?api=1&query=ShapeShifter%20Caf%C3%A9&query_place_id=ChIJi7GYiqtbwokRy3YJbKxXM0w",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 2
+ },
+ "ChIJbYF0CiRbwokRthiWXFpSeBQ": {
+  "placeId": "ChIJbYF0CiRbwokRthiWXFpSeBQ",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 20.3,
+  "segmentDistanceM": 20.3,
+  "address": "106 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=La%20Bagel%20Delight&query_place_id=ChIJbYF0CiRbwokRthiWXFpSeBQ",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 2
+ },
+ "ChIJ6c4obKdbwokRQ85KP3H8zVQ": {
+  "placeId": "ChIJ6c4obKdbwokRQ85KP3H8zVQ",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 33.2,
+  "segmentDistanceM": 11.3,
+  "address": "510 2nd St, Brooklyn, NY 11215",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Brooklyn%20French%20Bakers%20Park%20Slope&query_place_id=ChIJ6c4obKdbwokRQ85KP3H8zVQ",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ04XsHwtbwokR4I09mmbemNA": {
+  "placeId": "ChIJ04XsHwtbwokR4I09mmbemNA",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 43.8,
+  "segmentDistanceM": 13.1,
+  "address": "81A 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Internet cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Rabota&query_place_id=ChIJ04XsHwtbwokR4I09mmbemNA",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJSZrB2s9bwokRHXYEaQSgw_8": {
+  "placeId": "ChIJSZrB2s9bwokRHXYEaQSgw_8",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 147.9,
+  "segmentDistanceM": 12.0,
+  "address": "176 Lincoln Pl, Brooklyn, NY 11217",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=nerd%20be%20cool&query_place_id=ChIJSZrB2s9bwokRHXYEaQSgw_8",
+  "description": "Homey haunt for coffee & tea drinks plus wellness lattes & ice cream.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJc7iitYhbwokRnvMjjAopr3Q": {
+  "placeId": "ChIJc7iitYhbwokRnvMjjAopr3Q",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 37.7,
+  "segmentDistanceM": 14.0,
+  "address": "847B Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Japanese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Konoha%20Yakitori%20Ramen%20and%20Sushi%20House&query_place_id=ChIJc7iitYhbwokRnvMjjAopr3Q",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJG-_SDhhbwokRZJ558tepGe8": {
+  "placeId": "ChIJG-_SDhhbwokRZJ558tepGe8",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 135.4,
+  "segmentDistanceM": 17.9,
+  "address": "61a 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Thai restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sakul%20Thai%20Noodles&query_place_id=ChIJG-_SDhhbwokRZJ558tepGe8",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJBffzf_9awokRQ7QK6m2K9w0": {
+  "placeId": "ChIJBffzf_9awokRQ7QK6m2K9w0",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 72.0,
+  "segmentDistanceM": 28.4,
+  "address": "837 Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Live music venue",
+   "Bar",
+   "Cafe",
+   "Recording studio"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=ShapeShifter%20Lab&query_place_id=ChIJBffzf_9awokRQ7QK6m2K9w0",
+  "description": "Performance venue with shows nightly plus art exhibits, video capture, sessions & master classes.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJo5OmrhVbwokRCBOvr_CQZRY": {
+  "placeId": "ChIJo5OmrhVbwokRCBOvr_CQZRY",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 26.3,
+  "segmentDistanceM": 26.3,
+  "address": "122 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Oren%E2%80%99s&query_place_id=ChIJo5OmrhVbwokRCBOvr_CQZRY",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJH7zK0KlbwokRHWLKv6UFSv0": {
+  "placeId": "ChIJH7zK0KlbwokRHWLKv6UFSv0",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 92.9,
+  "segmentDistanceM": 12.8,
+  "address": "73 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Chinese restaurant",
+   "Asian restaurant",
+   "Gastropub",
+   "Delivery Restaurant",
+   "Thai restaurant",
+   "Vegetarian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mr.%20Wonton&query_place_id=ChIJH7zK0KlbwokRHWLKv6UFSv0",
+  "description": "This Chinese restaurant near Prospect Park features an extensive menu of traditional dishes.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJezZzPwdbwokRW-BlU1J6C40": {
+  "placeId": "ChIJezZzPwdbwokRW-BlU1J6C40",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 12.0,
+  "segmentDistanceM": 12.0,
+  "address": "109 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Ice cream shop",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=H%C3%A4agen-Dazs&query_place_id=ChIJezZzPwdbwokRW-BlU1J6C40",
+  "description": "Counter-service chain offering scoops of ice cream & sorbet plus sundaes, shakes & smoothies.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJtQzAYwdbwokRi4lc1ah-WmA": {
+  "placeId": "ChIJtQzAYwdbwokRi4lc1ah-WmA",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 41.4,
+  "segmentDistanceM": 26.6,
+  "address": "85 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Pizza restaurant",
+   "Delivery Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Roma%20Pizza&query_place_id=ChIJtQzAYwdbwokRi4lc1ah-WmA",
+  "description": "Straight-up, counter-serve pizzeria with limited seating for slices, pies & pasta dinners.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ4cgnrABbwokRUn9X53k4Rpg": {
+  "placeId": "ChIJ4cgnrABbwokRUn9X53k4Rpg",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 190.9,
+  "segmentDistanceM": 23.0,
+  "address": "54 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Indian restaurant",
+   "Chinese takeaway",
+   "Indian Muslim restaurant",
+   "Indian sizzler restaurant",
+   "Indian takeaway",
+   "Pakistani restaurant",
+   "Vegan restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Bombay%20Kabab&query_place_id=ChIJ4cgnrABbwokRUn9X53k4Rpg",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJj3thBKhbwokRReEBfyFA0g8": {
+  "placeId": "ChIJj3thBKhbwokRReEBfyFA0g8",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 12.3,
+  "address": "25 8th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Social club",
+   "Bar",
+   "Event venue",
+   "Delivery Restaurant",
+   "Takeout Restaurant",
+   "Restaurant",
+   "Wedding venue"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Montauk%20Club&query_place_id=ChIJj3thBKhbwokRReEBfyFA0g8",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ2zOuoABbwokRYg7hMmy4B1I": {
+  "placeId": "ChIJ2zOuoABbwokRYg7hMmy4B1I",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 224.6,
+  "segmentDistanceM": 13.4,
+  "address": "752 Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Chinese restaurant",
+   "Delivery Restaurant",
+   "Restaurant",
+   "Vegetarian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Hunan%20Delight&query_place_id=ChIJ2zOuoABbwokRYg7hMmy4B1I",
+  "description": "Standard Chinese eatery dishing up familiar fare including combos, dim sum & lunch specials.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJOzfizKlbwokRcYzn-qa9kUk": {
+  "placeId": "ChIJOzfizKlbwokRcYzn-qa9kUk",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 150.6,
+  "segmentDistanceM": 11.1,
+  "address": "178 Lincoln Pl, Brooklyn, NY 11217",
+  "categories": [
+   "Vietnamese restaurant",
+   "Asian restaurant",
+   "Bubble tea store",
+   "Pho restaurant",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Banhmigos&query_place_id=ChIJOzfizKlbwokRcYzn-qa9kUk",
+  "description": "Informal Vietnamese pick featuring traditional pork sandwiches, bubble tea & sides.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJD07tCrBbwokRpbUUdyE2jo4": {
+  "placeId": "ChIJD07tCrBbwokRpbUUdyE2jo4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 199.9,
+  "segmentDistanceM": 16.4,
+  "address": "52 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Ramen restaurant",
+   "Noodle shop",
+   "Vegan restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Ramen%20DANBO%20Park%20Slope&query_place_id=ChIJD07tCrBbwokRpbUUdyE2jo4",
+  "description": "Outpost for customizable ramen bowls served in a modern Japanese eatery with blonde-wood accents. ",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJF__hBepYwokRAhJBfNLHBMQ": {
+  "placeId": "ChIJF__hBepYwokRAhJBfNLHBMQ",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 86.5,
+  "segmentDistanceM": 22.0,
+  "address": "833 Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Authentic Japanese restaurant",
+   "Japanese delicatessen",
+   "Izakaya restaurant",
+   "Japanese restaurant",
+   "Takeout Restaurant",
+   "Ramen restaurant",
+   "Seafood restaurant",
+   "Sushi takeaway"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Oita%20Sushi&query_place_id=ChIJF__hBepYwokRAhJBfNLHBMQ",
+  "description": "Inventive rolls are artfully presented at this snug Japanese eatery.",
+  "price": "$30–70",
+  "reviewsScraped": 60
+ },
+ "ChIJk2Yw0albwokRSvAV5FHcoHU": {
+  "placeId": "ChIJk2Yw0albwokRSvAV5FHcoHU",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 105.1,
+  "segmentDistanceM": 15.0,
+  "address": "71 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "New American restaurant",
+   "Cocktail bar",
+   "Gastropub"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Bar%20Basic&query_place_id=ChIJk2Yw0albwokRSvAV5FHcoHU",
+  "description": "Cozy, brick-clad outlet offering comfort & American dining classics, plus brunch & cocktails.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJBWCmculbwokRpfvcYL_7RFI": {
+  "placeId": "ChIJBWCmculbwokRpfvcYL_7RFI",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 58.3,
+  "segmentDistanceM": 17.9,
+  "address": "82 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Health food restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Playa%20Bowls&query_place_id=ChIJBWCmculbwokRpfvcYL_7RFI",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ6Yn7VihbwokRgN-zk_pWsYk": {
+  "placeId": "ChIJ6Yn7VihbwokRgN-zk_pWsYk",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 111.2,
+  "segmentDistanceM": 21.9,
+  "address": "70 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Mexican restaurant",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=La%20Taq&query_place_id=ChIJ6Yn7VihbwokRgN-zk_pWsYk",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJQXPSUAdbwokR0zX-AI0TuBw": {
+  "placeId": "ChIJQXPSUAdbwokR0zX-AI0TuBw",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 94.9,
+  "segmentDistanceM": 13.9,
+  "address": "788A Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Italian restaurant",
+   "Bar",
+   "Dessert restaurant",
+   "Dessert shop",
+   "Restaurant",
+   "Tuscan restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Scottadito%20Osteria%20Toscana&query_place_id=ChIJQXPSUAdbwokR0zX-AI0TuBw",
+  "description": "Northern Italy touches Brooklyn via this eatery with hearty fare & a rustic, farmhouse-like setting.",
+  "price": "$30–40",
+  "reviewsScraped": 60
+ },
+ "ChIJU45gcXBbwokRDPP1d8d9Uog": {
+  "placeId": "ChIJU45gcXBbwokRDPP1d8d9Uog",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 39.2,
+  "segmentDistanceM": 13.0,
+  "address": "847A Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Thai restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Bangkok%20Degree&query_place_id=ChIJU45gcXBbwokRDPP1d8d9Uog",
+  "description": "Modern takes on Thai classics presented in a quaint, stylish restaurant filled with indoor plants.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJi7C16r1ZwokRUPieymyCOso": {
+  "placeId": "ChIJi7C16r1ZwokRUPieymyCOso",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 111.8,
+  "segmentDistanceM": 19.1,
+  "address": "69 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Tea house"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=BKHL%2C%20The%20PARLOUR%20for%20Afternoon%20Tea&query_place_id=ChIJi7C16r1ZwokRUPieymyCOso",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ9bt9PwBbwokROCcdBTcMuyA": {
+  "placeId": "ChIJ9bt9PwBbwokROCcdBTcMuyA",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 41.1,
+  "segmentDistanceM": 18.9,
+  "address": "83 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Cafe",
+   "Deli"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Dial%20Up%20Days&query_place_id=ChIJ9bt9PwBbwokROCcdBTcMuyA",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 55
+ },
+ "ChIJZ1evbYBbwokRj6ns7uVhQJ8": {
+  "placeId": "ChIJZ1evbYBbwokRj6ns7uVhQJ8",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 28.5,
+  "segmentDistanceM": 19.7,
+  "address": "814 Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Velvette%20Black&query_place_id=ChIJZ1evbYBbwokRj6ns7uVhQJ8",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ8fvwWwFbwokRFvogGMMDakg": {
+  "placeId": "ChIJ8fvwWwFbwokRFvogGMMDakg",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 17.9,
+  "segmentDistanceM": 17.9,
+  "address": "199 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Waxing hair removal service",
+   "Beauty salon",
+   "Esthetics service",
+   "Eyebrow bar",
+   "Hair removal service",
+   "Spa"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=European%20Wax%20Center&query_place_id=ChIJ8fvwWwFbwokRFvogGMMDakg",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ47aoYAdbwokRaMxiWX9gBzk": {
+  "placeId": "ChIJ47aoYAdbwokRaMxiWX9gBzk",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 29.5,
+  "segmentDistanceM": 11.8,
+  "address": "849A Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Hair salon",
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Union%20Beauty%20Salon&query_place_id=ChIJ47aoYAdbwokRaMxiWX9gBzk",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJT5bHF5ZbwokRm-f6T0nQCNs": {
+  "placeId": "ChIJT5bHF5ZbwokRm-f6T0nQCNs",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 22.9,
+  "segmentDistanceM": 22.9,
+  "address": "145 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Nail salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Eva%20Nail%20Salon&query_place_id=ChIJT5bHF5ZbwokRm-f6T0nQCNs",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJpdxvdABbwokRZcU73WCxBnY": {
+  "placeId": "ChIJpdxvdABbwokRZcU73WCxBnY",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 15.7,
+  "segmentDistanceM": 15.7,
+  "address": "242 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Barber shop",
+   "Hairdresser"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Maksim%20Hair%20Salon%20%26%20Barbershop&query_place_id=ChIJpdxvdABbwokRZcU73WCxBnY",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJjXoUFeZbwokRHkHCpvUe800": {
+  "placeId": "ChIJjXoUFeZbwokRHkHCpvUe800",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 17.8,
+  "segmentDistanceM": 17.8,
+  "address": "169 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Barber shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Master%20Barber%20NYC%20-%20Park%20Slope&query_place_id=ChIJjXoUFeZbwokRHkHCpvUe800",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJd09ecclbwokRBSINwtd2XYE": {
+  "placeId": "ChIJd09ecclbwokRBSINwtd2XYE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 169.8,
+  "segmentDistanceM": 12.1,
+  "address": "558 2nd St #2, Brooklyn, NY 11215",
+  "categories": [
+   "Medical spa",
+   "Beauty salon",
+   "Beauty supply store",
+   "Esthetics service",
+   "Facial spa",
+   "Massage spa",
+   "Skin care clinic",
+   "Spa"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=La%20Muse%20Skin%20Studio&query_place_id=ChIJd09ecclbwokRBSINwtd2XYE",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 28
+ },
+ "ChIJKa3BUv5awokRQXnMzLzc56U": {
+  "placeId": "ChIJKa3BUv5awokRQXnMzLzc56U",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 30.2,
+  "segmentDistanceM": 26.6,
+  "address": "177 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Beauty salon",
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Elements%20By%20Robert%20Santana&query_place_id=ChIJKa3BUv5awokRQXnMzLzc56U",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 49
+ },
+ "ChIJMeWZKwFbwokRtHkBqMNt0LA": {
+  "placeId": "ChIJMeWZKwFbwokRtHkBqMNt0LA",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 21.9,
+  "segmentDistanceM": 11.2,
+  "address": "203 Garfield Pl, Brooklyn, NY 11215",
+  "categories": [
+   "Barber shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cuts%20on%20Garfield&query_place_id=ChIJMeWZKwFbwokRtHkBqMNt0LA",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJOXG4zqlbwokR05eYMIIX4qc": {
+  "placeId": "ChIJOXG4zqlbwokR05eYMIIX4qc",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 141.6,
+  "segmentDistanceM": 17.3,
+  "address": "62 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Spa",
+   "Facial spa",
+   "Hair removal service",
+   "Hair salon",
+   "Massage spa",
+   "Skin care clinic"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Venelle%20Salon%20%26%20Spa&query_place_id=ChIJOXG4zqlbwokR05eYMIIX4qc",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJH4lTYHpbwokRG0KNNwBKSnE": {
+  "placeId": "ChIJH4lTYHpbwokRG0KNNwBKSnE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 13.4,
+  "segmentDistanceM": 13.4,
+  "address": "97 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Hair salon",
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Charmaine%20hair%20salon&query_place_id=ChIJH4lTYHpbwokRG0KNNwBKSnE",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJw0C9cStbwokRETSlGgjOrX0": {
+  "placeId": "ChIJw0C9cStbwokRETSlGgjOrX0",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 52.6,
+  "segmentDistanceM": 21.5,
+  "address": "Inside Petco, 81 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Pet supply store",
+   "Pet store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Just%20Food%20For%20Dogs&query_place_id=ChIJw0C9cStbwokRETSlGgjOrX0",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 1
+ },
+ "ChIJq6r2KwdbwokRASky2sxcW5M": {
+  "placeId": "ChIJq6r2KwdbwokRASky2sxcW5M",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 21.1,
+  "segmentDistanceM": 21.1,
+  "address": "138 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Nail salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Nail%20Project%20%7C%20Non-Toxic%20Manicure%20%26%20Pedicure%20Brooklyn%20%7C%20Nail%20Salon&query_place_id=ChIJq6r2KwdbwokRASky2sxcW5M",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJE1cW1AZbwokR8dtkW7TyNNU": {
+  "placeId": "ChIJE1cW1AZbwokR8dtkW7TyNNU",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 22.1,
+  "segmentDistanceM": 22.1,
+  "address": "147 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Beauty salon",
+   "Day spa",
+   "Facial spa",
+   "Hair removal service",
+   "Hair salon",
+   "Massage spa",
+   "Massage therapist",
+   "Nail salon",
+   "Spa"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Elan%20Salon%20%26%20Day%20Spa&query_place_id=ChIJE1cW1AZbwokR8dtkW7TyNNU",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJi4o5BOxbwokRhDlr1Fkjn5A": {
+  "placeId": "ChIJi4o5BOxbwokRhDlr1Fkjn5A",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 23.1,
+  "segmentDistanceM": 23.1,
+  "address": "162 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Nail salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Flourish%20DYC%20Nail%20Spa%20%26%20Beauty%20Facial&query_place_id=ChIJi4o5BOxbwokRhDlr1Fkjn5A",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 53
+ },
+ "ChIJPbAjZ-JawokRGywhMe7BxR0": {
+  "placeId": "ChIJPbAjZ-JawokRGywhMe7BxR0",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 21.1,
+  "segmentDistanceM": 21.1,
+  "address": "138 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Hair salon",
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Slope%20Suds%20Salon%20%7C%20Brooklyn%20Hair%20Salon&query_place_id=ChIJPbAjZ-JawokRGywhMe7BxR0",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJRVHTU3BbwokRZaaLTGsbs60": {
+  "placeId": "ChIJRVHTU3BbwokRZaaLTGsbs60",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 53.5,
+  "segmentDistanceM": 20.2,
+  "address": "351 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Jamaican restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Flavored%20Flames%20Restaurant%20Bakery%20%26%20Jerk%20House&query_place_id=ChIJRVHTU3BbwokRZaaLTGsbs60",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 17
+ },
+ "ChIJxzNsF_5awokRef9DYiDZ34A": {
+  "placeId": "ChIJxzNsF_5awokRef9DYiDZ34A",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 7.9,
+  "segmentDistanceM": 0.7,
+  "address": "5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Farmers' market"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Down%20to%20Earth%20Park%20Slope%20Farmers%20Market&query_place_id=ChIJxzNsF_5awokRef9DYiDZ34A",
+  "description": "Open-air market featuring seasonal produce, seafood & personal-care items on Sundays.",
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJX5TKxf1awokRpPiDPBhb7hw": {
+  "placeId": "ChIJX5TKxf1awokRpPiDPBhb7hw",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 219.3,
+  "segmentDistanceM": 19.0,
+  "address": "399 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Chinese restaurant",
+   "Delivery Restaurant",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=C%20%26%20Y&query_place_id=ChIJX5TKxf1awokRpPiDPBhb7hw",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJq0YED_5awokRaxmUHM3E-Ps": {
+  "placeId": "ChIJq0YED_5awokRaxmUHM3E-Ps",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 62.6,
+  "segmentDistanceM": 21.7,
+  "address": "355 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Coffee shop",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cafe%20Martin&query_place_id=ChIJq0YED_5awokRaxmUHM3E-Ps",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJfSWuS61bwokREXiFDMBXdI4": {
+  "placeId": "ChIJfSWuS61bwokREXiFDMBXdI4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 124.8,
+  "segmentDistanceM": 21.1,
+  "address": "369 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Indian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Pangat&query_place_id=ChIJfSWuS61bwokREXiFDMBXdI4",
+  "description": null,
+  "price": "$30–60",
+  "reviewsScraped": 60
+ },
+ "ChIJP_qsGP5awokRyvmAO-9NV3w": {
+  "placeId": "ChIJP_qsGP5awokRyvmAO-9NV3w",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 13.7,
+  "segmentDistanceM": 13.7,
+  "address": "331 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Frozen yogurt shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Culture%20An%20American%20Yogurt%20Company&query_place_id=ChIJP_qsGP5awokRyvmAO-9NV3w",
+  "description": "Snack shop dishing up fresh & frozen yogurt, made on-site, with a variety of toppings.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJCU_tcMBbwokR9GnNCCGjCbM": {
+  "placeId": "ChIJCU_tcMBbwokR9GnNCCGjCbM",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 94.1,
+  "segmentDistanceM": 28.0,
+  "address": "392 3rd St Apt 2, Brooklyn, NY 11215",
+  "categories": [
+   "Tour operator",
+   "Tour agency"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Food%20Strolls%20Guided%20Tours&query_place_id=ChIJCU_tcMBbwokR9GnNCCGjCbM",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ3yVm3_1awokRfGiqa2s3L7M": {
+  "placeId": "ChIJ3yVm3_1awokRfGiqa2s3L7M",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 134.9,
+  "segmentDistanceM": 25.9,
+  "address": "376 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Colombian restaurant",
+   "Cocktail bar",
+   "Latin American restaurant",
+   "South American restaurant",
+   "Steak house"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Colombia%20in%20Park%20Slope&query_place_id=ChIJ3yVm3_1awokRfGiqa2s3L7M",
+  "description": "An extensive menu of Colombian dishes are offered at this small Park Slope cafe.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJUTo_Cv5awokRBf8P9mpTTmM": {
+  "placeId": "ChIJUTo_Cv5awokRBf8P9mpTTmM",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 106.1,
+  "segmentDistanceM": 23.2,
+  "address": "363 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Bar",
+   "Gay bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Ginger's%20Bar&query_place_id=ChIJUTo_Cv5awokRBf8P9mpTTmM",
+  "description": "Casual lesbian bar with a neighborly feel thanks to happy hours, a pool table & an outdoor patio.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJUdT78AJbwokR5dRSj9XBxmE": {
+  "placeId": "ChIJUdT78AJbwokR5dRSj9XBxmE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 284.9,
+  "segmentDistanceM": 19.9,
+  "address": "306 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Coffee shop",
+   "Bagel shop",
+   "Bakery",
+   "Breakfast restaurant",
+   "Donut shop",
+   "Fast food restaurant",
+   "Takeout Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Dunkin'&query_place_id=ChIJUdT78AJbwokR5dRSj9XBxmE",
+  "description": "Long-running chain serving signature breakfast items & a variety of coffee drinks.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJxzgL9wJbwokRbyuVhQM4b5c": {
+  "placeId": "ChIJxzgL9wJbwokRbyuVhQM4b5c",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 250.6,
+  "segmentDistanceM": 12.3,
+  "address": "294 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Deli",
+   "Grocery store",
+   "Sandwich shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Park%20Slope%20Deli%20Farm&query_place_id=ChIJxzgL9wJbwokRbyuVhQM4b5c",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJO002SQBbwokRqyFwQ0ak-ac": {
+  "placeId": "ChIJO002SQBbwokRqyFwQ0ak-ac",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 10.4,
+  "address": "236b 6th St, Brooklyn, NY 11215",
+  "categories": [
+   "Event venue",
+   "Bar",
+   "Event planner",
+   "Live music venue",
+   "Lounge bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=ATOLYE%20NYC&query_place_id=ChIJO002SQBbwokRqyFwQ0ak-ac",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJOQZE0albwokRodrNQa_jmqA": {
+  "placeId": "ChIJOQZE0albwokRodrNQa_jmqA",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 106.5,
+  "segmentDistanceM": 24.0,
+  "address": "69A 7th Ave 2nd fl, Brooklyn, NY 11217",
+  "categories": [
+   "Massage spa",
+   "Massage therapist"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Spa%20On%207th&query_place_id=ChIJOQZE0albwokRodrNQa_jmqA",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 48
+ },
+ "ChIJXQKS4P1awokRckLf-756m-c": {
+  "placeId": "ChIJXQKS4P1awokRckLf-756m-c",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 138.4,
+  "segmentDistanceM": 20.7,
+  "address": "375a 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Bar",
+   "Lounge bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Logan's%20Run&query_place_id=ChIJXQKS4P1awokRckLf-756m-c",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJSdgc3f1awokRq3dr7RS4D4g": {
+  "placeId": "ChIJSdgc3f1awokRq3dr7RS4D4g",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 168.3,
+  "segmentDistanceM": 9.7,
+  "address": "381 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Sushi restaurant",
+   "Authentic Japanese restaurant",
+   "Japanese restaurant",
+   "Sushi takeaway"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sushi%20Yashin&query_place_id=ChIJSdgc3f1awokRq3dr7RS4D4g",
+  "description": "Chill, compact spot offering sushi rolls & sashimi, plus chef's-choice & lunch specials.",
+  "price": "$30–50",
+  "reviewsScraped": 60
+ },
+ "ChIJEyZWnWpbwokRyvmSg63kU1U": {
+  "placeId": "ChIJEyZWnWpbwokRyvmSg63kU1U",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 269.0,
+  "segmentDistanceM": 19.7,
+  "address": "295 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Coffee shop",
+   "Bubble tea store",
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Brew%20Memories&query_place_id=ChIJEyZWnWpbwokRyvmSg63kU1U",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJB9sOahFbwokRup4MDqpKdk4": {
+  "placeId": "ChIJB9sOahFbwokRup4MDqpKdk4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 17.5,
+  "segmentDistanceM": 17.5,
+  "address": "95 7th Ave 2nd fl, Brooklyn, NY 11215",
+  "categories": [
+   "Bridal shop",
+   "Wedding service",
+   "Wedding store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=New%20York%20City%20Bride%20NYCityBride&query_place_id=ChIJB9sOahFbwokRup4MDqpKdk4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJY0xkRDJbwokRyGF3-Oo5AM4": {
+  "placeId": "ChIJY0xkRDJbwokRyGF3-Oo5AM4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 173.0,
+  "segmentDistanceM": 10.5,
+  "address": "169 Lincoln Pl, Brooklyn, NY 11217",
+  "categories": [
+   "Barber shop",
+   "Hair salon",
+   "Hairdresser"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Resident%20Barber&query_place_id=ChIJY0xkRDJbwokRyGF3-Oo5AM4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJpyXfKQdbwokReB60wQsljwM": {
+  "placeId": "ChIJpyXfKQdbwokReB60wQsljwM",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 14.6,
+  "segmentDistanceM": 14.6,
+  "address": "95 7th Ave 2nd floor, Brooklyn, NY 11215",
+  "categories": [
+   "Nail salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Park%20Slope%20Nails&query_place_id=ChIJpyXfKQdbwokReB60wQsljwM",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJNfAsj71bwokRMUll3VlnScA": {
+  "placeId": "ChIJNfAsj71bwokRMUll3VlnScA",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 15.4,
+  "segmentDistanceM": 15.4,
+  "address": "315 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Restaurant",
+   "Pizza restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Emmy%20Squared%20Pizza%3A%20Park%20Slope&query_place_id=ChIJNfAsj71bwokRMUll3VlnScA",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJ7Wm0m-9bwokRoyAyy36GX00": {
+  "placeId": "ChIJ7Wm0m-9bwokRoyAyy36GX00",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 107.4,
+  "segmentDistanceM": 18.0,
+  "address": "370 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Japanese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mura%20Sushi&query_place_id=ChIJ7Wm0m-9bwokRoyAyy36GX00",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJkbWbEwBbwokRVOggDQ5hfLs": {
+  "placeId": "ChIJkbWbEwBbwokRVOggDQ5hfLs",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 273.4,
+  "segmentDistanceM": 18.1,
+  "address": "412 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mellow%20%26%20Melt%20Bakeshop&query_place_id=ChIJkbWbEwBbwokRVOggDQ5hfLs",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 34
+ },
+ "ChIJ40WDEP5awokRBzVrvzdHHww": {
+  "placeId": "ChIJ40WDEP5awokRBzVrvzdHHww",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 30.2,
+  "segmentDistanceM": 19.2,
+  "address": "341 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Ice cream shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=L'Albero%20Dei%20Gelati&query_place_id=ChIJ40WDEP5awokRBzVrvzdHHww",
+  "description": "Italian slow food cafe with a back garden sells housemade gelato, pastries, panini, espresso & wine.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJod63DqpbwokR0xEdm3K3-5I": {
+  "placeId": "ChIJod63DqpbwokR0xEdm3K3-5I",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 214.0,
+  "segmentDistanceM": 14.2,
+  "address": "204 6th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Milk%20Bar&query_place_id=ChIJod63DqpbwokR0xEdm3K3-5I",
+  "description": "Neighborhood cafe for daytime fare including egg dishes, toasts, salads, espresso & loose-leaf tea.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJhdk7CI5bwokR_xe6_KMCtto": {
+  "placeId": "ChIJhdk7CI5bwokR_xe6_KMCtto",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 175.3,
+  "segmentDistanceM": 14.9,
+  "address": "383 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Chicken restaurant",
+   "Bar & grill",
+   "Caribbean restaurant",
+   "Fried chicken takeaway",
+   "Jamaican restaurant",
+   "Seafood restaurant",
+   "Soul food restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Peppas%20Jerk%20Chicken%20-%20Park%20Slope&query_place_id=ChIJhdk7CI5bwokR_xe6_KMCtto",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ__8mxP1awokRp0GBJmGjLUE": {
+  "placeId": "ChIJ__8mxP1awokRp0GBJmGjLUE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 220.5,
+  "segmentDistanceM": 18.0,
+  "address": "399 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Chinese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Food%20Lin&query_place_id=ChIJ__8mxP1awokRp0GBJmGjLUE",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 22
+ },
+ "ChIJlTnMWWlbwokRfA8wk9CY6lA": {
+  "placeId": "ChIJlTnMWWlbwokRfA8wk9CY6lA",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 18.6,
+  "segmentDistanceM": 18.6,
+  "address": "808 b Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Lash%20Spa%20Eyelash%20Extensions&query_place_id=ChIJlTnMWWlbwokRfA8wk9CY6lA",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ6QdZIf5awokRutxyFrN3tck": {
+  "placeId": "ChIJ6QdZIf5awokRutxyFrN3tck",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 15.7,
+  "segmentDistanceM": 15.7,
+  "address": "321 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Bar",
+   "Beer garden",
+   "Pub"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Gate&query_place_id=ChIJ6QdZIf5awokRutxyFrN3tck",
+  "description": "Hard-to-find beers turn up at this laid-back tavern with dim lighting & an appealing patio.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJJ39Ty6lbwokR7gMI0Y_fZf4": {
+  "placeId": "ChIJJ39Ty6lbwokR7gMI0Y_fZf4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 174.1,
+  "segmentDistanceM": 12.8,
+  "address": "167 Lincoln Pl, Brooklyn, NY 11217",
+  "categories": [
+   "Massage spa"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=167%20Lincoln%20Place%20Spa&query_place_id=ChIJJ39Ty6lbwokR7gMI0Y_fZf4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ3z2VcGVbwokROnRUgABFgeU": {
+  "placeId": "ChIJ3z2VcGVbwokROnRUgABFgeU",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 145.6,
+  "segmentDistanceM": 13.5,
+  "address": "384 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Chinese restaurant",
+   "Sichuan restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Authentic%20Szechuan&query_place_id=ChIJ3z2VcGVbwokROnRUgABFgeU",
+  "description": "American & traditional takes on Chinese plates offered for dine-in service, take-out & delivery.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJwyH4GwJbwokRO0x0jD_unvw": {
+  "placeId": "ChIJwyH4GwJbwokRO0x0jD_unvw",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 228.2,
+  "segmentDistanceM": 12.1,
+  "address": "356 6th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "American restaurant",
+   "Bar",
+   "Brunch restaurant",
+   "Cocktail bar",
+   "Hamburger restaurant",
+   "Oyster bar restaurant",
+   "Pub",
+   "Restaurant",
+   "Sports bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Park%20Slope%20Ale%20House&query_place_id=ChIJwyH4GwJbwokRO0x0jD_unvw",
+  "description": "Mellow neighborhood hangout for beer & pub food with outdoor seating & a pool table.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJzaVL6EdbwokR9okqS7w0oik": {
+  "placeId": "ChIJzaVL6EdbwokR9okqS7w0oik",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 152.5,
+  "segmentDistanceM": 9.7,
+  "address": "180 Lincoln Pl, Brooklyn, NY 11217",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Salon%20Josie&query_place_id=ChIJzaVL6EdbwokR9okqS7w0oik",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 32
+ },
+ "ChIJXe7J2_1awokRLTsuSe5WNQ0": {
+  "placeId": "ChIJXe7J2_1awokRLTsuSe5WNQ0",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 170.8,
+  "segmentDistanceM": 11.7,
+  "address": "386 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Thai restaurant",
+   "Delivery Restaurant",
+   "Takeout Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Luck%20Thai&query_place_id=ChIJXe7J2_1awokRLTsuSe5WNQ0",
+  "description": "Corner storefront eatery offering a classic lineup of Thai curries & noodles, plus lunch specials.",
+  "price": "$10–50",
+  "reviewsScraped": 60
+ },
+ "ChIJq47_2f1awokRJaZOW5MQQ6s": {
+  "placeId": "ChIJq47_2f1awokRJaZOW5MQQ6s",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 173.0,
+  "segmentDistanceM": 11.6,
+  "address": "326 6th St, Brooklyn, NY 11215",
+  "categories": [
+   "Coffee shop",
+   "Tea store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Postmark%20Cafe&query_place_id=ChIJq47_2f1awokRJaZOW5MQQ6s",
+  "description": "This cozy, down-to-earth neighborhood hangout offers espresso drinks, baked goods & light fare.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ9xO3xCBbwokRRjO0dqcNXc4": {
+  "placeId": "ChIJ9xO3xCBbwokRRjO0dqcNXc4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 16.5,
+  "segmentDistanceM": 16.5,
+  "address": "100 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Waxing hair removal service",
+   "Beauty product supplier",
+   "Beauty salon",
+   "Eyebrow bar",
+   "Eyelash salon",
+   "Hair removal service",
+   "Health and beauty shop",
+   "Laser hair removal service",
+   "Skin care clinic",
+   "Spa"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sugaring%20NYC%20-%20Brooklyn%20Park%20Slope&query_place_id=ChIJ9xO3xCBbwokRRjO0dqcNXc4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJK51i6gJbwokRdo_Rmhwipow": {
+  "placeId": "ChIJK51i6gJbwokRdo_Rmhwipow",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 274.7,
+  "segmentDistanceM": 23.4,
+  "address": "302 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Soup restaurant",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Soup%20Bowl%20of%20Park%20Slope&query_place_id=ChIJK51i6gJbwokRdo_Rmhwipow",
+  "description": "Seasonal, cold-weather venue for a variety of homestyle soups served in no-frills surrounds.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ43TAif1awokR1WFGg_u8C-o": {
+  "placeId": "ChIJ43TAif1awokR1WFGg_u8C-o",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 13.1,
+  "address": "396 6th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Mexican restaurant",
+   "Brunch restaurant",
+   "Lunch restaurant",
+   "Vegan restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=M%C3%A9xico%20Aut%C3%A9ntico&query_place_id=ChIJ43TAif1awokR1WFGg_u8C-o",
+  "description": "Classic Mexican fare, sangria & more come in casual, colorful digs at this low-key corner standby.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJC5YbPwdbwokR34joIHeXiYY": {
+  "placeId": "ChIJC5YbPwdbwokR34joIHeXiYY",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 22.5,
+  "segmentDistanceM": 15.2,
+  "address": "111 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Barber shop",
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cut%20Above%20On%207th&query_place_id=ChIJC5YbPwdbwokR34joIHeXiYY",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJHYhISIVbwokRNcIdAD0mKjQ": {
+  "placeId": "ChIJHYhISIVbwokRNcIdAD0mKjQ",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 111.3,
+  "segmentDistanceM": 21.6,
+  "address": "365 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Indian restaurant",
+   "Bengali restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Masalawala%20%26%20Sons&query_place_id=ChIJHYhISIVbwokRNcIdAD0mKjQ",
+  "description": null,
+  "price": "$30–70",
+  "reviewsScraped": 60
+ },
+ "ChIJF6deL_5awokRh2ohKTMG2HE": {
+  "placeId": "ChIJF6deL_5awokRh2ohKTMG2HE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 27.8,
+  "segmentDistanceM": 15.8,
+  "address": "324 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "New American restaurant",
+   "American restaurant",
+   "Bar",
+   "Brunch restaurant",
+   "Fine dining restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Stone%20Park%20Cafe&query_place_id=ChIJF6deL_5awokRh2ohKTMG2HE",
+  "description": "Relaxed New American restaurant with a commitment to using seasonal, local ingredients.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJUTyzratbwokRW5XIdlfKxVE": {
+  "placeId": "ChIJUTyzratbwokRW5XIdlfKxVE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 212.6,
+  "segmentDistanceM": 18.5,
+  "address": "152 5th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Omni%20Beauty%20Salon&query_place_id=ChIJUTyzratbwokRW5XIdlfKxVE",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJW6nH46JLqy4R8p0J5S5BUfY": {
+  "placeId": "ChIJW6nH46JLqy4R8p0J5S5BUfY",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 255.8,
+  "segmentDistanceM": 13.4,
+  "address": "530 Dean St, Brooklyn, NY 11238",
+  "categories": [
+   "Pet store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Doggy%20Nibbles&query_place_id=ChIJW6nH46JLqy4R8p0J5S5BUfY",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 1
+ },
+ "ChIJmccz-cxbwokRjX2NYHa-kX4": {
+  "placeId": "ChIJmccz-cxbwokRjX2NYHa-kX4",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 137.3,
+  "segmentDistanceM": 19.8,
+  "address": "375 5th Ave Ste B, Brooklyn, NY 11215",
+  "categories": [
+   "Italian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Al%20Dente%20Fresh%20Pasta&query_place_id=ChIJmccz-cxbwokRjX2NYHa-kX4",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJNdlWyKRbwokRO7wpa44OWVo": {
+  "placeId": "ChIJNdlWyKRbwokRO7wpa44OWVo",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 185.1,
+  "segmentDistanceM": 18.9,
+  "address": "390 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Cocktail bar",
+   "Event venue",
+   "Restaurant",
+   "Wedding venue"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=390%20Social&query_place_id=ChIJNdlWyKRbwokRO7wpa44OWVo",
+  "description": null,
+  "price": "$90–100",
+  "reviewsScraped": 60
+ },
+ "ChIJrSf2_xhdwokRoJalqEbS_Sk": {
+  "placeId": "ChIJrSf2_xhdwokRoJalqEbS_Sk",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 13.3,
+  "segmentDistanceM": 13.3,
+  "address": "103 7th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Pet store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Gone%20to%20the%20Dogs&query_place_id=ChIJrSf2_xhdwokRoJalqEbS_Sk",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 35
+ },
+ "ChIJ3ef1wWdbwokRxwrBvSBD-Yw": {
+  "placeId": "ChIJ3ef1wWdbwokRxwrBvSBD-Yw",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 213.3,
+  "segmentDistanceM": 21.4,
+  "address": "397 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Sushi restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=KOME%20NORI&query_place_id=ChIJ3ef1wWdbwokRxwrBvSBD-Yw",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJp_YEll5bwokRQDr6RxQuyqo": {
+  "placeId": "ChIJp_YEll5bwokRQDr6RxQuyqo",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 226.8,
+  "segmentDistanceM": 11.9,
+  "address": "148 5th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Bar",
+   "Beer garden",
+   "Pub",
+   "Sports bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Beer%20Garage&query_place_id=ChIJp_YEll5bwokRQDr6RxQuyqo",
+  "description": null,
+  "price": "$40–50",
+  "reviewsScraped": 60
+ },
+ "ChIJpQemVgdbwokR4tVC2x91OtE": {
+  "placeId": "ChIJpQemVgdbwokR4tVC2x91OtE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 122.6,
+  "segmentDistanceM": 20.2,
+  "address": "782 Union St, Brooklyn, NY 11215",
+  "categories": [
+   "Grocery store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Park%20Slope%20Food%20Coop&query_place_id=ChIJpQemVgdbwokR4tVC2x91OtE",
+  "description": "Veteran, member-run co-op market stocking local, organic produce, meats, cheeses, bulk items & more.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJmQkqYwdbwokRm6pOnqrZzxU": {
+  "placeId": "ChIJmQkqYwdbwokRm6pOnqrZzxU",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 52.4,
+  "segmentDistanceM": 23.4,
+  "address": "81 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Pet store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Unleashed%20by%20Petco&query_place_id=ChIJmQkqYwdbwokRm6pOnqrZzxU",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJGWXdSAGNwokRS4_XZ-2r0rg": {
+  "placeId": "ChIJGWXdSAGNwokRS4_XZ-2r0rg",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 229.3,
+  "segmentDistanceM": 9.7,
+  "address": "339 7th St, Brooklyn, NY 11215",
+  "categories": [
+   "Cafe",
+   "Breakfast restaurant",
+   "Catering food and drink supplier",
+   "Coffee shop",
+   "Lunch restaurant",
+   "Mediterranean restaurant",
+   "Restaurant",
+   "Sandwich shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sandwich%20Girl%20Cafe&query_place_id=ChIJGWXdSAGNwokRS4_XZ-2r0rg",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJEcYmO11bwokRhMgnihB1wsE": {
+  "placeId": "ChIJEcYmO11bwokRhMgnihB1wsE",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th_control",
+  "corridorDistanceM": 173.4,
+  "segmentDistanceM": 13.6,
+  "address": "57 7th Ave, Brooklyn, NY 11217",
+  "categories": [
+   "Bagel shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Bagel%20Pub&query_place_id=ChIJEcYmO11bwokRhMgnihB1wsE",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJD1RILYNbwokR7YX0yLFLlpQ": {
+  "placeId": "ChIJD1RILYNbwokR7YX0yLFLlpQ",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 16.3,
+  "segmentDistanceM": 16.3,
+  "address": "280 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Mexican restaurant",
+   "Bar",
+   "Cocktail bar",
+   "Diner",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Terrace%20Restaurant%20%26%20Bakery&query_place_id=ChIJD1RILYNbwokR7YX0yLFLlpQ",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJ3Vkgyv1awokRa95N29fo1DY": {
+  "placeId": "ChIJ3Vkgyv1awokRa95N29fo1DY",
+  "area": "park_slope",
+  "city": "NYC",
+  "corridorId": "park_slope_5th",
+  "corridorDistanceM": 260.8,
+  "segmentDistanceM": 16.9,
+  "address": "408 5th Ave, Brooklyn, NY 11215",
+  "categories": [
+   "Mexican restaurant",
+   "Cocktail bar",
+   "Event venue"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Chela&query_place_id=ChIJ3Vkgyv1awokRa95N29fo1DY",
+  "description": "Warm Mexican eatery with colorful murals, offering tacos and enchiladas, plus tequila and mezcal.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ }
+}

@@ -1,0 +1,73 @@
+version: "1"
+name: corridor-brief
+description: >-
+  Builds a stakeholder briefing for one StreetShift corridor: finds the most relevant real
+  Google Maps reviews for that corridor with semantic search, has the streetshift-brief-writer
+  agent write a short briefing for a public hearing, and saves it to the briefs index.
+  Runs on demand, every day, or as a tool of the streetshift-analyst agent.
+enabled: true
+tags: ["calhacks", "streetshift"]
+
+triggers:
+  - type: manual
+  - type: scheduled
+    with:
+      every: 1d
+
+inputs:
+  - name: corridor
+    type: string
+    description: >-
+      Corridor id, one of ditmars, ditmars_control, park_slope_5th, park_slope_5th_control,
+      pell_doyers, pell_doyers_control, e32nd, e32nd_control, vanderbilt, vanderbilt_control, hayes
+    default: "ditmars"  # scheduled runs get no inputs, so steps also use | default
+
+steps:
+  # 1. Retrieve: semantic search over the corridor's Jina-embedded reviews
+  - name: find_reviews
+    type: elasticsearch.search
+    with:
+      index: reviews
+      size: 25
+      query:
+        bool:
+          filter:
+            - term:
+                corridor_id: '{{ inputs.corridor | default: "ditmars" }}'
+          must:
+            semantic:
+              field: content
+              query: "foot traffic, outdoor dining and seating, parking and driving, crowds, street life, business doing well or struggling"
+      _source: ["business_name", "category", "text", "published_at", "rating", "corridor_id"]
+
+  # 2. Reason: a separate brief-writer agent (it has NO workflow tool, so this cannot recurse)
+  - name: write_brief
+    type: ai.agent
+    agent-id: streetshift-brief-writer
+    with:
+      message: |
+        Write a stakeholder briefing for a simulated public hearing about pedestrianizing the
+        StreetShift corridor "{{ inputs.corridor | default: "ditmars" }}".
+        Using ONLY the reviews below (real Google Maps reviews of businesses on or near the corridor), write:
+        - a 2 sentence picture of the corridor's street life and customer base
+        - 3 to 5 bullets of what customers say about foot traffic, seating/outdoor dining, and parking/driving,
+          each naming the business and the review date
+        - one line on which kinds of businesses look most car-dependent and which most walk-in
+        - one line on what the evidence cannot tell us
+        Do not invent facts. Reviews:
+        {{ steps.find_reviews.output.hits.hits | json }}
+
+  # 3. Act: store the brief so the hearing's stakeholder agents can read it
+  - name: save_brief
+    type: elasticsearch.index
+    with:
+      index: briefs
+      document:
+        corridor_id: '{{ inputs.corridor | default: "ditmars" }}'
+        brief: "{{ steps.write_brief.output.message }}"
+        source: corridor-brief workflow
+
+  - name: log
+    type: console
+    with:
+      message: "{{ steps.write_brief.output.message }}"

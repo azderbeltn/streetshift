@@ -1,0 +1,178 @@
+{
+  "_readme": "Every model parameter, with low/mid/high values and its source. The sim runs at all three and reports ranges. Parameters marked calibrated are fit only on the calibration corridors (ditmars, park_slope_5th) by validation/calibrate.ts; holdout ground truth is never read by /sim.",
+  "traffic": {
+    "bprAlpha": {
+      "low": 0.1,
+      "mid": 0.15,
+      "high": 0.3,
+      "source": "Bureau of Public Roads (1964) volume-delay function; 0.15/4 is the standard FHWA default, 0.10-0.30 the range used in practice for urban arterials."
+    },
+    "bprBeta": {
+      "low": 4,
+      "mid": 4,
+      "high": 5,
+      "source": "BPR (1964); beta 4 standard, 5 used for congested urban networks."
+    },
+    "laneCapacityVph": {
+      "value": {
+        "motorway": 1800,
+        "trunk": 1500,
+        "primary": 900,
+        "secondary": 800,
+        "tertiary": 650,
+        "residential": 450,
+        "unclassified": 450,
+        "living_street": 200,
+        "default": 450
+      },
+      "source": "HCM base saturation flow ~1,900 pc/h/ln times typical urban signal green ratio g/C 0.35-0.50 for arterials; lower for local streets with parking and unsignalized friction."
+    },
+    "defaultPeakHourVolumeVph": {
+      "value": {
+        "motorway": 3000,
+        "trunk": 1800,
+        "primary": 700,
+        "secondary": 450,
+        "tertiary": 250,
+        "residential": 60,
+        "unclassified": 60,
+        "living_street": 20,
+        "default": 60
+      },
+      "source": "Used only when no NYC Automated Traffic Volume Count is within 500 m (flagged 'estimated'). Order-of-magnitude two-way peak-hour volumes by OSM road class for dense US cities; NYC ATR counts near the corridors (sim/assets/*/context.json) fall in these bands."
+    },
+    "arterialOriginWeight": {
+      "value": {
+        "motorway": 6,
+        "trunk": 5,
+        "primary": 4,
+        "secondary": 3,
+        "tertiary": 2,
+        "residential": 1,
+        "default": 1
+      },
+      "source": "Trip ends weighted toward arterials (CLAUDE.md Section 4); relative weights are an assumption."
+    },
+    "sampleTrips": {
+      "value": 2500,
+      "source": "Monte Carlo sample of OD pairs per area; scaled to calibrated volumes."
+    },
+    "peakHourShareOfDaily": {
+      "low": 0.08,
+      "mid": 0.09,
+      "high": 0.1,
+      "source": "FHWA Traffic Monitoring Guide: urban K-factors typically 8-10%."
+    },
+    "closureHoursPerDay": {
+      "value": 12,
+      "source": "NYC Open Streets typically ran ~8am-8pm on operating days; SF Hayes Street weekend closure is ~10-15 h."
+    }
+  },
+  "pedestrians": {
+    "baseVolumeByClassPph": {
+      "value": {
+        "primary": 450,
+        "secondary": 350,
+        "tertiary": 250,
+        "residential": 90,
+        "unclassified": 90,
+        "living_street": 120,
+        "pedestrian": 300,
+        "default": 120
+      },
+      "source": "Prior for hourly pedestrians on a block face in a dense neighborhood; NYC Bi-Annual Pedestrian Counts (cqsj-cfgu) on commercial corridors are typically hundreds to low thousands per hour. Flagged 'estimated' where no count within 500 m."
+    },
+    "perBusinessPph": {
+      "low": 10,
+      "mid": 18,
+      "high": 30,
+      "source": "Added hourly pedestrians per active storefront on the block (business density drives foot traffic); assumption checked against NYC ped counts where available."
+    },
+    "closureUplift": {
+      "low": 0.6,
+      "mid": 1.0,
+      "high": 1.4,
+      "calibrated": true,
+      "note": "Multiplier on the fitted uplift; the mid value is set by calibration.",
+      "source": "Fit on calibration corridors. Prior literature: NYC DOT plaza evaluations report 10-40% more pedestrians; car-free streets in Europe report larger gains."
+    },
+    "seatingMultiplier": {
+      "low": 1.15,
+      "mid": 1.3,
+      "high": 1.5,
+      "source": "Whyte, The Social Life of Small Urban Spaces (1980): sittable space is the strongest predictor of people staying. Applies to dwell and capture."
+    },
+    "programmingMultiplier": {
+      "value": {
+        "none": 1.0,
+        "light": 1.12,
+        "heavy": 1.3
+      },
+      "source": "Events/activation raise attendance; Project for Public Spaces 'Power of 10'. Assumption."
+    }
+  },
+  "economy": {
+    "captureRate": {
+      "value": {
+        "restaurant": 0.05,
+        "cafe": 0.07,
+        "bar": 0.04,
+        "bakery": 0.06,
+        "food_other": 0.05,
+        "retail": 0.025,
+        "grocery": 0.04,
+        "service": 0.01,
+        "other": 0.015
+      },
+      "source": "Share of passing pedestrians who become customers, by category. Retail capture-rate rules of thumb (2-8%); food & drink highest, appointment services lowest. Assumption."
+    },
+    "carCustomerShare": {
+      "low": 0.05,
+      "mid": 0.12,
+      "high": 0.2,
+      "source": "Share of customers arriving by car on NYC neighborhood retail corridors: NYC DOT / Transportation Alternatives merchant-intercept surveys report roughly 5-20%."
+    },
+    "carLossElasticity": {
+      "low": 0.5,
+      "mid": 1.0,
+      "high": 1.5,
+      "source": "Fraction of car customers lost per unit of added access difficulty (closure of frontage + added delay). Assumption."
+    },
+    "outdoorSeatingCapacityGain": {
+      "low": 0.15,
+      "mid": 0.3,
+      "high": 0.45,
+      "calibrated": true,
+      "source": "Added seated capacity from roadway dining relative to indoor capacity, for food & drink on closed segments. During 2020-21 indoor capacity was restricted, so roadway seats mattered more."
+    },
+    "diversionFromNearby": {
+      "low": 0.0,
+      "mid": 0.15,
+      "high": 0.3,
+      "source": "Share of newly captured visits on the closed street that are diverted from nearby corridors (the control). Assumption; nets the 'zero-sum' critique."
+    }
+  },
+  "interaction": {
+    "dwellMinutesBase": {
+      "value": 2.0,
+      "source": "Average time a passer-by spends on a block face; walking a 100 m block takes ~1.2 min."
+    },
+    "dwellFoodMultiplier": {
+      "value": 0.6,
+      "source": "Each food & drink share point raises dwell (people stop to eat). Whyte: 'If you want to seed a place with activity, put out food.'"
+    },
+    "encounterRate": {
+      "value": 0.02,
+      "source": "Probability per person-minute of co-presence that two lingering strangers start a conversation, scaled by density. Assumption (Whyte 'triangulation'); interaction is model output, not validated."
+    },
+    "thresholds": {
+      "diesOffBelow": 8,
+      "thrivesAbove": 25,
+      "source": "lingerIndex = people present per 100 m at any moment. Whyte observed well-used plazas sustain dozens of sitters; below ~8 a space reads as empty (the 'empty plaza' effect)."
+    },
+    "connectionShare": {
+      "value": 0.12,
+      "source": "Share of street conversations between strangers that become a repeat acquaintance (recognised next time). Assumption informed by research on weak ties and 'familiar strangers' (Milgram 1972); model output, not validated."
+    }
+  }
+}
