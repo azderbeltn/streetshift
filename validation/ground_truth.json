@@ -1,0 +1,432 @@
+{
+  "source": "NYC DOT, Streets for Recovery: The Economic Benefits of the NYC Open Streets Program (2022)",
+  "urls": [
+    "https://www.nyc.gov/html/dot/downloads/pdf/streets-for-recovery.pdf",
+    "https://www.nyc.gov/html/dot/downloads/pdf/streets-for-recovery-report-data.pdf"
+  ],
+  "metric": "Gross taxable sales of restaurants and bars, percent change from pre-pandemic baseline",
+  "targetQuarter": "2022 Q2",
+  "targetQuarterNote": "Last appendix column. Matches the report's headline 'summer 2021 (June to August 2021)' comparison (report p.8) and the press-confirmed values; study period Mar 1 2020 - Aug 31 2021 (report p.6).",
+  "gapDefinition": "actualGapPct = treated pct change - control pct change (percentage points)",
+  "averages": {
+    "treatedPct": 19.6,
+    "controlPct": -28.8
+  },
+  "corridors": [
+    {
+      "corridorId": "ditmars",
+      "corridorName": "Ditmars Blvd (Astoria, Queens)",
+      "split": "calibration",
+      "definitions": {
+        "treated": "Ditmars Boulevard between 33rd Street and 36th Street",
+        "control": "Ditmars Avenue between 28th Street and 33rd Street",
+        "source": "streets-for-recovery.pdf, PDF page 7",
+        "verifiedInPdf": true
+      },
+      "treated": {
+        "taxableSalesUsd": {
+          "Baseline": 2155305.0,
+          "2020 Q4": 2490290.0,
+          "2021 Q1": 1051326.0,
+          "2021 Q2": 2762023.0,
+          "2021 Q3": 2983712.0,
+          "2021 Q4": 1433737.0,
+          "2022 Q1": 2581617.0,
+          "2022 Q2": 3095467.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": 16.0,
+          "2021 Q1": -51.0,
+          "2021 Q2": 28.0,
+          "2021 Q3": 39.0,
+          "2021 Q4": -33.0,
+          "2022 Q1": 20.0,
+          "2022 Q2": 44.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 5"
+      },
+      "control": {
+        "taxableSalesUsd": {
+          "Baseline": 3070887.0,
+          "2020 Q4": 2790425.0,
+          "2021 Q1": 978527.0,
+          "2021 Q2": 1865571.0,
+          "2021 Q3": 2378636.0,
+          "2021 Q4": 1523406.0,
+          "2022 Q1": 2940115.0,
+          "2022 Q2": 2865646.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -9.0,
+          "2021 Q1": -68.0,
+          "2021 Q2": -39.0,
+          "2021 Q3": -23.0,
+          "2021 Q4": -50.0,
+          "2022 Q1": -4.0,
+          "2022 Q2": -7.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 5"
+      },
+      "borough": {
+        "taxableSalesUsd": {
+          "Baseline": 450303905.0,
+          "2020 Q4": 442090006.0,
+          "2021 Q1": 206957461.0,
+          "2021 Q2": 322530477.0,
+          "2021 Q3": 359472189.0,
+          "2021 Q4": 297339239.0,
+          "2022 Q1": 426895467.0,
+          "2022 Q2": 475142136.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -2.0,
+          "2021 Q1": -54.0,
+          "2021 Q2": -28.0,
+          "2021 Q3": -20.0,
+          "2021 Q4": -34.0,
+          "2022 Q1": -5.0,
+          "2022 Q2": 6.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 5"
+      },
+      "actualTreatedPct": 44.0,
+      "actualControlPct": -7.0,
+      "actualGapPct": 51.0
+    },
+    {
+      "corridorId": "park_slope_5th",
+      "corridorName": "5th Ave (Park Slope, Brooklyn)",
+      "split": "calibration",
+      "definitions": {
+        "treated": "5th Avenue between Union Street and 4th Street",
+        "control": "7th Avenue between Union Street and 4th Street",
+        "source": "streets-for-recovery.pdf, PDF page 7",
+        "verifiedInPdf": true
+      },
+      "treated": {
+        "taxableSalesUsd": {
+          "Baseline": 6828974.0,
+          "2020 Q4": 7841900.0,
+          "2021 Q1": 3781772.0,
+          "2021 Q2": 5693106.0,
+          "2021 Q3": 7035680.0,
+          "2021 Q4": 5463736.0,
+          "2022 Q1": 7251018.0,
+          "2022 Q2": 8622033.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": 15.0,
+          "2021 Q1": -44.0,
+          "2021 Q2": -16.0,
+          "2021 Q3": 3.0,
+          "2021 Q4": -20.0,
+          "2022 Q1": 7.0,
+          "2022 Q2": 27.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 3"
+      },
+      "control": {
+        "taxableSalesUsd": {
+          "Baseline": 4285255.0,
+          "2020 Q4": 4059167.0,
+          "2021 Q1": 2528938.0,
+          "2021 Q2": 3042730.0,
+          "2021 Q3": 3407204.0,
+          "2021 Q4": 3177906.0,
+          "2022 Q1": 3923163.0,
+          "2022 Q2": 3554467.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -5.0,
+          "2021 Q1": -41.0,
+          "2021 Q2": -29.0,
+          "2021 Q3": -20.0,
+          "2021 Q4": -26.0,
+          "2022 Q1": -8.0,
+          "2022 Q2": -17.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 3"
+      },
+      "borough": {
+        "taxableSalesUsd": {
+          "Baseline": 561922530.0,
+          "2020 Q4": 547503841.0,
+          "2021 Q1": 265832612.0,
+          "2021 Q2": 398300508.0,
+          "2021 Q3": 457030126.0,
+          "2021 Q4": 374459681.0,
+          "2022 Q1": 527569098.0,
+          "2022 Q2": 593358365.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -2.0,
+          "2021 Q1": -53.0,
+          "2021 Q2": -29.0,
+          "2021 Q3": -19.0,
+          "2021 Q4": -33.0,
+          "2022 Q1": -6.0,
+          "2022 Q2": 6.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 3"
+      },
+      "actualTreatedPct": 27.0,
+      "actualControlPct": -17.0,
+      "actualGapPct": 44.0
+    },
+    {
+      "corridorId": "pell_doyers",
+      "corridorName": "Pell & Doyers Sts (Chinatown, Manhattan)",
+      "split": "holdout",
+      "definitions": {
+        "treated": "Pell Street between Bowery and Mott Street, Doyers Street between Pell Street and Bowery",
+        "control": "Bowery between Grand Street and Chatham Square",
+        "source": "streets-for-recovery.pdf, PDF page 7",
+        "verifiedInPdf": true
+      },
+      "treated": {
+        "taxableSalesUsd": {
+          "Baseline": 2951454.0,
+          "2020 Q4": 2566420.0,
+          "2021 Q1": 668539.0,
+          "2021 Q2": 579575.0,
+          "2021 Q3": 844868.0,
+          "2021 Q4": 627204.0,
+          "2022 Q1": 1454935.0,
+          "2022 Q2": 2724341.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -13.0,
+          "2021 Q1": -77.0,
+          "2021 Q2": -80.0,
+          "2021 Q3": -71.0,
+          "2021 Q4": -79.0,
+          "2022 Q1": -51.0,
+          "2022 Q2": -8.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 7"
+      },
+      "control": {
+        "taxableSalesUsd": {
+          "Baseline": 5041206.0,
+          "2020 Q4": 4886834.0,
+          "2021 Q1": 1068383.0,
+          "2021 Q2": 1455899.0,
+          "2021 Q3": 2333354.0,
+          "2021 Q4": 1890958.0,
+          "2022 Q1": 2346927.0,
+          "2022 Q2": 3488295.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -3.0,
+          "2021 Q1": -79.0,
+          "2021 Q2": -71.0,
+          "2021 Q3": -54.0,
+          "2021 Q4": -62.0,
+          "2022 Q1": -53.0,
+          "2022 Q2": -31.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 7"
+      },
+      "borough": {
+        "taxableSalesUsd": {
+          "Baseline": 1537799404.0,
+          "2020 Q4": 1491737111.0,
+          "2021 Q1": 420978989.0,
+          "2021 Q2": 445358448.0,
+          "2021 Q3": 682695604.0,
+          "2021 Q4": 520761004.0,
+          "2022 Q1": 904682624.0,
+          "2022 Q2": 1197512623.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -3.0,
+          "2021 Q1": -73.0,
+          "2021 Q2": -71.0,
+          "2021 Q3": -56.0,
+          "2021 Q4": -66.0,
+          "2022 Q1": -41.0,
+          "2022 Q2": -22.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 7"
+      },
+      "actualTreatedPct": -8.0,
+      "actualControlPct": -31.0,
+      "actualGapPct": 23.0
+    },
+    {
+      "corridorId": "e32nd",
+      "corridorName": "E 32nd St (Koreatown, Manhattan)",
+      "split": "holdout",
+      "definitions": {
+        "treated": "E 32nd Street from Broadway to Madison Avenue",
+        "control": "West 36th Street between 6th Avenue and Madison Avenue",
+        "source": "streets-for-recovery.pdf, PDF page 7",
+        "verifiedInPdf": true
+      },
+      "treated": {
+        "taxableSalesUsd": {
+          "Baseline": 8253026.0,
+          "2020 Q4": 8973550.0,
+          "2021 Q1": 3174268.0,
+          "2021 Q2": 3639954.0,
+          "2021 Q3": 5407841.0,
+          "2021 Q4": 4416674.0,
+          "2022 Q1": 5811247.0,
+          "2022 Q2": 9468741.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": 9.0,
+          "2021 Q1": -61.0,
+          "2021 Q2": -56.0,
+          "2021 Q3": -34.0,
+          "2021 Q4": -46.0,
+          "2022 Q1": -29.0,
+          "2022 Q2": 15.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 9"
+      },
+      "control": {
+        "taxableSalesUsd": {
+          "Baseline": 6836707.0,
+          "2020 Q4": 8833145.0,
+          "2021 Q1": 1168832.0,
+          "2021 Q2": 653393.0,
+          "2021 Q3": 1961288.0,
+          "2021 Q4": 1072053.0,
+          "2022 Q1": 2408513.0,
+          "2022 Q2": 3471254.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": 29.0,
+          "2021 Q1": -83.0,
+          "2021 Q2": -90.0,
+          "2021 Q3": -71.0,
+          "2021 Q4": -84.0,
+          "2022 Q1": -65.0,
+          "2022 Q2": -49.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 9"
+      },
+      "borough": {
+        "taxableSalesUsd": {
+          "Baseline": 1537799404.0,
+          "2020 Q4": 1491737111.0,
+          "2021 Q1": 420978989.0,
+          "2021 Q2": 445358448.0,
+          "2021 Q3": 682695604.0,
+          "2021 Q4": 520761004.0,
+          "2022 Q1": 904682624.0,
+          "2022 Q2": 1197512623.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -3.0,
+          "2021 Q1": -73.0,
+          "2021 Q2": -71.0,
+          "2021 Q3": -56.0,
+          "2021 Q4": -66.0,
+          "2022 Q1": -41.0,
+          "2022 Q2": -22.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 9"
+      },
+      "actualTreatedPct": 15.0,
+      "actualControlPct": -49.0,
+      "actualGapPct": 64.0
+    },
+    {
+      "corridorId": "vanderbilt",
+      "corridorName": "Vanderbilt Ave (Prospect Heights, Brooklyn)",
+      "split": "holdout",
+      "definitions": {
+        "treated": "Vanderbilt Avenue between Atlantic Avenue and Park Place",
+        "control": "Flatbush Avenue between Dean Street and 8th Avenue",
+        "source": "streets-for-recovery.pdf, PDF page 7",
+        "verifiedInPdf": true
+      },
+      "treated": {
+        "taxableSalesUsd": {
+          "Baseline": 4928831.0,
+          "2020 Q4": 5799397.0,
+          "2021 Q1": 2511463.0,
+          "2021 Q2": 4043619.0,
+          "2021 Q3": 5591904.0,
+          "2021 Q4": 3631628.0,
+          "2022 Q1": 6022378.0,
+          "2022 Q2": 5898801.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": 18.0,
+          "2021 Q1": -49.0,
+          "2021 Q2": -18.0,
+          "2021 Q3": 14.0,
+          "2021 Q4": -26.0,
+          "2022 Q1": 22.0,
+          "2022 Q2": 20.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 1"
+      },
+      "control": {
+        "taxableSalesUsd": {
+          "Baseline": 7478460.0,
+          "2020 Q4": 6316269.0,
+          "2021 Q1": 2666833.0,
+          "2021 Q2": 4510298.0,
+          "2021 Q3": 5449567.0,
+          "2021 Q4": 4563085.0,
+          "2022 Q1": 4608841.0,
+          "2022 Q2": 4506702.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -16.0,
+          "2021 Q1": -64.0,
+          "2021 Q2": -40.0,
+          "2021 Q3": -27.0,
+          "2021 Q4": -39.0,
+          "2022 Q1": -38.0,
+          "2022 Q2": -40.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 1"
+      },
+      "borough": {
+        "taxableSalesUsd": {
+          "Baseline": 561922530.0,
+          "2020 Q4": 547503841.0,
+          "2021 Q1": 265832612.0,
+          "2021 Q2": 398300508.0,
+          "2021 Q3": 457030126.0,
+          "2021 Q4": 374459681.0,
+          "2022 Q1": 527569098.0,
+          "2022 Q2": 593358365.0
+        },
+        "pctChangeFromBaseline": {
+          "Baseline": 0.0,
+          "2020 Q4": -2.0,
+          "2021 Q1": -53.0,
+          "2021 Q2": -29.0,
+          "2021 Q3": -19.0,
+          "2021 Q4": -33.0,
+          "2022 Q1": -6.0,
+          "2022 Q2": 6.0
+        },
+        "source": "streets-for-recovery-report-data.pdf, page 1"
+      },
+      "actualTreatedPct": 20.0,
+      "actualControlPct": -40.0,
+      "actualGapPct": 60.0
+    }
+  ]
+}
