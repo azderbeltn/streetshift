@@ -21,6 +21,7 @@ Sources:
 - [ ] Devpost submission.
 - [ ] Register via the "Cal Hacks ASI:One Submission" agent in ASI:One: project name, name, email, team size, problem statement, GitHub URL, Devpost URL, demo video URL; optional (bonus) Agentverse agent profile URLs and ASI:One shared chat URLs (e.g. https://asi1.ai/shared-chat/...). Status must read "Submitted".
 - Recommended/bonus: ASI1 Interactive Cards (see docs/fetchai-extras.md), Payment Protocol, multi-agent collaboration, reliability/error handling, real-time data, agent that keeps operating after the hackathon.
+- Note: the hackpack "Quick start example" code is reproduced verbatim and has an indentation bug in `create_text_chat` (the `return` is over-indented) and omits `from uagents import Agent, Context, Protocol`; use the code in docs/fetchai.md instead.
 - Offer: one month free ASI:One Pro + Agentverse Premium, code shown on page as "CALHACKS26CALHACKS26AV" (likely a rendering duplicate; may be two codes CALHACKS26 / CALHACKS26AV).
 
 ---

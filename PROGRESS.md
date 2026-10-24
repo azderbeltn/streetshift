@@ -1,8 +1,8 @@
 # StreetShift: Progress
 
-**Current phase:** 0, Setup. Waiting at **STOP GATE 1**.
+**Current phase:** 1, Data. STOP GATE 1 is cleared: corridor = **Hayes St (Gough–Octavia), SF**, Creao track skipped (recommended), repo https://github.com/azderbeltn/streetshift.
 **Repo path:** `C:\Users\azizd\CalHacks\streetshift` (CLAUDE.md says `C:\Users\azizd\streetshift`; the actual location is the CalHacks folder).
-**Next step:** human completes STOP GATE 1, then create the GitHub repo, push, and start Phase 1 (Data).
+**Next step:** Phase 1: OSMnx graphs, ground truth extraction, NYC counts, Census, Apify, Elastic.
 
 ## Phase 0 tasks
 
@@ -15,8 +15,11 @@
 | Convex scaffold + AI files | ✅ (login pending) | `npm create convex@latest . -- -t bare`; `npx convex ai-files install` → `convex/_generated/ai/guidelines.md` and `.agents/skills/` present; `npm run typecheck` exit 0 |
 | Claude Code plugins | ✅ | `claude plugin list`: convex 1.14.0, elastic-elasticsearch 0.6.0, elastic-kibana 0.6.0, all enabled |
 | Agent seeds | ✅ | 5 random `AGENT_SEED_*` written to `.env` (never printed) |
-| Docs → `/docs` | 🔄 | in progress |
-| Forward corridor candidates | 🔄 | in progress → `docs/corridor-candidates.md` |
+| Docs → `/docs` | ✅ (frontend/apify/osmnx pending) | elastic, spacetimedb, convex, moss, livekit, fetchai, factory-droid, creao |
+| Forward corridor candidates | ✅ | `docs/corridor-candidates.md`; Hayes St chosen |
+| Convex cloud deployment | ✅ | `npx convex dev --once` → "Convex functions ready!"; project `streetshift` |
+| SpacetimeDB CLI login | ✅ | `spacetime login show` → logged in; URI = maincloud |
+| GitHub repo | ✅ | https://github.com/azderbeltn/streetshift (public); secret scan clean before push |
 | Root build | ✅ | `npm run build` exit 0 |
 
 ### Key check output (2026-10-24)
