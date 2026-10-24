@@ -1,0 +1,10 @@
+{
+  "name": "streetshift",
+  "private": true,
+  "version": "0.1.0",
+  "description": "City simulator that predicts what happens when a street is pedestrianized, backtested against real NYC Open Streets.",
+  "scripts": {
+    "build": "npm --prefix contracts run build && npm --prefix convex run typecheck",
+    "test": "npm --prefix contracts test"
+  }
+}

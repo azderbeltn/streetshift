@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://streetshift.dev/schemas/Scenario.json",
+  "title": "Scenario",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "city": {
+      "enum": [
+        "NYC",
+        "SF",
+        "BERKELEY"
+      ]
+    },
+    "corridorId": {
+      "type": "string"
+    },
+    "closedSegmentIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "addedSeating": {
+      "type": "boolean"
+    },
+    "programming": {
+      "enum": [
+        "none",
+        "light",
+        "heavy"
+      ]
+    },
+    "createdAt": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "city",
+    "corridorId",
+    "closedSegmentIds",
+    "addedSeating",
+    "programming",
+    "createdAt"
+  ],
+  "additionalProperties": false
+}

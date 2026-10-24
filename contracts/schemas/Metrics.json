@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://streetshift.dev/schemas/Metrics.json",
+  "title": "Metrics",
+  "type": "object",
+  "properties": {
+    "interaction": {
+      "type": "object",
+      "properties": {
+        "lingerIndex": {
+          "type": "number"
+        },
+        "encountersPerHour": {
+          "type": "number"
+        },
+        "verdict": {
+          "enum": [
+            "THRIVES",
+            "MARGINAL",
+            "DIES_OFF"
+          ]
+        },
+        "range": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "lingerIndex",
+        "encountersPerHour",
+        "verdict",
+        "range"
+      ],
+      "additionalProperties": false
+    },
+    "economy": {
+      "type": "object",
+      "properties": {
+        "totalRevenueChangePct": {
+          "type": "number"
+        },
+        "range": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "perBusiness": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "businessId": {
+                "type": "string"
+              },
+              "changePct": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "businessId",
+              "changePct"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "totalRevenueChangePct",
+        "range",
+        "perBusiness"
+      ],
+      "additionalProperties": false
+    },
+    "traffic": {
+      "type": "object",
+      "properties": {
+        "addedVehicleHours": {
+          "type": "number"
+        },
+        "range": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "overflowSegments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "segmentId": {
+                "type": "string"
+              },
+              "loadIncreasePct": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "segmentId",
+              "loadIncreasePct"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "addedVehicleHours",
+        "range",
+        "overflowSegments"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "interaction",
+    "economy",
+    "traffic"
+  ],
+  "additionalProperties": false
+}

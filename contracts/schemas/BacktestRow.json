@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://streetshift.dev/schemas/BacktestRow.json",
+  "title": "BacktestRow",
+  "type": "object",
+  "properties": {
+    "corridorId": {
+      "type": "string"
+    },
+    "corridorName": {
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "calibration",
+        "holdout"
+      ]
+    },
+    "predictedGapPct": {
+      "type": "number"
+    },
+    "actualGapPct": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "directionCorrect": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "absErrorPts": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "corridorId",
+    "corridorName",
+    "split",
+    "predictedGapPct",
+    "actualGapPct",
+    "directionCorrect",
+    "absErrorPts"
+  ],
+  "additionalProperties": false
+}

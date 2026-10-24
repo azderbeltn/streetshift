@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StreetShift: city sandbox</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E4F1EC;
+  --panel:#FFFFFF;
+  --ink:#25223B;
+  --muted:#625E7C;
+  --line:#25223B;
+  --shadow:#25223B;
+  --accent:#F0477D;
+  --accent-soft:#FFE0EA;
+  --good:#1F8A5B;
+  --bad:#C9413D;
+  --chip:#F1EEFB;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#191733;
+    --panel:#27243F;
+    --ink:#F4F1FF;
+    --muted:#B9B3DA;
+    --line:#0C0A1B;
+    --shadow:#0C0A1B;
+    --accent:#FF79A3;
+    --accent-soft:#4C2443;
+    --good:#5ED39B;
+    --bad:#FF8A84;
+    --chip:#353150;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#191733;
+  --panel:#27243F;
+  --ink:#F4F1FF;
+  --muted:#B9B3DA;
+  --line:#0C0A1B;
+  --shadow:#0C0A1B;
+  --accent:#FF79A3;
+  --accent-soft:#4C2443;
+  --good:#5ED39B;
+  --bad:#FF8A84;
+  --chip:#353150;
+  color-scheme:dark;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{height:100%;margin:0;background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.4;overflow:hidden;-webkit-font-smoothing:antialiased}
+#app{position:relative;width:100%;height:100%;overflow:hidden}
+canvas#city{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+canvas#city.tool-act{cursor:pointer}
+.panel{background:var(--panel);color:var(--ink);border:2px solid var(--line);box-shadow:0 3px 0 var(--shadow)}
+button{font:inherit;color:inherit}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+.title{position:absolute;top:14px;left:14px;padding:10px 16px 11px;border-radius:20px;max-width:300px}
+.title h1{margin:0;font-family:"Fredoka",system-ui,sans-serif;font-weight:700;font-size:26px;line-height:1;letter-spacing:-.01em}
+.title p{margin:5px 0 0;color:var(--muted);font-size:13.5px}
+
+.stats{position:absolute;top:14px;right:14px;display:flex;gap:10px;align-items:stretch}
+.stat{border-radius:18px;padding:9px 13px 10px;min-width:128px;display:flex;flex-direction:column}
+.stat-label{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.stat-num{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:24px;line-height:1.15;font-variant-numeric:tabular-nums}
+.stat-was{font-size:12px;color:var(--muted);min-height:16px;white-space:nowrap}
+.stat.hero{min-width:190px;background:var(--accent-soft)}
+.stat.hero .stat-num{font-size:34px;color:var(--accent)}
+.spark{display:block;width:100%;height:26px;margin-top:3px}
+.up{color:var(--good)}.down{color:var(--bad)}
+
+.tools{position:absolute;left:14px;top:50%;transform:translateY(-50%);border-radius:22px;padding:8px;display:flex;flex-direction:column;gap:6px}
+.tool{width:66px;border:2px solid transparent;background:transparent;border-radius:14px;padding:6px 2px 5px;display:flex;flex-direction:column;align-items:center;gap:1px;cursor:pointer}
+.tool .ic{font-size:22px;line-height:1.1}
+.tool .lb{font-family:"Fredoka",system-ui,sans-serif;font-weight:500;font-size:12.5px}
+.tool:hover{background:var(--chip)}
+.tool[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent)}
+
+.clock{position:absolute;right:14px;bottom:14px;border-radius:18px;padding:7px 8px 7px 14px;display:flex;align-items:center;gap:6px}
+.clock .time{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:17px;min-width:118px;font-variant-numeric:tabular-nums}
+.cbtn{border:2px solid var(--line);background:var(--chip);border-radius:11px;height:34px;min-width:34px;padding:0 9px;cursor:pointer;font-family:"Fredoka",system-ui,sans-serif;font-weight:500;font-size:14px}
+.cbtn[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--line)}
+
+.feed{position:absolute;left:14px;bottom:14px;margin:0;padding:0;list-style:none;display:flex;flex-direction:column-reverse;gap:6px;max-width:380px;pointer-events:none}
+.feed li{background:var(--panel);border:2px solid var(--line);box-shadow:0 2px 0 var(--shadow);border-radius:14px;padding:7px 12px;font-size:13.5px;transition:opacity .6s}
+.feed li.friend{background:var(--accent-soft)}
+.feed li .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;background:var(--accent);vertical-align:1px}
+.feed li.biz .dot{background:var(--good)}
+.feed li.car .dot{background:var(--bad)}
+.feed li.old{opacity:.55}
+
+.inspector{position:absolute;right:14px;top:132px;width:290px;border-radius:20px;padding:14px 16px 16px}
+.inspector[hidden]{display:none}
+.insp-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.insp-head h2{margin:0;font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:20px;line-height:1.15}
+.insp-kind{color:var(--muted);font-size:13px;margin-top:2px}
+.x{border:none;background:var(--chip);border-radius:10px;width:30px;height:30px;cursor:pointer;font-size:16px;flex:none}
+.rows{margin:12px 0 4px;display:grid;grid-template-columns:1fr auto;gap:5px 12px;font-size:14px}
+.rows dt{color:var(--muted)}
+.rows dd{margin:0;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.acts{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.act{border:2px solid var(--line);background:var(--chip);border-radius:12px;padding:7px 11px;cursor:pointer;font-family:"Fredoka",system-ui,sans-serif;font-weight:500;font-size:14px}
+.act.primary{background:var(--accent);color:#fff}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}
+
+.coach{position:absolute;transform:translate(-50%,calc(-100% - 16px));background:var(--ink);color:var(--panel);border-radius:14px;padding:9px 13px;font-size:13.5px;max-width:230px;text-align:center;pointer-events:none;box-shadow:0 3px 0 var(--accent)}
+.coach::after{content:"";position:absolute;left:50%;bottom:-8px;transform:translateX(-50%);border:8px solid transparent;border-bottom:0;border-top-color:var(--ink)}
+.coach[hidden]{display:none}
+.toast{position:absolute;left:50%;top:86px;transform:translateX(-50%);background:var(--ink);color:var(--panel);border-radius:999px;padding:8px 16px;font-size:14px;opacity:0;transition:opacity .25s;pointer-events:none;white-space:nowrap;max-width:92vw;overflow:hidden;text-overflow:ellipsis}
+.toast.on{opacity:1}
+
+@media (max-width: 860px){
+  .stat{min-width:112px}
+  .stat.hero{min-width:150px}
+  .stat-was{display:none}
+}
+@media (max-width: 760px){
+  body{font-size:14px}
+  .title{top:8px;left:8px;padding:7px 12px;border-radius:16px}
+  .title h1{font-size:17px}
+  .title p{display:none}
+  .title{max-width:40vw}
+  .stats{top:54px;left:8px;right:8px;overflow-x:auto;padding-bottom:5px;gap:7px}
+  .stat-label{white-space:normal;line-height:1.2}
+  .stat{min-width:104px;padding:6px 10px 7px;border-radius:14px}
+  .stat.hero{min-width:132px}
+  .stat-num{font-size:19px}.stat.hero .stat-num{font-size:24px}
+  .stat-label{font-size:11.5px}
+  .spark{height:18px}
+  .tools{top:auto;bottom:8px;left:8px;right:8px;transform:none;flex-direction:row;overflow-x:auto;border-radius:18px;padding:5px;gap:3px}
+  .tool{width:auto;min-width:58px;flex:1 0 auto}
+  .tool .ic{font-size:19px}
+  .clock{top:8px;bottom:auto;right:8px;left:auto;padding:4px 5px 4px 10px;border-radius:14px;gap:4px}
+  .clock #bZin,.clock #bZout{display:none}
+  .clock .time{font-size:13px;min-width:0}
+  .cbtn{height:30px;min-width:30px;padding:0 6px;font-size:13px}
+  .cbtn.wide{display:none}
+  .feed{left:8px;right:8px;bottom:84px;max-width:none}
+  .feed li:nth-child(n+2){display:none}
+  .inspector{top:auto;bottom:84px;left:8px;right:8px;width:auto;max-height:52vh;overflow:auto}
+  .toast{top:128px}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <canvas id="city" role="img" aria-label="A small simulated city with people walking, cars driving, shops, cafés, homes, and parks"></canvas>
+
+  <header class="title panel">
+    <h1>StreetShift</h1>
+    <p>Change the streets. Watch who meets whom.</p>
+  </header>
+
+  <section class="stats" aria-label="City stats">
+    <div class="stat hero panel">
+      <span class="stat-label">Conversations this hour</span>
+      <span class="stat-num" id="sConv">0</span>
+      <span class="stat-was" id="wConv"></span>
+      <canvas class="spark" id="spConv" aria-hidden="true"></canvas>
+    </div>
+    <div class="stat panel">
+      <span class="stat-label">Friendships formed</span>
+      <span class="stat-num" id="sFriends">0</span>
+      <span class="stat-was" id="wFriends"></span>
+    </div>
+    <div class="stat panel">
+      <span class="stat-label">Shop sales this hour</span>
+      <span class="stat-num" id="sRev">$0</span>
+      <span class="stat-was" id="wRev"></span>
+      <canvas class="spark" id="spRev" aria-hidden="true"></canvas>
+    </div>
+    <div class="stat panel">
+      <span class="stat-label">Extra drive time</span>
+      <span class="stat-num" id="sTraffic">+0%</span>
+      <span class="stat-was" id="wTraffic"></span>
+    </div>
+  </section>
+
+  <nav class="tools panel" aria-label="Tools">
+    <button class="tool" data-tool="look" aria-pressed="true" title="Look at a building, street or person (1)"><span class="ic" aria-hidden="true">🔍</span><span class="lb">Look</span></button>
+    <button class="tool" data-tool="plaza" aria-pressed="false" title="Turn a block into a pedestrian plaza (2)"><span class="ic" aria-hidden="true">🚶</span><span class="lb">Plaza</span></button>
+    <button class="tool" data-tool="floor" aria-pressed="false" title="Add a floor to a building (3)"><span class="ic" aria-hidden="true">🏢</span><span class="lb">Build up</span></button>
+    <button class="tool" data-tool="cafe" aria-pressed="false" title="Open a café (4)"><span class="ic" aria-hidden="true">☕</span><span class="lb">Café</span></button>
+    <button class="tool" data-tool="shop" aria-pressed="false" title="Open a shop (5)"><span class="ic" aria-hidden="true">🛍️</span><span class="lb">Shop</span></button>
+    <button class="tool" data-tool="park" aria-pressed="false" title="Make a park (6)"><span class="ic" aria-hidden="true">🌳</span><span class="lb">Park</span></button>
+    <button class="tool" data-tool="clear" aria-pressed="false" title="Clear a lot (7)"><span class="ic" aria-hidden="true">🧹</span><span class="lb">Clear</span></button>
+  </nav>
+
+  <div class="clock panel">
+    <span class="time" id="clock">Mon 9:00 am</span>
+    <button class="cbtn" id="bPause" aria-pressed="false" title="Pause">❚❚</button>
+    <button class="cbtn" id="b1" aria-pressed="true" title="Normal speed">1×</button>
+    <button class="cbtn" id="b3" aria-pressed="false" title="Fast">3×</button>
+    <button class="cbtn wide" id="bWeb" aria-pressed="true" title="Show lines between friends">Friend lines</button>
+    <button class="cbtn" id="bZin" title="Zoom in">+</button>
+    <button class="cbtn" id="bZout" title="Zoom out">−</button>
+    <button class="cbtn wide" id="bReset" title="Start the city over">Reset</button>
+  </div>
+
+  <ol class="feed" id="feed" aria-live="polite"></ol>
+  <aside class="inspector panel" id="insp" hidden></aside>
+  <div class="coach" id="coach">Try it: pick <b>Plaza</b>, then tap this block of Main St.</div>
+  <div class="toast" id="toast" role="status"></div>
+</div>
+
+<script>
+(() => {
+"use strict";
+const N = 16, TW = 48, TH = 24, FLOOR = 9, CAR_V = 2.0, PED_V = 0.85;
+const STREETS = ["Bay St","Pine St","Oak St","Main St","Elm St","Shore St"];
+const AVES = ["1st Ave","2nd Ave","3rd Ave","4th Ave","5th Ave","6th Ave"];
+const DAYS = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+const NAMES = ["Maya","Leo","Ana","Jon","Priya","Sam","Noor","Eli","Rosa","Kai","Zoe","Omar","Lena","Theo","Ivy","Raj","Mei","Ben","Ada","Luis","Nia","Ezra","Yuki","Tom","Sara","Femi","Lucy","Arlo","Dani","Hugo","Ines","Malik","June","Oscar","Pia","Ravi","Tess","Uma","Wes","Zara"];
+const NM = {
+  cafe:["Juniper Café","Little Owl Coffee","Copper Kettle","Morning Glory","Bean & Leaf","Tidepool Café"],
+  shop:["Fern & Co.","Paper Moon Books","Two Wheels Bikes","Corner Grocer","Plant Lady","Vinyl Attic","Thread Studio","Good Bread"],
+  office:["Harbor Labs","Northwind Studio","Kite Systems","Brightline Co.","Atlas Works"],
+  home:["Lilac Apartments","Rowhouses","Garden Flats","Sunny Lofts","Maple Homes"],
+  park:["Bayview Park","Linden Green","Pocket Park","Willow Commons","Fountain Square"],
+  drive:["Burger Barn Drive-Thru"],
+  empty:["Empty lot"]
+};
+const KIND_LABEL = {cafe:"Café",shop:"Shop",office:"Offices",home:"Homes",park:"Park",drive:"Drive-thru restaurant",empty:"Empty lot"};
+const D4 = [[1,0],[-1,0],[0,1],[0,-1]];
+
+// ---------- seeded layout randomness ----------
+let seed = 11;
+function srand(){ seed = (seed + 0x6D2B79F5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }
+const rnd = Math.random;
+const pick = (a, r = rnd) => a[Math.floor(r() * a.length)];
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const idx = (x, y) => y * N + x;
+const isRoad = (x, y) => x % 3 === 0 || y % 3 === 0;
+const isInter = (x, y) => x % 3 === 0 && y % 3 === 0;
+const center = i => ({ x: (i % N) + 0.5, y: ((i / N) | 0) + 0.5 });
+
+// ---------- state ----------
+let tiles, lots, frontMap, peds, cars, sparks, rel, pairT, convLog, revLog, friendships, friendPairs, tripRatios, failedTrips;
+let simMin, simSec, history, lastHist, baseline, pedId, nameCount, lastTalkEvent, lastCarEvent, hintDone;
+let speed = 1, paused = false, showWeb = true, tool = "look", selected = null, hoverTile = -1;
+
+function streetName(t){
+  if (isInter(t.x, t.y)) return `${AVES[t.x/3]} & ${STREETS[t.y/3]}`;
+  if (t.y % 3 === 0) return STREETS[t.y/3];
+  return AVES[t.x/3];
+}
+function lotName(kind){
+  nameCount[kind] = (nameCount[kind] || 0) + 1;
+  const list = NM[kind]; const n = nameCount[kind];
+  const base = list[(n - 1) % list.length];
+  return n > list.length ? `${base} ${Math.ceil(n / list.length)}` : base;
+}
+
+function build(){
+  seed = 11; nameCount = {};
+  tiles = []; lots = []; frontMap = new Map();
+  for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) tiles.push({ x, y, road: isRoad(x, y), ped: false, lot: null, heat: 0 });
+  const main = {"4,8":"cafe","5,8":"shop","7,8":"cafe","8,8":"shop","10,8":"shop","11,8":"cafe","4,10":"shop","5,10":"home","7,10":"cafe","8,10":"shop","10,10":"home","11,10":"drive"};
+  const parks = new Set(["1,1","13,4","4,13","14,13","10,1"]);
+  for (const t of tiles){
+    if (t.road) continue;
+    const key = `${t.x},${t.y}`;
+    let kind = main[key] || (parks.has(key) ? "park" : null);
+    if (!kind){
+      const r = srand();
+      if (t.y < 6 && t.x > 5) kind = r < 0.68 ? "office" : (r < 0.8 ? "cafe" : "home");
+      else kind = r < 0.05 ? "empty" : r < 0.15 ? "shop" : r < 0.21 ? "cafe" : "home";
+    }
+    const floors = kind === "home" ? 2 + Math.floor(srand() * 4) : kind === "office" ? 3 + Math.floor(srand() * 5) : (kind === "park" || kind === "empty") ? 0 : 1;
+    const lot = { x: t.x, y: t.y, kind, floors, name: lotName(kind), visits: 0, revenue: 0, passers: 0, lostDrivers: 0, seed: Math.floor(srand() * 1e6), tint: Math.floor(srand() * 3), frontage: [] };
+    for (const [dx, dy] of D4){
+      const nx = t.x + dx, ny = t.y + dy;
+      if (nx < 0 || ny < 0 || nx >= N || ny >= N) continue;
+      const ni = idx(nx, ny);
+      if (tiles[ni].road){ lot.frontage.push(ni); if (!frontMap.has(ni)) frontMap.set(ni, []); frontMap.get(ni).push(lot); }
+    }
+    t.lot = lot; lots.push(lot);
+  }
+  peds = []; cars = []; sparks = []; rel = new Map(); pairT = new Map();
+  convLog = []; revLog = []; friendships = 0; friendPairs = []; tripRatios = []; failedTrips = 0;
+  simMin = 6 * 60; simSec = 0; history = []; lastHist = -999; baseline = null; pedId = 0;
+  lastTalkEvent = -99; lastCarEvent = -99; hintDone = false;
+  const homes = lots.filter(l => l.kind === "home");
+  const pool = []; homes.forEach(h => { for (let k = 0; k < h.floors; k++) pool.push(h); });
+  const count = Math.min(230, Math.round(pool.length * 1.7));
+  for (let k = 0; k < count; k++) peds.push(makePed(pick(pool)));
+  // warm up three simulated hours so the stats have something to show
+  for (let k = 0; k < 600; k++) update(0.05, true);
+  feedEl.innerHTML = "";
+  selected = null; renderInspector();
+  coachEl.hidden = false;
+}
+
+// ---------- people ----------
+function sideOff(){ return (rnd() < 0.5 ? -1 : 1) * (0.2 + rnd() * 0.16); }
+function makePed(home){
+  const e = home.frontage[0];
+  const p = { id: pedId++, name: pick(NAMES), hue: Math.floor(rnd() * 360), home, tile: e, x: 0, y: 0, off: { x: sideOff(), y: sideOff() },
+              path: [], state: "home", hidden: true, timer: rnd() * 6, target: null, lingerTile: -1, lp: null, met: 0, friends: 0, doing: "At home", bob: rnd() * 6 };
+  const c = center(e); p.x = c.x + p.off.x; p.y = c.y + p.off.y;
+  return p;
+}
+const hour = () => (simMin % 1440) / 60;
+const isNight = () => { const h = hour(); return h >= 23 || h < 6; };
+function minsUntil(m){ return ((m - (simMin % 1440)) + 1440) % 1440; }
+function nearestOf(arr, p, n = 3){
+  let best = null, bd = 1e9;
+  for (let k = 0; k < n; k++){ const o = arr[(rnd() * arr.length) | 0]; const d = Math.abs(o.x - p.x) + Math.abs(o.y - p.y); if (d < bd){ bd = d; best = o; } }
+  return best;
+}
+function decideNext(p){
+  if (isNight()){ goTo(p, { type: "home", lot: p.home }); return; }
+  const h = hour();
+  const kinds = { cafe: [], shop: [], office: [], park: [] };
+  for (const l of lots) if (kinds[l.kind]) kinds[l.kind].push(l);
+  const plazas = tiles.filter(t => t.ped);
+  const opts = [];
+  if (kinds.cafe.length) opts.push([3, "cafe"]);
+  if (kinds.shop.length) opts.push([3, "shop"]);
+  if (kinds.office.length && h >= 8 && h < 17) opts.push([2.2, "office"]);
+  if (kinds.park.length) opts.push([1.4, "park"]);
+  if (plazas.length) opts.push([Math.min(3, 1.1 + plazas.length * 0.45), "plaza"]);
+  opts.push([1, "home"]);
+  let total = opts.reduce((s, o) => s + o[0], 0), r = rnd() * total, choice = "home";
+  for (const o of opts){ r -= o[0]; if (r <= 0){ choice = o[1]; break; } }
+  if (choice === "home") goTo(p, { type: "home", lot: p.home });
+  else if (choice === "plaza"){ const t = nearestOf(plazas, p); goTo(p, { type: "plaza", tile: idx(t.x, t.y) }); }
+  else goTo(p, { type: "lot", lot: nearestOf(kinds[choice], p) });
+}
+function goTo(p, target){
+  let dest;
+  if (target.type === "plaza") dest = target.tile;
+  else {
+    const fr = target.lot.frontage; let bd = 1e9; dest = fr[0];
+    for (const f of fr){ const c = center(f); const d = Math.abs(c.x - p.x) + Math.abs(c.y - p.y); if (d < bd){ bd = d; dest = f; } }
+  }
+  const path = bfs(p.tile, dest, n => tiles[n].road);
+  if (!path){ p.state = "visit"; p.hidden = true; p.timer = 2; return; }
+  p.target = target; p.path = path; p.state = "walk"; p.hidden = false;
+  p.doing = target.type === "home" ? "Heading home" : target.type === "plaza" ? "Walking to a plaza" : `Walking to ${target.lot.name}`;
+  if (!path.length) arrive(p);
+}
+function hide(p, secs, doing){ p.state = "visit"; p.hidden = true; p.timer = secs; p.doing = doing; }
+function sale(l, amt){ l.visits++; l.revenue += amt; revLog.push([simMin, amt]); }
+function adjPlaza(l){ for (const f of l.frontage) if (tiles[f].ped) return f; return -1; }
+function crowd(tileIdx){ let n = 0; for (const q of peds) if (q.state === "linger" && q.lingerTile === tileIdx) n++; return n; }
+function startLinger(p, tileIdx, doing, nearLot){
+  if (crowd(tileIdx) >= 12){ decideNext(p); return; }
+  p.state = "linger"; p.hidden = false; p.lingerTile = tileIdx; p.doing = doing;
+  const t = tiles[tileIdx];
+  if (nearLot){ const cx = t.x + 0.5 + (nearLot.x - t.x) * 0.32, cy = t.y + 0.5 + (nearLot.y - t.y) * 0.32; p.lp = { x: cx + (rnd() - 0.5) * 0.5, y: cy + (rnd() - 0.5) * 0.5 }; }
+  else p.lp = { x: t.x + 0.15 + rnd() * 0.7, y: t.y + 0.15 + rnd() * 0.7 };
+  p.timer = 6 + rnd() * 7;
+  if (t.road) p.tile = tileIdx;
+}
+function arrive(p){
+  const t = p.target; if (!t){ decideNext(p); return; }
+  if (t.type === "home"){
+    p.hidden = true; p.state = "home"; p.doing = "At home";
+    p.timer = isNight() ? minsUntil(6 * 60) / 6 + rnd() * 3 : 3 + rnd() * 5; return;
+  }
+  if (t.type === "plaza"){
+    const tt = tiles[t.tile];
+    if (tt.ped) startLinger(p, t.tile, `Hanging out on the ${streetName(tt)} plaza`); else decideNext(p);
+    return;
+  }
+  const l = t.lot;
+  switch (l.kind){
+    case "park": startLinger(p, idx(l.x, l.y), `Relaxing in ${l.name}`); break;
+    case "cafe": { sale(l, 6); const pt = adjPlaza(l); if (pt >= 0) startLinger(p, pt, `Coffee outside ${l.name}`, l); else hide(p, 2 + rnd() * 2, `Getting coffee at ${l.name}`); break; }
+    case "shop": sale(l, 9); hide(p, 2 + rnd() * 2, `Shopping at ${l.name}`); break;
+    case "office": hide(p, 10 + rnd() * 8, `Working at ${l.name}`); break;
+    case "drive": sale(l, 5); hide(p, 1.5, `Grabbing food at ${l.name}`); break;
+    case "home": hide(p, 4, "Visiting a friend"); break;
+    default: decideNext(p);
+  }
+}
+function onEnter(p, i){
+  const t = tiles[i]; const fl = frontMap.get(i);
+  if (fl) for (const l of fl){
+    l.passers++;
+    if ((l.kind === "shop" || l.kind === "cafe") && (!p.target || p.target.lot !== l) && rnd() < (t.ped ? 0.1 : 0.018)){
+      p.path = []; p.target = { type: "lot", lot: l }; arrive(p); return true;
+    }
+  }
+  if (t.ped && p.target && p.target.type !== "plaza" && rnd() < 0.12){ p.path = []; startLinger(p, i, `Stopped to hang out on the ${streetName(t)} plaza`); return true; }
+  return false;
+}
+
+// ---------- paths ----------
+function bfs(s, g, pass){
+  if (s === g) return [];
+  const prev = new Int32Array(N * N).fill(-1); prev[s] = s;
+  const q = [s]; let h = 0; const r = (rnd() * 4) | 0;
+  while (h < q.length){
+    const c = q[h++]; if (c === g) break;
+    const cx = c % N, cy = (c / N) | 0;
+    for (let k = 0; k < 4; k++){
+      const d = D4[(k + r) % 4], nx = cx + d[0], ny = cy + d[1];
+      if (nx < 0 || ny < 0 || nx >= N || ny >= N) continue;
+      const n = ny * N + nx;
+      if (prev[n] !== -1 || !pass(n)) continue;
+      prev[n] = c; q.push(n);
+    }
+  }
+  if (prev[g] === -1) return null;
+  const path = []; let c = g; while (c !== s){ path.push(c); c = prev[c]; }
+  return path.reverse();
+}
+const carPass = n => tiles[n].road && !tiles[n].ped;
+
+// ---------- cars ----------
+const CAR_COLS = ["#F25F5C","#FFD23F","#2E86DE","#55C1A9","#F4F4F6","#9B6BD6"];
+function boundary(){ return tiles.filter(t => t.road && !t.ped && (t.x === 0 || t.y === 0 || t.x === N - 1 || t.y === N - 1)); }
+function spawnCar(quiet){
+  const B = boundary(); if (B.length < 2) return;
+  const s = pick(B); let g = null, lot = null;
+  if (rnd() < 0.32){
+    const cand = lots.filter(l => l.kind === "shop" || l.kind === "cafe" || l.kind === "drive");
+    const drives = cand.filter(l => l.kind === "drive");
+    const pool = cand.concat(drives, drives, drives);
+    if (pool.length){
+      lot = pick(pool);
+      const fr = lot.frontage.filter(i => !tiles[i].ped);
+      if (fr.length) g = pick(fr);
+      else { lot.lostDrivers++; if (!quiet && simSec - lastCarEvent > 8){ lastCarEvent = simSec; addEvent("car", `A driver couldn’t reach ${lot.name}`); } lot = null; }
+    }
+  }
+  if (g === null){ let tries = 0, e; do { e = pick(B); tries++; } while (Math.abs(e.x - s.x) + Math.abs(e.y - s.y) < 8 && tries < 12); g = idx(e.x, e.y); }
+  const si = idx(s.x, s.y);
+  const path = bfs(si, g, carPass);
+  if (!path || !path.length){ if (!path) failedTrips++; return; }
+  const gc = center(g), sc = center(si);
+  cars.push({ x: sc.x, y: sc.y, tile: si, path, goal: g, lot, t0: simSec, free: Math.max(1, Math.abs(gc.x - sc.x) + Math.abs(gc.y - sc.y)) / CAR_V, dx: 1, dy: 0, col: pick(CAR_COLS) });
+}
+function reroute(){
+  for (const c of cars){
+    if (tiles[c.goal].ped){
+      if (c.lot){ const fr = c.lot.frontage.filter(i => !tiles[i].ped); if (fr.length) c.goal = pick(fr); else { c.lot.lostDrivers++; c.done = true; continue; } }
+      else { c.done = true; failedTrips++; continue; }
+    }
+    const p = bfs(c.tile, c.goal, carPass);
+    if (!p){ c.done = true; failedTrips++; } else c.path = p;
+  }
+  cars = cars.filter(c => !c.done);
+}
+
+// ---------- connections ----------
+let carCount = new Int16Array(N * N);
+function quietAt(x, y){
+  const tx = Math.floor(x), ty = Math.floor(y); let s = 0;
+  for (const [dx, dy] of [[0,0],...D4]){ const nx = tx + dx, ny = ty + dy; if (nx >= 0 && ny >= 0 && nx < N && ny < N) s += carCount[idx(nx, ny)]; }
+  return Math.max(0.2, 1 - 0.16 * s);
+}
+function whereOf(p){
+  const t = tiles[p.lingerTile]; if (!t) return "";
+  if (t.road) return `on the ${streetName(t)} plaza`;
+  if (t.lot) return `in ${t.lot.name}`;
+  return "";
+}
+function connect(p, q, quiet){
+  const k = p.id * 100000 + q.id; const prevLvl = rel.get(k) || 0;
+  if (prevLvl >= 2) { convLog.push(simMin); p.met++; q.met++; p.lastTalk = simSec; q.lastTalk = simSec; if (!quiet) sparks.push({ a: p, b: q, t: 0, heart: false }); return; }
+  // most first conversations stay small talk; some people hit it off, and a second meeting makes it a friendship
+  const lvl = prevLvl === 0 && rnd() < 0.12 ? 2 : prevLvl + 1; rel.set(k, lvl);
+  convLog.push(simMin); p.met++; q.met++; p.lastTalk = simSec; q.lastTalk = simSec;
+  if (!quiet) sparks.push({ a: p, b: q, t: 0, heart: lvl === 2 });
+  if (lvl === 2){
+    friendships++; p.friends++; q.friends++; friendPairs.push([p, q]);
+    if (!quiet) addEvent("friend", `${p.name} and ${q.name} are now friends`);
+  } else if (!quiet && simSec - lastTalkEvent > 1.6){
+    lastTalkEvent = simSec;
+    addEvent("talk", `${p.name} and ${q.name} got talking ${whereOf(p)}`);
+  }
+}
+
+// ---------- update ----------
+function update(dt, quiet){
+  const dts = paused && !quiet ? 0 : dt * (quiet ? 1 : speed);
+  if (dts <= 0) return;
+  simMin += dts * 6; simSec += dts;
+  const h = hour();
+  const act = (h >= 7 && h < 10) || (h >= 16 && h < 19) ? 1 : (h >= 6 && h < 22) ? 0.6 : 0.15;
+  if (cars.length < Math.round(44 * act) && rnd() < dts * 3.5) spawnCar(quiet);
+
+  carCount.fill(0);
+  for (const c of cars) carCount[idx(clamp(Math.floor(c.x), 0, N - 1), clamp(Math.floor(c.y), 0, N - 1))]++;
+
+  for (const c of cars){
+    if (!c.path.length){ c.done = true; continue; }
+    const n = c.path[0], nc = center(n), cc = center(c.tile);
+    const dx = Math.sign(nc.x - cc.x), dy = Math.sign(nc.y - cc.y);
+    if (dx || dy){ c.dx = dx; c.dy = dy; }
+    const tx = nc.x - c.dy * 0.17, ty = nc.y + c.dx * 0.17;
+    const cnt = carCount[c.tile] || 1;
+    const v = CAR_V / (1 + 0.5 * Math.max(0, cnt - 1)) * dts;
+    const ddx = tx - c.x, ddy = ty - c.y, d = Math.hypot(ddx, ddy);
+    if (d <= v){
+      c.x = tx; c.y = ty; c.tile = n; c.path.shift();
+      if (!c.path.length){
+        tripRatios.push(clamp((simSec - c.t0) / c.free, 1, 4)); if (tripRatios.length > 60) tripRatios.shift();
+        if (c.lot){ sale(c.lot, c.lot.kind === "drive" ? 12 : c.lot.kind === "shop" ? 8 : 6); }
+        c.done = true;
+      }
+    } else { c.x += ddx / d * v; c.y += ddy / d * v; }
+  }
+  cars = cars.filter(c => !c.done);
+
+  for (const p of peds){
+    p.bob += dts * 5;
+    if (p.state === "walk"){
+      let budget = PED_V * dts;
+      while (budget > 0 && p.state === "walk"){
+        if (!p.path.length){ arrive(p); break; }
+        const n = p.path[0], c = center(n), tx = c.x + p.off.x, ty = c.y + p.off.y;
+        const ddx = tx - p.x, ddy = ty - p.y, d = Math.hypot(ddx, ddy);
+        if (d <= budget){
+          p.x = tx; p.y = ty; budget -= d; p.tile = n; p.path.shift();
+          if (onEnter(p, n)) break;
+          if (!p.path.length){ arrive(p); break; }
+        } else { p.x += ddx / d * budget; p.y += ddy / d * budget; budget = 0; }
+      }
+    } else if (p.state === "linger"){
+      const ddx = p.lp.x - p.x, ddy = p.lp.y - p.y, d = Math.hypot(ddx, ddy), v = PED_V * 0.7 * dts;
+      if (d > v){ p.x += ddx / d * v; p.y += ddy / d * v; } else { p.x = p.lp.x; p.y = p.lp.y; }
+      p.timer -= dts;
+      const lt = tiles[p.lingerTile];
+      if (p.timer <= 0 || (lt.road && !lt.ped) || isNight()){
+        const fl = lt.ped ? (frontMap.get(p.lingerTile) || []).filter(l => l.kind === "shop" || l.kind === "cafe") : [];
+        if (p.timer <= 0 && fl.length && rnd() < 0.6 && !isNight()){ const l = pick(fl); p.target = { type: "lot", lot: l }; if (l.kind === "cafe") { sale(l, 6); hide(p, 2 + rnd() * 2, `Getting coffee at ${l.name}`); } else arrive(p); }
+        else decideNext(p);
+      }
+    } else {
+      p.timer -= dts;
+      if (p.timer <= 0){ if (p.state === "home" && isNight()) p.timer = 2; else decideNext(p); }
+    }
+  }
+
+  // conversations between people lingering near each other
+  const buckets = new Map(); const lingering = [];
+  for (const p of peds) if (p.state === "linger" && !p.hidden){
+    lingering.push(p);
+    const k = Math.floor(p.x) * 100 + Math.floor(p.y);
+    if (!buckets.has(k)) buckets.set(k, []); buckets.get(k).push(p);
+  }
+  for (const p of lingering){
+    const bx = Math.floor(p.x), by = Math.floor(p.y);
+    for (let oy = -1; oy <= 1; oy++) for (let ox = -1; ox <= 1; ox++){
+      const list = buckets.get((bx + ox) * 100 + (by + oy)); if (!list) continue;
+      for (const q of list){
+        if (q.id <= p.id) continue;
+        if (simSec - (p.lastTalk || -99) < 2 || simSec - (q.lastTalk || -99) < 2) continue;
+        if (Math.hypot(q.x - p.x, q.y - p.y) > 0.9) continue;
+        const k = p.id * 100000 + q.id; let e = pairT.get(k);
+        if (!e){ e = { t: 0, last: simSec }; pairT.set(k, e); }
+        if (simSec - e.last > 0.5 && e.t > 0) e.t = 0;
+        e.last = simSec; e.t += dts;
+        if (e.t >= 2.4){ if (rnd() < 0.6 * quietAt(p.x, p.y)) connect(p, q, quiet); e.t = -5; }
+      }
+    }
+  }
+  if (pairT.size > 6000) for (const [k, e] of pairT) if (simSec - e.last > 30) pairT.delete(k);
+
+  for (const t of tiles) if (t.road){ const c = carCount[idx(t.x, t.y)]; t.heat += (c - t.heat) * Math.min(1, dts * 1.5); }
+  for (const s of sparks) s.t += dts;
+  sparks = sparks.filter(s => s.t < 1.8);
+
+  const cut = simMin - 120;
+  while (convLog.length && convLog[0] < cut) convLog.shift();
+  while (revLog.length && revLog[0][0] < cut) revLog.shift();
+  if (simMin - lastHist >= 15){ lastHist = simMin; const m = metrics(); history.push(m); if (history.length > 56) history.shift(); }
+}
+function metrics(){
+  const conv = convLog.filter(t => t > simMin - 60).length;
+  let rev = 0; for (const [t, a] of revLog) if (t > simMin - 60) rev += a;
+  const avg = tripRatios.length ? tripRatios.reduce((s, v) => s + v, 0) / tripRatios.length : 1;
+  return { conv, rev, traffic: Math.round((avg - 1) * 100), friends: friendships };
+}
+
+// ---------- editing ----------
+function segmentOf(i){
+  const t = tiles[i]; if (!t.road || isInter(t.x, t.y)) return null;
+  if (t.y % 3 === 0){ const b = Math.floor(t.x / 3) * 3; return [idx(b + 1, t.y), idx(b + 2, t.y)]; }
+  const b = Math.floor(t.y / 3) * 3; return [idx(t.x, b + 1), idx(t.x, b + 2)];
+}
+function markBaseline(){ if (!baseline) baseline = metrics(); }
+function toggleSegment(i){
+  const seg = segmentOf(i);
+  if (!seg){ toast("Pick a block between two crossings, not the crossing itself"); return; }
+  markBaseline();
+  const on = !tiles[seg[0]].ped;
+  for (const s of seg) tiles[s].ped = on;
+  reroute();
+  const name = streetName(tiles[seg[0]]);
+  if (on){
+    toast(`This block of ${name} is now a plaza`);
+    addEvent("biz", `${name} closed to cars for one block`);
+    if (!hintDone){ hintDone = true; coachEl.hidden = true; setTimeout(() => toast("Now watch “Conversations this hour” over the next few hours"), 2600); }
+  } else toast(`${name} reopened to cars`);
+}
+function addFloor(l){
+  if (l.kind === "park" || l.kind === "empty"){ toast("Build something here first"); return; }
+  if (l.floors >= 9){ toast("That’s as tall as this block allows"); return; }
+  markBaseline(); l.floors++;
+  if (l.kind === "home"){ for (let k = 0; k < 3; k++) peds.push(makePed(l)); toast(`${l.name} grew a floor, and 3 new neighbors moved in`); }
+  else toast(`${l.name} grew to ${l.floors} floors`);
+}
+function setKind(l, k){
+  if (l.kind === k){ toast(`That’s already a ${KIND_LABEL[k].toLowerCase()}`); return; }
+  markBaseline();
+  l.kind = k; l.floors = { cafe: 1, shop: 1, park: 0, empty: 0 }[k]; l.name = lotName(k);
+  l.visits = 0; l.revenue = 0; l.passers = 0; l.lostDrivers = 0;
+  toast(k === "empty" ? "Lot cleared" : `${l.name} opened`);
+}
+
+// ---------- rendering ----------
+const canvas = document.getElementById("city"), ctx = canvas.getContext("2d");
+const app = document.getElementById("app");
+const feedEl = document.getElementById("feed"), coachEl = document.getElementById("coach"), toastEl = document.getElementById("toast"), insp = document.getElementById("insp");
+let W = 0, H = 0, dpr = 1; const cam = { s: 1, x: 0, y: 0 };
+function resize(){
+  const r = app.getBoundingClientRect(); W = r.width; H = r.height; dpr = Math.min(2, window.devicePixelRatio || 1);
+  canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+  fit();
+}
+function fit(){
+  const mobile = W < 760;
+  const top = mobile ? 150 : 96, bottom = mobile ? 120 : 70;
+  const availW = W - (mobile ? 16 : 230), availH = H - top - bottom;
+  cam.s = clamp(Math.min(availW / (N * TW) * (mobile ? 1.3 : 1), availH / (N * TH + 80)), 0.38, 2.2);
+  cam.x = (mobile ? W / 2 : W / 2 + 30);
+  cam.y = top + (availH - (N * TH) * cam.s) / 2 + 50 * cam.s;
+}
+function P(gx, gy, z = 0){ return [(gx - gy) * TW / 2 * cam.s + cam.x, ((gx + gy) * TH / 2 - z) * cam.s + cam.y]; }
+function poly(pts, fill, stroke, lw){
+  ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]);
+  for (let k = 1; k < pts.length; k++) ctx.lineTo(pts[k][0], pts[k][1]);
+  ctx.closePath();
+  if (fill){ ctx.fillStyle = fill; ctx.fill(); }
+  if (stroke){ ctx.strokeStyle = stroke; ctx.lineWidth = lw || 1; ctx.stroke(); }
+}
+function diamond(x, y, inset, fill, stroke, lw){ poly([P(x + inset, y + inset), P(x + 1 - inset, y + inset), P(x + 1 - inset, y + 1 - inset), P(x + inset, y + 1 - inset)], fill, stroke, lw); }
+
+// colour helpers with night tint
+const NIGHT = [27, 33, 71]; let nf = 0, shadeCache = new Map(), lastNf = -1;
+function hexRgb(h){ const n = parseInt(h.slice(1), 16); return [(n >> 16) & 255, (n >> 8) & 255, n & 255]; }
+function mixRgb(a, b, t){ return `rgb(${Math.round(a[0] + (b[0] - a[0]) * t)},${Math.round(a[1] + (b[1] - a[1]) * t)},${Math.round(a[2] + (b[2] - a[2]) * t)})`; }
+function sh(hex){ let v = shadeCache.get(hex); if (!v){ v = mixRgb(hexRgb(hex), NIGHT, nf * 0.62); shadeCache.set(hex, v); } return v; }
+function nightFactor(){ const h = hour(); if (h < 5) return 1; if (h < 7) return 1 - (h - 5) / 2; if (h < 18) return 0; if (h < 20) return (h - 18) / 2; return 1; }
+
+const PAL = {
+  grass: "#A9D58C", lotBase: "#CFE2B9", road: "#6A7186", roadLine: "#E8EDF5", plaza: "#F2DFB4", plazaLine: "#E2C890",
+  parkGrass: "#8ECC6F", tree: "#4C9F57", tree2: "#6DBF6E", trunk: "#7B5D46",
+  home: [["#F6E6F1","#D7B4CF","#E8CCE0"],["#FFF2CF","#E6C77F","#F2DAA3"],["#E4F0FB","#9DB9DA","#BED3EA"]],
+  office: ["#E1EAF4","#8BA5C3","#A9BED7"], shop: ["#E2F6EC","#86CDAD","#A6DCC3"], cafe: ["#FFE9D8","#F0AF88","#F6C8A7"], drive: ["#E6E6EA","#A1A1A8","#BDBDC3"],
+  awnShop: "#2F9E6E", awnCafe: "#F0477D", win: "#CBE4F6", winLit: "#FFD86E", winOff: "#4A4F7C", empty: "#D8C9A6"
+};
+function heatColor(h){
+  const t = clamp((h - 1) / 3, 0, 1);
+  if (t <= 0) return sh(PAL.road);
+  const a = hexRgb(PAL.road), b = t < 0.5 ? hexRgb("#D98A3A") : hexRgb("#D9453A");
+  const tt = t < 0.5 ? t * 2 * 0.8 : 0.8 + (t - 0.5) * 0.4;
+  const base = mixRgb(a, b, tt);
+  return base;
+}
+function hash(n){ n = (n ^ 61) ^ (n >>> 16); n = n + (n << 3); n = n ^ (n >>> 4); n = Math.imul(n, 0x27d4eb2d); n = n ^ (n >>> 15); return (n >>> 0) / 4294967296; }
+
+function drawBox(x0, y0, x1, y1, z0, h, top, left, right){
+  poly([P(x0, y1, z0), P(x1, y1, z0), P(x1, y1, z0 + h), P(x0, y1, z0 + h)], left);
+  poly([P(x1, y0, z0), P(x1, y1, z0), P(x1, y1, z0 + h), P(x1, y0, z0 + h)], right);
+  poly([P(x0, y0, z0 + h), P(x1, y0, z0 + h), P(x1, y1, z0 + h), P(x0, y1, z0 + h)], top);
+}
+function drawTree(gx, gy, size){
+  const [bx, by] = P(gx, gy, 0), [tx, ty] = P(gx, gy, 9 * size);
+  ctx.strokeStyle = sh(PAL.trunk); ctx.lineWidth = Math.max(1, 1.6 * cam.s); ctx.beginPath(); ctx.moveTo(bx, by); ctx.lineTo(tx, ty); ctx.stroke();
+  ctx.fillStyle = sh(PAL.tree); ctx.beginPath(); ctx.arc(tx, ty, 5.4 * cam.s * size, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = sh(PAL.tree2); ctx.beginPath(); ctx.arc(tx - 1.5 * cam.s * size, ty - 1.6 * cam.s * size, 3 * cam.s * size, 0, Math.PI * 2); ctx.fill();
+}
+function drawUmbrella(gx, gy){
+  const [bx, by] = P(gx, gy, 0), [tx, ty] = P(gx, gy, 9);
+  ctx.strokeStyle = sh("#8C7B70"); ctx.lineWidth = Math.max(1, cam.s); ctx.beginPath(); ctx.moveTo(bx, by); ctx.lineTo(tx, ty); ctx.stroke();
+  ctx.fillStyle = sh(PAL.awnCafe); ctx.beginPath(); ctx.ellipse(tx, ty, 6 * cam.s, 3 * cam.s, 0, Math.PI, 0); ctx.fill();
+  ctx.fillStyle = sh("#FFFFFF"); ctx.beginPath(); ctx.ellipse(tx, ty, 2 * cam.s, 3 * cam.s, 0, Math.PI, 0); ctx.fill();
+}
+function drawLot(l){
+  const x = l.x, y = l.y, m = 0.13;
+  if (l.kind === "park"){
+    diamond(x, y, 0.04, sh(PAL.parkGrass));
+    drawTree(x + 0.3, y + 0.3, 1.1); drawTree(x + 0.72, y + 0.4, 0.9); drawTree(x + 0.42, y + 0.75, 1);
+    return;
+  }
+  if (l.kind === "empty"){ diamond(x, y, 0.08, sh(PAL.empty)); return; }
+  let cols = l.kind === "home" ? PAL.home[l.tint] : PAL[l.kind];
+  const h = Math.max(1, l.floors) * FLOOR * (l.kind === "drive" ? 0.8 : 1);
+  const x0 = x + m, y0 = y + m, x1 = x + 1 - m, y1 = y + 1 - m;
+  drawBox(x0, y0, x1, y1, 0, h, sh(cols[0]), sh(cols[1]), sh(cols[2]));
+  // windows
+  const floors = Math.max(1, l.floors);
+  const lit = nf > 0.35;
+  for (let f = 0; f < floors; f++){
+    const za = f * FLOOR + 3, wh = FLOOR * 0.42;
+    for (let k = 0; k < 2; k++){
+      if (l.kind !== "office" && f === 0 && (l.kind === "shop" || l.kind === "cafe" || l.kind === "drive")) continue;
+      const on = hash(l.seed + f * 7 + k * 3) < 0.62;
+      const wc = lit ? (on ? PAL.winLit : sh(PAL.winOff)) : sh(PAL.win);
+      const a = x0 + (x1 - x0) * (0.18 + k * 0.42), b = a + (x1 - x0) * 0.24;
+      poly([P(a, y1, za), P(b, y1, za), P(b, y1, za + wh), P(a, y1, za + wh)], wc);
+      const on2 = hash(l.seed + f * 11 + k * 5 + 1) < 0.62;
+      const wc2 = lit ? (on2 ? PAL.winLit : sh(PAL.winOff)) : sh(PAL.win);
+      const c = y0 + (y1 - y0) * (0.18 + k * 0.42), d = c + (y1 - y0) * 0.24;
+      poly([P(x1, c, za), P(x1, d, za), P(x1, d, za + wh), P(x1, c, za + wh)], wc2);
+    }
+  }
+  if (l.kind === "shop" || l.kind === "cafe"){
+    const aw = sh(l.kind === "shop" ? PAL.awnShop : PAL.awnCafe), z = FLOOR * 0.62;
+    poly([P(x0, y1, z), P(x1, y1, z), P(x1, y1 + 0.08, z - 2.5), P(x0, y1 + 0.08, z - 2.5)], aw);
+    poly([P(x1, y0, z), P(x1, y1, z), P(x1 + 0.08, y1, z - 2.5), P(x1 + 0.08, y0, z - 2.5)], aw);
+    // glowing shopfront at night
+    if (lit){ poly([P(x0 + 0.05, y1, 1), P(x1 - 0.05, y1, 1), P(x1 - 0.05, y1, z - 2), P(x0 + 0.05, y1, z - 2)], "rgba(255,216,110,.85)"); }
+  }
+  if (l.kind === "drive"){
+    const [sx, sy] = P(x1 - 0.05, y1 - 0.05, h + 2), [ex, ey] = P(x1 - 0.05, y1 - 0.05, h + 14);
+    ctx.strokeStyle = sh("#666670"); ctx.lineWidth = Math.max(1, 1.4 * cam.s); ctx.beginPath(); ctx.moveTo(sx, sy); ctx.lineTo(ex, ey); ctx.stroke();
+    ctx.fillStyle = "#E5484D"; ctx.beginPath(); ctx.roundRect(ex - 9 * cam.s, ey - 7 * cam.s, 18 * cam.s, 8 * cam.s, 2 * cam.s); ctx.fill();
+  }
+  if (selected && selected.type === "lot" && selected.lot === l){
+    poly([P(x0, y0, h + 0.5), P(x1, y0, h + 0.5), P(x1, y1, h + 0.5), P(x0, y1, h + 0.5)], null, cssVar("--accent"), 2.5);
+  }
+}
+function drawPed(p){
+  const bob = p.state === "linger" ? Math.abs(Math.sin(p.bob)) * 0.8 : Math.abs(Math.sin(p.bob * 1.6)) * 1.1;
+  const [sx, sy] = P(p.x, p.y, 0);
+  ctx.fillStyle = "rgba(20,20,40,.18)"; ctx.beginPath(); ctx.ellipse(sx, sy, 2.6 * cam.s, 1.3 * cam.s, 0, 0, Math.PI * 2); ctx.fill();
+  const [bx, by] = P(p.x, p.y, 3 + bob);
+  ctx.fillStyle = `hsl(${p.hue} 68% ${nf > 0.5 ? 64 : 56}%)`;
+  ctx.beginPath(); ctx.ellipse(bx, by, 2.3 * cam.s, 3 * cam.s, 0, 0, Math.PI * 2); ctx.fill();
+  const [hx, hy] = P(p.x, p.y, 7.6 + bob);
+  ctx.fillStyle = nf > 0.5 ? "#E9DCCB" : "#F3E1CC"; ctx.beginPath(); ctx.arc(hx, hy, 1.7 * cam.s, 0, Math.PI * 2); ctx.fill();
+  if (selected && selected.type === "ped" && selected.ped === p){
+    ctx.strokeStyle = cssVar("--accent"); ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(bx, by - 1 * cam.s, 6 * cam.s, 0, Math.PI * 2); ctx.stroke();
+  }
+}
+function drawCar(c){
+  const [sx, sy] = P(c.x, c.y, 0), [fx, fy] = P(c.x + c.dx, c.y + c.dy, 0);
+  const ang = Math.atan2(fy - sy, fx - sx);
+  ctx.save(); ctx.translate(sx, sy - 2 * cam.s); ctx.rotate(ang);
+  ctx.fillStyle = "rgba(20,20,40,.22)"; ctx.beginPath(); ctx.roundRect(-5 * cam.s, -1.5 * cam.s, 10 * cam.s, 5.5 * cam.s, 2 * cam.s); ctx.fill();
+  ctx.fillStyle = sh(c.col); ctx.beginPath(); ctx.roundRect(-5 * cam.s, -3 * cam.s, 10 * cam.s, 5.5 * cam.s, 2 * cam.s); ctx.fill();
+  ctx.fillStyle = sh("#2B3048"); ctx.beginPath(); ctx.roundRect(-1.5 * cam.s, -2.2 * cam.s, 4 * cam.s, 4 * cam.s, 1 * cam.s); ctx.fill();
+  if (nf > 0.4){ ctx.fillStyle = "rgba(255,236,170,.9)"; ctx.beginPath(); ctx.arc(5 * cam.s, -1.6 * cam.s, 1 * cam.s, 0, Math.PI * 2); ctx.arc(5 * cam.s, 1.2 * cam.s, 1 * cam.s, 0, Math.PI * 2); ctx.fill(); }
+  ctx.restore();
+}
+let cssCache = {};
+function cssVar(n){ if (!cssCache[n]) cssCache[n] = getComputedStyle(document.documentElement).getPropertyValue(n).trim() || "#F0477D"; return cssCache[n]; }
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { cssCache = {}; });
+
+function render(){
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  nf = nightFactor(); const nfr = Math.round(nf * 50) / 50; if (nfr !== lastNf){ lastNf = nfr; nf = nfr; shadeCache.clear(); } else nf = nfr;
+  const g = ctx.createLinearGradient(0, 0, 0, H);
+  g.addColorStop(0, mixRgb(hexRgb("#AFDAF6"), hexRgb("#0F1433"), nf)); g.addColorStop(1, mixRgb(hexRgb("#EAF5E6"), hexRgb("#2A2F63"), nf));
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+
+  // ground slab
+  const e = 0.0;
+  poly([P(-e, -e), P(N + e, -e), P(N + e, N + e), P(-e, N + e)], sh(PAL.grass));
+  poly([P(0, N, 0), P(N, N, 0), P(N, N, -8), P(0, N, -8)], sh("#7FAE66"));
+  poly([P(N, 0, 0), P(N, N, 0), P(N, N, -8), P(N, 0, -8)], sh("#95C27A"));
+
+  for (const t of tiles){
+    if (t.road){
+      if (t.ped){
+        diamond(t.x, t.y, 0, sh(PAL.plaza));
+        diamond(t.x, t.y, 0.22, null, sh(PAL.plazaLine), 1);
+      } else {
+        diamond(t.x, t.y, 0, heatColor(t.heat));
+        if (!isInter(t.x, t.y)){
+          const horiz = t.y % 3 === 0;
+          ctx.strokeStyle = sh(PAL.roadLine); ctx.lineWidth = Math.max(0.8, cam.s); ctx.setLineDash([3 * cam.s, 4 * cam.s]);
+          const a = horiz ? P(t.x + 0.1, t.y + 0.5) : P(t.x + 0.5, t.y + 0.1), b = horiz ? P(t.x + 0.9, t.y + 0.5) : P(t.x + 0.5, t.y + 0.9);
+          ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); ctx.setLineDash([]);
+        }
+      }
+    } else diamond(t.x, t.y, 0.03, sh(PAL.lotBase));
+  }
+
+  // hover / selection outlines on the ground
+  if (hoverTile >= 0){
+    const ht = tiles[hoverTile];
+    if (tool === "plaza"){ const seg = segmentOf(hoverTile); if (seg) for (const s of seg){ const st = tiles[s]; diamond(st.x, st.y, 0.04, st.ped ? "rgba(217,69,58,.35)" : "rgba(255,255,255,.35)", "#FFFFFF", 2); } else diamond(ht.x, ht.y, 0.04, null, "rgba(255,255,255,.6)", 1.5); }
+    else diamond(ht.x, ht.y, 0.04, null, "rgba(255,255,255,.85)", 2);
+  }
+  if (selected && selected.type === "road"){ const seg = segmentOf(selected.idx) || [selected.idx]; for (const s of seg){ const st = tiles[s]; diamond(st.x, st.y, 0.04, null, cssVar("--accent"), 2.5); } }
+
+  // depth-sorted things
+  const items = [];
+  for (const l of lots) items.push([l.x + l.y + 1, 0, l]);
+  for (const t of tiles) if (t.ped){
+    items.push([t.x + t.y + 0.6, 3, [t.x + 0.22, t.y + 0.22]]);
+    items.push([t.x + t.y + 1.4, 3, [t.x + 0.78, t.y + 0.78]]);
+    const fl = frontMap.get(idx(t.x, t.y));
+    if (fl) for (const l of fl) if (l.kind === "cafe"){ const ux = t.x + 0.5 + (l.x - t.x) * 0.3, uy = t.y + 0.5 + (l.y - t.y) * 0.3; items.push([ux + uy, 4, [ux, uy]]); }
+  }
+  for (const p of peds) if (!p.hidden) items.push([p.x + p.y, 1, p]);
+  for (const c of cars) items.push([c.x + c.y, 2, c]);
+  items.sort((a, b) => a[0] - b[0]);
+  for (const it of items){
+    if (it[1] === 0) drawLot(it[2]); else if (it[1] === 1) drawPed(it[2]); else if (it[1] === 2) drawCar(it[2]);
+    else if (it[1] === 3) drawTree(it[2][0], it[2][1], 0.7); else drawUmbrella(it[2][0], it[2][1]);
+  }
+
+  // friendship web
+  const accent = cssVar("--accent");
+  if (showWeb){
+    ctx.strokeStyle = accent; ctx.globalAlpha = 0.28; ctx.lineWidth = 1.2;
+    ctx.beginPath();
+    for (const [a, b] of friendPairs){ if (a.hidden || b.hidden) continue; const pa = P(a.x, a.y, 5), pb = P(b.x, b.y, 5); ctx.moveTo(pa[0], pa[1]); ctx.lineTo(pb[0], pb[1]); }
+    ctx.stroke(); ctx.globalAlpha = 1;
+  }
+  // conversation sparks
+  for (const s of sparks){
+    const a = P(s.a.x, s.a.y, 11), b = P(s.b.x, s.b.y, 11), k = s.t / 1.8;
+    const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2 - 16 * cam.s;
+    ctx.globalAlpha = 1 - k; ctx.strokeStyle = accent; ctx.lineWidth = 2.2;
+    ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.quadraticCurveTo(mx, my, b[0], b[1]); ctx.stroke();
+    ctx.fillStyle = accent; ctx.font = `${Math.round((s.heart ? 17 : 12) * Math.max(0.8, cam.s))}px Fredoka, system-ui, sans-serif`; ctx.textAlign = "center";
+    ctx.fillText(s.heart ? "♥" : "•••", mx, my + 4 - k * 18 * cam.s);
+    ctx.globalAlpha = 1;
+  }
+
+  // coach mark anchored to Main St
+  if (!coachEl.hidden){ const [cx, cy] = P(8, 9.5, 0); coachEl.style.left = `${cx}px`; coachEl.style.top = `${cy}px`; }
+}
+
+// ---------- HUD ----------
+const $ = id => document.getElementById(id);
+function fmtMoney(v){ return "$" + Math.round(v).toLocaleString("en-US"); }
+function fmtTime(){ const d = DAYS[Math.floor(simMin / 1440) % 7], m = simMin % 1440; let h = Math.floor(m / 60); const mm = String(Math.floor((m % 60) / 10) * 10).padStart(2, "0"); const ap = h < 12 ? "am" : "pm"; h = h % 12 || 12; return `${d} ${h}:${mm} ${ap}`; }
+function sparkline(id, key, color){
+  const c = $(id), r = c.getBoundingClientRect(); if (!r.width) return;
+  const w = Math.round(r.width * dpr), h = Math.round(r.height * dpr); if (c.width !== w) c.width = w; if (c.height !== h) c.height = h;
+  const x = c.getContext("2d"); x.clearRect(0, 0, w, h);
+  const vals = history.map(m => m[key]); if (vals.length < 2) return;
+  const max = Math.max(1, ...vals);
+  x.strokeStyle = color; x.lineWidth = 2 * dpr; x.lineJoin = "round"; x.beginPath();
+  vals.forEach((v, k) => { const px = k / (vals.length - 1) * (w - 4 * dpr) + 2 * dpr, py = h - 2 * dpr - v / max * (h - 6 * dpr); k ? x.lineTo(px, py) : x.moveTo(px, py); });
+  x.stroke();
+}
+function setWas(id, now, was, fmt, higherIsGood){
+  const el = $(id);
+  if (!baseline){ el.textContent = ""; el.className = "stat-was"; return; }
+  el.textContent = `Before your changes: ${fmt(was)}`;
+  const diff = now - was;
+  el.className = "stat-was" + (Math.abs(diff) < 0.0001 ? "" : ((diff > 0) === higherIsGood ? " up" : " down"));
+}
+function hud(){
+  const m = metrics();
+  $("sConv").textContent = m.conv; $("sFriends").textContent = m.friends; $("sRev").textContent = fmtMoney(m.rev); $("sTraffic").textContent = (m.traffic >= 0 ? "+" : "") + m.traffic + "%";
+  if (baseline){
+    setWas("wConv", m.conv, baseline.conv, v => v, true);
+    setWas("wFriends", m.friends, baseline.friends, v => v, true);
+    setWas("wRev", m.rev, baseline.rev, fmtMoney, true);
+    setWas("wTraffic", m.traffic, baseline.traffic, v => (v >= 0 ? "+" : "") + v + "%", false);
+  } else ["wConv","wFriends","wRev","wTraffic"].forEach(i => { $(i).textContent = ""; });
+  $("clock").textContent = fmtTime();
+  sparkline("spConv", "conv", cssVar("--accent"));
+  sparkline("spRev", "rev", cssVar("--good"));
+  if (selected) renderInspector();
+}
+function addEvent(type, text){
+  const li = document.createElement("li"); li.className = type;
+  li.innerHTML = `<span class="dot" aria-hidden="true"></span>`; li.appendChild(document.createTextNode(text));
+  feedEl.prepend(li);
+  while (feedEl.children.length > 4) feedEl.lastChild.remove();
+  [...feedEl.children].forEach((c, k) => c.classList.toggle("old", k > 1));
+}
+let toastT = 0;
+function toast(text){ toastEl.textContent = text; toastEl.classList.add("on"); clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove("on"), 2600); }
+
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+function renderInspector(){
+  if (!selected){ insp.hidden = true; insp.innerHTML = ""; return; }
+  insp.hidden = false;
+  let html = "";
+  if (selected.type === "lot"){
+    const l = selected.lot;
+    html = `<div class="insp-head"><div><h2>${esc(l.name)}</h2><div class="insp-kind">${KIND_LABEL[l.kind]}${l.floors > 1 ? `, ${l.floors} floors` : ""}</div></div><button class="x" data-act="close" aria-label="Close">✕</button></div><dl class="rows">`;
+    if (l.kind === "shop" || l.kind === "cafe" || l.kind === "drive") html += `<dt>Customers so far</dt><dd>${l.visits}</dd><dt>Sales so far</dt><dd>${fmtMoney(l.revenue)}</dd>`;
+    html += `<dt>People walking past</dt><dd>${l.passers}</dd>`;
+    if (l.kind === "drive" || l.lostDrivers) html += `<dt>Drivers who couldn’t reach it</dt><dd>${l.lostDrivers}</dd>`;
+    if (l.kind === "home") html += `<dt>Residents</dt><dd>${peds.filter(p => p.home === l).length}</dd>`;
+    html += `</dl><div class="acts">`;
+    if (l.kind !== "park" && l.kind !== "empty") html += `<button class="act primary" data-act="floor">Add a floor</button>`;
+    if (l.kind !== "cafe") html += `<button class="act" data-act="k:cafe">Make it a café</button>`;
+    if (l.kind !== "park") html += `<button class="act" data-act="k:park">Make it a park</button>`;
+    html += `</div>`;
+    if (l.kind === "cafe" && adjPlaza(l) < 0) html += `<p class="note">Cafés next to a plaza get outdoor seating, where people stay longer and start talking.</p>`;
+  } else if (selected.type === "road"){
+    const t = tiles[selected.idx], seg = segmentOf(selected.idx);
+    const nowCars = (seg || [selected.idx]).reduce((s, i) => s + carCount[i], 0);
+    const lingerers = peds.filter(p => p.state === "linger" && seg && seg.includes(p.lingerTile)).length;
+    html = `<div class="insp-head"><div><h2>${esc(streetName(t))}</h2><div class="insp-kind">${t.ped ? "Pedestrian plaza" : (seg ? "One block, open to cars" : "Crossing")}</div></div><button class="x" data-act="close" aria-label="Close">✕</button></div><dl class="rows">`;
+    html += t.ped ? `<dt>People hanging out here now</dt><dd>${lingerers}</dd>` : `<dt>Cars on this block now</dt><dd>${nowCars}</dd>`;
+    html += `</dl>`;
+    if (seg) html += `<div class="acts"><button class="act primary" data-act="toggle">${t.ped ? "Reopen to cars" : "Turn into a plaza"}</button></div>`;
+    else html += `<p class="note">Crossings stay open. Pick a block between two crossings to make a plaza.</p>`;
+  } else if (selected.type === "ped"){
+    const p = selected.ped;
+    html = `<div class="insp-head"><div><h2>${esc(p.name)}</h2><div class="insp-kind">Lives at ${esc(p.home.name)}</div></div><button class="x" data-act="close" aria-label="Close">✕</button></div><dl class="rows">`;
+    html += `<dt>Right now</dt><dd>${esc(p.doing)}</dd><dt>Conversations</dt><dd>${p.met}</dd><dt>Friends made</dt><dd>${p.friends}</dd></dl>`;
+    if (p.hidden) html += `<p class="note">${esc(p.name)} is indoors right now.</p>`;
+  }
+  insp.innerHTML = html;
+}
+insp.addEventListener("click", e => {
+  const b = e.target.closest("[data-act]"); if (!b || !selected) return;
+  const a = b.dataset.act;
+  if (a === "close"){ selected = null; renderInspector(); return; }
+  if (a === "floor") addFloor(selected.lot);
+  else if (a.startsWith("k:")) setKind(selected.lot, a.slice(2));
+  else if (a === "toggle") toggleSegment(selected.idx);
+  renderInspector();
+});
+
+// ---------- input ----------
+function screenToTile(mx, my){
+  const u = (mx - cam.x) / cam.s, v = (my - cam.y) / cam.s;
+  const gx = (u / (TW / 2) + v / (TH / 2)) / 2, gy = (v / (TH / 2) - u / (TW / 2)) / 2;
+  const x = Math.floor(gx), y = Math.floor(gy);
+  return (x < 0 || y < 0 || x >= N || y >= N) ? -1 : idx(x, y);
+}
+function pedAt(mx, my){
+  let best = null, bd = 12;
+  for (const p of peds){ if (p.hidden) continue; const [sx, sy] = P(p.x, p.y, 4); const d = Math.hypot(sx - mx, sy - my); if (d < bd){ bd = d; best = p; } }
+  return best;
+}
+function lotAtScreen(mx, my){
+  // check building tops too, front-most first, so tall buildings are easy to tap
+  const sorted = lots.slice().sort((a, b) => (b.x + b.y) - (a.x + a.y));
+  for (const l of sorted){
+    if (l.kind === "park" || l.kind === "empty") continue;
+    const h = Math.max(1, l.floors) * FLOOR, m = 0.13;
+    const pts = [P(l.x + m, l.y + m, h), P(l.x + 1 - m, l.y + m, h), P(l.x + 1 - m, l.y + 1 - m, 0), P(l.x + m, l.y + 1 - m, 0)];
+    const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+    const [lx, rx] = [P(l.x + m, l.y + 1 - m, 0)[0], P(l.x + 1 - m, l.y + m, 0)[0]];
+    if (mx >= Math.min(lx, ...xs) && mx <= Math.max(rx, ...xs) && my >= Math.min(...ys) && my <= Math.max(...ys)){
+      const ti = screenToTile(mx, my);
+      if (ti >= 0 && tiles[ti].road) { const [, cy] = P(l.x + 0.5, l.y + 0.5, 0); if (my > cy) continue; }
+      return l;
+    }
+  }
+  return null;
+}
+function handleTap(mx, my){
+  if (tool === "look"){
+    const p = pedAt(mx, my); if (p){ selected = { type: "ped", ped: p }; renderInspector(); return; }
+  }
+  let ti = screenToTile(mx, my);
+  if (tool === "look" || tool === "floor" || tool === "cafe" || tool === "shop" || tool === "park" || tool === "clear"){
+    const l = lotAtScreen(mx, my);
+    if (l) ti = idx(l.x, l.y);
+  }
+  if (ti < 0) { selected = null; renderInspector(); return; }
+  const t = tiles[ti];
+  switch (tool){
+    case "look": selected = t.road ? { type: "road", idx: ti } : { type: "lot", lot: t.lot }; break;
+    case "plaza": if (t.road) toggleSegment(ti); else toast("Plazas go on streets. Tap a road."); break;
+    case "floor": if (t.lot) { addFloor(t.lot); selected = { type: "lot", lot: t.lot }; } else toast("Tap a building to add a floor"); break;
+    case "cafe": case "shop": case "park": if (t.lot) { setKind(t.lot, tool); selected = { type: "lot", lot: t.lot }; } else toast("Tap a lot, not a street"); break;
+    case "clear": if (t.lot) { setKind(t.lot, "empty"); selected = { type: "lot", lot: t.lot }; } else toast("Tap a lot to clear it"); break;
+  }
+  renderInspector();
+}
+let drag = null; const pointers = new Map(); let pinch = null;
+canvas.addEventListener("pointerdown", e => {
+  canvas.setPointerCapture(e.pointerId);
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  if (pointers.size === 2){ const [a, b] = [...pointers.values()]; pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), s: cam.s, cx: cam.x, cy: cam.y, mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2 }; drag = null; return; }
+  drag = { x: e.clientX, y: e.clientY, cx: cam.x, cy: cam.y, moved: false };
+});
+canvas.addEventListener("pointermove", e => {
+  const r = canvas.getBoundingClientRect();
+  if (pointers.has(e.pointerId)) pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  if (pinch && pointers.size === 2){
+    const [a, b] = [...pointers.values()]; const d = Math.hypot(a.x - b.x, a.y - b.y);
+    const ns = clamp(pinch.s * d / pinch.d, 0.35, 3); const mx = pinch.mx - r.left, my = pinch.my - r.top;
+    cam.x = mx - (mx - pinch.cx) * ns / pinch.s; cam.y = my - (my - pinch.cy) * ns / pinch.s; cam.s = ns; return;
+  }
+  if (drag){
+    const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (!drag.moved && Math.hypot(dx, dy) > 6) drag.moved = true;
+    if (drag.moved){ cam.x = drag.cx + dx; cam.y = drag.cy + dy; canvas.style.cursor = "grabbing"; }
+  }
+  hoverTile = e.pointerType === "mouse" ? screenToTile(e.clientX - r.left, e.clientY - r.top) : -1;
+});
+function endPointer(e){
+  const r = canvas.getBoundingClientRect();
+  pointers.delete(e.pointerId);
+  if (pinch){ if (pointers.size < 2) pinch = null; drag = null; return; }
+  if (drag && !drag.moved && e.type === "pointerup") handleTap(e.clientX - r.left, e.clientY - r.top);
+  drag = null; canvas.style.cursor = "";
+}
+canvas.addEventListener("pointerup", endPointer);
+canvas.addEventListener("pointercancel", endPointer);
+canvas.addEventListener("pointerleave", () => { hoverTile = -1; });
+canvas.addEventListener("wheel", e => {
+  e.preventDefault(); const r = canvas.getBoundingClientRect(); const mx = e.clientX - r.left, my = e.clientY - r.top;
+  zoomAt(mx, my, Math.exp(-e.deltaY * 0.0015));
+}, { passive: false });
+function zoomAt(mx, my, f){ const ns = clamp(cam.s * f, 0.35, 3); cam.x = mx - (mx - cam.x) * ns / cam.s; cam.y = my - (my - cam.y) * ns / cam.s; cam.s = ns; }
+
+function setTool(t){
+  tool = t;
+  document.querySelectorAll(".tool").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.tool === t)));
+  canvas.classList.toggle("tool-act", t !== "look");
+  if (t === "plaza" && !hintDone) toast("Tap any block of road to close it to cars");
+}
+document.querySelectorAll(".tool").forEach(b => b.addEventListener("click", () => setTool(b.dataset.tool)));
+function setSpeed(s){ speed = s; paused = false; $("b1").setAttribute("aria-pressed", String(s === 1)); $("b3").setAttribute("aria-pressed", String(s === 3)); $("bPause").setAttribute("aria-pressed", "false"); }
+$("b1").onclick = () => setSpeed(1); $("b3").onclick = () => setSpeed(3);
+$("bPause").onclick = () => { paused = !paused; $("bPause").setAttribute("aria-pressed", String(paused)); if (paused){ $("b1").setAttribute("aria-pressed", "false"); $("b3").setAttribute("aria-pressed", "false"); } else setSpeed(speed); };
+$("bWeb").onclick = () => { showWeb = !showWeb; $("bWeb").setAttribute("aria-pressed", String(showWeb)); };
+$("bZin").onclick = () => zoomAt(W / 2, H / 2, 1.25); $("bZout").onclick = () => zoomAt(W / 2, H / 2, 0.8);
+$("bReset").onclick = () => { build(); fit(); toast("Fresh city. Same streets, nobody’s met yet"); };
+const TOOL_KEYS = ["look","plaza","floor","cafe","shop","park","clear"];
+window.addEventListener("keydown", e => {
+  if (e.target.closest && e.target.closest("input,textarea")) return;
+  const n = parseInt(e.key, 10); if (n >= 1 && n <= 7) setTool(TOOL_KEYS[n - 1]);
+  if (e.key === "Escape"){ selected = null; renderInspector(); }
+  if (e.key === " "){ e.preventDefault(); $("bPause").click(); }
+});
+window.addEventListener("resize", () => { resize(); });
+
+// ---------- loop ----------
+build(); resize();
+let last = performance.now(), hudT = 0;
+function frame(now){
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  update(dt, false); render();
+  hudT += dt; if (hudT > 0.25){ hudT = 0; hud(); }
+  requestAnimationFrame(frame);
+}
+hud(); requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

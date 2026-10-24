@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://streetshift.dev/schemas/Segment.json",
+  "title": "Segment",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "coords": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "lanes": {
+      "type": "integer"
+    },
+    "baselineCarVolume": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "baselinePedVolume": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "coords",
+    "lanes",
+    "baselineCarVolume",
+    "baselinePedVolume"
+  ],
+  "additionalProperties": false
+}

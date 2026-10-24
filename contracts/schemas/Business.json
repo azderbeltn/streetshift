@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://streetshift.dev/schemas/Business.json",
+  "title": "Business",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "lng": {
+      "type": "number"
+    },
+    "lat": {
+      "type": "number"
+    },
+    "rating": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "reviewCount": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "popularTimes": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "carDependence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "segmentId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "lng",
+    "lat",
+    "rating",
+    "reviewCount",
+    "popularTimes",
+    "carDependence",
+    "segmentId"
+  ],
+  "additionalProperties": false
+}

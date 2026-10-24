@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://streetshift.dev/schemas/DroidRun.json",
+  "title": "DroidRun",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "backtest",
+        "sweep"
+      ]
+    },
+    "status": {
+      "enum": [
+        "planning",
+        "running",
+        "done",
+        "failed"
+      ]
+    },
+    "plan": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "output": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "resultSummary": {
+      "type": "string"
+    },
+    "startedAt": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "status",
+    "plan",
+    "steps",
+    "startedAt"
+  ],
+  "additionalProperties": false
+}
