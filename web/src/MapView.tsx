@@ -39,16 +39,24 @@ const road = (hw: string) => ROAD[hw] ?? ROAD[hw?.replace("_link", "")] ?? ROAD.
 export type Pick =
   | { kind: "segment"; id: string; x: number; y: number }
   | { kind: "business"; id: string; x: number; y: number }
+  | { kind: "person"; person: PersonInfo; x: number; y: number }
   | { kind: "building"; feature: MapGeoJSONFeature; lngLat: [number, number]; x: number; y: number }
   | { kind: "none"; lngLat: [number, number]; x: number; y: number };
 
 export type FloorBlock = { key: string; polygon: [number, number][][]; height: number };
+export type PersonInfo = { index: number; visitor: boolean; lingeredMin: number; walkedM: number; talkedWith: number; heading: Business | null; talkingNow: boolean };
+
+const metres = (a: [number, number], b: [number, number]) => {
+  const dx = (b[0] - a[0]) * 111320 * Math.cos((a[1] * Math.PI) / 180), dy = (b[1] - a[1]) * 110540;
+  return Math.sqrt(dx * dx + dy * dy);
+};
 
 type Props = {
   network: NetworkPayload | null; businesses: Business[]; closed: Set<string>; seg: Map<string, SegMetric>; biz: Map<string, number>;
   trips: TripsPayload | null; pedShare: number; showBefore: boolean; floors: FloorBlock[]; presence: Presence[];
   onPick: (p: Pick) => void; onHover: (h: { kind: "segment" | "business"; id: string; x: number; y: number } | null) => void;
   onFeed: (text: string) => void; onPointer: (lngLat: [number, number]) => void; onConnections: (n: number) => void;
+  preferBuildings?: boolean;
 };
 
 type Pause = { t0: number; t1: number; pos: [number, number]; trip: number };
@@ -81,7 +89,7 @@ export default function MapView(props: Props) {
   const p = useRef(props); p.current = props;
   const lastInteract = useRef(performance.now());
   const pausesRef = useRef<Pause[]>([]);
-  const talkRef = useRef<{ key: string; a: [number, number]; b: [number, number] }[]>([]);
+  const talkRef = useRef<{ key: string; a: [number, number]; b: [number, number]; ta: number; tb: number }[]>([]);
   const bondsRef = useRef<Map<string, [number, number]>>(new Map()); // pair key -> [tripA, tripB]
   const lastFeed = useRef(0);
 
@@ -106,27 +114,53 @@ export default function MapView(props: Props) {
     const fb = setTimeout(() => { if (!styled) map.setStyle(FALLBACK_STYLE); }, 8000);
     map.on("error", (e: any) => { if (!styled && String(e?.error?.message ?? "").match(/style|fetch/i)) { clearTimeout(fb); map.setStyle(FALLBACK_STYLE); } });
 
-    const makeOverlay = () => new MapLibreOverlay({
-      interleaved: true, layers: [],
-      onClick: (info) => {
-        lastInteract.current = performance.now();
-        const { x, y } = info;
-        if (info.layer?.id === "segments" && info.object) return p.current.onPick({ kind: "segment", id: info.object.id, x, y });
-        if (info.layer?.id === "businesses" && info.object) return p.current.onPick({ kind: "business", id: info.object.id, x, y });
-        const feats = map.getLayer("ss-buildings") ? map.queryRenderedFeatures([x, y], { layers: ["ss-buildings"] }) : [];
-        const ll = info.coordinate as [number, number] | undefined ?? map.unproject([x, y]).toArray() as [number, number];
-        if (feats.length) return p.current.onPick({ kind: "building", feature: feats[0], lngLat: ll, x, y });
-        p.current.onPick({ kind: "none", lngLat: ll, x, y });
-      },
-      onHover: (info) => {
-        if ((info.layer?.id === "segments" || info.layer?.id === "businesses") && info.object) p.current.onHover({ kind: info.layer.id === "segments" ? "segment" : "business", id: info.object.id, x: info.x, y: info.y });
-        else p.current.onHover(null);
-        if (info.coordinate) p.current.onPointer(info.coordinate as [number, number]);
-      },
-      getCursor: ({ isHovering }) => (isHovering ? "pointer" : "grab"),
+    (window as any).__map = map; // for scripted UI tests (web/scripts/tour.mjs)
+    const PICKABLE = ["talk-dots", "businesses", "peds", "segments"];
+    const deckPick = (x: number, y: number) => overlayRef.current?.pickObject({ x, y, radius: 5, layerIds: PICKABLE }) ?? null;
+    const personFrom = (trip: Trip, x: number, y: number): Pick | null => {
+      const peds = p.current.trips?.peds; if (!peds) return null;
+      const index = peds.indexOf(trip);
+      let lingered = 0, walked = 0;
+      for (let i = 0; i + 1 < trip.path.length; i++) {
+        const same = trip.path[i][0] === trip.path[i + 1][0] && trip.path[i][1] === trip.path[i + 1][1];
+        if (same) lingered += trip.timestamps[i + 1] - trip.timestamps[i]; else walked += metres(trip.path[i], trip.path[i + 1]);
+      }
+      const end = trip.path[trip.path.length - 1];
+      let heading: Business | null = null, bd = 80;
+      for (const b of p.current.businesses) { const d = metres(end, [b.lng, b.lat]); if (d < bd) { bd = d; heading = b; } }
+      const bonds = [...bondsRef.current.values()].filter(([a, b]) => a === index || b === index).length;
+      const talkingNow = talkRef.current.some((t) => t.key.split("-").map(Number).includes(index));
+      return { kind: "person", x, y, person: { index, visitor: !!trip.visitor, lingeredMin: lingered / 60, walkedM: walked, talkedWith: bonds, heading, talkingNow } };
+    };
+    // Picking is driven by MapLibre's own events + deck.pickObject (robust in interleaved mode).
+    map.on("click", (e) => {
+      lastInteract.current = performance.now();
+      const { x, y } = e.point, ll = e.lngLat.toArray() as [number, number];
+      const buildings = map.getLayer("ss-buildings") ? map.queryRenderedFeatures(e.point, { layers: ["ss-buildings"] }) : [];
+      // With the "Add floors" tool, a building under the cursor wins over the street on top of it.
+      if (p.current.preferBuildings && buildings.length) return p.current.onPick({ kind: "building", feature: buildings[0], lngLat: ll, x, y });
+      const info = deckPick(x, y);
+      const id = info?.layer?.id;
+      if (id === "talk-dots" && p.current.trips) { const pk = personFrom(p.current.trips.peds[info!.object.trip], x, y); if (pk) return p.current.onPick(pk); }
+      if (id === "businesses") return p.current.onPick({ kind: "business", id: info!.object.id, x, y });
+      if (id === "peds") { const pk = personFrom(info!.object as Trip, x, y); if (pk) return p.current.onPick(pk); }
+      if (id === "segments") return p.current.onPick({ kind: "segment", id: info!.object.id, x, y });
+      if (buildings.length) return p.current.onPick({ kind: "building", feature: buildings[0], lngLat: ll, x, y });
+      p.current.onPick({ kind: "none", lngLat: ll, x, y });
     });
+    let lastMove = 0;
+    map.on("mousemove", (e) => {
+      p.current.onPointer(e.lngLat.toArray() as [number, number]);
+      const now = performance.now(); if (now - lastMove < 50) return; lastMove = now;
+      const info = deckPick(e.point.x, e.point.y);
+      const id = info?.layer?.id;
+      map.getCanvas().style.cursor = info ? "pointer" : "";
+      if (id === "segments" || id === "businesses") p.current.onHover({ kind: id === "segments" ? "segment" : "business", id: info!.object.id, x: e.point.x, y: e.point.y });
+      else p.current.onHover(null);
+    });
+    const makeOverlay = () => new MapLibreOverlay({ interleaved: true, layers: [] });
     // Per docs/frontend.md: add the overlay once the map has loaded.
-    map.once("load", () => { const o = makeOverlay(); map.addControl(o as any); overlayRef.current = o; });
+    map.once("load", () => { const o = makeOverlay(); map.addControl(o as any); overlayRef.current = o; (window as any).__deck = o; });
     for (const ev of ["mousedown", "wheel", "touchstart", "dragstart"]) map.on(ev as any, () => { lastInteract.current = performance.now(); });
 
     let raf = 0, lastTalk = 0;
@@ -153,7 +187,7 @@ export default function MapView(props: Props) {
           const a = g[i], b = g[i + 1];
           const key = a.trip < b.trip ? `${a.trip}-${b.trip}` : `${b.trip}-${a.trip}`;
           // Spread the pair a few metres apart so the arc reads.
-          talks.push({ key, a: [a.pos[0] - 0.00004, a.pos[1]], b: [b.pos[0] + 0.00004, b.pos[1] + 0.00002] });
+          talks.push({ key, a: [a.pos[0] - 0.00004, a.pos[1]], b: [b.pos[0] + 0.00004, b.pos[1] + 0.00002], ta: a.trip, tb: b.trip });
           if (!bondsRef.current.has(key)) {
             bondsRef.current.set(key, [a.trip, b.trip]);
             const nowMs = performance.now();
@@ -168,7 +202,7 @@ export default function MapView(props: Props) {
         }
       }
       talkRef.current = talks;
-      (window as any).__ss = { talks: talks.length, bonds: bondsRef.current.size, pauses: pausesRef.current.length, t: Math.round(t) };
+      (window as any).__ss = { talks: talks.length, bonds: bondsRef.current.size, pauses: pausesRef.current.length, t: Math.round(t), dots: talks.slice(0, 5).map((d) => d.a) };
       q.onConnections(bondsRef.current.size);
     };
     const layers = (t: number, now: number) => {
@@ -205,7 +239,7 @@ export default function MapView(props: Props) {
           capRounded: true, jointRounded: true, parameters: GLOW,
         }),
         new TripsLayer({
-          id: "peds", data: peds, getPath: (d: Trip) => d.path, getTimestamps: (d: Trip) => d.timestamps,
+          id: "peds", data: peds, pickable: true, autoHighlight: true, highlightColor: [255, 255, 255, 255], getPath: (d: Trip) => d.path, getTimestamps: (d: Trip) => d.timestamps,
           getColor: (d: Trip) => (d.kind === "linger" && !q.showBefore ? [255, 196, 110, 250] : PED), widthMinPixels: 2.6, widthUnits: "meters", getWidth: 2.2,
           trailLength: 60, fadeTrail: true, currentTime: t, capRounded: true, jointRounded: true, parameters: GLOW,
         }),
@@ -215,8 +249,8 @@ export default function MapView(props: Props) {
           getSourceColor: PINK, getTargetColor: [255, 160, 205, 220], getHeight: 2.2, getWidth: 2.2, widthMinPixels: 1.5, parameters: GLOW,
         }),
         new ScatterplotLayer({
-          id: "talk-dots", data: talkRef.current.flatMap((d) => [d.a, d.b]), getPosition: (d: any) => d, radiusUnits: "meters",
-          getRadius: 1.6 + 0.6 * pulse, getFillColor: [255, 120, 180, 230], parameters: GLOW, updateTriggers: { getRadius: pulse },
+          id: "talk-dots", data: talkRef.current.flatMap((d) => [{ p: d.a, trip: d.ta }, { p: d.b, trip: d.tb }]), getPosition: (d: any) => d.p, radiusUnits: "meters",
+          pickable: true, radiusMinPixels: 3, getRadius: 1.6 + 0.6 * pulse, getFillColor: [255, 120, 180, 230], parameters: GLOW, updateTriggers: { getRadius: pulse },
         }),
         new PolygonLayer({
           id: "floors", data: q.floors, extruded: true, getPolygon: (d: FloorBlock) => d.polygon, getElevation: (d: FloorBlock) => d.height,

@@ -6,7 +6,7 @@ import { DbConnection, tables } from "./module_bindings";
 import { api, fromRunResult, type ScenarioInput, type SegMetric, type Summary } from "./api";
 
 export type Presence = { id: string; name: string; color: string; lng: number; lat: number; tool: string; me: boolean };
-export type Edit = { kind: "floors" | "land_use" | "park"; targetId: string; value: string };
+export type Edit = { kind: "floors" | "land_use" | "park" | "param"; targetId: string; value: string };
 export type HearingMsg = { id: string; speaker: string; role: string; text: string; at: number };
 
 export type State = {
@@ -41,13 +41,14 @@ export function useStore<T>(sel: (s: State) => T): T {
 }
 
 export function scenarioInput(s: State = state): ScenarioInput {
-  const segmentMods: ScenarioInput["segmentMods"] = {}, businessMods: ScenarioInput["businessMods"] = {};
+  const segmentMods: ScenarioInput["segmentMods"] = {}, businessMods: ScenarioInput["businessMods"] = {}, assumptions: Record<string, number> = {};
   for (const e of s.edits.values()) {
     if (e.kind === "floors") (segmentMods[e.targetId] ??= {}).extraResidents = Number(e.value) || 0;
     if (e.kind === "park") (segmentMods[e.targetId] ??= {}).park = true;
     if (e.kind === "land_use") businessMods[e.targetId] = { category: e.value };
+    if (e.kind === "param") assumptions[e.targetId] = Number(e.value);
   }
-  return { area: s.area, corridorId: s.corridorId, closedSegmentIds: [...s.closed], addedSeating: s.addedSeating, programming: s.programming, segmentMods, businessMods };
+  return { area: s.area, corridorId: s.corridorId, closedSegmentIds: [...s.closed], addedSeating: s.addedSeating, programming: s.programming, segmentMods, businessMods, assumptions };
 }
 
 // ---------------- live (SpacetimeDB) ----------------

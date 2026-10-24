@@ -1,0 +1,21 @@
+[project]
+name = "streetshift-agents"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Aziz Derbel", email = "az.derbel.tn@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.3.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "uagents==0.25.5",
+]
+
+[project.scripts]
+streetshift-agents = "streetshift_agents:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"

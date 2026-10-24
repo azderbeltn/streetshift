@@ -23,3 +23,5 @@ cache/
 /sim/.spacetime_token
 sim_server.log
 /sim/.cache/
+/agents/.cache/
+/reports/

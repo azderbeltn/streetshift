@@ -81,6 +81,8 @@ export type ScenarioInput = {
   /** Optional planner edits (tool dock): extra residents/workers on a segment, parks, use changes. */
   segmentMods?: Record<string, { extraResidents?: number; extraWorkers?: number; park?: boolean }>;
   businessMods?: Record<string, { category: string }>;
+  /** Planner assumption overrides (see assumptions.ts). */
+  assumptions?: Record<string, number>;
 };
 
 export type EconomyResult = {
@@ -126,6 +128,7 @@ export function runEconomy(net: Network, biz0: Biz[], s: ScenarioInput, traffic:
   const adj = neighbours(net, closed);
   const density = densityPerKm2(net.area);
   const densityF = density ? Math.sqrt(density / REF_DENSITY) : 1;
+  const footScale = P.pedestrians.footTrafficScale?.value ?? 1; // planner assumption knob
 
   // Baseline pedestrians per hour on each segment.
   const bizBySeg = new Map<string, Biz[]>();
@@ -137,7 +140,7 @@ export function runEconomy(net: Network, biz0: Biz[], s: ScenarioInput, traffic:
     // Each added resident/worker makes ~3 walk trips a day, ~10% in the busy hour (assumption).
     const added = ((mod?.extraResidents ?? 0) + (mod?.extraWorkers ?? 0)) * 3 * 0.1 + (mod?.park ? 60 : 0);
     const measured = pedCountOverrides(net).get(seg.id)?.pph;
-    pedBase.set(seg.id, measured !== undefined ? measured + added : seg.baselinePedVolume ?? classVal<number>(P.pedestrians.baseVolumeByClassPph.value, seg.highway) * densityF + n * P.pedestrians.perBusinessPph[level] + added);
+    pedBase.set(seg.id, footScale * (measured !== undefined ? measured : seg.baselinePedVolume ?? classVal<number>(P.pedestrians.baseVolumeByClassPph.value, seg.highway) * densityF + n * P.pedestrians.perBusinessPph[level]) + added);
   }
 
   // Closure intensity: how much the street changes. Removing a busy car street transforms it;

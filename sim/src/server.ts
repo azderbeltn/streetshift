@@ -18,6 +18,7 @@ import { buildTrips } from "./trips.ts";
 import { startLive, liveStatus } from "./live.ts";
 import { search } from "./search.ts";
 import { merchantReport } from "./report.ts";
+import { KNOBS, withAssumptions } from "./assumptions.ts";
 
 const envFile = join(dirname(fileURLToPath(import.meta.url)), "..", "..", ".env");
 if (existsSync(envFile)) process.loadEnvFile(envFile);
@@ -50,6 +51,7 @@ const server = createServer(async (req, res) => {
     if (req.method === "OPTIONS") return send(res, 204, {});
     if (req.method === "GET" && url.pathname === "/health") return send(res, 200, { ok: true, areas: listAreas(), live: liveStatus });
     if (req.method === "GET" && url.pathname === "/areas") return send(res, 200, listAreas().map(areaSummary));
+    if (req.method === "GET" && url.pathname === "/assumptions") return send(res, 200, KNOBS);
     if (req.method === "GET" && parts[0] === "areas" && parts[2] === "network") {
       const net = loadNetwork(parts[1]);
       return send(res, 200, { area: net.area, center: net.center, corridors: net.corridors,
@@ -64,8 +66,10 @@ const server = createServer(async (req, res) => {
       const body: ScenarioRequest = await readJson(req);
       const net = loadNetwork(body.area);
       const s = { closedSegmentIds: body.closedSegmentIds ?? [], addedSeating: !!body.addedSeating, programming: body.programming ?? "none", segmentMods: body.segmentMods, businessMods: body.businessMods };
-      const econ = runEconomy(net, loadBusinesses(body.area), s, runTraffic(net, s.closedSegmentIds, "mid"), "mid");
-      return send(res, 200, buildTrips(net, s.closedSegmentIds, econ.pedAt));
+      return send(res, 200, withAssumptions(body.assumptions, () => {
+        const econ = runEconomy(net, loadBusinesses(body.area), s, runTraffic(net, s.closedSegmentIds, "mid"), "mid");
+        return buildTrips(net, s.closedSegmentIds, econ.pedAt);
+      }));
     }
     if (req.method === "GET" && url.pathname === "/backtest/results") {
       // Output of validation/score.ts (predictions + scores). /sim never reads ground_truth.json itself.
@@ -78,7 +82,7 @@ const server = createServer(async (req, res) => {
     }
     if (req.method === "POST" && url.pathname === "/report/merchant") {
       const b = await readJson(req);
-      return send(res, 200, await merchantReport(b));
+      return send(res, 200, await withAssumptions(b.assumptions, () => merchantReport(b)));
     }
     if (req.method === "POST" && url.pathname === "/backtest/predict") {
       const b = await readJson(req);

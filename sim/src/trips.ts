@@ -6,7 +6,7 @@ import { type Network, shortestPath, rng, haversineM } from "./network.ts";
 import { trafficBaseline } from "./traffic.ts";
 import { loadContext } from "./economy.ts";
 
-export type Trip = { path: [number, number][]; timestamps: number[]; kind?: "linger" | "walk" };
+export type Trip = { path: [number, number][]; timestamps: number[]; kind?: "linger" | "walk"; visitor?: boolean };
 export type TripsPayload = { loopSeconds: number; cars: Trip[]; peds: Trip[]; agents: { cars: number; peds: number; populationInCircle: number | null } };
 
 const LOOP = 600; // seconds of simulated time per animation loop
@@ -137,6 +137,7 @@ export function buildTrips(net: Network, closedSegmentIds: string[], pedAt: (seg
     if (pts.length < 2) continue;
     const trip = timed(pts, 1.1 + rand() * 0.4, rand() * LOOP, pauses);
     trip.kind = lingered ? "linger" : "walk";
+    if (visitor) trip.visitor = true;
     peds.push(trip);
     if (trip.timestamps[trip.timestamps.length - 1] > LOOP) peds.push(shifted(trip));
   }

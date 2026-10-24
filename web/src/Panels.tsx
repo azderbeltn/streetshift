@@ -31,12 +31,30 @@ function Spark({ values, color }: { values: number[]; color: string }) {
   return <svg className="spark" viewBox={`0 0 ${w} ${h}`} width="100%" height={h} preserveAspectRatio="none"><polyline points={pts} fill="none" stroke={color} strokeWidth="1.5" vectorEffect="non-scaling-stroke" /></svg>;
 }
 
-function Stat({ label, value, fmt, unit, range, was, hero, cls }: { label: string; value: number | null | undefined; fmt: (x: number | null) => string; unit?: string; range?: [number, number] | null; was?: string | null; hero?: boolean; cls?: string }) {
+/** "What just changed": a fading badge with the delta since the previous value. */
+function useDelta(value: number | null | undefined) {
+  const prev = useRef<number | null | undefined>(value);
+  const [d, setD] = useState<{ v: number; key: number } | null>(null);
+  useEffect(() => {
+    const p = prev.current; prev.current = value;
+    if (p === null || p === undefined || value === null || value === undefined) return;
+    const dv = value - p;
+    if (Math.abs(dv) < 0.05) return;
+    setD({ v: dv, key: Date.now() });
+    const h = setTimeout(() => setD(null), 3200);
+    return () => clearTimeout(h);
+  }, [value]);
+  return d;
+}
+
+function Stat({ label, value, fmt, unit, range, was, hero, cls, goodWhenUp = true }: { label: string; value: number | null | undefined; fmt: (x: number | null) => string; unit?: string; range?: [number, number] | null; was?: string | null; hero?: boolean; cls?: string; goodWhenUp?: boolean }) {
   const v = useCount(value);
+  const d = useDelta(value);
   return (
     <div className="stat">
       <div className="lbl">{label}</div>
-      <div className={`big ${hero ? "hero" : ""} ${cls ?? ""}`}>{fmt(v)}<span className="unit">{unit}</span></div>
+      <div className={`big ${hero ? "hero" : ""} ${cls ?? ""}`}>{fmt(v)}<span className="unit">{unit}</span>
+        {d && <span key={d.key} className={`delta ${(d.v > 0) === goodWhenUp ? "up" : "down"}`}>{d.v > 0 ? "▲" : "▼"} {Math.abs(d.v) >= 10 ? Math.round(Math.abs(d.v)) : Math.abs(d.v).toFixed(1)}</span>}</div>
       {range && <div className="rng">range {fmt(range[0])} – {fmt(range[1])}</div>}
       {was !== undefined && was !== null && <div className="was">Before your changes: <b>{was}</b></div>}
     </div>
@@ -101,8 +119,8 @@ export function TrafficPanel({ s, seg, network }: { s: Summary | null; seg: Map<
     <div className="glass panel">
       <h3><span className="label">Traffic</span><span className="dim mono" style={{ fontSize: 10.5 }}>{s ? `${s.elapsedMs} ms` : ""}</span></h3>
       <div className="stat-row">
-        <Stat label="Added vehicle-hours / day" value={s?.addedVehicleHours} fmt={f1} range={s ? [s.vehicleHoursLo, s.vehicleHoursHi] : null} was={s ? "0" : null} />
-        <Stat label="Cars rerouted / peak hour" value={s?.reroutedVehPerHour} fmt={f0} was={s ? "0" : null} />
+        <Stat goodWhenUp={false} label="Added vehicle-hours / day" value={s?.addedVehicleHours} fmt={f1} range={s ? [s.vehicleHoursLo, s.vehicleHoursHi] : null} was={s ? "0" : null} />
+        <Stat goodWhenUp={false} label="Cars rerouted / peak hour" value={s?.reroutedVehPerHour} fmt={f0} was={s ? "0" : null} />
       </div>
       {overflow.length > 0 && <div className="list">{overflow.map(([n, v]) => <div className="li" key={n}><span>{n}</span><span className="mono" style={{ color: "#ff9a3c" }}>+{Math.round(v)}% load</span></div>)}</div>}
     </div>

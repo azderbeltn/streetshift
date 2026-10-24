@@ -157,31 +157,35 @@ export function runTraffic(net: Network, closedSegmentIds: string[], level: Leve
   for (const sid of closedSegmentIds) for (const ei of net.edgesBySeg.get(sid) ?? []) closed.add(ei);
   // Run at a representative closure-hour volume; level shifts the peak-hour share (demand).
   const demand = P.traffic.peakHourShareOfDaily[level] / P.traffic.peakHourShareOfDaily.mid;
-  const s = base.vehPerSampleTrip * demand;
+  const s = base.vehPerSampleTrip * demand * (P.traffic.demandScale?.value ?? 1);
   const V0 = Float64Array.from(base.sampleFlow, (f) => f * s);
-  const T0 = net.edges.map((e, i) => bpr(e.travelTimeS, V0[i], base.capacity[i], level));
 
   const affected = base.trips.filter((t) => t.path.some((ei) => closed.has(ei)));
-  const V1 = Float64Array.from(V0);
-  for (const t of affected) for (const ei of t.path) V1[ei] -= s;
-  // Reroute affected trips against congested baseline times, in two passes so later trips see
-  // the load added by earlier ones (incremental assignment).
-  let unreachable = 0;
-  const newPaths: (number[] | null)[] = [];
-  const half = Math.ceil(affected.length / 2);
-  for (const [lo, hi] of [[0, half], [half, affected.length]]) {
-    const T = net.edges.map((e, i) => (closed.has(i) ? Infinity : bpr(e.travelTimeS, V1[i], base.capacity[i], level)));
-    for (const t of affected.slice(lo, hi)) {
-      const p = shortestPath(net, t.o, t.d, (ei) => T[ei]);
-      newPaths.push(p);
-      if (!p) { unreachable++; continue; }
-      for (const ei of p) V1[ei] += s;
+  // Reassign the affected trips against congested times, in two passes so later trips see the
+  // load added by earlier ones (incremental assignment). Run it twice - once with the closure and
+  // once without - and count only the difference, so congestion relief from simply re-optimising
+  // those trips is never mistaken for a benefit of the closure.
+  const reassign = (blocked: Set<number>) => {
+    const V = Float64Array.from(V0);
+    for (const t of affected) for (const ei of t.path) V[ei] -= s;
+    let unreach = 0;
+    const half = Math.ceil(affected.length / 2);
+    for (const [lo, hi] of [[0, half], [half, affected.length]]) {
+      const T = net.edges.map((e, i) => (blocked.has(i) ? Infinity : bpr(e.travelTimeS, V[i], base.capacity[i], level)));
+      for (const t of affected.slice(lo, hi)) {
+        const p = shortestPath(net, t.o, t.d, (ei) => T[ei]);
+        if (!p) { unreach++; continue; }
+        for (const ei of p) V[ei] += s;
+      }
     }
-  }
-  const T1 = net.edges.map((e, i) => (closed.has(i) ? 0 : bpr(e.travelTimeS, V1[i], base.capacity[i], level)));
-  let vh0 = 0, vh1 = 0;
-  for (let i = 0; i < net.edges.length; i++) { vh0 += V0[i] * T0[i]; vh1 += closed.has(i) ? 0 : V1[i] * T1[i]; }
-  const addedPerHour = (vh1 - vh0 + unreachable * s * UNREACHABLE_PENALTY_S) / 3600;
+    let vh = 0;
+    for (let i = 0; i < net.edges.length; i++) if (!blocked.has(i)) vh += V[i] * bpr(net.edges[i].travelTimeS, V[i], base.capacity[i], level);
+    return { V, vh, unreach };
+  };
+  const ref = affected.length ? reassign(new Set()) : { V: V0, vh: 0, unreach: 0 };
+  const after = affected.length ? reassign(closed) : { V: V0, vh: 0, unreach: 0 };
+  const V1 = after.V, unreachable = after.unreach;
+  const addedPerHour = (after.vh - ref.vh + unreachable * s * UNREACHABLE_PENALTY_S) / 3600;
   const addedVehicleHours = Math.max(0, addedPerHour) * P.traffic.closureHoursPerDay.value;
 
   const segBase = new Map<string, number>(), segAfter = new Map<string, number>();

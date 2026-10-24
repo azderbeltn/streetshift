@@ -74,7 +74,7 @@ button { font: inherit; color: inherit; }
 
 /* ---------- tool dock ---------- */
 .dock { position: absolute; left: 50%; transform: translateX(-50%); bottom: 64px; display: flex; gap: 4px; padding: 5px; z-index: 5; }
-.tool { display: flex; align-items: center; gap: 7px; padding: 8px 12px; border-radius: 7px; border: 1px solid transparent; background: transparent; cursor: pointer; color: var(--muted); }
+.tool { display: flex; align-items: center; gap: 6px; padding: 7px 10px; white-space: nowrap; border-radius: 7px; border: 1px solid transparent; background: transparent; cursor: pointer; color: var(--muted); }
 .tool:hover { color: var(--text); background: rgba(255,255,255,0.04); }
 .tool.active { color: var(--text); border-color: var(--line-strong); background: rgba(255,255,255,0.07); }
 .tool .k { font-family: var(--mono); font-size: 10px; color: var(--dim); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; }
@@ -149,3 +149,27 @@ button { font: inherit; color: inherit; }
 .modal { width: min(980px, calc(100vw - 40px)); max-height: calc(100vh - 60px); overflow: auto; padding: 20px 22px; position: relative; }
 .modal h2 { margin: 0 0 4px; font-size: 18px; }
 .toast { position: absolute; top: 70px; left: 50%; transform: translateX(-50%); z-index: 30; padding: 8px 14px; font-size: 12px; }
+
+/* ---------- assumptions drawer ---------- */
+.assumptions { position: absolute; left: 316px; top: 70px; width: 300px; z-index: 6; max-height: calc(100vh - 180px); overflow: auto; }
+.knob input[type=range] { width: 100%; accent-color: var(--ped); margin: 4px 0 0; }
+.knob-help { font-size: 10.5px; color: var(--dim); line-height: 1.35; }
+.knob-help a { color: var(--accent); cursor: pointer; }
+
+/* ---------- cause -> effect chain ---------- */
+.chain { position: absolute; top: 66px; left: 50%; transform: translateX(-50%); z-index: 4; display: flex; align-items: center; gap: 4px; padding: 7px 12px; max-width: calc(100vw - 700px); overflow: hidden; }
+.chain-step { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.chain-step .arrow { color: var(--dim); font-size: 14px; margin: 0 2px; }
+.chain-v { font-size: 15px; font-weight: 500; animation: pop .5s ease; }
+.chain-v.ped { color: var(--ped); } .chain-v.connect { color: var(--connect); } .chain-v.good { color: var(--good); } .chain-v.bad { color: var(--bad); } .chain-v.car { color: var(--car); }
+@keyframes pop { 0% { transform: scale(1.25); filter: brightness(1.8); } 100% { transform: none; filter: none; } }
+
+/* ---------- delta badges ---------- */
+.delta { font-size: 11px; margin-left: 8px; padding: 1px 6px; border-radius: 4px; vertical-align: middle; animation: deltaFade 3.2s ease forwards; font-family: var(--mono); }
+.delta.up { color: #05140c; background: var(--good); }
+.delta.down { color: #fff; background: #b33939; }
+@keyframes deltaFade { 0% { opacity: 0; transform: translateY(4px); } 10% { opacity: 1; transform: none; } 75% { opacity: 1; } 100% { opacity: 0; } }
+
+/* ---------- person card ---------- */
+.person h4 { display: flex; align-items: center; gap: 8px; }
+.person .avatar { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ffd79a, #ff9f2e); box-shadow: 0 0 10px rgba(255,170,60,.6); }

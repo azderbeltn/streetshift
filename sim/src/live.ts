@@ -27,6 +27,7 @@ export function startLive(): DbConnection | null {
       if (e.kind === "floors") (req.segmentMods![e.targetId] ??= {}).extraResidents = Number(e.value) || 0;
       if (e.kind === "park") (req.segmentMods![e.targetId] ??= {}).park = true;
       if (e.kind === "land_use") req.businessMods![e.targetId] = { category: e.value };
+      if (e.kind === "param") (req.assumptions ??= {})[e.targetId] = Number(e.value);
     }
     let r;
     try { r = runScenario(req); } catch (err) { liveStatus.error = String(err); return; }

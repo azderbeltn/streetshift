@@ -10,7 +10,7 @@ export type Business = { id: string; name: string; category: string; lng: number
   popularTimes: number[][] | null; carDependence: number; segmentId: string; group?: string };
 export type AreaSummary = { area: string; city: string; center: [number, number]; businesses: number; populationInCircle: number | null;
   householdsInCircle: number | null; corridors: (Corridor & { id: string })[] };
-export type Trip = { path: [number, number][]; timestamps: number[]; kind?: "linger" | "walk" };
+export type Trip = { path: [number, number][]; timestamps: number[]; kind?: "linger" | "walk"; visitor?: boolean };
 export type TripsPayload = { loopSeconds: number; cars: Trip[]; peds: Trip[]; agents: { cars: number; peds: number; populationInCircle: number | null } };
 
 /** Same fields as the SpacetimeDB `scenario_result` row. */
@@ -28,6 +28,7 @@ export type SegMetric = { segmentId: string; baseCar: number; afterCar: number; 
 export type ScenarioInput = {
   area: string; corridorId?: string; closedSegmentIds: string[]; addedSeating: boolean; programming: "none" | "light" | "heavy";
   segmentMods?: Record<string, { extraResidents?: number; park?: boolean }>; businessMods?: Record<string, { category: string }>;
+  assumptions?: Record<string, number>;
 };
 
 async function j<T>(path: string, body?: unknown): Promise<T> {

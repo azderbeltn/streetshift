@@ -5,6 +5,8 @@ import { api, type AreaSummary, type Business, type NetworkPayload, type SearchH
 import { actions, connect, myself, scenarioInput, useStore } from "./store";
 import Backtest from "./Backtest";
 import Side from "./Side";
+import Assumptions from "./Assumptions";
+import Chain from "./Chain";
 
 type Tool = "pedestrianize" | "floors" | "land_use" | "park" | "inspect";
 const TOOLS: { id: Tool; label: string; key: string; icon: JSX.Element }[] = [
@@ -37,6 +39,7 @@ export default function App() {
   const [hits, setHits] = useState<SearchHit[] | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const [report, setReport] = useState<string | null>(null);
+  const [showAssumptions, setShowAssumptions] = useState(false);
   const lastPresence = useRef(0);
 
   useEffect(() => { connect(); api.areas().then(setAreas).catch((e) => setToast(`Sim API unreachable: ${e.message}`)); }, []);
@@ -46,9 +49,9 @@ export default function App() {
     api.trips({ area: st.area, closedSegmentIds: [], addedSeating: false, programming: "none" }).then((t) => { setBeforeTrips(t); setTrips((x) => x ?? t); });
   }, [st.area]);
   // Re-fetch animated trips when the set of closed streets changes.
-  const closedKey = [...st.closed].sort().join(",");
+  const closedKey = [...st.closed].sort().join(",") + "|" + [...st.edits.values()].filter((e) => e.kind === "param" || e.kind === "park" || e.kind === "floors").map((e) => `${e.kind}:${e.targetId}=${e.value}`).sort().join(",");
   useEffect(() => {
-    if (!st.closed.size) { if (beforeTrips) setTrips(beforeTrips); return; }
+    if (!st.closed.size && !st.edits.size) { if (beforeTrips) setTrips(beforeTrips); return; }
     const h = setTimeout(() => api.trips(scenarioInput()).then(setTrips), 150);
     return () => clearTimeout(h);
   }, [closedKey, st.area, beforeTrips]);
@@ -112,7 +115,7 @@ export default function App() {
       <MapView network={network} businesses={businesses} closed={st.closed} seg={st.seg} biz={st.biz} trips={showBefore ? beforeTrips : trips}
         pedShare={pedShare} showBefore={showBefore} floors={floors} presence={st.presence} onPick={onPick} onHover={setHover}
         onFeed={(text) => setFeed((f) => [...f.slice(-5), { id: Math.random(), text, at: `${String(hour).padStart(2, "0")}:${String(Math.floor(Math.random() * 60)).padStart(2, "0")}` }])}
-        onPointer={onPointer} onConnections={setLiveConnections} />
+        onPointer={onPointer} onConnections={setLiveConnections} preferBuildings={tool === "floors"} />
 
       <div className="topbar glass">
         <div className="brand"><b>STREETSHIFT</b><span>Predict what happens when a street goes car-free — and see how wrong we were on five real ones.</span></div>
@@ -183,6 +186,9 @@ export default function App() {
 
       <div className="dock glass">
         {TOOLS.map((t) => <button key={t.id} className={`tool ${tool === t.id ? "active" : ""}`} onClick={() => setTool(t.id)}>{t.icon}{t.label}<span className="k">{t.key}</span></button>)}
+        <button className={`tool ${showAssumptions ? "active" : ""}`} onClick={() => setShowAssumptions((v) => !v)}>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 4h7M12 4h2M2 8h2M7 8h7M2 12h9M14 12h0" /><circle cx="10.5" cy="4" r="1.5" /><circle cx="5.5" cy="8" r="1.5" /><circle cx="12.5" cy="12" r="1.5" /></svg>Assumptions{[...st.edits.values()].some((e) => e.kind === "param") && <span className="k" style={{ color: "var(--ped)" }}>●</span>}
+        </button>
       </div>
 
       <div className="bottom glass">
@@ -239,6 +245,25 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {showAssumptions && <Assumptions onClose={() => setShowAssumptions(false)} />}
+      <Chain s={active ? st.summary : null} seg={st.seg} closed={st.closed} network={network} />
+
+      {pick && pick.kind === "person" && (() => {
+        const q = pick.person;
+        return (
+          <div className="popover glass person" style={{ left: pick.x, top: pick.y, width: 260 }}>
+            <button className="close-x" onClick={() => setPick(null)}>×</button>
+            <h4><span className="avatar" />{q.visitor ? "Visitor to the plaza" : "Local resident"}</h4>
+            <div className="sub">{q.visitor ? "Came to spend time on the pedestrianized block" : `One of ${(areas.find((a) => a.area === st.area)?.populationInCircle ?? 0).toLocaleString()} people living within 1.5 km (US Census ACS 2024)`}</div>
+            <div className="row"><span className="muted">Time lingering on this walk</span><span className="mono">{q.lingeredMin.toFixed(1)} min</span></div>
+            <div className="row"><span className="muted">Distance walked</span><span className="mono">{Math.round(q.walkedM)} m</span></div>
+            <div className="row"><span className="muted">Conversations so far</span><span className="mono" style={{ color: q.talkedWith ? "var(--connect)" : undefined }}>{q.talkedWith}{q.talkingNow ? " · talking now" : ""}</span></div>
+            {q.heading && <div className="row"><span className="muted">Heading toward</span><span>{q.heading.name}</span></div>}
+            <div className="note"><span className="dot" />Simulated person, sized to the real population; not a real individual.</div>
+          </div>
+        );
+      })()}
 
       {mode === "backtest" && <Backtest onClose={() => setMode("plan")} />}
       {toast && <div className="toast glass">{toast}</div>}

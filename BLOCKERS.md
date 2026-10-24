@@ -4,6 +4,8 @@ Open issues that need the human, or that forced a mock. Newest first.
 
 ## Open
 
+- **Elastic Jina embeddings hit the free-trial cap**: after about 30k reviews, `.jina-embeddings-v5-text-small` returns HTTP 402 "You have reached your total trial limit for this model. Upgrade to continue" on every call, both indexing and query embedding. That breaks every semantic query on fields embedded with it. We did not upgrade. Workaround in place: `data/elastic_common.py` `usable_embedding_id()` probes the endpoint and falls back to `.multilingual-e5-small-elasticsearch`, which runs on the project's own ML nodes with no EIS trial cap. The `businesses` and `reviews` indexes were recreated on e5. Hybrid search and the reranker (`.jina-reranker-v3.5`) still work. `.jina-embeddings-v5-text-nano` and `jina-embeddings-v3` still answer, but they probably have the same kind of cap, so we didn't use them for 36k reviews: the live demo needs query-time embeddings to keep working. The human could ask the Elastic booth whether the trial quota can be raised; if it is, rerun `elastic_ingest.py --recreate` with Jina.
+
 - **LiveKit credentials** — `LIVEKIT_*` are empty and the `lk` CLI isn't installed. Not needed until Phase 6 (below the line in 8.6). `USE_MOCK_VOICE` fallback stays available.
 
 - **Creao track needs their platform** — a CREAO agent (agent.creao.ai) must do the core work; it runs in their cloud and can't reach the local `/sim` without a tunnel. Not in the plan. Human decides whether to enter (docs/creao.md).

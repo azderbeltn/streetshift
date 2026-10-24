@@ -21,6 +21,11 @@ if KIBANA_URL == ES_URL.rstrip("/"):
     KIBANA_URL = ""
 API_KEY = os.environ.get("ELASTIC_API_KEY", "")
 EMBEDDING_ID = os.environ.get("EMBEDDING_INFERENCE_ID", ".jina-embeddings-v5-text-small")
+# Fallback when the Jina endpoint exists but refuses work. On 2026-10-24 the free Serverless trial returned
+# HTTP 402 "You have reached your total trial limit for this model" for .jina-embeddings-v5-text-small after
+# ~30k reviews (see BLOCKERS.md). multilingual-e5-small runs on the project's own ML nodes (no EIS trial cap).
+FALLBACK_EMBEDDING_IDS = [x for x in os.environ.get(
+    "EMBEDDING_FALLBACK_IDS", ".multilingual-e5-small-elasticsearch").split(",") if x]
 AGENT_ID = os.environ.get("ELASTIC_AGENT_ID", "streetshift-analyst")
 BUSINESSES = "businesses"
 REVIEWS = "reviews"
@@ -58,3 +63,21 @@ def find_reranker(client: Elasticsearch) -> str | None:
     ids = [e["inference_id"] for e in endpoints]
     jina = sorted((i for i in ids if "jina" in i and "m0" not in i), reverse=True)
     return (jina or ids or [None])[0]
+
+
+def usable_embedding_id(client: Elasticsearch) -> str | None:
+    """First embedding endpoint that exists AND answers a real inference call (EMBEDDING_ID, then fallbacks).
+    The starter only checks that the endpoint exists; we also probe it because a trial-capped endpoint
+    still exists but fails every request (402), which would silently break indexing and every semantic query."""
+    for iid in [EMBEDDING_ID, *FALLBACK_EMBEDDING_IDS]:
+        for _ in range(4):  # in-cluster models may need a minute to deploy (408) on first use
+            try:
+                client.options(request_timeout=120).inference.inference(inference_id=iid, input=["probe"])
+                return iid
+            except Exception as e:
+                msg = str(e)
+                if "408" in msg or "timeout" in msg.lower():
+                    continue
+                print(f"  embedding endpoint {iid} unusable: {msg[:160]}")
+                break
+    return None

@@ -8,5 +8,6 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, "..", "");
   const define: Record<string, string> = {};
   for (const k of PUBLIC_KEYS) define[`import.meta.env.${k}`] = JSON.stringify(env[k] ?? "");
-  return { plugins: [react()], define, server: { port: 5173 } };
+  // fs.allow: the Convex generated API lives in ../convex.
+  return { plugins: [react()], define, server: { port: 5173, fs: { allow: [".."] } } };
 });

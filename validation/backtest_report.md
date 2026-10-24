@@ -1,6 +1,6 @@
 # StreetShift backtest report
 
-Generated 2026-10-24T22:32:41.808Z by `validation/score.ts`.
+Generated 2026-10-24T23:13:43.213Z by `validation/score.ts`.
 
 **Question:** after a 2020 NYC Open Street, how much better did its restaurants and bars do than a nearby control corridor?
 **Metric:** gap in percentage points between the Open Street's and the control's change in gross taxable sales of restaurants and bars, summer 2021 (Jun–Aug 2021) vs the pre-pandemic baseline. The difference-in-differences nets out COVID, which hit both corridors.

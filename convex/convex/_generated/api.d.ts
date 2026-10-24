@@ -8,7 +8,9 @@
  * @module
  */
 
-import type * as myFunctions from "../myFunctions.js";
+import type * as crons from "../crons.js";
+import type * as droid from "../droid.js";
+import type * as scenarios from "../scenarios.js";
 
 import type {
   ApiFromModules,
@@ -17,7 +19,9 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
-  myFunctions: typeof myFunctions;
+  crons: typeof crons;
+  droid: typeof droid;
+  scenarios: typeof scenarios;
 }>;
 
 /**

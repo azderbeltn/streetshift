@@ -147,6 +147,7 @@ def build(area: str) -> dict | None:
                 "reviewId": review_id(pid, r), "businessId": pid, "businessName": b["name"],
                 "category": b["category"], "area": area, "city": net.get("city"), "corridorId": cid,
                 "text": text, "publishedAtDate": r["publishedAtDate"], "rating": r.get("stars"),
+                "language": r.get("originalLanguage"),
             })
 
     v = Draft202012Validator(SCHEMA)

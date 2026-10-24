@@ -33,7 +33,7 @@ const scenarioEdit = table(
   {
     id: t.string().primaryKey(), // `${scenarioId}:${kind}:${targetId}`
     scenarioId: t.string().index('btree'),
-    kind: t.string(), // floors | land_use | park
+    kind: t.string(), // floors | land_use | park | param (assumption override)
     targetId: t.string(), // segmentId or businessId
     value: t.string(), // floors: "+N residents"; land_use: new category; park: "1"
   }
@@ -142,7 +142,7 @@ const spacetimedb = schema({
 export default spacetimedb;
 
 const PROGRAMMING = ['none', 'light', 'heavy'];
-const EDIT_KINDS = ['floors', 'land_use', 'park'];
+const EDIT_KINDS = ['floors', 'land_use', 'park', 'param'];
 
 type Ctx = ReducerCtx<InferSchema<typeof spacetimedb>>;
 
@@ -203,7 +203,7 @@ export const setOptions = spacetimedb.reducer(
 export const setEdit = spacetimedb.reducer(
   { scenarioId: t.string(), kind: t.string(), targetId: t.string(), value: t.string() },
   (ctx, { scenarioId, kind, targetId, value }) => {
-    if (!EDIT_KINDS.includes(kind)) throw new SenderError('kind must be floors|land_use|park');
+    if (!EDIT_KINDS.includes(kind)) throw new SenderError('kind must be floors|land_use|park|param');
     const id = `${scenarioId}:${kind}:${targetId}`;
     const existing = ctx.db.scenarioEdit.id.find(id);
     if (value === '') { if (existing) ctx.db.scenarioEdit.id.delete(id); }

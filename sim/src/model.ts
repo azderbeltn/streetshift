@@ -1,6 +1,7 @@
 // Runs one scenario at low/mid/high parameter levels and assembles the contract `Metrics`.
 import type { Metrics, Verdict } from "../../contracts/index.ts";
 import { loadNetwork } from "./network.ts";
+import { withAssumptions } from "./assumptions.ts";
 import { LEVELS, P, type Level } from "./params.ts";
 import { runTraffic, trafficBaseline, type TrafficResult } from "./traffic.ts";
 import { loadBusinesses, runEconomy, runInteraction, businessesOn, type ScenarioInput, type EconomyResult, type InteractionResult, RESTAURANT_BAR } from "./economy.ts";
@@ -29,11 +30,15 @@ export function verdictOf(lingerIndex: number): Verdict {
 }
 
 export function runScenario(req: ScenarioRequest): RunResult {
+  return withAssumptions(req.assumptions, () => runScenarioInner(req));
+}
+
+function runScenarioInner(req: ScenarioRequest): RunResult {
   const t0 = performance.now();
   const net = loadNetwork(req.area);
   const biz = loadBusinesses(req.area);
   const s: ScenarioInput = { closedSegmentIds: req.closedSegmentIds ?? [], addedSeating: !!req.addedSeating, programming: req.programming ?? "none",
-    segmentMods: req.segmentMods, businessMods: req.businessMods };
+    segmentMods: req.segmentMods, businessMods: req.businessMods, assumptions: req.assumptions };
   const unknown = s.closedSegmentIds.filter((id) => !net.segById.has(id));
   if (unknown.length) throw new Error(`unknown segment ids: ${unknown.slice(0, 5).join(", ")}`);
   const focus = req.corridorId ? net.corridors[req.corridorId]?.segmentIds : undefined;

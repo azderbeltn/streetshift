@@ -86,7 +86,7 @@ export function scoreAll() {
   return { rows, summary };
 }
 
-function writeReport(res: ReturnType<typeof scoreAll>) {
+export function writeReport(res: ReturnType<typeof scoreAll>) {
   const { rows, summary: s } = res;
   const lines = [
     "# StreetShift backtest report", "",

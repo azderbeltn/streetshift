@@ -23,7 +23,7 @@ from pathlib import Path
 
 from elasticsearch import helpers
 
-from elastic_common import BUSINESSES, EMBEDDING_ID, REVIEWS, ROOT, es
+from elastic_common import BUSINESSES, EMBEDDING_ID, REVIEWS, ROOT, es, usable_embedding_id
 
 ASSETS = ROOT / "sim" / "assets"
 PROCESSED = ROOT / "data" / "processed"
@@ -32,15 +32,18 @@ AREAS = ["astoria", "park_slope", "chinatown", "koreatown", "prospect_heights", 
 
 def semantic_field(client) -> dict:
     semantic = {"type": "semantic_text"}
-    try:
-        client.inference.get(inference_id=EMBEDDING_ID)
-        semantic["inference_id"] = EMBEDDING_ID
-    except Exception:
-        print(f"{EMBEDDING_ID} not found here, using this cluster's default semantic_text model")
+    iid = usable_embedding_id(client)
+    if iid:
+        semantic["inference_id"] = iid
+    else:
+        print(f"{EMBEDDING_ID} and fallbacks unusable, using this cluster's default semantic_text model")
     return semantic
 
 
 def create_indexes(client, recreate: bool):
+    if all(client.indices.exists(index=n) for n in (BUSINESSES, REVIEWS)) and not recreate:
+        print("Indexes exist, adding to them (use --recreate to start fresh)")
+        return
     semantic = semantic_field(client)
     specs = {
         BUSINESSES: {
@@ -98,6 +101,26 @@ def create_indexes(client, recreate: bool):
         print(f"Created index '{name}' (semantic: {semantic})")
 
 
+def shared_business_ids() -> set[str]:
+    """Businesses that fall inside two areas' search circles (e.g. 3 between park_slope and prospect_heights).
+    Their docs get area-scoped _ids ("<area>:<id>") so one area's copy doesn't overwrite the other's."""
+    seen, shared = set(), set()
+    for area in AREAS:
+        bp = ASSETS / area / "businesses.json"
+        if bp.exists():
+            ids = {b["id"] for b in json.loads(bp.read_text(encoding="utf-8"))}
+            shared |= seen & ids
+            seen |= ids
+    return shared
+
+
+SHARED = shared_business_ids()
+
+
+def doc_id(area: str, business_id: str, own_id: str) -> str:
+    return f"{area}:{own_id}" if business_id in SHARED else own_id
+
+
 def business_docs(area: str):
     biz = json.loads((ASSETS / area / "businesses.json").read_text(encoding="utf-8"))
     meta = json.loads((PROCESSED / f"business_meta_{area}.json").read_text(encoding="utf-8"))
@@ -106,7 +129,7 @@ def business_docs(area: str):
         text = " | ".join(x for x in [b["name"], b["category"], ", ".join(m.get("categories") or []),
                                       m.get("address") or "", m.get("description") or ""] if x)
         yield {
-            "_index": BUSINESSES, "_id": b["id"],
+            "_index": BUSINESSES, "_id": doc_id(area, b["id"], b["id"]),
             "business_id": b["id"], "name": b["name"], "category": b["category"],
             "categories": m.get("categories") or [], "area": area, "city": m.get("city"),
             "corridor_id": m.get("corridorId"), "segment_id": b["segmentId"],
@@ -122,7 +145,7 @@ def business_docs(area: str):
 def review_docs(area: str):
     for r in json.loads((PROCESSED / f"reviews_{area}.json").read_text(encoding="utf-8")):
         yield {
-            "_index": REVIEWS, "_id": r["reviewId"],
+            "_index": REVIEWS, "_id": doc_id(area, r["businessId"], r["reviewId"]),
             "review_id": r["reviewId"], "business_id": r["businessId"], "business_name": r["businessName"],
             "category": r["category"], "area": area, "city": r["city"], "corridor_id": r["corridorId"],
             "text": r["text"], "content": r["text"], "published_at": r["publishedAtDate"],
@@ -161,6 +184,14 @@ def main():
     client = es()
     create_indexes(client, a.recreate)
     areas = a.areas or [x for x in AREAS if (PROCESSED / f"reviews_{x}.json").exists()]
+    if SHARED:  # drop un-scoped copies of shared businesses/reviews left by runs before area-scoped ids
+        rev_ids = [r["reviewId"] for x in AREAS if (PROCESSED / f"reviews_{x}.json").exists()
+                   for r in json.loads((PROCESSED / f"reviews_{x}.json").read_text(encoding="utf-8"))
+                   if r["businessId"] in SHARED]
+        for idx, ids in ((BUSINESSES, sorted(SHARED)), (REVIEWS, sorted(set(rev_ids)))):
+            r = client.delete_by_query(index=idx, query={"ids": {"values": ids}}, conflicts="proceed", refresh=True)
+            if r.get("deleted"):
+                print(f"  removed {r['deleted']} un-scoped shared docs from '{idx}'")
     for area in areas:
         ok, err = bulk(client, business_docs(area), a.batch)
         print(f"  {area}: businesses indexed {ok}" + (f" ({len(err)} errors: {err[0]})" if err else ""))
