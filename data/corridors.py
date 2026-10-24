@@ -9,7 +9,10 @@ AREAS = {
     "park_slope": {"city": "NYC", "center": (40.6740, -73.9810), "radius_m": 1500,
                    "state": "36", "county": "047"},
     "chinatown": {"city": "NYC", "center": (40.7155, -73.9975), "radius_m": 1500,
-                  "state": "36", "county": "061"},
+                  "state": "36", "county": "061",
+                  # Doyers St is mapped as highway=pedestrian today; include pedestrian/living streets
+                  # at walking-pace car speed so the corridor exists but carries almost no cars.
+                  "include_pedestrian": True},
     "koreatown": {"city": "NYC", "center": (40.7487, -73.9855), "radius_m": 1500,
                   "state": "36", "county": "061"},
     "prospect_heights": {"city": "NYC", "center": (40.6790, -73.9715), "radius_m": 1500,

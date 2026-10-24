@@ -11,6 +11,8 @@ export type TripsPayload = { loopSeconds: number; cars: Trip[]; peds: Trip[]; ag
 
 const LOOP = 600; // seconds of simulated time per animation loop
 const r6 = (x: number) => Math.round(x * 1e6) / 1e6;
+/** Copy of a trip one loop earlier, so trips running past the loop end also show after it wraps. */
+const shifted = (t: Trip): Trip => ({ ...t, timestamps: t.timestamps.map((x) => Math.round((x - LOOP) * 10) / 10) });
 
 function edgeCoords(net: Network, ei: number): [number, number][] {
   const e = net.edges[ei];
@@ -68,7 +70,9 @@ export function buildTrips(net: Network, closedSegmentIds: string[], pedAt: (seg
     if (!path?.length) continue;
     const pts: [number, number][] = [];
     for (const ei of path) { const c = edgeCoords(net, ei); pts.push(...(pts.length ? c.slice(1) : c)); }
-    cars.push(timed(pts, 7 + rand() * 4, rand() * LOOP));
+    const car = timed(pts, 7 + rand() * 4, rand() * LOOP);
+    cars.push(car);
+    if (car.timestamps[car.timestamps.length - 1] > LOOP) cars.push(shifted(car));
   }
 
   // Pedestrians: random walks weighted by modelled foot traffic.
@@ -78,18 +82,33 @@ export function buildTrips(net: Network, closedSegmentIds: string[], pedAt: (seg
     (adj.get(w.u) ?? adj.set(w.u, []).get(w.u)!).push(i);
     (adj.get(w.v) ?? adj.set(w.v, []).get(w.v)!).push(i);
   });
-  const weight = (i: number) => { const s = nearest[i]; return s ? Math.max(20, pedAt(s)) : 25; };
+  // A pedestrianized block draws people in (destination effect), beyond its modelled through-flow.
+  const weight = (i: number) => { const s = nearest[i]; return s ? Math.max(20, pedAt(s)) * (closedSeg.has(s) ? 3 : 1) : 25; };
   const nodes = [...adj.keys()];
   const nodeW = nodes.map((n) => adj.get(n)!.reduce((a, i) => a + weight(i), 0));
   const totW = nodeW.reduce((a, b) => a + b, 0);
   const pickNode = () => { let r = rand() * totW; for (let i = 0; i < nodes.length; i++) { r -= nodeW[i]; if (r <= 0) return nodes[i]; } return nodes[0]; };
   const nPeds = Math.min(900, Math.max(300, Math.round((pop ?? 40000) / 110)));
+  // Plaza visitors: people who come to the pedestrianized block itself and stay a while. Their number
+  // scales with modelled foot traffic on the closed block (a share of passers-by who stop).
+  const closedWalk = net.walkEdges.map((_, i) => i).filter((i) => nearest[i] && closedSeg.has(nearest[i]!));
+  const nVisitors = closedWalk.length ? Math.min(160, Math.max(20, Math.round(closedSegmentIds.reduce((a, s) => a + pedAt(s), 0) * 0.12))) : 0;
   const peds: Trip[] = [];
-  for (let k = 0; k < nPeds; k++) {
-    let at = pickNode();
+  for (let k = 0; k < nPeds + nVisitors; k++) {
+    const visitor = k >= nPeds;
+    const startEdge = visitor ? net.walkEdges[closedWalk[Math.floor(rand() * closedWalk.length)]] : null;
+    let at = startEdge ? (rand() < 0.5 ? startEdge.u : startEdge.v) : pickNode();
     const pts: [number, number][] = [net.walkNodes[at]];
     const pauses = new Map<number, number>();
     let walked = 0, lingered = false;
+    if (startEdge) {
+      // Arrive, find a seat at one of a few spots along the block, stay 1-5 minutes.
+      const spot = startEdge.coords[Math.floor(rand() * startEdge.coords.length)];
+      const j = Math.floor(rand() * 6);
+      pts.push([spot[0] + ((j % 3) - 1) * 0.00005, spot[1] + (Math.floor(j / 3) - 0.5) * 0.00004]);
+      pauses.set(pts.length - 1, 60 + rand() * 240); lingered = true;
+      pts.push(net.walkNodes[at]);
+    }
     const target = 250 + rand() * 650;
     let prev = -1;
     while (walked < target) {
@@ -105,13 +124,21 @@ export function buildTrips(net: Network, closedSegmentIds: string[], pedAt: (seg
       walked += w.lengthM; prev = pick; at = forward ? w.v : w.u;
       // On a pedestrianized block people stop: sit, chat, browse.
       const s = nearest[pick];
-      if (s && closedSeg.has(s) && rand() < 0.55) { pauses.set(pts.length - 1, 40 + rand() * 160); lingered = true; }
+      if (s && closedSeg.has(s) && rand() < 0.85) {
+        // Sit at one of the seating spots spaced ~15 m along the block, so people share space.
+        const spot = w.coords[Math.floor(rand() * w.coords.length)];
+        const k = Math.floor(rand() * 4);
+        const sp: [number, number] = [spot[0] + (k - 1.5) * 0.00006, spot[1] + ((k % 2) - 0.5) * 0.00004];
+        pts.push(sp, pts[pts.length - 1]);
+        pauses.set(pts.length - 2, 60 + rand() * 260); lingered = true;
+      }
       else if (rand() < 0.06) pauses.set(pts.length - 1, 10 + rand() * 30);
     }
     if (pts.length < 2) continue;
     const trip = timed(pts, 1.1 + rand() * 0.4, rand() * LOOP, pauses);
     trip.kind = lingered ? "linger" : "walk";
     peds.push(trip);
+    if (trip.timestamps[trip.timestamps.length - 1] > LOOP) peds.push(shifted(trip));
   }
-  return { loopSeconds: LOOP, cars, peds, agents: { cars: cars.length, peds: peds.length, populationInCircle: pop } };
+  return { loopSeconds: LOOP, cars, peds, agents: { cars: nCars, peds: nPeds + nVisitors, populationInCircle: pop } };
 }

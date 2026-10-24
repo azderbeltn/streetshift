@@ -16,7 +16,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=A.MANO%20Brooklyn&query_place_id=ChIJvxkchDNbwokRCS362OqkhnI",
   "description": null,
   "price": null,
-  "reviewsScraped": 40
+  "reviewsScraped": 40,
+  "carDependence": 0.032,
+  "carMentions": 0,
+  "reviewsWithText": 33,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJq-a39gNbwokRcm1KjuGF6w0": {
   "placeId": "ChIJq-a39gNbwokRcm1KjuGF6w0",
@@ -34,7 +45,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Pok%C3%A9%20Tiky%20Bar&query_place_id=ChIJq-a39gNbwokRcm1KjuGF6w0",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.029,
+  "carMentions": 0,
+  "reviewsWithText": 36,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ4WpCMWVbwokRzeL4PInDmtE": {
   "placeId": "ChIJ4WpCMWVbwokRzeL4PInDmtE",
@@ -57,7 +79,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Muteki%20Udon%20%26%20Ramen&query_place_id=ChIJ4WpCMWVbwokRzeL4PInDmtE",
   "description": null,
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.329,
+  "carMentions": 1,
+  "reviewsWithText": 45,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJEQPOoMFbwokRAUbJwqJ5kHY": {
   "placeId": "ChIJEQPOoMFbwokRAUbJwqJ5kHY",
@@ -75,7 +108,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Honeycomb%20Hi-Fi%20Listening%20Bar&query_place_id=ChIJEQPOoMFbwokRAUbJwqJ5kHY",
   "description": null,
   "price": "$10–50",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.336,
+  "carMentions": 1,
+  "reviewsWithText": 44,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJH2PJcXNbwokREr2uI6qTReQ": {
   "placeId": "ChIJH2PJcXNbwokREr2uI6qTReQ",
@@ -93,7 +137,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Phobar&query_place_id=ChIJH2PJcXNbwokREr2uI6qTReQ",
   "description": null,
   "price": "$20–30",
-  "reviewsScraped": 0
+  "reviewsScraped": 0,
+  "carDependence": 0.24,
+  "carMentions": 0,
+  "reviewsWithText": 0,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJlylvKq9bwokRkslMvmbAJ7Q": {
   "placeId": "ChIJlylvKq9bwokRkslMvmbAJ7Q",
@@ -120,7 +175,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Morgan's%20Brooklyn%20Barbecue&query_place_id=ChIJlylvKq9bwokRkslMvmbAJ7Q",
   "description": "Trendy, stylish spot serving Texas-style BBQ by the pound, plus sandwiches & Southern sides.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 44,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJR-QxWc1bwokRng-BnRaDhPE": {
   "placeId": "ChIJR-QxWc1bwokRng-BnRaDhPE",
@@ -138,7 +204,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Ishi%20Omakase%20Sushi%20%26%20Premium%20Sake&query_place_id=ChIJR-QxWc1bwokRng-BnRaDhPE",
   "description": null,
   "price": "$100+",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.317,
+  "carMentions": 1,
+  "reviewsWithText": 47,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ36AQhaNbwokRWNkBRGgcIC4": {
   "placeId": "ChIJ36AQhaNbwokRWNkBRGgcIC4",
@@ -158,7 +235,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Art%20Cafe%20%2B%20Bar&query_place_id=ChIJ36AQhaNbwokRWNkBRGgcIC4",
   "description": "Bohemian haunt showcasing local artists in a funky space with a cozy patio, light fare & cocktails.",
   "price": "$10–60",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.025,
+  "carMentions": 0,
+  "reviewsWithText": 43,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJBavgoa5bwokRmG1fmugGzlE": {
   "placeId": "ChIJBavgoa5bwokRmG1fmugGzlE",
@@ -178,7 +266,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Wasan%20Brooklyn&query_place_id=ChIJBavgoa5bwokRmG1fmugGzlE",
   "description": "Japanese restaurant emphasizing seasonal & local ingredients with creative takes on familiar dishes.",
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJfWMHD2RbwokRB3IeP0SeOVA": {
   "placeId": "ChIJfWMHD2RbwokRB3IeP0SeOVA",
@@ -196,7 +295,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Bandido&query_place_id=ChIJfWMHD2RbwokRB3IeP0SeOVA",
   "description": null,
   "price": "$20–30",
-  "reviewsScraped": 0
+  "reviewsScraped": 0,
+  "carDependence": 0.24,
+  "carMentions": 0,
+  "reviewsWithText": 0,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ37Tc_DFbwokR4p2N95g9I7s": {
   "placeId": "ChIJ37Tc_DFbwokR4p2N95g9I7s",
@@ -217,7 +327,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Pasta%20Night&query_place_id=ChIJ37Tc_DFbwokR4p2N95g9I7s",
   "description": null,
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJnf_8xaRbwokRN3PJjLF565w": {
   "placeId": "ChIJnf_8xaRbwokRN3PJjLF565w",
@@ -236,7 +357,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Belli%20Ristorante%20%26%20Bar&query_place_id=ChIJnf_8xaRbwokRN3PJjLF565w",
   "description": "Stark yet intimate candelit eatery with classic & other Italian meals, including homemade pastas.",
   "price": "$40–50",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 50,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ_W7cGPtbwokRXxTMC6MOvHA": {
   "placeId": "ChIJ_W7cGPtbwokRXxTMC6MOvHA",
@@ -256,7 +388,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=The%20Simpson&query_place_id=ChIJ_W7cGPtbwokRXxTMC6MOvHA",
   "description": "Casual recipes with Jamaican flair whipped up in a relaxed spot with a colorful bar.",
   "price": "$50–100",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.02,
+  "carMentions": 0,
+  "reviewsWithText": 54,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJUav8AqxbwokRiMxGcbqw7nY": {
   "placeId": "ChIJUav8AqxbwokRiMxGcbqw7nY",
@@ -283,7 +426,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=SkyIce%20Thai%20Food%20%26%20Ice%20Cream&query_place_id=ChIJUav8AqxbwokRiMxGcbqw7nY",
   "description": "All-natural ice creams & sorbets share the menu with Northern Thai curry & noodle dishes.",
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.02,
+  "carMentions": 0,
+  "reviewsWithText": 54,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJRUBNiqRbwokR7q_L-wSTZeU": {
   "placeId": "ChIJRUBNiqRbwokR7q_L-wSTZeU",
@@ -301,7 +455,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Kinanm%20Lounge&query_place_id=ChIJRUBNiqRbwokR7q_L-wSTZeU",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.515,
+  "carMentions": 1,
+  "reviewsWithText": 27,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJd1LlBndbwokR14S5QBMjntE": {
   "placeId": "ChIJd1LlBndbwokR14S5QBMjntE",
@@ -319,7 +484,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Savor%C3%A9&query_place_id=ChIJd1LlBndbwokR14S5QBMjntE",
   "description": null,
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.329,
+  "carMentions": 1,
+  "reviewsWithText": 45,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJgavFNQBbwokRDqLr-HvBIAY": {
   "placeId": "ChIJgavFNQBbwokRDqLr-HvBIAY",
@@ -337,7 +513,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Pachanga%20Coffee&query_place_id=ChIJgavFNQBbwokRDqLr-HvBIAY",
   "description": null,
   "price": "$1–10",
-  "reviewsScraped": 0
+  "reviewsScraped": 0,
+  "carDependence": 0.24,
+  "carMentions": 0,
+  "reviewsWithText": 0,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJn19lFGVbwokRED80fk8B0uk": {
   "placeId": "ChIJn19lFGVbwokRED80fk8B0uk",
@@ -355,7 +542,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Tacos%20del%20Barrio&query_place_id=ChIJn19lFGVbwokRED80fk8B0uk",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.021,
+  "carMentions": 0,
+  "reviewsWithText": 53,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ-TwGwK5bwokRsrbSCkO4dEM": {
   "placeId": "ChIJ-TwGwK5bwokRsrbSCkO4dEM",
@@ -373,7 +571,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Bklyn%20Cream&query_place_id=ChIJ-TwGwK5bwokRsrbSCkO4dEM",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.343,
+  "carMentions": 1,
+  "reviewsWithText": 43,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJHSZvHgBbwokR7Xw_H9Dv5e0": {
   "placeId": "ChIJHSZvHgBbwokR7Xw_H9Dv5e0",
@@ -391,7 +600,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Sweetbee%20Dean%20St&query_place_id=ChIJHSZvHgBbwokR7Xw_H9Dv5e0",
   "description": null,
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.021,
+  "carMentions": 0,
+  "reviewsWithText": 53,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJi73FVqNbwokRZ4KIqLtNoFw": {
   "placeId": "ChIJi73FVqNbwokRZ4KIqLtNoFw",
@@ -409,7 +629,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Sisters&query_place_id=ChIJi73FVqNbwokRZ4KIqLtNoFw",
   "description": "Cozy eatery focused on local and organic produce, with a dining room and a covered patio. ",
   "price": "$20–80",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 41,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJgRd23gFbwokRFaACKwWIF7E": {
   "placeId": "ChIJgRd23gFbwokRFaACKwWIF7E",
@@ -434,7 +665,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Charm%20Bar%20%26%20Restaurant&query_place_id=ChIJgRd23gFbwokRFaACKwWIF7E",
   "description": "Warm fixture for Caribbean cuisine, including jerk chicken, guava wings, and fried plantains, plus a bar.",
   "price": "$50–100",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.02,
+  "carMentions": 0,
+  "reviewsWithText": 56,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJyfZlTzhbwokRgbKBkyMsooU": {
   "placeId": "ChIJyfZlTzhbwokRgbKBkyMsooU",
@@ -453,7 +695,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=The%20Brooklyn%20Teacup&query_place_id=ChIJyfZlTzhbwokRgbKBkyMsooU",
   "description": null,
   "price": null,
-  "reviewsScraped": 50
+  "reviewsScraped": 50,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 46,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJnRyRtUBbwokR4veV9Er_PAU": {
   "placeId": "ChIJnRyRtUBbwokR4veV9Er_PAU",
@@ -472,7 +725,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=gertrude%E2%80%99s&query_place_id=ChIJnRyRtUBbwokR4veV9Er_PAU",
   "description": null,
   "price": "$20–70",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.028,
+  "carMentions": 0,
+  "reviewsWithText": 38,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJBSS2OQBbwokRA0SUF2LPkmE": {
   "placeId": "ChIJBSS2OQBbwokRA0SUF2LPkmE",
@@ -490,7 +754,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Love%20%26%20Honey%20Fried%20Chicken%20-%20Brooklyn%2C%20NY&query_place_id=ChIJBSS2OQBbwokRA0SUF2LPkmE",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.27,
+  "carMentions": 1,
+  "reviewsWithText": 56,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJsTa8m65bwokRJdKLMPF5yUI": {
   "placeId": "ChIJsTa8m65bwokRJdKLMPF5yUI",
@@ -508,7 +783,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=McMahon's%20Public%20House&query_place_id=ChIJsTa8m65bwokRJdKLMPF5yUI",
   "description": "Irish pub fare, draft beer & cocktails served in a comfortable, warm setting with a long bar.",
   "price": "$10–50",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.029,
+  "carMentions": 0,
+  "reviewsWithText": 36,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJjW_xjcJbwokRhrgB0I0l3Xg": {
   "placeId": "ChIJjW_xjcJbwokRhrgB0I0l3Xg",
@@ -531,7 +817,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Leland%20Eating%20and%20Drinking%20House&query_place_id=ChIJjW_xjcJbwokRhrgB0I0l3Xg",
   "description": "Intimate eatery highlighting thoughtfully sourced plates, wines, and spirits, plus brunch.",
   "price": "$30–90",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.392,
+  "carMentions": 1,
+  "reviewsWithText": 37,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJEZA01o1bwokRFQ1LKoKArNQ": {
   "placeId": "ChIJEZA01o1bwokRFQ1LKoKArNQ",
@@ -558,7 +855,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Badshah%20Social&query_place_id=ChIJEZA01o1bwokRFQ1LKoKArNQ",
   "description": null,
   "price": "$30–40",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 48,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJNe8GN6RbwokR0vmN2cVx59g": {
   "placeId": "ChIJNe8GN6RbwokR0vmN2cVx59g",
@@ -576,7 +884,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Weather%20Up&query_place_id=ChIJNe8GN6RbwokR0vmN2cVx59g",
   "description": "Slick, Prohibition-style watering hole with craft cocktails & sophisticated bar snacks.",
   "price": "$30–40",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.032,
+  "carMentions": 0,
+  "reviewsWithText": 32,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJEVFkpFtbwokR5ItXs2oJnvk": {
   "placeId": "ChIJEVFkpFtbwokR5ItXs2oJnvk",
@@ -595,7 +914,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Beer%20Street%20South&query_place_id=ChIJEVFkpFtbwokR5ItXs2oJnvk",
   "description": null,
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.034,
+  "carMentions": 0,
+  "reviewsWithText": 30,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJsUw4H6xbwokRiC4tlrJ92zs": {
   "placeId": "ChIJsUw4H6xbwokRiC4tlrJ92zs",
@@ -613,7 +943,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Uncle%20Barry's&query_place_id=ChIJsUw4H6xbwokRiC4tlrJ92zs",
   "description": "Neighborhood taproom with a large, varied craft-beer selection, plus vintage games & trivia.",
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.412,
+  "carMentions": 1,
+  "reviewsWithText": 35,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJQx632a5bwokRXdj9mkGmwKU": {
   "placeId": "ChIJQx632a5bwokRXdj9mkGmwKU",
@@ -631,7 +972,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Sweet%20Polly&query_place_id=ChIJQx632a5bwokRXdj9mkGmwKU",
   "description": "Cozy-chic bar for cocktails (plus wines & New York beers) with oysters, cheeses & small plates.",
   "price": "$30–40",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.029,
+  "carMentions": 0,
+  "reviewsWithText": 37,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJp_YEll5bwokRQDr6RxQuyqo": {
   "placeId": "ChIJp_YEll5bwokRQDr6RxQuyqo",
@@ -652,7 +1004,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=The%20Beer%20Garage&query_place_id=ChIJp_YEll5bwokRQDr6RxQuyqo",
   "description": null,
   "price": "$40–50",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 1.0,
+  "carMentions": 8,
+  "reviewsWithText": 41,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJBekYIaxbwokR2b69gL7j9k0": {
   "placeId": "ChIJBekYIaxbwokR2b69gL7j9k0",
@@ -671,7 +1034,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=North%20Pole%20Pub&query_place_id=ChIJBekYIaxbwokR2b69gL7j9k0",
   "description": "Cocktails & beer served in a simple, relaxed watering hole with a TV at the bar.",
   "price": "$10–40",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.044,
+  "carMentions": 0,
+  "reviewsWithText": 22,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJidVuqaRbwokRG17J-8zzSJ8": {
   "placeId": "ChIJidVuqaRbwokRG17J-8zzSJ8",
@@ -691,7 +1065,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Hops%20Hill&query_place_id=ChIJidVuqaRbwokRG17J-8zzSJ8",
   "description": "Industrial-chic bar specializing in craft beers, also offering cocktails, bar snacks & sandwiches.",
   "price": "$10–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.027,
+  "carMentions": 0,
+  "reviewsWithText": 39,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJEydYygtbwokRkhZKexvZ3o4": {
   "placeId": "ChIJEydYygtbwokRkhZKexvZ3o4",
@@ -709,7 +1094,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=The%20Bilt%20Bar&query_place_id=ChIJEydYygtbwokRkhZKexvZ3o4",
   "description": null,
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.03,
+  "carMentions": 0,
+  "reviewsWithText": 35,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ8z5ZRM9bwokR_G2bz_MQ5zU": {
   "placeId": "ChIJ8z5ZRM9bwokR_G2bz_MQ5zU",
@@ -727,7 +1123,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Famous%20Last%20Words&query_place_id=ChIJ8z5ZRM9bwokR_G2bz_MQ5zU",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 45,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ45c7LgBbwokR6GskZ46FOnU": {
   "placeId": "ChIJ45c7LgBbwokR6GskZ46FOnU",
@@ -751,7 +1158,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=The%20Vaux%20Social%20Bar%20%2B%20Grill&query_place_id=ChIJ45c7LgBbwokR6GskZ46FOnU",
   "description": null,
   "price": "$20–60",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJk9RJNaRbwokRtMPbGlZp3uc": {
   "placeId": "ChIJk9RJNaRbwokRtMPbGlZp3uc",
@@ -769,7 +1187,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=BierWax&query_place_id=ChIJk9RJNaRbwokRtMPbGlZp3uc",
   "description": "Cool hangout featuring select craft beers on tap,  plus 5,000 vinyl records & a lineup of DJs.",
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.032,
+  "carMentions": 0,
+  "reviewsWithText": 33,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJiTZf77JbwokRiNZ2sXys3Bg": {
   "placeId": "ChIJiTZf77JbwokRiNZ2sXys3Bg",
@@ -787,7 +1216,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=The%20LayUp&query_place_id=ChIJiTZf77JbwokRiNZ2sXys3Bg",
   "description": null,
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ4632-d9bwokRo_GqYoKmf8k": {
   "placeId": "ChIJ4632-d9bwokRo_GqYoKmf8k",
@@ -806,7 +1246,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=BAR%20GOTO%20NIBAN&query_place_id=ChIJ4632-d9bwokRo_GqYoKmf8k",
   "description": "Wood-accented contemporary izakaya offering cocktails & food with a Japanese spin.",
   "price": "$30–40",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.029,
+  "carMentions": 0,
+  "reviewsWithText": 37,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ94vBTaxbwokRBi29aV5ROSk": {
   "placeId": "ChIJ94vBTaxbwokRBi29aV5ROSk",
@@ -828,7 +1279,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Canteen%20Delicatessen%20and%20Cafe&query_place_id=ChIJ94vBTaxbwokRBi29aV5ROSk",
   "description": "Corner deli with tables, offering an international selection of sandwiches, wraps & breakfast food.",
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 41,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJH2vRDZBbwokRR9fWYeKp_BE": {
   "placeId": "ChIJH2vRDZBbwokRR9fWYeKp_BE",
@@ -847,7 +1309,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Bar%20Francis&query_place_id=ChIJH2vRDZBbwokRR9fWYeKp_BE",
   "description": null,
   "price": "$40–50",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 42,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJi9zdYQBbwokRN3xZPMABLcQ": {
   "placeId": "ChIJi9zdYQBbwokRN3xZPMABLcQ",
@@ -865,7 +1338,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Leo%E2%80%99s&query_place_id=ChIJi9zdYQBbwokRN3xZPMABLcQ",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 22
+  "reviewsScraped": 22,
+  "carDependence": 0.057,
+  "carMentions": 0,
+  "reviewsWithText": 16,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJmxB4TfdbwokRoSCnT-yVlEg": {
   "placeId": "ChIJmxB4TfdbwokRoSCnT-yVlEg",
@@ -885,7 +1369,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Everbean&query_place_id=ChIJmxB4TfdbwokRoSCnT-yVlEg",
   "description": null,
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJde7BIldbwokRPkZhR7gAoVk": {
   "placeId": "ChIJde7BIldbwokRPkZhR7gAoVk",
@@ -903,7 +1398,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Shaka%20Shaka%20Tiki&query_place_id=ChIJde7BIldbwokRPkZhR7gAoVk",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.027,
+  "carMentions": 0,
+  "reviewsWithText": 40,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJwSlK8KtbwokRwh1JMe3d6Sw": {
   "placeId": "ChIJwSlK8KtbwokRwh1JMe3d6Sw",
@@ -922,7 +1428,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Clever%20Blend&query_place_id=ChIJwSlK8KtbwokRwh1JMe3d6Sw",
   "description": "A traditional menu of coffee shop beverages, assorted pastries, & gelato in a relaxed setting.",
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.027,
+  "carMentions": 0,
+  "reviewsWithText": 39,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJj0eyRQBbwokREawjObSL_bw": {
   "placeId": "ChIJj0eyRQBbwokREawjObSL_bw",
@@ -940,7 +1457,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Canyon%20Coffee&query_place_id=ChIJj0eyRQBbwokREawjObSL_bw",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 46,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ_yaCB6xbwokRzsbqAJUYxpY": {
   "placeId": "ChIJ_yaCB6xbwokRzsbqAJUYxpY",
@@ -962,7 +1490,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Miriam&query_place_id=ChIJ_yaCB6xbwokRzsbqAJUYxpY",
   "description": "Tel Aviv's Mediterranean flavors come to Park Slope via this Israeli eatery with a popular brunch.",
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.031,
+  "carMentions": 0,
+  "reviewsWithText": 34,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJca2ebQBbwokRTjTkh72DWPE": {
   "placeId": "ChIJca2ebQBbwokRTjTkh72DWPE",
@@ -987,7 +1526,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=idashi%20Omakase&query_place_id=ChIJca2ebQBbwokRTjTkh72DWPE",
   "description": null,
   "price": "$100+",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 47,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJJS1zUgBbwokR6JcWcX45aA8": {
   "placeId": "ChIJJS1zUgBbwokR6JcWcX45aA8",
@@ -1005,7 +1555,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Mazi&query_place_id=ChIJJS1zUgBbwokR6JcWcX45aA8",
   "description": null,
   "price": "$10–50",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.343,
+  "carMentions": 1,
+  "reviewsWithText": 43,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJKaYntiZbwokR9wKaOYcRyEw": {
   "placeId": "ChIJKaYntiZbwokR9wKaOYcRyEw",
@@ -1023,7 +1584,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Sofreh%20Cafe&query_place_id=ChIJKaYntiZbwokR9wKaOYcRyEw",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.028,
+  "carMentions": 0,
+  "reviewsWithText": 38,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJWZJ2165bwokRHvtRWm0d_fI": {
   "placeId": "ChIJWZJ2165bwokRHvtRWm0d_fI",
@@ -1043,7 +1615,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Hungry%20Ghost&query_place_id=ChIJWZJ2165bwokRHvtRWm0d_fI",
   "description": "Stumptown coffee, casual lunch fare & housemade baked goods in a chill, modern storefront setting.",
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 44,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJJy4UaG1bwokRRnpJjk-ozac": {
   "placeId": "ChIJJy4UaG1bwokRRnpJjk-ozac",
@@ -1067,7 +1650,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Ciao%2C%20Gloria&query_place_id=ChIJJy4UaG1bwokRRnpJjk-ozac",
   "description": "Daytime hangout serving coffee, plus sweet and savory baked goods in a warm space.",
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 42,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJFxQERvlbwokRWOqS1SHMGJE": {
   "placeId": "ChIJFxQERvlbwokRWOqS1SHMGJE",
@@ -1085,7 +1679,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Hungry%20Ghost%20Coffee&query_place_id=ChIJFxQERvlbwokRWOqS1SHMGJE",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.029,
+  "carMentions": 0,
+  "reviewsWithText": 37,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJR6l_9KNbwokRGPyx3HL9CHQ": {
   "placeId": "ChIJR6l_9KNbwokRGPyx3HL9CHQ",
@@ -1111,7 +1716,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Underhill%20Greek%20Eatery&query_place_id=ChIJR6l_9KNbwokRGPyx3HL9CHQ",
   "description": "Updated Greek classics & comfort foods are offered with beer & wine in casual, modern surrounds.",
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.027,
+  "carMentions": 0,
+  "reviewsWithText": 39,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJO-Vhz89bwokRNG2krrQw7mc": {
   "placeId": "ChIJO-Vhz89bwokRNG2krrQw7mc",
@@ -1129,7 +1745,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Porta%20coffee&query_place_id=ChIJO-Vhz89bwokRNG2krrQw7mc",
   "description": null,
   "price": "$1–10",
-  "reviewsScraped": 46
+  "reviewsScraped": 46,
+  "carDependence": 0.03,
+  "carMentions": 0,
+  "reviewsWithText": 35,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJdWB-CMVbwokRz8EhEVIT3nM": {
   "placeId": "ChIJdWB-CMVbwokRz8EhEVIT3nM",
@@ -1150,7 +1777,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Lileo%20Coffee%20%26%20Wine%20Bar&query_place_id=ChIJdWB-CMVbwokRz8EhEVIT3nM",
   "description": null,
   "price": "$10–50",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 44,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJPQwKC-RbwokR13i0Pu2coqU": {
   "placeId": "ChIJPQwKC-RbwokR13i0Pu2coqU",
@@ -1168,7 +1806,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Burly%20Coffee&query_place_id=ChIJPQwKC-RbwokR13i0Pu2coqU",
   "description": null,
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 42,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJnwQ6gaRbwokRQza0LznOrf8": {
   "placeId": "ChIJnwQ6gaRbwokRQza0LznOrf8",
@@ -1187,7 +1836,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Queen%20Virgin%20Remy%20NY&query_place_id=ChIJnwQ6gaRbwokRQza0LznOrf8",
   "description": null,
   "price": null,
-  "reviewsScraped": 8
+  "reviewsScraped": 8,
+  "carDependence": 0.12,
+  "carMentions": 0,
+  "reviewsWithText": 5,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJtw-RK6RbwokR5w8YktPLAa8": {
   "placeId": "ChIJtw-RK6RbwokR5w8YktPLAa8",
@@ -1205,7 +1865,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Caff%C3%A8%20De%20Martini&query_place_id=ChIJtw-RK6RbwokR5w8YktPLAa8",
   "description": "Charming, Italian-inspired cafe with artisanal coffee, panini & baked goods, plus outdoor tables.",
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.021,
+  "carMentions": 0,
+  "reviewsWithText": 53,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJRZxJ8DdbwokR7MYwE4SmPio": {
   "placeId": "ChIJRZxJ8DdbwokR7MYwE4SmPio",
@@ -1223,7 +1894,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Mira%20Cali%20Roosevelt%20ave&query_place_id=ChIJRZxJ8DdbwokR7MYwE4SmPio",
   "description": null,
   "price": null,
-  "reviewsScraped": 1
+  "reviewsScraped": 1,
+  "carDependence": 0.2,
+  "carMentions": 0,
+  "reviewsWithText": 1,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJDxVJMKRbwokRPZcrYFZklVE": {
   "placeId": "ChIJDxVJMKRbwokRPZcrYFZklVE",
@@ -1239,7 +1921,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=SOTRO&query_place_id=ChIJDxVJMKRbwokRPZcrYFZklVE",
   "description": null,
   "price": null,
-  "reviewsScraped": 0
+  "reviewsScraped": 0,
+  "carDependence": 0.24,
+  "carMentions": 0,
+  "reviewsWithText": 0,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJKyuwtKRbwokRxS274KzJvhc": {
   "placeId": "ChIJKyuwtKRbwokRxS274KzJvhc",
@@ -1257,7 +1950,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Levels%20Barbershop&query_place_id=ChIJKyuwtKRbwokRxS274KzJvhc",
   "description": null,
   "price": null,
-  "reviewsScraped": 0
+  "reviewsScraped": 0,
+  "carDependence": 0.24,
+  "carMentions": 0,
+  "reviewsWithText": 0,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJO3SN2qlbwokRL6fb3NdhfXo": {
   "placeId": "ChIJO3SN2qlbwokRL6fb3NdhfXo",
@@ -1284,7 +1988,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Cousin%20John's%20Cafe%20%26%20Bakery&query_place_id=ChIJO3SN2qlbwokRL6fb3NdhfXo",
   "description": "Cozy spot serving breakfast & lunch, with an open kitchen turning out pastries, cakes & breads.",
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.35,
+  "carMentions": 1,
+  "reviewsWithText": 42,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJC3otGaxbwokRuypCAGbcx_o": {
   "placeId": "ChIJC3otGaxbwokRuypCAGbcx_o",
@@ -1306,7 +2021,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=BK9&query_place_id=ChIJC3otGaxbwokRuypCAGbcx_o",
   "description": "Contemporary takes on Haitian, Trinidadian & Jamaican cuisine served in a warm, refined setting.",
   "price": "$30–80",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 44,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJvU4yeaZbwokRd9vY-VhfuAY": {
   "placeId": "ChIJvU4yeaZbwokRd9vY-VhfuAY",
@@ -1326,7 +2052,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Zaytoons&query_place_id=ChIJvU4yeaZbwokRd9vY-VhfuAY",
   "description": "Prospect Heights venue for Middle Eastern cuisine, plus a back garden in season.",
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.027,
+  "carMentions": 0,
+  "reviewsWithText": 39,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJS0t8U6NbwokRkOh5Fukfb1E": {
   "placeId": "ChIJS0t8U6NbwokRkOh5Fukfb1E",
@@ -1345,7 +2082,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Bergen%20Bagels%20on%20Fulton&query_place_id=ChIJS0t8U6NbwokRkOh5Fukfb1E",
   "description": "Popular counter serve featuring housemade bagels, sandwiches, salads & pastries in a casual setting.",
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.027,
+  "carMentions": 0,
+  "reviewsWithText": 40,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJK9DnCNlbwokR499xR5NXZII": {
   "placeId": "ChIJK9DnCNlbwokR499xR5NXZII",
@@ -1363,7 +2111,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Sofreh&query_place_id=ChIJK9DnCNlbwokR499xR5NXZII",
   "description": "Modern, ingredient-driven Persian cooking in a whitewashed space with wood-beam ceilings.",
   "price": "$50–100",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 45,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJU4P_KqRbwokR1NV3ltwBdwU": {
   "placeId": "ChIJU4P_KqRbwokR1NV3ltwBdwU",
@@ -1382,7 +2141,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Brooklyn%20High%20Low%20-%20Original%20Location&query_place_id=ChIJU4P_KqRbwokR1NV3ltwBdwU",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 48,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ-azJby1bwokRX-gZEHYxryg": {
   "placeId": "ChIJ-azJby1bwokRX-gZEHYxryg",
@@ -1400,7 +2170,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=The%20Throne%20Barbershop%20Club&query_place_id=ChIJ-azJby1bwokRX-gZEHYxryg",
   "description": null,
   "price": null,
-  "reviewsScraped": 12
+  "reviewsScraped": 12,
+  "carDependence": 0.075,
+  "carMentions": 0,
+  "reviewsWithText": 11,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJYeUhwKtbwokRJXNODKdkjzU": {
   "placeId": "ChIJYeUhwKtbwokRJXNODKdkjzU",
@@ -1418,7 +2199,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Polish%20Nail%20Spa&query_place_id=ChIJYeUhwKtbwokRJXNODKdkjzU",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.635,
+  "carMentions": 2,
+  "reviewsWithText": 45,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJRZb_PltbwokRIqAuJNvgtyg": {
   "placeId": "ChIJRZb_PltbwokRIqAuJNvgtyg",
@@ -1436,7 +2228,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Eastern%20District&query_place_id=ChIJRZb_PltbwokRIqAuJNvgtyg",
   "description": null,
   "price": null,
-  "reviewsScraped": 43
+  "reviewsScraped": 43,
+  "carDependence": 1.0,
+  "carMentions": 4,
+  "reviewsWithText": 31,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJyw2Tnn1bwokRGhX2QwxoYrg": {
   "placeId": "ChIJyw2Tnn1bwokRGhX2QwxoYrg",
@@ -1461,7 +2264,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Joe%20Coffee%20Company%3A%20Bergen%20St&query_place_id=ChIJyw2Tnn1bwokRGhX2QwxoYrg",
   "description": "Coffee spot offering free-trade brews, baked goods, classes & catering in a buzzy modern space.",
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.294,
+  "carMentions": 1,
+  "reviewsWithText": 51,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJZzQhLKRbwokRn0b2HAQQI-o": {
   "placeId": "ChIJZzQhLKRbwokRn0b2HAQQI-o",
@@ -1487,7 +2301,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Branded%20Saloon&query_place_id=ChIJZzQhLKRbwokRn0b2HAQQI-o",
   "description": "A sprawling Western-themed honky-tonk saloon serving Southern-style bar food.",
   "price": "$10–50",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 41,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ84rWSUhbwokR4AW9YQzBqu4": {
   "placeId": "ChIJ84rWSUhbwokR4AW9YQzBqu4",
@@ -1505,7 +2330,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Honey%20Nail%20Salon&query_place_id=ChIJ84rWSUhbwokR4AW9YQzBqu4",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 47,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJB7NCUDBbwokRzsYJaYCSv90": {
   "placeId": "ChIJB7NCUDBbwokRzsYJaYCSv90",
@@ -1525,7 +2361,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=BYou%20Laser%20Clinic%20-%20Flatbush%20Prospect%20Heights&query_place_id=ChIJB7NCUDBbwokRzsYJaYCSv90",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.019,
+  "carMentions": 0,
+  "reviewsWithText": 57,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJHdGljdhbwokRagCrQMf0Ck0": {
   "placeId": "ChIJHdGljdhbwokRagCrQMf0Ck0",
@@ -1545,7 +2392,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Babyface%20Brows&query_place_id=ChIJHdGljdhbwokRagCrQMf0Ck0",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.02,
+  "carMentions": 0,
+  "reviewsWithText": 56,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ1YqLcwBbwokRU21erxC-cQU": {
   "placeId": "ChIJ1YqLcwBbwokRU21erxC-cQU",
@@ -1563,7 +2421,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Q%20Spa%20Nail&query_place_id=ChIJ1YqLcwBbwokRU21erxC-cQU",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.029,
+  "carMentions": 0,
+  "reviewsWithText": 36,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJFRTZSdNbwokRPv71NOk5GH8": {
   "placeId": "ChIJFRTZSdNbwokRPv71NOk5GH8",
@@ -1582,7 +2451,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=No.%207%20Restaurant&query_place_id=ChIJFRTZSdNbwokRPv71NOk5GH8",
   "description": "Simple dinner & brunch menu of re-conceived American classics in hipster-friendly surroundings.",
   "price": "$30–40",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 41,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJgwUjentbwokRh0XrTxM-BEo": {
   "placeId": "ChIJgwUjentbwokRh0XrTxM-BEo",
@@ -1600,7 +2480,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Mumbai%20Place&query_place_id=ChIJgwUjentbwokRh0XrTxM-BEo",
   "description": "Casual dine-in or takeout spot for Indian cuisine, including tandoori oven classics.",
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 47,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJbVI3oa9bwokR6VM3znI0sTY": {
   "placeId": "ChIJbVI3oa9bwokR6VM3znI0sTY",
@@ -1621,7 +2512,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=OMAR'S%20INDIAN%20FINE%20CUISINE&query_place_id=ChIJbVI3oa9bwokR6VM3znI0sTY",
   "description": null,
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 42,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJQdBhEaFbwokRzO6we6nCV0E": {
   "placeId": "ChIJQdBhEaFbwokRzO6we6nCV0E",
@@ -1647,7 +2549,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Muse%20Thai&query_place_id=ChIJQdBhEaFbwokRzO6we6nCV0E",
   "description": "Contemporary-style eatery serving Thai-style small plates & classic entrees such as drunken noodles.",
   "price": "$20–30",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 45,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJLyO1UrtbwokRcejeJ009pr4": {
   "placeId": "ChIJLyO1UrtbwokRcejeJ009pr4",
@@ -1665,7 +2578,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Pure%20Nail%20Salon&query_place_id=ChIJLyO1UrtbwokRcejeJ009pr4",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.029,
+  "carMentions": 0,
+  "reviewsWithText": 36,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ1XYDwbVbwokRLF1JQjV7iBg": {
   "placeId": "ChIJ1XYDwbVbwokRLF1JQjV7iBg",
@@ -1692,7 +2616,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Auntie%20Anne's&query_place_id=ChIJ1XYDwbVbwokRLF1JQjV7iBg",
   "description": "Global chain of counters dispensing sweet & savory soft pretzels with a variety of toppings & dips.",
   "price": "$10–20",
-  "reviewsScraped": 24
+  "reviewsScraped": 24,
+  "carDependence": 0.063,
+  "carMentions": 0,
+  "reviewsWithText": 14,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJgQl10q1bwokREHnZwOZr1Fs": {
   "placeId": "ChIJgQl10q1bwokREHnZwOZr1Fs",
@@ -1710,7 +2645,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=CLEVER%20BARBER%20FULTON&query_place_id=ChIJgQl10q1bwokREHnZwOZr1Fs",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 48,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJG9SSKR5bwokRNPVLq-iNlMA": {
   "placeId": "ChIJG9SSKR5bwokRNPVLq-iNlMA",
@@ -1730,7 +2676,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Auntie%20Anne's&query_place_id=ChIJG9SSKR5bwokRNPVLq-iNlMA",
   "description": "Global chain of counters dispensing sweet & savory soft pretzels with a variety of toppings & dips.",
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.021,
+  "carMentions": 0,
+  "reviewsWithText": 52,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJAS_JAiBbwokRWiqZwIm-Uvs": {
   "placeId": "ChIJAS_JAiBbwokRWiqZwIm-Uvs",
@@ -1752,7 +2709,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Precycle%20-%20Healthy%20Food%20%26%20Grocery%20Store%20NYC&query_place_id=ChIJAS_JAiBbwokRWiqZwIm-Uvs",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 45,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJM2N4pQFbwokR0nN8csb8UtU": {
   "placeId": "ChIJM2N4pQFbwokR0nN8csb8UtU",
@@ -1770,7 +2738,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Cinnabon&query_place_id=ChIJM2N4pQFbwokR0nN8csb8UtU",
   "description": "Counter-serve chain serving cinnamon rolls plus other baked goods & specialty frozen beverages.",
   "price": "$1–10",
-  "reviewsScraped": 36
+  "reviewsScraped": 36,
+  "carDependence": 0.043,
+  "carMentions": 0,
+  "reviewsWithText": 23,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJw9zKnK5bwokRgVnV-OGjqh4": {
   "placeId": "ChIJw9zKnK5bwokRgVnV-OGjqh4",
@@ -1793,7 +2772,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=YAYOS%20LATIN%20CUISINE&query_place_id=ChIJw9zKnK5bwokRgVnV-OGjqh4",
   "description": "Spacious spot a block from the Barclays Center serving classic Latin-American dishes.",
   "price": "$20–70",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.025,
+  "carMentions": 0,
+  "reviewsWithText": 43,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJqeTONLtbwokRiXQ19ESo-zk": {
   "placeId": "ChIJqeTONLtbwokRiXQ19ESo-zk",
@@ -1815,7 +2805,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Yafa%20Deli%20and%20Grocery&query_place_id=ChIJqeTONLtbwokRiXQ19ESo-zk",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.029,
+  "carMentions": 0,
+  "reviewsWithText": 37,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJF7r9F-VbwokRyNFIaMnDCds": {
   "placeId": "ChIJF7r9F-VbwokRyNFIaMnDCds",
@@ -1833,7 +2834,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=VEER%20WINE%20AND%20LIQUOR&query_place_id=ChIJF7r9F-VbwokRyNFIaMnDCds",
   "description": null,
   "price": null,
-  "reviewsScraped": 9
+  "reviewsScraped": 9,
+  "carDependence": 0.1,
+  "carMentions": 0,
+  "reviewsWithText": 7,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJbVdc1qhbwokRaavqeeAsyWE": {
   "placeId": "ChIJbVdc1qhbwokRaavqeeAsyWE",
@@ -1853,7 +2865,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=BKLYN%20CREPE&query_place_id=ChIJbVdc1qhbwokRaavqeeAsyWE",
   "description": "Tiny, colorful cafe turning out creative crêpes, salads & health-oriented smoothies & juices.",
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 47,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJG-TI8S1bwokR1wxa-ijMEcs": {
   "placeId": "ChIJG-TI8S1bwokR1wxa-ijMEcs",
@@ -1873,7 +2896,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Insomnia%20Cookies&query_place_id=ChIJG-TI8S1bwokR1wxa-ijMEcs",
   "description": "Bakery chain known for warm cookies, ice cream & late-night deliveries.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJJayiNLtbwokRPPlxsOL-42Q": {
   "placeId": "ChIJJayiNLtbwokRPPlxsOL-42Q",
@@ -1891,7 +2925,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Olivino%20Wines%20Clinton%20Hill&query_place_id=ChIJJayiNLtbwokRPPlxsOL-42Q",
   "description": null,
   "price": null,
-  "reviewsScraped": 34
+  "reviewsScraped": 34,
+  "carDependence": 0.046,
+  "carMentions": 0,
+  "reviewsWithText": 21,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJlYROIQ9bwokRIq_GbyjcwBw": {
   "placeId": "ChIJlYROIQ9bwokRIq_GbyjcwBw",
@@ -1911,7 +2956,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=T-swirl%20Crepe&query_place_id=ChIJlYROIQ9bwokRIq_GbyjcwBw",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.959,
+  "carMentions": 3,
+  "reviewsWithText": 44,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ0WLO1aBbwokReAbZ75RbE4g": {
   "placeId": "ChIJ0WLO1aBbwokReAbZ75RbE4g",
@@ -1935,7 +2991,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Verde%20Market&query_place_id=ChIJ0WLO1aBbwokReAbZ75RbE4g",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.305,
+  "carMentions": 1,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJOymo3a5bwokRtGJ_YBHf2GY": {
   "placeId": "ChIJOymo3a5bwokRtGJ_YBHf2GY",
@@ -1953,7 +3020,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=World%20Famous%20Deli&query_place_id=ChIJOymo3a5bwokRtGJ_YBHf2GY",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.374,
+  "carMentions": 1,
+  "reviewsWithText": 39,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJJ2FrKQBbwokRKiPTnRLsWq8": {
   "placeId": "ChIJJ2FrKQBbwokRKiPTnRLsWq8",
@@ -1979,7 +3057,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Walgreens&query_place_id=ChIJJ2FrKQBbwokRKiPTnRLsWq8",
   "description": "Drugstore chain with health & beauty aids, prescriptions & photo services, plus mini-mart basics.",
   "price": null,
-  "reviewsScraped": 21
+  "reviewsScraped": 21,
+  "carDependence": 0.06,
+  "carMentions": 0,
+  "reviewsWithText": 15,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJUcUdea5bwokR7wSZmnmyU3E": {
   "placeId": "ChIJUcUdea5bwokR7wSZmnmyU3E",
@@ -1997,7 +3086,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Vinnies%20Styles&query_place_id=ChIJUcUdea5bwokR7wSZmnmyU3E",
   "description": "Boutique with a line of urban-inspired T-shirts & other casual streetwear for men & women.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.402,
+  "carMentions": 1,
+  "reviewsWithText": 36,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ4VIxGaFbwokRb1bjCuma87Y": {
   "placeId": "ChIJ4VIxGaFbwokRb1bjCuma87Y",
@@ -2015,7 +3115,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Salon%20Leahing&query_place_id=ChIJ4VIxGaFbwokRb1bjCuma87Y",
   "description": null,
   "price": null,
-  "reviewsScraped": 16
+  "reviewsScraped": 16,
+  "carDependence": 0.067,
+  "carMentions": 0,
+  "reviewsWithText": 13,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ50PsGuhbwokRBY2W28IV-Eg": {
   "placeId": "ChIJ50PsGuhbwokRBY2W28IV-Eg",
@@ -2035,7 +3146,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=SEPHORA&query_place_id=ChIJ50PsGuhbwokRBY2W28IV-Eg",
   "description": "Retail chain with a selection of upmarket makeup, perfumes, beauty & skincare products.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 47,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJtU00SaRbwokR4mUTTifU7zI": {
   "placeId": "ChIJtU00SaRbwokR4mUTTifU7zI",
@@ -2053,7 +3175,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Vanderbilt%20Avenue%20Wine%20Merchants&query_place_id=ChIJtU00SaRbwokR4mUTTifU7zI",
   "description": "Snug outfit featuring organic & biodynamic French wines, plus local spirits, tastings & classes.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.035,
+  "carMentions": 0,
+  "reviewsWithText": 29,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJd6a1Oa5bwokRitVMSdNTYvY": {
   "placeId": "ChIJd6a1Oa5bwokRitVMSdNTYvY",
@@ -2080,7 +3213,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Burlington&query_place_id=ChIJd6a1Oa5bwokRitVMSdNTYvY",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 50,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJf4-QBKxbwokRNpapEWCf5oY": {
   "placeId": "ChIJf4-QBKxbwokRNpapEWCf5oY",
@@ -2098,7 +3242,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Sip%20Wine%20%26%20Spirits&query_place_id=ChIJf4-QBKxbwokRNpapEWCf5oY",
   "description": "Global varietals & unusual vintages are sold in a contemporary setting, plus tastings & workshops.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.027,
+  "carMentions": 0,
+  "reviewsWithText": 39,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJcc0Qz65bwokR1YO7vUXyzYM": {
   "placeId": "ChIJcc0Qz65bwokR1YO7vUXyzYM",
@@ -2117,7 +3272,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Garry's%20Wine%20%26%20Liquor&query_place_id=ChIJcc0Qz65bwokR1YO7vUXyzYM",
   "description": null,
   "price": null,
-  "reviewsScraped": 55
+  "reviewsScraped": 55,
+  "carDependence": 0.03,
+  "carMentions": 0,
+  "reviewsWithText": 35,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJwfhTXqxbwokRvO8PcNkhmXQ": {
   "placeId": "ChIJwfhTXqxbwokRvO8PcNkhmXQ",
@@ -2135,7 +3301,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Slope%20Foods%20inc&query_place_id=ChIJwfhTXqxbwokRvO8PcNkhmXQ",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 47,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJgw_2M_xawokRAYE-RxemPgs": {
   "placeId": "ChIJgw_2M_xawokRAYE-RxemPgs",
@@ -2153,7 +3330,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Hazuki%20Hair%20Salon&query_place_id=ChIJgw_2M_xawokRAYE-RxemPgs",
   "description": null,
   "price": null,
-  "reviewsScraped": 0
+  "reviewsScraped": 0,
+  "carDependence": 0.24,
+  "carMentions": 0,
+  "reviewsWithText": 0,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ-VYRI8JbwokRm199xfwg9Pc": {
   "placeId": "ChIJ-VYRI8JbwokRm199xfwg9Pc",
@@ -2171,7 +3359,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=73%C2%B0%20Natural%20Nails%20%E2%80%A2%20Clean%20Beauty&query_place_id=ChIJ-VYRI8JbwokRm199xfwg9Pc",
   "description": null,
   "price": null,
-  "reviewsScraped": 40
+  "reviewsScraped": 40,
+  "carDependence": 0.392,
+  "carMentions": 1,
+  "reviewsWithText": 37,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJqYlQGBdawokRgTZBOg3wWfA": {
   "placeId": "ChIJqYlQGBdawokRgTZBOg3wWfA",
@@ -2189,7 +3388,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Be.%20Medical%20Cannabis%20Dispensary%20-%20Brooklyn&query_place_id=ChIJqYlQGBdawokRgTZBOg3wWfA",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.023,
+  "carMentions": 0,
+  "reviewsWithText": 47,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJKTr3K6RbwokRYNRiK8z4kN8": {
   "placeId": "ChIJKTr3K6RbwokRYNRiK8z4kN8",
@@ -2207,7 +3417,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Nicko's%20Unisex%20Salon&query_place_id=ChIJKTr3K6RbwokRYNRiK8z4kN8",
   "description": null,
   "price": null,
-  "reviewsScraped": 40
+  "reviewsScraped": 40,
+  "carDependence": 0.044,
+  "carMentions": 0,
+  "reviewsWithText": 22,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJUTyzratbwokRW5XIdlfKxVE": {
   "placeId": "ChIJUTyzratbwokRW5XIdlfKxVE",
@@ -2225,7 +3446,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Omni%20Beauty%20Salon&query_place_id=ChIJUTyzratbwokRW5XIdlfKxVE",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.374,
+  "carMentions": 1,
+  "reviewsWithText": 39,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJB0cXlHZbwokRjQ2e8pHMFe4": {
   "placeId": "ChIJB0cXlHZbwokRjQ2e8pHMFe4",
@@ -2247,7 +3479,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Glowbar%20Prospect%20Heights&query_place_id=ChIJB0cXlHZbwokRjQ2e8pHMFe4",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 50,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJXTdaTqNbwokRCkjLDxSEKkc": {
   "placeId": "ChIJXTdaTqNbwokRCkjLDxSEKkc",
@@ -2267,7 +3510,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Brooklyn%20deli%20corp&query_place_id=ChIJXTdaTqNbwokRCkjLDxSEKkc",
   "description": null,
   "price": null,
-  "reviewsScraped": 13
+  "reviewsScraped": 13,
+  "carDependence": 0.086,
+  "carMentions": 0,
+  "reviewsWithText": 9,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ1SDrBaxbwokRXM5TpK1YtY8": {
   "placeId": "ChIJ1SDrBaxbwokRXM5TpK1YtY8",
@@ -2285,7 +3539,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=George's%202%20Barber%20Shop&query_place_id=ChIJ1SDrBaxbwokRXM5TpK1YtY8",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJs3wOu0tbwokReNqQoumuY7s": {
   "placeId": "ChIJs3wOu0tbwokReNqQoumuY7s",
@@ -2303,7 +3568,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Coco%20Salon%20Inc&query_place_id=ChIJs3wOu0tbwokReNqQoumuY7s",
   "description": null,
   "price": null,
-  "reviewsScraped": 58
+  "reviewsScraped": 58,
+  "carDependence": 0.323,
+  "carMentions": 1,
+  "reviewsWithText": 46,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJC9OYgaRbwokRD24Yj2wQC5w": {
   "placeId": "ChIJC9OYgaRbwokRD24Yj2wQC5w",
@@ -2321,7 +3597,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Volumes%20Hair%20Salon&query_place_id=ChIJC9OYgaRbwokRD24Yj2wQC5w",
   "description": null,
   "price": null,
-  "reviewsScraped": 24
+  "reviewsScraped": 24,
+  "carDependence": 0.071,
+  "carMentions": 0,
+  "reviewsWithText": 12,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ88DDobtbwokR8CaZGOrUgFY": {
   "placeId": "ChIJ88DDobtbwokR8CaZGOrUgFY",
@@ -2343,7 +3630,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Wholesome%20Farms%20Market&query_place_id=ChIJ88DDobtbwokR8CaZGOrUgFY",
   "description": null,
   "price": null,
-  "reviewsScraped": 0
+  "reviewsScraped": 0,
+  "carDependence": 0.24,
+  "carMentions": 0,
+  "reviewsWithText": 0,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJU7NbGg9bwokRXQhSiTHNpyg": {
   "placeId": "ChIJU7NbGg9bwokRXQhSiTHNpyg",
@@ -2362,7 +3660,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=miGak%20nail%20art%20table%20Brooklyn&query_place_id=ChIJU7NbGg9bwokRXQhSiTHNpyg",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.253,
+  "carMentions": 1,
+  "reviewsWithText": 60,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJcbehZaZbwokRy2gLRQjEKNY": {
   "placeId": "ChIJcbehZaZbwokRy2gLRQjEKNY",
@@ -2386,7 +3695,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=%5Bsalon%5D718%20Prospect%20Heights&query_place_id=ChIJcbehZaZbwokRy2gLRQjEKNY",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.02,
+  "carMentions": 0,
+  "reviewsWithText": 54,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJNz5g0ahbwokRqA-z33F0Uvg": {
   "placeId": "ChIJNz5g0ahbwokRqA-z33F0Uvg",
@@ -2405,7 +3725,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Prospect%20Hair&query_place_id=ChIJNz5g0ahbwokRqA-z33F0Uvg",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.02,
+  "carMentions": 0,
+  "reviewsWithText": 56,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJL3H0-atbwokR4MGwlN88kGs": {
   "placeId": "ChIJL3H0-atbwokR4MGwlN88kGs",
@@ -2426,7 +3757,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Lost%20Foundry%20Salon&query_place_id=ChIJL3H0-atbwokR4MGwlN88kGs",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 41,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJrfld3K5bwokRyl-4YOkBB48": {
   "placeId": "ChIJrfld3K5bwokRyl-4YOkBB48",
@@ -2444,7 +3786,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Hair%20%26%20Co%20BKLYN&query_place_id=ChIJrfld3K5bwokRyl-4YOkBB48",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.019,
+  "carMentions": 0,
+  "reviewsWithText": 57,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJQ5hWJaNbwokRJgaxEQxPII4": {
   "placeId": "ChIJQ5hWJaNbwokRJgaxEQxPII4",
@@ -2466,7 +3819,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=%5Bsalon%5D718%20Fulton&query_place_id=ChIJQ5hWJaNbwokRJgaxEQxPII4",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.02,
+  "carMentions": 0,
+  "reviewsWithText": 55,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJNZBGwqNbwokRZ4Co181traQ": {
   "placeId": "ChIJNZBGwqNbwokRZ4Co181traQ",
@@ -2489,7 +3853,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=House%20of%20Hair%20Salon%20%26%20Spa&query_place_id=ChIJNZBGwqNbwokRZ4Co181traQ",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.032,
+  "carMentions": 0,
+  "reviewsWithText": 32,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ-_xkhiRbwokRnMxuVyUDFew": {
   "placeId": "ChIJ-_xkhiRbwokRnMxuVyUDFew",
@@ -2507,7 +3882,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Brooklyn%20Running%20Company&query_place_id=ChIJ-_xkhiRbwokRnMxuVyUDFew",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.305,
+  "carMentions": 1,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJJUnMSrtbwokRMWnhB0H70bs": {
   "placeId": "ChIJJUnMSrtbwokRMWnhB0H70bs",
@@ -2526,7 +3912,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=909%20Fulton%20St%20Grocery%20%26%20Deli&query_place_id=ChIJJUnMSrtbwokRMWnhB0H70bs",
   "description": null,
   "price": null,
-  "reviewsScraped": 30
+  "reviewsScraped": 30,
+  "carDependence": 0.052,
+  "carMentions": 0,
+  "reviewsWithText": 18,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJG0f45K1bwokRd9cOr94UxhI": {
   "placeId": "ChIJG0f45K1bwokRd9cOr94UxhI",
@@ -2544,7 +3941,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Men's%20Wearhouse&query_place_id=ChIJG0f45K1bwokRd9cOr94UxhI",
   "description": "Menswear chain offering brand-name suits, casual attire, shoes & accessories, plus tuxedo rentals.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.021,
+  "carMentions": 0,
+  "reviewsWithText": 52,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJBdSYx65bwokRQUZ0G54LSio": {
   "placeId": "ChIJBdSYx65bwokRQUZ0G54LSio",
@@ -2565,7 +3973,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Mazzone%20Ace%20Hardware&query_place_id=ChIJBdSYx65bwokRQUZ0G54LSio",
   "description": "Stalwart neighborhood store, family-run since 1940, providing hardware, paint, tools & key cutting.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.027,
+  "carMentions": 0,
+  "reviewsWithText": 40,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJmzI8wq1bwokR6Hq1D98Uxto": {
   "placeId": "ChIJmzI8wq1bwokR6Hq1D98Uxto",
@@ -2592,7 +4011,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=P.C.%20Richard%20%26%20Son&query_place_id=ChIJmzI8wq1bwokR6Hq1D98Uxto",
   "description": "Family-owned electronics chain for computers, kitchen appliances & mattresses.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.284,
+  "carMentions": 1,
+  "reviewsWithText": 53,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ4ZMWzKlbwokRqdBqQeybdE4": {
   "placeId": "ChIJ4ZMWzKlbwokRqdBqQeybdE4",
@@ -2610,7 +4040,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=HairCraft%20By%20Paul%20and%20Ben&query_place_id=ChIJ4ZMWzKlbwokRqdBqQeybdE4",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.024,
+  "carMentions": 0,
+  "reviewsWithText": 46,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJe1cHPABbwokRl5zxn0D8_uc": {
   "placeId": "ChIJe1cHPABbwokRl5zxn0D8_uc",
@@ -2628,7 +4069,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Caputo%20Bagels&query_place_id=ChIJe1cHPABbwokRl5zxn0D8_uc",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 32
+  "reviewsScraped": 32,
+  "carDependence": 1.0,
+  "carMentions": 2,
+  "reviewsWithText": 24,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJLUP06KhbwokRS2YMSji0zYw": {
   "placeId": "ChIJLUP06KhbwokRS2YMSji0zYw",
@@ -2652,7 +4104,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Duane%20Reade&query_place_id=ChIJLUP06KhbwokRS2YMSji0zYw",
   "description": "Drugstore & pharmacy chain selling products including cosmetics, vitamins & mini-mart basics.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.025,
+  "carMentions": 0,
+  "reviewsWithText": 43,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJve0A66tbwokRtddBec7uOek": {
   "placeId": "ChIJve0A66tbwokRtddBec7uOek",
@@ -2671,7 +4134,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Sterling%20Grapes%20%26%20Grains&query_place_id=ChIJve0A66tbwokRtddBec7uOek",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.02,
+  "carMentions": 0,
+  "reviewsWithText": 56,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ403hM6RbwokRVzhvOfmBLhg": {
   "placeId": "ChIJ403hM6RbwokRVzhvOfmBLhg",
@@ -2690,7 +4164,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Wine%20Exchange&query_place_id=ChIJ403hM6RbwokRVzhvOfmBLhg",
   "description": "Neighborhood shop stocking a large selection of wines from around the world, as well as spirits.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.027,
+  "carMentions": 0,
+  "reviewsWithText": 39,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJrXOGSgBbwokRogBqx-L6svw": {
   "placeId": "ChIJrXOGSgBbwokRogBqx-L6svw",
@@ -2708,7 +4193,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Lidl&query_place_id=ChIJrXOGSgBbwokRogBqx-L6svw",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.721,
+  "carMentions": 2,
+  "reviewsWithText": 39,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJd6a1Oa5bwokR39E9hZqbDs0": {
   "placeId": "ChIJd6a1Oa5bwokR39E9hZqbDs0",
@@ -2733,7 +4229,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Marshalls&query_place_id=ChIJd6a1Oa5bwokR39E9hZqbDs0",
   "description": "Retail chain offering brand-name clothing, accessories, shoes & housewares.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.383,
+  "carMentions": 1,
+  "reviewsWithText": 38,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJT9fdHANZwokR0i76OrOfd0k": {
   "placeId": "ChIJT9fdHANZwokR0i76OrOfd0k",
@@ -2751,7 +4258,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Invictus%20Bakery&query_place_id=ChIJT9fdHANZwokR0i76OrOfd0k",
   "description": null,
   "price": null,
-  "reviewsScraped": 24
+  "reviewsScraped": 24,
+  "carDependence": 0.716,
+  "carMentions": 1,
+  "reviewsWithText": 18,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ8X1ynKpbwokRTAwqP6EacBc": {
   "placeId": "ChIJ8X1ynKpbwokRTAwqP6EacBc",
@@ -2772,7 +4290,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Beacon's%20Closet%20Park%20Slope&query_place_id=ChIJ8X1ynKpbwokRTAwqP6EacBc",
   "description": "Vintage clothing, shoes & accessories, including selections from top designers, in hip corner digs.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.599,
+  "carMentions": 2,
+  "reviewsWithText": 48,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJTW2Y265bwokRnDb5jZXdgLs": {
   "placeId": "ChIJTW2Y265bwokRnDb5jZXdgLs",
@@ -2792,7 +4321,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Doughnut%20Plant&query_place_id=ChIJTW2Y265bwokRnDb5jZXdgLs",
   "description": "Outlet for handcrafted donuts in unusual varieties such as crème brûlée & tres leches.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 42,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ89zdA6xbwokRlj9eVF9nYgI": {
   "placeId": "ChIJ89zdA6xbwokRlj9eVF9nYgI",
@@ -2812,7 +4352,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Slope%20Vintage&query_place_id=ChIJ89zdA6xbwokRlj9eVF9nYgI",
   "description": null,
   "price": null,
-  "reviewsScraped": 32
+  "reviewsScraped": 32,
+  "carDependence": 0.04,
+  "carMentions": 0,
+  "reviewsWithText": 25,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJR_hhk_BawokRN4V0ft2szFs": {
   "placeId": "ChIJR_hhk_BawokRN4V0ft2szFs",
@@ -2830,7 +4381,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Stop%20%26%20Shop&query_place_id=ChIJR_hhk_BawokRN4V0ft2szFs",
   "description": "Supermarket chain with house-brand groceries & organics, including deli & bakery counters.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.774,
+  "carMentions": 2,
+  "reviewsWithText": 36,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJG1Un3a5bwokRTeg-7RfnxUs": {
   "placeId": "ChIJG1Un3a5bwokRTeg-7RfnxUs",
@@ -2849,7 +4411,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Bergen%20Bagels&query_place_id=ChIJG1Un3a5bwokRTeg-7RfnxUs",
   "description": "Bagel shop/deli with a long list of flavored cream cheeses plus sandwiches, salads & pastries.",
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.026,
+  "carMentions": 0,
+  "reviewsWithText": 41,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJ6SAsuI5bwokRmGJQ-PYKpGo": {
   "placeId": "ChIJ6SAsuI5bwokRmGJQ-PYKpGo",
@@ -2868,7 +4441,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Midoriya%20Japanese%20Grocery&query_place_id=ChIJ6SAsuI5bwokRmGJQ-PYKpGo",
   "description": null,
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.029,
+  "carMentions": 0,
+  "reviewsWithText": 37,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJbfrpKHlbwokR8xvD60Fx0Sg": {
   "placeId": "ChIJbfrpKHlbwokR8xvD60Fx0Sg",
@@ -2888,7 +4472,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Otway%20Bakery&query_place_id=ChIJbfrpKHlbwokR8xvD60Fx0Sg",
   "description": null,
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.317,
+  "carMentions": 1,
+  "reviewsWithText": 47,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJccT16K5bwokRut4FHSwIELY": {
   "placeId": "ChIJccT16K5bwokRut4FHSwIELY",
@@ -2909,7 +4504,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Kith%20Brooklyn&query_place_id=ChIJccT16K5bwokRut4FHSwIELY",
   "description": "Brooklyn outpost of the hip urban-apparel chain Atrium & streetwise footwear store Kith.",
   "price": null,
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.329,
+  "carMentions": 1,
+  "reviewsWithText": 45,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJP4kB4aNbwokRB0Ah8EkHyTs": {
   "placeId": "ChIJP4kB4aNbwokRB0Ah8EkHyTs",
@@ -2927,7 +4533,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=The%20BAKERY%20on%20Bergen&query_place_id=ChIJP4kB4aNbwokRB0Ah8EkHyTs",
   "description": "Cookies, pies, cupcakes & boozy bundt cakes whipped up in a cozy-chic bakery setting.",
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.021,
+  "carMentions": 0,
+  "reviewsWithText": 51,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJU9PweqZbwokRKNVRvloctiI": {
   "placeId": "ChIJU9PweqZbwokRKNVRvloctiI",
@@ -2946,7 +4563,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Little%20Cupcake%20Bakeshop&query_place_id=ChIJU9PweqZbwokRKNVRvloctiI",
   "description": "Cupcakes, puddings, pies & cakes are made using sustainable ingredients in an eco-friendly space.",
   "price": "$10–20",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.022,
+  "carMentions": 0,
+  "reviewsWithText": 49,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJFyj02-NbwokRNSLdkuCe98A": {
   "placeId": "ChIJFyj02-NbwokRNSLdkuCe98A",
@@ -2969,7 +4597,18 @@
   "url": "https://www.google.com/maps/search/?api=1&query=The%20Good%20Batch%20Bakery&query_place_id=ChIJFyj02-NbwokRNSLdkuCe98A",
   "description": "Cozy bakery known for artisanal ice cream sandwiches, plus cookies, cakes & other sweet treats.",
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.021,
+  "carMentions": 0,
+  "reviewsWithText": 51,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  },
  "ChIJZShmEcRbwokR5l_flWfUIso": {
   "placeId": "ChIJZShmEcRbwokR5l_flWfUIso",
@@ -2992,6 +4631,17 @@
   "url": "https://www.google.com/maps/search/?api=1&query=Mille-Feuille%20Bakery%20Cafe&query_place_id=ChIJZShmEcRbwokR5l_flWfUIso",
   "description": "Small French bakery/cafe offering croissants, macarons, Napoleons, cakes & other treats.",
   "price": "$1–10",
-  "reviewsScraped": 60
+  "reviewsScraped": 60,
+  "carDependence": 0.02,
+  "carMentions": 0,
+  "reviewsWithText": 54,
+  "carDependenceMethod": {
+   "query": "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic.",
+   "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
+   "tau": 0.575,
+   "alpha": 5.0,
+   "prior": 0.0157,
+   "s95": 0.0655
+  }
  }
 }

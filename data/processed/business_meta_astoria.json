@@ -18,7 +18,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -26,8 +26,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJw__rLpVfwokRSkAbb4pQ3Hw": {
@@ -47,7 +47,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -55,8 +55,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJSxVzSgBfwokRRDlBmrfoQEk": {
@@ -76,7 +76,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 3,
-  "carDependence": 0.16,
+  "carDependence": 0.171,
   "carMentions": 0,
   "reviewsWithText": 2,
   "carDependenceMethod": {
@@ -84,8 +84,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJOxneUrlfwokRxlLpcgmUUS8": {
@@ -105,7 +105,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 3,
-  "carDependence": 0.16,
+  "carDependence": 0.171,
   "carMentions": 0,
   "reviewsWithText": 2,
   "carDependenceMethod": {
@@ -113,8 +113,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ90Pty2dfwokR2epHn7EAeuw": {
@@ -134,7 +134,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 44,
   "carDependenceMethod": {
@@ -142,8 +142,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJj3iYukJfwokRHtjVrPqpuRo": {
@@ -165,7 +165,7 @@
   "description": "Homey, neighborhood halal nook offering late hours & traditional Afghan meals to eat in or take out.",
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 0.027,
+  "carDependence": 0.029,
   "carMentions": 0,
   "reviewsWithText": 36,
   "carDependenceMethod": {
@@ -173,8 +173,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJY2ZqBudfwokR09ucBurL94M": {
@@ -194,7 +194,7 @@
   "description": null,
   "price": "$20–30",
   "reviewsScraped": 49,
-  "carDependence": 0.027,
+  "carDependence": 0.029,
   "carMentions": 0,
   "reviewsWithText": 37,
   "carDependenceMethod": {
@@ -202,8 +202,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJE7kgU29fwokR5iqrSYA3aXQ": {
@@ -232,7 +232,7 @@
   "description": null,
   "price": "$20–50",
   "reviewsScraped": 60,
-  "carDependence": 0.027,
+  "carDependence": 0.029,
   "carMentions": 0,
   "reviewsWithText": 37,
   "carDependenceMethod": {
@@ -240,8 +240,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJqyWT6mdfwokRt5uy0_W4QCI": {
@@ -262,7 +262,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -270,8 +270,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ04U5UQBfwokRUZDIGXdJxDI": {
@@ -291,7 +291,7 @@
   "description": "Customized salads, wraps & smoothies are the specialties of this counter-service chain.",
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 50,
   "carDependenceMethod": {
@@ -299,8 +299,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJeaUtoWhfwokRSEYUh2yFQUI": {
@@ -322,7 +322,7 @@
   "description": "A wide variety of pizzas & Italian dishes are available at this local spot for dine-in or takeout.",
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 0.025,
+  "carDependence": 0.027,
   "carMentions": 0,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -330,8 +330,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJJ9vfH2ZfwokRx0GVeSBuXFQ": {
@@ -355,7 +355,7 @@
   "description": "Family-owned Italian eatery for Neapolitan pies from a wood-fired oven plus other handmade fare.",
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 0.024,
+  "carDependence": 0.026,
   "carMentions": 0,
   "reviewsWithText": 42,
   "carDependenceMethod": {
@@ -363,8 +363,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ7bPrS11fwokRe2jDDclRCrY": {
@@ -390,7 +390,7 @@
   "description": "Basic spot featuring a variety of sushi-roll choices, lunch specials & happy-hour beers.",
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 44,
   "carDependenceMethod": {
@@ -398,8 +398,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJQQ2II2ZfwokReJNLw_TcYZk": {
@@ -422,7 +422,7 @@
   "description": "Intimate sushi house plating standard rolls & Japanese classics in a bustling, wood-accented space.",
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 44,
   "carDependenceMethod": {
@@ -430,8 +430,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJM_DDAI9fwokRU8Oh77Ms0-Q": {
@@ -451,7 +451,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -459,8 +459,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJRYbByclfwokRwW2obKCM6Ts": {
@@ -480,7 +480,7 @@
   "description": null,
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.024,
+  "carDependence": 0.026,
   "carMentions": 0,
   "reviewsWithText": 42,
   "carDependenceMethod": {
@@ -488,8 +488,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJcW-eZylfwokR_CexLo-WR04": {
@@ -514,7 +514,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.039,
+  "carDependence": 0.041,
   "carMentions": 0,
   "reviewsWithText": 24,
   "carDependenceMethod": {
@@ -522,8 +522,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ167LTV1fwokR-Y7CfLiKQe0": {
@@ -546,7 +546,7 @@
   "description": "Greek dishes, plus burgers & other casual American fare served in a small cafe with sidewalk tables.",
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.022,
+  "carDependence": 0.023,
   "carMentions": 0,
   "reviewsWithText": 47,
   "carDependenceMethod": {
@@ -554,8 +554,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ0XAgMmZfwokRuSI-VKOVt3A": {
@@ -582,7 +582,7 @@
   "description": "Snug, buzzy Ramen bar with minimalist wooden furniture, also serving sushi & Japanese small plates.",
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 44,
   "carDependenceMethod": {
@@ -590,8 +590,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJPdWj-mdfwokRcnWqbbeK2og": {
@@ -611,7 +611,7 @@
   "description": "Upbeat place with a spacious back patio serving Turkish & Greek dishes and homemade bread.",
   "price": "$20–60",
   "reviewsScraped": 60,
-  "carDependence": 0.03,
+  "carDependence": 0.032,
   "carMentions": 0,
   "reviewsWithText": 32,
   "carDependenceMethod": {
@@ -619,8 +619,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ8UiXM2ZfwokRS7Nvdr-5rT0": {
@@ -646,7 +646,7 @@
   "description": "A chic, modern eatery serving inventive sushi & Japanese dishes, plus lunch specials.",
   "price": "$20–50",
   "reviewsScraped": 60,
-  "carDependence": 0.027,
+  "carDependence": 0.029,
   "carMentions": 0,
   "reviewsWithText": 36,
   "carDependenceMethod": {
@@ -654,8 +654,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJB6pdzv1fwokRWrQeFuiTFIo": {
@@ -675,7 +675,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.021,
   "carMentions": 0,
   "reviewsWithText": 52,
   "carDependenceMethod": {
@@ -683,8 +683,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJO1ClpEJfwokRTACxWUoBp-E": {
@@ -704,7 +704,7 @@
   "description": "White-tablecloth Greek restaurant & bar with many Cypriot recipes & live music on the weekends.",
   "price": "$40–80",
   "reviewsScraped": 60,
-  "carDependence": 0.85,
+  "carDependence": 0.412,
   "carMentions": 1,
   "reviewsWithText": 35,
   "carDependenceMethod": {
@@ -712,8 +712,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJBctIrUhfwokRtpKFzdnLxEo": {
@@ -733,7 +733,7 @@
   "description": null,
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.022,
+  "carDependence": 0.023,
   "carMentions": 0,
   "reviewsWithText": 47,
   "carDependenceMethod": {
@@ -741,8 +741,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJPYfl2jNfwokRKDKs-WP9zVQ": {
@@ -762,7 +762,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.025,
   "carMentions": 0,
   "reviewsWithText": 43,
   "carDependenceMethod": {
@@ -770,8 +770,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJAxwnU2BfwokR3rwo_uhZnx8": {
@@ -793,7 +793,7 @@
   "description": null,
   "price": "$30–40",
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 50,
   "carDependenceMethod": {
@@ -801,8 +801,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJV6G4us9fwokRy4GOF89i6nE": {
@@ -825,7 +825,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.919,
+  "carDependence": 0.445,
   "carMentions": 1,
   "reviewsWithText": 32,
   "carDependenceMethod": {
@@ -833,8 +833,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJYTnXGE9fwokRqNxtP0yGLCc": {
@@ -854,7 +854,7 @@
   "description": null,
   "price": "$20–70",
   "reviewsScraped": 37,
-  "carDependence": 0.036,
+  "carDependence": 0.039,
   "carMentions": 0,
   "reviewsWithText": 26,
   "carDependenceMethod": {
@@ -862,8 +862,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJl8zvTF1fwokRGKyptukvIhE": {
@@ -883,7 +883,7 @@
   "description": "This longtime taverna is a family-friendly spot for hearty Greek staples in a simple setting.",
   "price": "$20–60",
   "reviewsScraped": 60,
-  "carDependence": 0.025,
+  "carDependence": 0.027,
   "carMentions": 0,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -891,8 +891,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJX1Q_jXhfwokRbYciJdt26sY": {
@@ -912,7 +912,7 @@
   "description": null,
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 44,
   "carDependenceMethod": {
@@ -920,8 +920,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJp1s80W9fwokRkwzQUkHrh8w": {
@@ -942,7 +942,7 @@
   "description": null,
   "price": "$30–90",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.025,
   "carMentions": 0,
   "reviewsWithText": 43,
   "carDependenceMethod": {
@@ -950,8 +950,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ77R7-2dfwokRmK3aHJ7pmFs": {
@@ -971,7 +971,7 @@
   "description": "Unassuming counter-serve eatery serving falafel, shawarma pitas & other halal Middle Eastern fare.",
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.022,
+  "carDependence": 0.023,
   "carMentions": 0,
   "reviewsWithText": 47,
   "carDependenceMethod": {
@@ -979,8 +979,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJW_yDWKlfwokRWsO5qIIKTCA": {
@@ -1000,7 +1000,7 @@
   "description": null,
   "price": "$30–60",
   "reviewsScraped": 60,
-  "carDependence": 0.022,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 45,
   "carDependenceMethod": {
@@ -1008,8 +1008,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJd0KMJGZfwokRfQGUhYry4Oc": {
@@ -1036,7 +1036,7 @@
   "description": null,
   "price": "$20–30",
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -1044,8 +1044,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJVxazJGZfwokRGG-Gz3dps7U": {
@@ -1078,8 +1078,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJgYUvaENfwokR-FBQTVX89Zg": {
@@ -1101,7 +1101,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.025,
+  "carDependence": 0.027,
   "carMentions": 0,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -1109,8 +1109,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJWfwJA2hfwokRnc4dKjEYT5A": {
@@ -1130,7 +1130,7 @@
   "description": "Relaxed choice with a marble bar for modern Italian dishes, gourmet brick-oven pies & imported wine.",
   "price": "$30–50",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 44,
   "carDependenceMethod": {
@@ -1138,8 +1138,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ6-II7XBfwokRd8lWUelCr-s": {
@@ -1161,7 +1161,7 @@
   "description": null,
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.024,
+  "carDependence": 0.026,
   "carMentions": 0,
   "reviewsWithText": 42,
   "carDependenceMethod": {
@@ -1169,8 +1169,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJXVZQk2dfwokRydhiOmgmwJk": {
@@ -1196,7 +1196,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 44,
   "carDependenceMethod": {
@@ -1204,8 +1204,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJC83PPWhfwokRGqRjY-HJiKQ": {
@@ -1225,7 +1225,7 @@
   "description": "Beer, wine & cocktails served in an old-school pub with sports on TV, live music & trivia nights.",
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.029,
+  "carDependence": 0.031,
   "carMentions": 0,
   "reviewsWithText": 34,
   "carDependenceMethod": {
@@ -1233,8 +1233,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJV7r8VhVfwokRSbQvlR5GXw4": {
@@ -1254,7 +1254,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 32,
-  "carDependence": 0.037,
+  "carDependence": 0.04,
   "carMentions": 0,
   "reviewsWithText": 25,
   "carDependenceMethod": {
@@ -1262,8 +1262,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJKSgcVV1fwokRZsrIa2XnIKM": {
@@ -1285,7 +1285,7 @@
   "description": "Sports bar with 40+ TVs offering elevated pub grub, a solid beer selection & weekend breakfast.",
   "price": "$10–50",
   "reviewsScraped": 60,
-  "carDependence": 0.667,
+  "carDependence": 0.323,
   "carMentions": 1,
   "reviewsWithText": 46,
   "carDependenceMethod": {
@@ -1293,8 +1293,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJcXm7DOFfwokRp1TmbCmRgmQ": {
@@ -1315,7 +1315,7 @@
   "description": null,
   "price": "$10–50",
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.021,
   "carMentions": 0,
   "reviewsWithText": 51,
   "carDependenceMethod": {
@@ -1323,8 +1323,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ_fnoqUJfwokRDjGS70uHa_o": {
@@ -1348,7 +1348,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.025,
+  "carDependence": 0.027,
   "carMentions": 0,
   "reviewsWithText": 40,
   "carDependenceMethod": {
@@ -1356,8 +1356,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ0-b5H2ZfwokRtFGurZEYQpw": {
@@ -1379,7 +1379,7 @@
   "description": "Seasonal New American comfort fare, craft beer & cocktails are served in a hip, wood-paneled space.",
   "price": "$20–60",
   "reviewsScraped": 60,
-  "carDependence": 0.024,
+  "carDependence": 0.026,
   "carMentions": 0,
   "reviewsWithText": 41,
   "carDependenceMethod": {
@@ -1387,8 +1387,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJx3LGoQ1fwokRSOa7wh4zXp0": {
@@ -1410,7 +1410,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -1418,8 +1418,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ90pvtWdfwokRw86tuNLCG7g": {
@@ -1440,7 +1440,7 @@
   "description": "Lively eatery specializing in fresh Greek seafood & sides that doesn't take reservations.",
   "price": "$30–70",
   "reviewsScraped": 60,
-  "carDependence": 0.033,
+  "carDependence": 0.035,
   "carMentions": 0,
   "reviewsWithText": 29,
   "carDependenceMethod": {
@@ -1448,8 +1448,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJl_wjyWdfwokRf_bKcACVHS4": {
@@ -1472,7 +1472,7 @@
   "description": "This formerly hidden speakeasy-style bar serves refined cocktails & snacks.",
   "price": "$20–60",
   "reviewsScraped": 60,
-  "carDependence": 0.773,
+  "carDependence": 0.374,
   "carMentions": 1,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -1480,8 +1480,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJS5UFORVfwokRKG9pzggm8Cg": {
@@ -1502,7 +1502,7 @@
   "description": null,
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 0.027,
+  "carDependence": 0.029,
   "carMentions": 0,
   "reviewsWithText": 37,
   "carDependenceMethod": {
@@ -1510,8 +1510,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJKY2wj85fwokRwZU2TtdLA10": {
@@ -1531,7 +1531,7 @@
   "description": null,
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.68,
+  "carDependence": 0.329,
   "carMentions": 1,
   "reviewsWithText": 45,
   "carDependenceMethod": {
@@ -1539,8 +1539,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJh9_0AmhfwokRnt4e6aYwMwk": {
@@ -1560,7 +1560,7 @@
   "description": "Informal dinner destination for hearty Czech & Slovak fare plus imported & domestic beers.",
   "price": "$30–40",
   "reviewsScraped": 60,
-  "carDependence": 0.024,
+  "carDependence": 0.026,
   "carMentions": 0,
   "reviewsWithText": 41,
   "carDependenceMethod": {
@@ -1568,8 +1568,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJdftOj2BfwokRpQT6Ikrhh0w": {
@@ -1589,7 +1589,7 @@
   "description": null,
   "price": "$30–40",
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.021,
   "carMentions": 0,
   "reviewsWithText": 52,
   "carDependenceMethod": {
@@ -1597,8 +1597,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJDw8NW29fwokR8ScUOttjQkc": {
@@ -1623,7 +1623,7 @@
   "description": "This peaceful Greek establishment is part bakery, part restaurant & boasts a quiet garden ambiance.",
   "price": "$10–40",
   "reviewsScraped": 60,
-  "carDependence": 0.025,
+  "carDependence": 0.027,
   "carMentions": 0,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -1631,8 +1631,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJP4jmPGhfwokR6NzPhqksmhY": {
@@ -1653,7 +1653,7 @@
   "description": "No-frills, old-fashioned counter known for oversized Italian-style subs, plus basic groceries.",
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 1.0,
+  "carDependence": 0.814,
   "carMentions": 2,
   "reviewsWithText": 34,
   "carDependenceMethod": {
@@ -1661,8 +1661,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJh4Q1SwBfwokRMTmii-j7Ng4": {
@@ -1682,7 +1682,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.027,
+  "carDependence": 0.029,
   "carMentions": 0,
   "reviewsWithText": 37,
   "carDependenceMethod": {
@@ -1690,8 +1690,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJufkQ_9pfwokRe8KcMNHEBLI": {
@@ -1712,7 +1712,7 @@
   "description": null,
   "price": "$20–80",
   "reviewsScraped": 60,
-  "carDependence": 0.022,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 46,
   "carDependenceMethod": {
@@ -1720,8 +1720,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJPyRWaWlfwokRXlsdIftmPhI": {
@@ -1750,7 +1750,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -1758,8 +1758,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJS0-CIGZfwokRgs6ADyiQEKE": {
@@ -1780,7 +1780,7 @@
   "description": "Spacious cafe featuring New American fare, coffee drinks & Wi-Fi in rustic-chic surrounds.",
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 0.024,
+  "carDependence": 0.026,
   "carMentions": 0,
   "reviewsWithText": 41,
   "carDependenceMethod": {
@@ -1788,8 +1788,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ4eHcyVRfwokR3qnGgK2uQcQ": {
@@ -1809,7 +1809,7 @@
   "description": null,
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.025,
   "carMentions": 0,
   "reviewsWithText": 43,
   "carDependenceMethod": {
@@ -1817,8 +1817,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ_RMMzGdfwokR-KVKO2LFcgI": {
@@ -1839,7 +1839,7 @@
   "description": "Quirky, warm coffee shop serving organic brews in diverse flavors, plus locally sourced baked goods.",
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.654,
+  "carDependence": 0.317,
   "carMentions": 1,
   "reviewsWithText": 47,
   "carDependenceMethod": {
@@ -1847,8 +1847,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ1f8aVABfwokRf_xKf0uyGi8": {
@@ -1868,7 +1868,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.024,
+  "carDependence": 0.026,
   "carMentions": 0,
   "reviewsWithText": 41,
   "carDependenceMethod": {
@@ -1876,8 +1876,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJm-kttGdfwokRyRckL53xxrI": {
@@ -1897,7 +1897,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -1905,8 +1905,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJP1D_QABfwokR0yhaAfmMD6U": {
@@ -1926,7 +1926,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -1934,8 +1934,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJm-kttGdfwokRLqC1cXojKTI": {
@@ -1955,7 +1955,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 30,
-  "carDependence": 0.047,
+  "carDependence": 0.05,
   "carMentions": 0,
   "reviewsWithText": 19,
   "carDependenceMethod": {
@@ -1963,8 +1963,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJi2xH-2dfwokR_O-_18jvmp4": {
@@ -1990,7 +1990,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 37,
-  "carDependence": 1.0,
+  "carDependence": 0.515,
   "carMentions": 1,
   "reviewsWithText": 27,
   "carDependenceMethod": {
@@ -1998,8 +1998,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJmYSTfgZfwokR2gIjQMOaqco": {
@@ -2020,7 +2020,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 20,
-  "carDependence": 0.049,
+  "carDependence": 0.052,
   "carMentions": 0,
   "reviewsWithText": 18,
   "carDependenceMethod": {
@@ -2028,8 +2028,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJFRtQdqxfwokRoG4C6NccDLE": {
@@ -2049,7 +2049,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 11,
-  "carDependence": 0.102,
+  "carDependence": 0.109,
   "carMentions": 0,
   "reviewsWithText": 6,
   "carDependenceMethod": {
@@ -2057,8 +2057,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJDdGoH2ZfwokRxtaOjm9BSSA": {
@@ -2078,7 +2078,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -2086,8 +2086,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJUXr1pWhfwokRY2NdF23aJqM": {
@@ -2107,7 +2107,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 23,
-  "carDependence": 0.045,
+  "carDependence": 0.048,
   "carMentions": 0,
   "reviewsWithText": 20,
   "carDependenceMethod": {
@@ -2115,8 +2115,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJwXVPxjtfwokRaqeWYQLTwRw": {
@@ -2137,7 +2137,7 @@
   "description": "Straightforward smoke shop featuring vaporizers, equipment & eclectic juice flavors.",
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.027,
+  "carDependence": 0.029,
   "carMentions": 0,
   "reviewsWithText": 36,
   "carDependenceMethod": {
@@ -2145,8 +2145,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJCxfOx2dfwokREEI3HOHqy9g": {
@@ -2166,7 +2166,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.025,
+  "carDependence": 0.027,
   "carMentions": 0,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -2174,8 +2174,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJkSxfNBdfwokR3STYzBB_rEs": {
@@ -2195,7 +2195,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 12,
-  "carDependence": 0.086,
+  "carDependence": 0.092,
   "carMentions": 0,
   "reviewsWithText": 8,
   "carDependenceMethod": {
@@ -2203,8 +2203,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ9yevVElfwokRwaKRzFXhTQc": {
@@ -2225,7 +2225,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 15,
-  "carDependence": 0.062,
+  "carDependence": 0.067,
   "carMentions": 0,
   "reviewsWithText": 13,
   "carDependenceMethod": {
@@ -2233,8 +2233,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJJUl7fBRfwokRa9gakjE4ELk": {
@@ -2254,7 +2254,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -2262,8 +2262,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ5RTDFgtfwokR9SCoYeiwBWE": {
@@ -2285,7 +2285,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.021,
   "carMentions": 0,
   "reviewsWithText": 51,
   "carDependenceMethod": {
@@ -2293,8 +2293,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ45zTzQNfwokRSGqNnTMnNz4": {
@@ -2316,7 +2316,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 50,
   "carDependenceMethod": {
@@ -2324,8 +2324,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJsWzLPKlfwokRTJvLZBkLQoA": {
@@ -2345,7 +2345,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 28,
-  "carDependence": 0.04,
+  "carDependence": 0.043,
   "carMentions": 0,
   "reviewsWithText": 23,
   "carDependenceMethod": {
@@ -2353,8 +2353,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJKSe1RidfwokRMB0deglbybY": {
@@ -2374,7 +2374,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 50,
   "carDependenceMethod": {
@@ -2382,8 +2382,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJc4xor2hfwokR9yC1KMFU-i4": {
@@ -2403,7 +2403,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 2,
-  "carDependence": 0.187,
+  "carDependence": 0.2,
   "carMentions": 0,
   "reviewsWithText": 1,
   "carDependenceMethod": {
@@ -2411,8 +2411,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJKVsA_GdfwokR3e3TzVzpW8M": {
@@ -2432,7 +2432,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.026,
+  "carDependence": 0.028,
   "carMentions": 0,
   "reviewsWithText": 38,
   "carDependenceMethod": {
@@ -2440,8 +2440,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJKS90R29fwokRZ4CIupNVtm0": {
@@ -2461,7 +2461,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -2469,8 +2469,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJUd90tWdfwokRhopMHbg07Uc": {
@@ -2490,7 +2490,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.025,
+  "carDependence": 0.027,
   "carMentions": 0,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -2498,8 +2498,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJszME9jZfwokRuQDc7_VnYkg": {
@@ -2519,7 +2519,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.028,
+  "carDependence": 0.03,
   "carMentions": 0,
   "reviewsWithText": 35,
   "carDependenceMethod": {
@@ -2527,8 +2527,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ5cLXqUJfwokRAkirl9ksPS0": {
@@ -2549,7 +2549,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.028,
+  "carDependence": 0.03,
   "carMentions": 0,
   "reviewsWithText": 35,
   "carDependenceMethod": {
@@ -2557,8 +2557,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJmZ-ZAIlfwokRk14SefBQKYI": {
@@ -2578,7 +2578,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 56,
-  "carDependence": 0.022,
+  "carDependence": 0.023,
   "carMentions": 0,
   "reviewsWithText": 47,
   "carDependenceMethod": {
@@ -2586,8 +2586,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJlUESxw9fwokRW3rWWZCyW8E": {
@@ -2607,7 +2607,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 55,
-  "carDependence": 0.019,
+  "carDependence": 0.02,
   "carMentions": 0,
   "reviewsWithText": 54,
   "carDependenceMethod": {
@@ -2615,8 +2615,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJaWkxHmZfwokRRhxF9Knibu0": {
@@ -2647,8 +2647,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJR3CD9URfwokR-TRtNnCLs0o": {
@@ -2673,7 +2673,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -2681,8 +2681,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJz9ZWVvdfwokR0kdas1qoMLo": {
@@ -2703,7 +2703,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.022,
+  "carDependence": 0.023,
   "carMentions": 0,
   "reviewsWithText": 47,
   "carDependenceMethod": {
@@ -2711,8 +2711,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJMxj9pWhfwokRKlbsOVo17dg": {
@@ -2732,7 +2732,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.773,
+  "carDependence": 0.374,
   "carMentions": 1,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -2740,8 +2740,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ31e4HWZfwokRrPnUTApPS8w": {
@@ -2761,7 +2761,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.022,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 46,
   "carDependenceMethod": {
@@ -2769,8 +2769,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ-bf58GdfwokRcPzrCVdV12Q": {
@@ -2790,7 +2790,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.024,
+  "carDependence": 0.026,
   "carMentions": 0,
   "reviewsWithText": 42,
   "carDependenceMethod": {
@@ -2798,8 +2798,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ0x1uSW9fwokRfd7pbX9P7Sk": {
@@ -2822,7 +2822,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 47,
-  "carDependence": 0.03,
+  "carDependence": 0.032,
   "carMentions": 0,
   "reviewsWithText": 32,
   "carDependenceMethod": {
@@ -2830,8 +2830,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJm-kttGdfwokRiay5hdsg04Y": {
@@ -2851,7 +2851,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 4,
-  "carDependence": 0.187,
+  "carDependence": 0.2,
   "carMentions": 0,
   "reviewsWithText": 1,
   "carDependenceMethod": {
@@ -2859,8 +2859,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJiYhOAhVfwokRcstnlsMj_qw": {
@@ -2882,7 +2882,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -2890,8 +2890,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJeeWKx2dfwokRNipMgqsjFYU": {
@@ -2912,7 +2912,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 50,
   "carDependenceMethod": {
@@ -2920,8 +2920,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJR1A7JGZfwokRov2vyZxM15c": {
@@ -2941,7 +2941,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.63,
+  "carDependence": 0.305,
   "carMentions": 1,
   "reviewsWithText": 49,
   "carDependenceMethod": {
@@ -2949,8 +2949,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJkadnmWdfwokR7vWXqBMoaQ4": {
@@ -2970,7 +2970,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.576,
+  "carDependence": 0.279,
   "carMentions": 1,
   "reviewsWithText": 54,
   "carDependenceMethod": {
@@ -2978,8 +2978,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ7TduMV1fwokRXjrZNftcGbA": {
@@ -3000,7 +3000,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.723,
+  "carDependence": 0.35,
   "carMentions": 1,
   "reviewsWithText": 42,
   "carDependenceMethod": {
@@ -3008,8 +3008,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJKQHMPMJfwokR6WIUxiCK0ng": {
@@ -3035,7 +3035,7 @@
   "description": "Long-running chain serving signature breakfast items & a variety of coffee drinks.",
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.037,
+  "carDependence": 0.04,
   "carMentions": 0,
   "reviewsWithText": 25,
   "carDependenceMethod": {
@@ -3043,8 +3043,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJYwBKuGdfwokRpmQs7DGg-7M": {
@@ -3070,7 +3070,7 @@
   "description": "Long-running chain serving signature breakfast items & a variety of coffee drinks.",
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.025,
   "carMentions": 0,
   "reviewsWithText": 43,
   "carDependenceMethod": {
@@ -3078,8 +3078,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJtx3cT_FfwokR7XuiUqk1thk": {
@@ -3099,7 +3099,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -3107,8 +3107,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ3a5jLmZfwokRXwbsl6_-eR8": {
@@ -3131,7 +3131,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.027,
+  "carDependence": 0.029,
   "carMentions": 0,
   "reviewsWithText": 36,
   "carDependenceMethod": {
@@ -3139,8 +3139,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ5QPvazJfwokRTHc2C-RxoI0": {
@@ -3161,7 +3161,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.022,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 46,
   "carDependenceMethod": {
@@ -3169,8 +3169,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJMzLfyGdfwokRR0x9vxlzZbk": {
@@ -3191,7 +3191,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.026,
+  "carDependence": 0.028,
   "carMentions": 0,
   "reviewsWithText": 38,
   "carDependenceMethod": {
@@ -3199,8 +3199,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJn1zl_GdfwokRxlwPaL3g81o": {
@@ -3220,7 +3220,7 @@
   "description": null,
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.019,
+  "carDependence": 0.02,
   "carMentions": 0,
   "reviewsWithText": 54,
   "carDependenceMethod": {
@@ -3228,8 +3228,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJe0HPI2ZfwokR6lph0iPZIyE": {
@@ -3257,7 +3257,7 @@
   "description": "Mediterranean fare such as kebabs, pizza & salads served in bright, modern digs with outdoor tables.",
   "price": "$50–100",
   "reviewsScraped": 60,
-  "carDependence": 0.607,
+  "carDependence": 0.294,
   "carMentions": 1,
   "reviewsWithText": 51,
   "carDependenceMethod": {
@@ -3265,8 +3265,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJn1zl_GdfwokReB0CyxuT3mU": {
@@ -3286,7 +3286,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.036,
+  "carDependence": 0.039,
   "carMentions": 0,
   "reviewsWithText": 26,
   "carDependenceMethod": {
@@ -3294,8 +3294,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJowFop2hfwokROgVQ1b2LL2I": {
@@ -3315,7 +3315,7 @@
   "description": "Bakeshop with a warm vibe serving old-fashioned cakes & pastries, plus gelato & an espresso bar.",
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.031,
+  "carDependence": 0.033,
   "carMentions": 0,
   "reviewsWithText": 31,
   "carDependenceMethod": {
@@ -3323,8 +3323,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ7Qla8GdfwokRVKH8M7IaRwk": {
@@ -3344,7 +3344,7 @@
   "description": "Classic Italian bakery with a selection of specialty breads & pastries, plus a back pizza counter.",
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.021,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 49,
   "carDependenceMethod": {
@@ -3352,8 +3352,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ2eMc_2dfwokRLMM5Hr-Oils": {
@@ -3373,7 +3373,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 8,
-  "carDependence": 0.124,
+  "carDependence": 0.133,
   "carMentions": 0,
   "reviewsWithText": 4,
   "carDependenceMethod": {
@@ -3381,8 +3381,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ16NP1aVfwokRs1hW7S0zAMw": {
@@ -3406,7 +3406,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.021,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 49,
   "carDependenceMethod": {
@@ -3414,8 +3414,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJg5yPFftfwokR16X5gUOwYVg": {
@@ -3435,7 +3435,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -3443,8 +3443,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJY0y2H3FfwokRhyVA4pKOxtQ": {
@@ -3464,7 +3464,7 @@
   "description": null,
   "price": "$100+",
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 50,
   "carDependenceMethod": {
@@ -3472,8 +3472,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ47cR8GdfwokRhpKglvQudKw": {
@@ -3496,7 +3496,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 16,
-  "carDependence": 0.07,
+  "carDependence": 0.075,
   "carMentions": 0,
   "reviewsWithText": 11,
   "carDependenceMethod": {
@@ -3504,8 +3504,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJM1Xz_mdfwokR8h7WmVgp4bw": {
@@ -3526,7 +3526,7 @@
   "description": "Homey Italian deli offering sandwiches, pizzas, pre-made goods & gourmet grocery items.",
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.022,
+  "carDependence": 0.024,
   "carMentions": 0,
   "reviewsWithText": 45,
   "carDependenceMethod": {
@@ -3534,8 +3534,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJARH9ImZfwokR4d-0EDgdhP4": {
@@ -3555,7 +3555,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 10,
-  "carDependence": 0.102,
+  "carDependence": 0.109,
   "carMentions": 0,
   "reviewsWithText": 6,
   "carDependenceMethod": {
@@ -3563,8 +3563,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJAZYmvEJfwokRwsOBXg6IYBQ": {
@@ -3586,7 +3586,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 1.0,
+  "carDependence": 0.835,
   "carMentions": 2,
   "reviewsWithText": 33,
   "carDependenceMethod": {
@@ -3594,8 +3594,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJAZYmvEJfwokRdS63p-J_3X0": {
@@ -3624,8 +3624,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJQQE-FgBfwokRV4KY6qQcR8c": {
@@ -3645,7 +3645,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 1,
-  "carDependence": 0.187,
+  "carDependence": 0.2,
   "carMentions": 0,
   "reviewsWithText": 1,
   "carDependenceMethod": {
@@ -3653,8 +3653,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJW3nKuWdfwokR58zQeKJ-LU4": {
@@ -3675,7 +3675,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.026,
+  "carDependence": 0.028,
   "carMentions": 0,
   "reviewsWithText": 38,
   "carDependenceMethod": {
@@ -3683,8 +3683,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJY7q_hRxfwokRlE6ARPwOenM": {
@@ -3713,7 +3713,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.027,
+  "carDependence": 0.029,
   "carMentions": 0,
   "reviewsWithText": 36,
   "carDependenceMethod": {
@@ -3721,8 +3721,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJF5YiAQBfwokRBmZDMfgwxeU": {
@@ -3742,7 +3742,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 44,
-  "carDependence": 0.033,
+  "carDependence": 0.035,
   "carMentions": 0,
   "reviewsWithText": 29,
   "carDependenceMethod": {
@@ -3750,8 +3750,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJfRx-_mdfwokRLqkcmKgT1FE": {
@@ -3771,7 +3771,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 2,
-  "carDependence": 0.16,
+  "carDependence": 0.171,
   "carMentions": 0,
   "reviewsWithText": 2,
   "carDependenceMethod": {
@@ -3779,8 +3779,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJz_sAAmhfwokRM7x5P352UAM": {
@@ -3803,7 +3803,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.756,
+  "carDependence": 0.366,
   "carMentions": 1,
   "reviewsWithText": 40,
   "carDependenceMethod": {
@@ -3811,8 +3811,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJQVWTUm9fwokRfSjsiqsYotA": {
@@ -3832,7 +3832,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 4,
-  "carDependence": 0.16,
+  "carDependence": 0.171,
   "carMentions": 0,
   "reviewsWithText": 2,
   "carDependenceMethod": {
@@ -3840,8 +3840,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJqX9nHE5fwokR5Ptguu1OYSA": {
@@ -3861,7 +3861,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 25,
-  "carDependence": 0.043,
+  "carDependence": 0.046,
   "carMentions": 0,
   "reviewsWithText": 21,
   "carDependenceMethod": {
@@ -3869,8 +3869,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJv_b5d0dfwokRgg5CjD7dX58": {
@@ -3890,7 +3890,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 9,
-  "carDependence": 0.124,
+  "carDependence": 0.133,
   "carMentions": 0,
   "reviewsWithText": 4,
   "carDependenceMethod": {
@@ -3898,8 +3898,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ5zSs_mdfwokReKFvC6twfIU": {
@@ -3919,7 +3919,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -3927,8 +3927,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJmz2z9MxfwokRzX2GlZzm9j8": {
@@ -3952,7 +3952,7 @@
   "description": "Teen-oriented retail chain for a large assortment of games, snacks, jewelry, room decor & more.",
   "price": null,
   "reviewsScraped": 58,
-  "carDependence": 1.0,
+  "carDependence": 0.738,
   "carMentions": 2,
   "reviewsWithText": 38,
   "carDependenceMethod": {
@@ -3960,8 +3960,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJDVPT7mdfwokR7v23MnE_rpA": {
@@ -3985,7 +3985,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.723,
+  "carDependence": 0.35,
   "carMentions": 1,
   "reviewsWithText": 42,
   "carDependenceMethod": {
@@ -3993,8 +3993,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJQXqzKltfwokRWIWZ6KoUEUY": {
@@ -4015,7 +4015,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.018,
+  "carDependence": 0.019,
   "carMentions": 0,
   "reviewsWithText": 57,
   "carDependenceMethod": {
@@ -4023,8 +4023,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJsX9f4WJfwokRSppEvaKzyck": {
@@ -4051,7 +4051,7 @@
   "description": "Retail chain featuring stylish brand-name apparel, shoes & accessories, plus housewares.",
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.029,
+  "carDependence": 0.032,
   "carMentions": 0,
   "reviewsWithText": 33,
   "carDependenceMethod": {
@@ -4059,8 +4059,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJE_MAsd9fwokR-tWj500Eu_A": {
@@ -4081,7 +4081,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.596,
+  "carDependence": 0.289,
   "carMentions": 1,
   "reviewsWithText": 52,
   "carDependenceMethod": {
@@ -4089,8 +4089,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJYRow8GdfwokRG6YYXlDUeeg": {
@@ -4113,7 +4113,7 @@
   "description": "Pit stop for snacks, drinks & daily essentials",
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.025,
+  "carDependence": 0.027,
   "carMentions": 0,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -4121,8 +4121,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJr1ypv2dfwokR8H4iXgAdJ9I": {
@@ -4151,7 +4151,7 @@
   "description": "Drugstore chain selling a variety of beauty & health products, plus some grocery & household items.",
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.81,
+  "carDependence": 0.392,
   "carMentions": 1,
   "reviewsWithText": 37,
   "carDependenceMethod": {
@@ -4159,8 +4159,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJW-gTcglfwokRYssvJbr5Xlw": {
@@ -4180,7 +4180,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 4,
-  "carDependence": 0.16,
+  "carDependence": 0.171,
   "carMentions": 0,
   "reviewsWithText": 2,
   "carDependenceMethod": {
@@ -4188,8 +4188,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJFbL8vGxfwokRYuEz1TczM6o": {
@@ -4210,7 +4210,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.021,
   "carMentions": 0,
   "reviewsWithText": 51,
   "carDependenceMethod": {
@@ -4218,8 +4218,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJJxzGL11fwokRThYOU25eh5M": {
@@ -4239,7 +4239,7 @@
   "description": "Chill, vintage-style haunt with craft cocktails & local draft beer, plus weekly live music & DJs.",
   "price": "$10–30",
   "reviewsScraped": 60,
-  "carDependence": 0.025,
+  "carDependence": 0.027,
   "carMentions": 0,
   "reviewsWithText": 39,
   "carDependenceMethod": {
@@ -4247,8 +4247,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJec7_qGhfwokRDEQdaGVFXnM": {
@@ -4268,7 +4268,7 @@
   "description": "Multiethnic market with global produce, imported international foods & a full-service butcher.",
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 1.0,
+  "carDependence": 0.881,
   "carMentions": 2,
   "reviewsWithText": 31,
   "carDependenceMethod": {
@@ -4276,8 +4276,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ_Q-OWwBfwokRN8MuipVPvB4": {
@@ -4297,7 +4297,7 @@
   "description": "Retail chain offering home goods, clothing, electronics & more, plus exclusive designer collections.",
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 1.0,
+  "carDependence": 0.484,
   "carMentions": 1,
   "reviewsWithText": 29,
   "carDependenceMethod": {
@@ -4305,8 +4305,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ-yIwmydZwokRSShu-ZQtAQI": {
@@ -4334,7 +4334,7 @@
   "description": null,
   "price": null,
   "reviewsScraped": 0,
-  "carDependence": 0.224,
+  "carDependence": 0.24,
   "carMentions": 0,
   "reviewsWithText": 0,
   "carDependenceMethod": {
@@ -4342,8 +4342,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ72J3O2ZfwokRKcyw_siw980": {
@@ -4363,7 +4363,7 @@
   "description": "Snug pub pairing craft beer & cocktails with innovative bar bites, plus DJ nights & Sunday brunch.",
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 0.023,
+  "carDependence": 0.025,
   "carMentions": 0,
   "reviewsWithText": 43,
   "carDependenceMethod": {
@@ -4371,8 +4371,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJIXxptEJfwokRRzu3bQietPo": {
@@ -4397,7 +4397,7 @@
   "description": "Cozy brick-and-wood gastropub with cocktails & upscale pub fare.",
   "price": "$20–50",
   "reviewsScraped": 60,
-  "carDependence": 0.028,
+  "carDependence": 0.03,
   "carMentions": 0,
   "reviewsWithText": 35,
   "carDependenceMethod": {
@@ -4405,8 +4405,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJw0X1NwBfwokRtRNW7IXGNs8": {
@@ -4426,7 +4426,7 @@
   "description": null,
   "price": "$20–30",
   "reviewsScraped": 24,
-  "carDependence": 0.047,
+  "carDependence": 0.05,
   "carMentions": 0,
   "reviewsWithText": 19,
   "carDependenceMethod": {
@@ -4434,8 +4434,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJN4XOxR9fwokRwc1yIqFQdT8": {
@@ -4455,7 +4455,7 @@
   "description": null,
   "price": "$50–100",
   "reviewsScraped": 29,
-  "carDependence": 0.066,
+  "carDependence": 0.071,
   "carMentions": 0,
   "reviewsWithText": 12,
   "carDependenceMethod": {
@@ -4463,8 +4463,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJD3M6vulfwokRifiOZEpEiUk": {
@@ -4488,7 +4488,7 @@
   "description": null,
   "price": "$10–20",
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 50,
   "carDependenceMethod": {
@@ -4496,8 +4496,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJOwvHmGdfwokRrieDCqwqul8": {
@@ -4524,7 +4524,7 @@
   "description": "Long-running family-owned pastry shop crafting an array of Italian treats, cakes & baked goods.",
   "price": null,
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 50,
   "carDependenceMethod": {
@@ -4532,8 +4532,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJd-j0lSJfwokRminRxrf1YeI": {
@@ -4554,7 +4554,7 @@
   "description": null,
   "price": "$1–10",
   "reviewsScraped": 60,
-  "carDependence": 0.021,
+  "carDependence": 0.023,
   "carMentions": 0,
   "reviewsWithText": 48,
   "carDependenceMethod": {
@@ -4562,8 +4562,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  },
  "ChIJ_dOjmQZfwokR5e4P-7RVujI": {
@@ -4583,7 +4583,7 @@
   "description": null,
   "price": "$20–30",
   "reviewsScraped": 60,
-  "carDependence": 0.02,
+  "carDependence": 0.022,
   "carMentions": 0,
   "reviewsWithText": 50,
   "carDependenceMethod": {
@@ -4591,8 +4591,8 @@
    "terms": "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento",
    "tau": 0.575,
    "alpha": 5.0,
-   "prior": 0.00681,
-   "s95": 0.03041
+   "prior": 0.0157,
+   "s95": 0.0655
   }
  }
 }

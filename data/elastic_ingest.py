@@ -18,6 +18,7 @@ data/processed/business_meta_<area>.json, data/processed/reviews_<area>.json.
 import argparse
 import json
 import sys
+import time
 from pathlib import Path
 
 from elasticsearch import helpers
@@ -129,9 +130,24 @@ def review_docs(area: str):
         }
 
 
-def bulk(client, docs, batch):
-    ok, errors = helpers.bulk(client.options(request_timeout=300), docs, chunk_size=batch, raise_on_error=False)
-    return ok, errors
+def bulk(client, docs, batch, tries=10):
+    """Bulk with retry: on the free Serverless trial Jina returns 429 (quota refills within seconds), so
+    docs rejected with 429 are re-sent after a pause instead of being dropped."""
+    docs = list(docs)
+    by_id = {d["_id"]: d for d in docs}
+    total_ok, pending = 0, docs
+    for i in range(tries):
+        ok, errors = helpers.bulk(client.options(request_timeout=300), pending, chunk_size=batch,
+                                  raise_on_error=False)
+        total_ok += ok
+        retry = [by_id[e["index"]["_id"]] for e in errors if e.get("index", {}).get("status") == 429]
+        hard = [e for e in errors if e.get("index", {}).get("status") != 429]
+        if hard or not retry:
+            return total_ok, hard + [{"index": {"_id": d["_id"], "status": 429}} for d in retry]
+        print(f"    {len(retry)} docs rate-limited (429), retrying in {15 * (i + 1)}s")
+        time.sleep(15 * (i + 1))
+        pending = retry
+    return total_ok, [{"index": {"_id": d["_id"], "status": 429}} for d in pending]
 
 
 def main():
@@ -140,6 +156,7 @@ def main():
     p.add_argument("--recreate", action="store_true")
     p.add_argument("--batch", type=int, default=50)
     p.add_argument("--businesses-only", action="store_true")
+    p.add_argument("--missing-only", action="store_true", help="only send reviews not yet in the index")
     a = p.parse_args()
     client = es()
     create_indexes(client, a.recreate)
@@ -149,7 +166,13 @@ def main():
         print(f"  {area}: businesses indexed {ok}" + (f" ({len(err)} errors: {err[0]})" if err else ""))
         if a.businesses_only:
             continue
-        ok, err = bulk(client, review_docs(area), a.batch)
+        docs = review_docs(area)
+        if a.missing_only:  # don't re-embed reviews that are already indexed (saves Jina quota)
+            have = {h["_id"] for h in helpers.scan(client, index=REVIEWS, query={"query": {"term": {"area": area}}},
+                                                   _source=False)}
+            docs = [d for d in docs if d["_id"] not in have]
+            print(f"  {area}: {len(have)} reviews already indexed, sending {len(docs)}")
+        ok, err = bulk(client, docs, a.batch)
         print(f"  {area}: reviews indexed {ok}" + (f" ({len(err)} errors: {err[0]})" if err else ""))
     client.indices.refresh(index=f"{BUSINESSES},{REVIEWS}")
     print(f"Done. {client.count(index=BUSINESSES)['count']} businesses, "

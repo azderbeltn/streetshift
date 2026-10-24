@@ -98,8 +98,14 @@ def find_corridor(G, street: str, cross_a: str, cross_b: str) -> list[tuple[int,
 def build_area(area: str) -> dict:
     cfg = AREAS[area]
     lat, lng = cfg["center"]
-    G = ox.graph_from_point((lat, lng), dist=cfg["radius_m"], network_type="drive", simplify=True)
-    G = ox.add_edge_speeds(G)
+    if cfg.get("include_pedestrian"):
+        from osmnx import _overpass
+        flt = [_overpass._get_network_filter("drive"), '["highway"~"^(pedestrian|living_street)$"]["area"!~"yes"]']
+        G = ox.graph_from_point((lat, lng), dist=cfg["radius_m"], custom_filter=flt, simplify=True)
+        G = ox.add_edge_speeds(G, hwy_speeds={"pedestrian": 5, "living_street": 8})
+    else:
+        G = ox.graph_from_point((lat, lng), dist=cfg["radius_m"], network_type="drive", simplify=True)
+        G = ox.add_edge_speeds(G)
     G = ox.add_edge_travel_times(G)
     W = ox.graph_from_point((lat, lng), dist=WALK_RADIUS_M, network_type="walk", simplify=True)
 

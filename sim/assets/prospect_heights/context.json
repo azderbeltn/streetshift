@@ -1,0 +1,1173 @@
+{
+ "area": "prospect_heights",
+ "census": {
+  "source": "ACS 2024 5-year (B01003_001E, B11001_001E); TIGERweb ACS2024 block groups",
+  "radiusM": 1500,
+  "blockGroups": [
+   {
+    "geoid": "360470213002",
+    "population": 2345,
+    "households": 1082,
+    "shareInCircle": 0.458
+   },
+   {
+    "geoid": "360470167001",
+    "population": 1063,
+    "households": 412,
+    "shareInCircle": 0.637
+   },
+   {
+    "geoid": "360470165004",
+    "population": 1494,
+    "households": 571,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470177001",
+    "population": 0,
+    "households": 0,
+    "shareInCircle": 0.258
+   },
+   {
+    "geoid": "360470153001",
+    "population": 69,
+    "households": 0,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470153002",
+    "population": 838,
+    "households": 345,
+    "shareInCircle": 0.374
+   },
+   {
+    "geoid": "360470153003",
+    "population": 1016,
+    "households": 499,
+    "shareInCircle": 0.377
+   },
+   {
+    "geoid": "360470153004",
+    "population": 715,
+    "households": 352,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470165003",
+    "population": 1863,
+    "households": 647,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470119011",
+    "population": 402,
+    "households": 168,
+    "shareInCircle": 0.457
+   },
+   {
+    "geoid": "360470137003",
+    "population": 1188,
+    "households": 591,
+    "shareInCircle": 0.07
+   },
+   {
+    "geoid": "360470119012",
+    "population": 976,
+    "households": 408,
+    "shareInCircle": 0.999
+   },
+   {
+    "geoid": "360470071001",
+    "population": 805,
+    "households": 391,
+    "shareInCircle": 0.818
+   },
+   {
+    "geoid": "360470075002",
+    "population": 1046,
+    "households": 348,
+    "shareInCircle": 0.155
+   },
+   {
+    "geoid": "360470041002",
+    "population": 906,
+    "households": 364,
+    "shareInCircle": 0.412
+   },
+   {
+    "geoid": "360470071002",
+    "population": 2103,
+    "households": 886,
+    "shareInCircle": 0.756
+   },
+   {
+    "geoid": "360470071003",
+    "population": 1142,
+    "households": 354,
+    "shareInCircle": 0.423
+   },
+   {
+    "geoid": "360470075001",
+    "population": 742,
+    "households": 483,
+    "shareInCircle": 0.185
+   },
+   {
+    "geoid": "360470075003",
+    "population": 1382,
+    "households": 523,
+    "shareInCircle": 0.119
+   },
+   {
+    "geoid": "360470129012",
+    "population": 871,
+    "households": 361,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470217002",
+    "population": 2584,
+    "households": 1209,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470031012",
+    "population": 910,
+    "households": 174,
+    "shareInCircle": 0.393
+   },
+   {
+    "geoid": "360470163002",
+    "population": 2264,
+    "households": 1015,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470199002",
+    "population": 905,
+    "households": 418,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470305004",
+    "population": 1525,
+    "households": 578,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470199004",
+    "population": 926,
+    "households": 525,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470193003",
+    "population": 1135,
+    "households": 0,
+    "shareInCircle": 0.371
+   },
+   {
+    "geoid": "360470195003",
+    "population": 2027,
+    "households": 921,
+    "shareInCircle": 0.748
+   },
+   {
+    "geoid": "360470195004",
+    "population": 442,
+    "households": 305,
+    "shareInCircle": 0.796
+   },
+   {
+    "geoid": "360470197001",
+    "population": 680,
+    "households": 276,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470197002",
+    "population": 669,
+    "households": 305,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470197003",
+    "population": 1554,
+    "households": 846,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470199003",
+    "population": 1877,
+    "households": 1117,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470201001",
+    "population": 527,
+    "households": 295,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470201002",
+    "population": 1269,
+    "households": 610,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470219002",
+    "population": 1583,
+    "households": 749,
+    "shareInCircle": 0.229
+   },
+   {
+    "geoid": "360470215001",
+    "population": 623,
+    "households": 346,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470195001",
+    "population": 907,
+    "households": 329,
+    "shareInCircle": 0.578
+   },
+   {
+    "geoid": "360470129014",
+    "population": 985,
+    "households": 391,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470161004",
+    "population": 1093,
+    "households": 520,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470161001",
+    "population": 1263,
+    "households": 549,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470193004",
+    "population": 1606,
+    "households": 982,
+    "shareInCircle": 0.91
+   },
+   {
+    "geoid": "360470159006",
+    "population": 986,
+    "households": 652,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470031021",
+    "population": 0,
+    "households": 0,
+    "shareInCircle": 0.655
+   },
+   {
+    "geoid": "360470159002",
+    "population": 768,
+    "households": 340,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470159004",
+    "population": 1166,
+    "households": 527,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470163004",
+    "population": 885,
+    "households": 387,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470031013",
+    "population": 0,
+    "households": 0,
+    "shareInCircle": 0.82
+   },
+   {
+    "geoid": "360470129011",
+    "population": 0,
+    "households": 0,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470129021",
+    "population": 1191,
+    "households": 408,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470129022",
+    "population": 2631,
+    "households": 1494,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470131003",
+    "population": 838,
+    "households": 319,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470131004",
+    "population": 1013,
+    "households": 625,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470133001",
+    "population": 686,
+    "households": 366,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470133004",
+    "population": 1156,
+    "households": 412,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470135002",
+    "population": 1206,
+    "households": 483,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470135003",
+    "population": 1885,
+    "households": 689,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470127001",
+    "population": 1989,
+    "households": 796,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470127002",
+    "population": 1088,
+    "households": 574,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470137001",
+    "population": 934,
+    "households": 428,
+    "shareInCircle": 0.967
+   },
+   {
+    "geoid": "360470129013",
+    "population": 683,
+    "households": 278,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470161002",
+    "population": 0,
+    "households": 0,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470179003",
+    "population": 587,
+    "households": 248,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470325001",
+    "population": 3657,
+    "households": 1015,
+    "shareInCircle": 0.021
+   },
+   {
+    "geoid": "360470215004",
+    "population": 2656,
+    "households": 1312,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470015021",
+    "population": 5238,
+    "households": 2990,
+    "shareInCircle": 0.004
+   },
+   {
+    "geoid": "360470229003",
+    "population": 585,
+    "households": 280,
+    "shareInCircle": 0.979
+   },
+   {
+    "geoid": "360470233001",
+    "population": 2069,
+    "households": 822,
+    "shareInCircle": 0.555
+   },
+   {
+    "geoid": "360470233002",
+    "population": 1728,
+    "households": 653,
+    "shareInCircle": 0.026
+   },
+   {
+    "geoid": "360470247002",
+    "population": 1306,
+    "households": 620,
+    "shareInCircle": 0.165
+   },
+   {
+    "geoid": "360470305003",
+    "population": 2000,
+    "households": 1060,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470305001",
+    "population": 1508,
+    "households": 620,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470203001",
+    "population": 1149,
+    "households": 494,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470155003",
+    "population": 947,
+    "households": 402,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470227001",
+    "population": 825,
+    "households": 342,
+    "shareInCircle": 0.688
+   },
+   {
+    "geoid": "360470221001",
+    "population": 1636,
+    "households": 636,
+    "shareInCircle": 0.578
+   },
+   {
+    "geoid": "360470219001",
+    "population": 777,
+    "households": 387,
+    "shareInCircle": 0.393
+   },
+   {
+    "geoid": "360470127003",
+    "population": 1209,
+    "households": 418,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470133002",
+    "population": 918,
+    "households": 394,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470201003",
+    "population": 1449,
+    "households": 657,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470157004",
+    "population": 1454,
+    "households": 631,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470041003",
+    "population": 955,
+    "households": 423,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470231001",
+    "population": 1124,
+    "households": 575,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470231003",
+    "population": 697,
+    "households": 391,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470131001",
+    "population": 835,
+    "households": 464,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470155004",
+    "population": 746,
+    "households": 287,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470205002",
+    "population": 1280,
+    "households": 625,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470183001",
+    "population": 1123,
+    "households": 600,
+    "shareInCircle": 0.81
+   },
+   {
+    "geoid": "360470201004",
+    "population": 748,
+    "households": 352,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470205001",
+    "population": 647,
+    "households": 313,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470205003",
+    "population": 1907,
+    "households": 648,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470207001",
+    "population": 1903,
+    "households": 895,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470207002",
+    "population": 1810,
+    "households": 954,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470207003",
+    "population": 915,
+    "households": 494,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470213001",
+    "population": 784,
+    "households": 391,
+    "shareInCircle": 0.931
+   },
+   {
+    "geoid": "360470215003",
+    "population": 1144,
+    "households": 460,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470217001",
+    "population": 1626,
+    "households": 728,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470219003",
+    "population": 1898,
+    "households": 807,
+    "shareInCircle": 0.215
+   },
+   {
+    "geoid": "360470221002",
+    "population": 1366,
+    "households": 641,
+    "shareInCircle": 0.583
+   },
+   {
+    "geoid": "360470221003",
+    "population": 722,
+    "households": 403,
+    "shareInCircle": 0.385
+   },
+   {
+    "geoid": "360470231002",
+    "population": 1709,
+    "households": 807,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470227002",
+    "population": 1826,
+    "households": 711,
+    "shareInCircle": 0.96
+   },
+   {
+    "geoid": "360470227003",
+    "population": 766,
+    "households": 395,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470227004",
+    "population": 1416,
+    "households": 719,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470229001",
+    "population": 877,
+    "households": 386,
+    "shareInCircle": 0.081
+   },
+   {
+    "geoid": "360470229002",
+    "population": 1113,
+    "households": 573,
+    "shareInCircle": 0.451
+   },
+   {
+    "geoid": "360470229004",
+    "population": 1075,
+    "households": 440,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470033001",
+    "population": 833,
+    "households": 389,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470137002",
+    "population": 979,
+    "households": 479,
+    "shareInCircle": 0.657
+   },
+   {
+    "geoid": "360470163003",
+    "population": 1221,
+    "households": 586,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470165001",
+    "population": 889,
+    "households": 557,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470165002",
+    "population": 1496,
+    "households": 612,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470033002",
+    "population": 3292,
+    "households": 2118,
+    "shareInCircle": 0.967
+   },
+   {
+    "geoid": "360470035001",
+    "population": 1346,
+    "households": 702,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470037001",
+    "population": 4385,
+    "households": 2727,
+    "shareInCircle": 0.363
+   },
+   {
+    "geoid": "360470039001",
+    "population": 1489,
+    "households": 667,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470039003",
+    "population": 782,
+    "households": 248,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470041001",
+    "population": 1453,
+    "households": 600,
+    "shareInCircle": 0.629
+   },
+   {
+    "geoid": "360470039002",
+    "population": 715,
+    "households": 405,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470183003",
+    "population": 957,
+    "households": 429,
+    "shareInCircle": 0.498
+   },
+   {
+    "geoid": "360470197004",
+    "population": 716,
+    "households": 370,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470199001",
+    "population": 603,
+    "households": 341,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470035002",
+    "population": 832,
+    "households": 465,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470305002",
+    "population": 1935,
+    "households": 1074,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470155001",
+    "population": 544,
+    "households": 297,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470195002",
+    "population": 728,
+    "households": 316,
+    "shareInCircle": 0.671
+   },
+   {
+    "geoid": "360470179001",
+    "population": 1301,
+    "households": 468,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470179002",
+    "population": 2295,
+    "households": 698,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470181001",
+    "population": 1123,
+    "households": 743,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470181003",
+    "population": 1000,
+    "households": 588,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470159005",
+    "population": 0,
+    "households": 0,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470155002",
+    "population": 1206,
+    "households": 450,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470157001",
+    "population": 1027,
+    "households": 463,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470157002",
+    "population": 1020,
+    "households": 367,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470157003",
+    "population": 1570,
+    "households": 648,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470159001",
+    "population": 1351,
+    "households": 610,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470161003",
+    "population": 1112,
+    "households": 523,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470183002",
+    "population": 741,
+    "households": 336,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470181002",
+    "population": 1295,
+    "households": 555,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470135001",
+    "population": 1203,
+    "households": 419,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470163001",
+    "population": 0,
+    "households": 0,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470203002",
+    "population": 925,
+    "households": 469,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470159003",
+    "population": 1106,
+    "households": 484,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470133003",
+    "population": 1504,
+    "households": 635,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470215002",
+    "population": 1172,
+    "households": 653,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470131002",
+    "population": 847,
+    "households": 379,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "360470181004",
+    "population": 487,
+    "households": 272,
+    "shareInCircle": 1.0
+   }
+  ],
+  "populationInCircle": 142589,
+  "householdsInCircle": 66042
+ },
+ "counts": {
+  "vanderbilt": {
+   "midpoint": [
+    -73.968165,
+    40.679642
+   ],
+   "pedestrianCounts": [
+    {
+     "loc": "22",
+     "street": "Flatbush Avenue",
+     "from": "St. Marks Avenue",
+     "to": "Prospect Place",
+     "coords": [
+      -73.97390965382397,
+      40.67918699313476
+     ],
+     "hourlyPreCovid": {
+      "am": 388.7,
+      "pm": 780.9,
+      "md": 878.3
+     },
+     "nCounts": {
+      "am": 8,
+      "pm": 8,
+      "md": 8
+     },
+     "units": "pedestrians/hour, both sidewalks, 2015-2019 mean"
+    }
+   ],
+   "trafficCounts": [
+    {
+     "segmentid": "29239",
+     "street": "PACIFIC STREET",
+     "from": "Vanderbilt Avenue",
+     "to": "Underhill Avenue",
+     "distanceM": 279,
+     "lng": -73.965017,
+     "lat": 40.6804,
+     "volume": {
+      "years": [
+       2019
+      ],
+      "meanVolPer15MinByDirection": {
+       "EB": 7.7
+      },
+      "meanHourlyTwoWay": 30.7
+     }
+    },
+    {
+     "segmentid": "29335",
+     "street": "UNDERHILL AVENUE",
+     "from": "Pacific Street",
+     "to": "Dean Street",
+     "distanceM": 287,
+     "lng": -73.964852,
+     "lat": 40.680183,
+     "volume": {
+      "years": [
+       2019
+      ],
+      "meanVolPer15MinByDirection": {
+       "NB": 14.0
+      },
+      "meanHourlyTwoWay": 56.0
+     }
+    },
+    {
+     "segmentid": "163729",
+     "street": "UNDERHILL AVENUE",
+     "from": "Atlantic Avenue",
+     "to": "Pacific Street",
+     "distanceM": 305,
+     "lng": -73.96473,
+     "lat": 40.680494,
+     "volume": {
+      "years": [
+       2019
+      ],
+      "meanVolPer15MinByDirection": {
+       "SB": 10.6
+      },
+      "meanHourlyTwoWay": 42.4
+     }
+    },
+    {
+     "segmentid": "29337",
+     "street": "WASHINGTON AVENUE",
+     "from": "Pacific Street",
+     "to": "Dean Street",
+     "distanceM": 338,
+     "lng": -73.964204,
+     "lat": 40.680068,
+     "volume": {
+      "years": [
+       2019
+      ],
+      "meanVolPer15MinByDirection": {
+       "NB": 61.0
+      },
+      "meanHourlyTwoWay": 244.0
+     }
+    },
+    {
+     "segmentid": "29338",
+     "street": "PACIFIC STREET",
+     "from": "Washington Avenue",
+     "to": "Grand Avenue",
+     "distanceM": 355,
+     "lng": -73.964033,
+     "lat": 40.680194,
+     "volume": {
+      "years": [
+       2019
+      ],
+      "meanVolPer15MinByDirection": {
+       "WB": 27.7
+      },
+      "meanHourlyTwoWay": 110.9
+     }
+    },
+    {
+     "segmentid": "29048",
+     "street": "FLATBUSH AV",
+     "from": "7 AV",
+     "to": "PARK PL",
+     "distanceM": 450,
+     "lng": -73.972884,
+     "lat": 40.677761,
+     "volume": {
+      "years": [
+       2013
+      ],
+      "meanVolPer15MinByDirection": {
+       "SB": 195.9
+      },
+      "meanHourlyTwoWay": 783.8
+     }
+    },
+    {
+     "segmentid": "29049",
+     "street": "FLATBUSH AV",
+     "from": "CARLTON AV",
+     "to": "PARK PL",
+     "distanceM": 452,
+     "lng": -73.97258,
+     "lat": 40.677342,
+     "volume": {
+      "years": [
+       2013
+      ],
+      "meanVolPer15MinByDirection": {
+       "NB": 204.6
+      },
+      "meanHourlyTwoWay": 818.3
+     }
+    },
+    {
+     "segmentid": "29041",
+     "street": "Flatbush Ave SB Between",
+     "from": "St. Marks Str and Prospect Pl",
+     "to": "PROSPECT PL",
+     "distanceM": 488,
+     "lng": -73.97391,
+     "lat": 40.679187,
+     "volume": {
+      "years": [
+       2010
+      ],
+      "meanVolPer15MinByDirection": {
+       "SB": 214.0
+      },
+      "meanHourlyTwoWay": 856.0
+     }
+    }
+   ]
+  },
+  "vanderbilt_control": {
+   "midpoint": [
+    -73.973574,
+    40.678651
+   ],
+   "pedestrianCounts": [
+    {
+     "loc": "22",
+     "street": "Flatbush Avenue",
+     "from": "St. Marks Avenue",
+     "to": "Prospect Place",
+     "coords": [
+      -73.97390965382397,
+      40.67918699313476
+     ],
+     "hourlyPreCovid": {
+      "am": 388.7,
+      "pm": 780.9,
+      "md": 878.3
+     },
+     "nCounts": {
+      "am": 8,
+      "pm": 8,
+      "md": 8
+     },
+     "units": "pedestrians/hour, both sidewalks, 2015-2019 mean"
+    }
+   ],
+   "trafficCounts": [
+    {
+     "segmentid": "29041",
+     "street": "Flatbush Ave SB Between",
+     "from": "St. Marks Str and Prospect Pl",
+     "to": "PROSPECT PL",
+     "distanceM": 66,
+     "lng": -73.97391,
+     "lat": 40.679187,
+     "volume": {
+      "years": [
+       2010
+      ],
+      "meanVolPer15MinByDirection": {
+       "SB": 214.0
+      },
+      "meanHourlyTwoWay": 856.0
+     }
+    },
+    {
+     "segmentid": "29048",
+     "street": "FLATBUSH AV",
+     "from": "7 AV",
+     "to": "PARK PL",
+     "distanceM": 115,
+     "lng": -73.972884,
+     "lat": 40.677761,
+     "volume": {
+      "years": [
+       2013
+      ],
+      "meanVolPer15MinByDirection": {
+       "SB": 195.9
+      },
+      "meanHourlyTwoWay": 783.8
+     }
+    },
+    {
+     "segmentid": "29049",
+     "street": "FLATBUSH AV",
+     "from": "CARLTON AV",
+     "to": "PARK PL",
+     "distanceM": 168,
+     "lng": -73.97258,
+     "lat": 40.677342,
+     "volume": {
+      "years": [
+       2013
+      ],
+      "meanVolPer15MinByDirection": {
+       "NB": 204.6
+      },
+      "meanHourlyTwoWay": 818.3
+     }
+    },
+    {
+     "segmentid": "29141",
+     "street": "FLATBUSH AVENUE",
+     "from": "8 Avenue",
+     "to": "Eastern Parkway Line",
+     "distanceM": 411,
+     "lng": -73.971186,
+     "lat": 40.675427,
+     "volume": {
+      "years": [
+       2025
+      ],
+      "meanVolPer15MinByDirection": {
+       "SB": 177.0
+      },
+      "meanHourlyTwoWay": 708.2
+     }
+    }
+   ]
+  }
+ }
+}

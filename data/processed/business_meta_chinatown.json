@@ -1,0 +1,4084 @@
+{
+ "ChIJiXD_SgdZwokRNoX6B7g1ZqA": {
+  "placeId": "ChIJiXD_SgdZwokRNoX6B7g1ZqA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 285.5,
+  "segmentDistanceM": 8.2,
+  "address": "192 Mott St, New York, NY 10012",
+  "categories": [
+   "Asian fusion restaurant",
+   "Gluten-free restaurant",
+   "Health food restaurant",
+   "Noodle shop",
+   "Pan-Asian restaurant",
+   "Restaurant",
+   "Vegan restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=noodlelove&query_place_id=ChIJiXD_SgdZwokRNoX6B7g1ZqA",
+  "description": "Build your own salad and noodle bowls, bao buns, and soup in a contemporary health-conscious Asian spot.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJrRDdvIhZwokRp0CotyHQ8NM": {
+  "placeId": "ChIJrRDdvIhZwokRp0CotyHQ8NM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 19.5,
+  "address": "200 Mott St, New York, NY 10012",
+  "categories": [
+   "Italian restaurant",
+   "Bar",
+   "Breakfast restaurant",
+   "Brunch restaurant",
+   "Cafe",
+   "Cocktail bar",
+   "Coffee shop",
+   "Pasta shop",
+   "Vegetarian restaurant",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Epistrophy&query_place_id=ChIJrRDdvIhZwokRp0CotyHQ8NM",
+  "description": "Brick walls & bookshelves lend character to this homey spot serving Italian fare & global wines.",
+  "price": "$40–50",
+  "reviewsScraped": 60
+ },
+ "ChIJQyFr6-FZwokRr23JK7BC7_g": {
+  "placeId": "ChIJQyFr6-FZwokRr23JK7BC7_g",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 258.3,
+  "segmentDistanceM": 13.8,
+  "address": "186 Mott St, New York, NY 10012",
+  "categories": [
+   "Thai restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Thai%20Diner&query_place_id=ChIJQyFr6-FZwokRr23JK7BC7_g",
+  "description": "Classic Thai dishes and drinks by a lauded restaurant group in a kitschy-cool, diner-style setting.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJEw1TVohZwokRA2vBXEexlVY": {
+  "placeId": "ChIJEw1TVohZwokRA2vBXEexlVY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 263.0,
+  "segmentDistanceM": 17.8,
+  "address": "167 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Bar",
+   "Family restaurant",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=La%20Mela&query_place_id=ChIJEw1TVohZwokRA2vBXEexlVY",
+  "description": "Classic red-sauce Italian fare can be ordered in large family-style servings at this casual eatery.",
+  "price": "$20–50",
+  "reviewsScraped": 60
+ },
+ "ChIJuw_3dgJbwokRvoUPrgQ28mY": {
+  "placeId": "ChIJuw_3dgJbwokRvoUPrgQ28mY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 225.3,
+  "segmentDistanceM": 8.4,
+  "address": "110a Mulberry St, New York, NY 10013",
+  "categories": [
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cafe%20Nostra&query_place_id=ChIJuw_3dgJbwokRvoUPrgQ28mY",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 4
+ },
+ "ChIJCcDXV4hZwokRhHninUj94_o": {
+  "placeId": "ChIJCcDXV4hZwokRhHninUj94_o",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 270.0,
+  "segmentDistanceM": 15.6,
+  "address": "173 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Lunella&query_place_id=ChIJCcDXV4hZwokRhHninUj94_o",
+  "description": "This bright, cozy restaurant offers traditional Italian pastas & seafood & meat entrees.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJnURzHbFZwokRqnfhlkSEPbQ": {
+  "placeId": "ChIJnURzHbFZwokRqnfhlkSEPbQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 277.8,
+  "segmentDistanceM": 21.2,
+  "address": "384 Broome St, New York, NY 10013",
+  "categories": [
+   "Japanese restaurant",
+   "Cocktail bar",
+   "Ramen restaurant",
+   "Seafood restaurant",
+   "Sushi restaurant",
+   "Sushi takeaway"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Zutto%20Japanese%20Ramen%20Sushi%20Bar&query_place_id=ChIJnURzHbFZwokRqnfhlkSEPbQ",
+  "description": "Cocktails, steamed buns, customizable ramen & an extensive sushi menu in a warm, brick-lined space.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJS3EpUohZwokReLFKxxE_zKE": {
+  "placeId": "ChIJS3EpUohZwokReLFKxxE_zKE",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 246.7,
+  "segmentDistanceM": 11.3,
+  "address": "186 Grand St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Cocktail bar",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Gelso%20%26%20Grand&query_place_id=ChIJS3EpUohZwokReLFKxxE_zKE",
+  "description": "Housemade pasta & other Italian standards served in spacious, stylish rustic surrounds with a bar.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJybmhOHxZwokR7sV0EMZBE6U": {
+  "placeId": "ChIJybmhOHxZwokR7sV0EMZBE6U",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 61.7,
+  "segmentDistanceM": 24.9,
+  "address": "87 Chrystie St, New York, NY 10002",
+  "categories": [
+   "Noodle shop",
+   "Asian restaurant",
+   "Chinese restaurant",
+   "Dumpling restaurant",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Ji%20Bei%20Chuan%20Noodles%20%E5%AD%A3%E5%8C%97%E5%B7%9D%20NYC&query_place_id=ChIJybmhOHxZwokR7sV0EMZBE6U",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJZzRtHIlZwokRYU5sVES5WNM": {
+  "placeId": "ChIJZzRtHIlZwokRYU5sVES5WNM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 17.4,
+  "address": "408 Broome St, New York, NY 10013",
+  "categories": [
+   "Tapas bar",
+   "Gourmet grocery store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Despa%C3%B1a&query_place_id=ChIJZzRtHIlZwokRYU5sVES5WNM",
+  "description": "Chic shop for imported Spanish eats like Serrano ham & chorizo plus a tapas & sandwich counter.",
+  "price": "$10–50",
+  "reviewsScraped": 60
+ },
+ "ChIJT82n1x1ZwokRnSciUmzf11Y": {
+  "placeId": "ChIJT82n1x1ZwokRnSciUmzf11Y",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 265.7,
+  "segmentDistanceM": 22.9,
+  "address": "165 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Pizza restaurant",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Amici%20Ristorante&query_place_id=ChIJT82n1x1ZwokRnSciUmzf11Y",
+  "description": "Cozy Italian restaurant offering pasta, meat, and seafood dishes amid a laid-back atmosphere.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJ7ZZgM4hZwokRddMfsLPztpM": {
+  "placeId": "ChIJ7ZZgM4hZwokRddMfsLPztpM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 211.3,
+  "segmentDistanceM": 19.5,
+  "address": "136 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Family restaurant",
+   "Takeout Restaurant",
+   "Pasta shop",
+   "Pizza restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Paesano%20of%20Mulberry%20Street&query_place_id=ChIJ7ZZgM4hZwokRddMfsLPztpM",
+  "description": "Cozy red-sauce Italian spot in Little Italy does all the classics in rustic, wood-beamed setting.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJkwvCUIhZwokRBOF1SVW2DH8": {
+  "placeId": "ChIJkwvCUIhZwokRBOF1SVW2DH8",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 232.9,
+  "segmentDistanceM": 7.9,
+  "address": "164 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Bar",
+   "Dessert restaurant",
+   "Pizza restaurant",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Da%20Nico&query_place_id=ChIJkwvCUIhZwokRBOF1SVW2DH8",
+  "description": "Little Italy venue serving traditional Italian plates from the old country & offers an ample garden.",
+  "price": "$20–80",
+  "reviewsScraped": 60
+ },
+ "ChIJyw5j84lZwokRnUI_UknPSNA": {
+  "placeId": "ChIJyw5j84lZwokRnUI_UknPSNA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 17.0,
+  "address": "138 Lafayette St, New York, NY 10013",
+  "categories": [
+   "Restaurant",
+   "Breakfast restaurant",
+   "Family restaurant",
+   "Fine dining restaurant",
+   "French restaurant",
+   "Lunch restaurant",
+   "Modern European restaurant",
+   "Modern French restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Le%20Coucou&query_place_id=ChIJyw5j84lZwokRnUI_UknPSNA",
+  "description": "Restaurant serving refined French fare, such as lobster, rabbit, duck, and foie gras in an airy, elegant setting.",
+  "price": "$100+",
+  "reviewsScraped": 60
+ },
+ "ChIJk-Ggw4hZwokRFn8ZTN9E2RI": {
+  "placeId": "ChIJk-Ggw4hZwokRFn8ZTN9E2RI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 17.9,
+  "address": "187 Mulberry St, New York, NY 10012",
+  "categories": [
+   "Italian restaurant",
+   "Pizza restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Pasquale%20Jones&query_place_id=ChIJk-Ggw4hZwokRFn8ZTN9E2RI",
+  "description": "Italian place by the Charlie Bird team for wood-fired pies, meats and fish from the open kitchen.",
+  "price": "$50–100",
+  "reviewsScraped": 60
+ },
+ "ChIJhypZG4hZwokRDkOkLtRpBRM": {
+  "placeId": "ChIJhypZG4hZwokRDkOkLtRpBRM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 26.1,
+  "segmentDistanceM": 26.1,
+  "address": "96 Bowery, New York, NY 10013",
+  "categories": [
+   "Korean restaurant",
+   "Takeout Restaurant",
+   "Tofu restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Tofu%20Tofu&query_place_id=ChIJhypZG4hZwokRDkOkLtRpBRM",
+  "description": "Korean classics like bibimbap & BBQ dishes served in an airy, brick-lined space with a tin ceiling.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJOQ8A1IlZwokRd4ZMRvOMQ3o": {
+  "placeId": "ChIJOQ8A1IlZwokRd4ZMRvOMQ3o",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 246.6,
+  "segmentDistanceM": 13.8,
+  "address": "125 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Il%20Cortile&query_place_id=ChIJOQ8A1IlZwokRd4ZMRvOMQ3o",
+  "description": "Traditional Northern Italian eatery since 1975 with veteran waiters & a back garden atrium.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJIditVq1bwokRyr0RzNTyuGI": {
+  "placeId": "ChIJIditVq1bwokRyr0RzNTyuGI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 210.9,
+  "segmentDistanceM": 23.3,
+  "address": "91 Baxter St, New York, NY 10013",
+  "categories": [
+   "Mexican restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=La%20Di%C3%A1spora&query_place_id=ChIJIditVq1bwokRyr0RzNTyuGI",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJWd83UYhZwokRDMwXOWImOlg": {
+  "placeId": "ChIJWd83UYhZwokRDMwXOWImOlg",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 264.0,
+  "segmentDistanceM": 23.5,
+  "address": "163 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=La%20Bella%20Vita&query_place_id=ChIJWd83UYhZwokRDMwXOWImOlg",
+  "description": "Elevated eatery for Italian cuisine, plus beer and wine in a pleasant setting.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJaSAL0olZwokRL5R4BwHyWwQ": {
+  "placeId": "ChIJaSAL0olZwokRL5R4BwHyWwQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 242.4,
+  "segmentDistanceM": 10.8,
+  "address": "129 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Da%20Gennaro&query_place_id=ChIJaSAL0olZwokRL5R4BwHyWwQ",
+  "description": "Traditional Italian eatery offering the standard red-sauce fare in an old-school setting.",
+  "price": "$20–80",
+  "reviewsScraped": 60
+ },
+ "ChIJUQXtLllZwokRTdOdcoYA5Ts": {
+  "placeId": "ChIJUQXtLllZwokRTdOdcoYA5Ts",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 282.8,
+  "segmentDistanceM": 13.1,
+  "address": "60 Kenmare St, New York, NY 10012",
+  "categories": [
+   "Cafe",
+   "Tea store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Chai%20Co%20-%20Nolita&query_place_id=ChIJUQXtLllZwokRTdOdcoYA5Ts",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJIQhhfCdawokROpkfEqLsby8": {
+  "placeId": "ChIJIQhhfCdawokROpkfEqLsby8",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 220.8,
+  "segmentDistanceM": 12.9,
+  "address": "108 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Bakery",
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=La%20Bella%20Ferrara%20Pasticceria&query_place_id=ChIJIQhhfCdawokROpkfEqLsby8",
+  "description": "This traditional Italian bakery popular for its cannoli & lobster tails also offers custom cakes.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJt_msWohZwokRlV0jDszwxFo": {
+  "placeId": "ChIJt_msWohZwokRlV0jDszwxFo",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 210.0,
+  "segmentDistanceM": 27.3,
+  "address": "192 Grand St, New York, NY 10013",
+  "categories": [
+   "Spanish restaurant",
+   "Cocktail bar",
+   "Galician restaurant",
+   "Restaurant",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Tomi%C3%B1o%20Taberna%20Gallega&query_place_id=ChIJt_msWohZwokRlV0jDszwxFo",
+  "description": "Informal Spanish storefront restaurant & tapas bar featuring Galician fare with wines & cocktails.",
+  "price": "$50–100",
+  "reviewsScraped": 60
+ },
+ "ChIJd0rS8IhZwokRenSFGigBbU0": {
+  "placeId": "ChIJd0rS8IhZwokRenSFGigBbU0",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 257.3,
+  "segmentDistanceM": 11.7,
+  "address": "385 Broome St, New York, NY 10013",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Caffe%20Roma&query_place_id=ChIJd0rS8IhZwokRenSFGigBbU0",
+  "description": "Quaint bakery serving housemade gelato & other Italian treats like cannoli & tiramisu since 1891.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJu6AxSohZwokR-C-gCJcQewI": {
+  "placeId": "ChIJu6AxSohZwokR-C-gCJcQewI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 217.5,
+  "segmentDistanceM": 12.6,
+  "address": "148 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Cafe",
+   "Bakery",
+   "Coffee shop",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Caff%C3%A9%20Palermo&query_place_id=ChIJu6AxSohZwokR-C-gCJcQewI",
+  "description": "Classic cafe serving cannoli, gelato & other Italian desserts with espresso & wine since 1973.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJS8yvHgBZwokR6zmhPxHVUBM": {
+  "placeId": "ChIJS8yvHgBZwokR6zmhPxHVUBM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 20.4,
+  "segmentDistanceM": 20.4,
+  "address": "111 Bowery, New York, NY 10002",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Luna%20Cafe%20%26%20Bakery&query_place_id=ChIJS8yvHgBZwokR6zmhPxHVUBM",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 54
+ },
+ "ChIJq6oum4hZwokRfG222QtKeGY": {
+  "placeId": "ChIJq6oum4hZwokRfG222QtKeGY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 212.8,
+  "segmentDistanceM": 11.8,
+  "address": "149 Elizabeth St, New York, NY 10012",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Integral&query_place_id=ChIJq6oum4hZwokRfG222QtKeGY",
+  "description": "Laid-back venture serving thoughtfully sourced Nicaraguan coffee, plus muesli and pudding.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJj-xYzllbwokRbTTItp7QIxc": {
+  "placeId": "ChIJj-xYzllbwokRbTTItp7QIxc",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 18.2,
+  "address": "153d Centre St, New York, NY 10013",
+  "categories": [
+   "Vegan restaurant",
+   "Breakfast restaurant",
+   "Cafe",
+   "Fast food restaurant",
+   "Hamburger restaurant",
+   "Sandwich shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Spring%20Cafe&query_place_id=ChIJj-xYzllbwokRbTTItp7QIxc",
+  "description": "Casual choice for vegan burgers, bao buns, and smoothies, presented in a counter-serve format.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJi7gKOIlbwokRoPYLopZaSwI": {
+  "placeId": "ChIJi7gKOIlbwokRoPYLopZaSwI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 17.3,
+  "address": "33 Cortlandt Alley, New York, NY 10013",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sawada%20Coffee&query_place_id=ChIJi7gKOIlbwokRoPYLopZaSwI",
+  "description": "Chill coffeehouse with reclaimed wood & artful accents serving espresso- & matcha-based beverages.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJkTIj34lZwokR-nmGDf9Cn_Q": {
+  "placeId": "ChIJkTIj34lZwokR-nmGDf9Cn_Q",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 12.5,
+  "address": "118 Baxter St, New York, NY 10013",
+  "categories": [
+   "Chinese bakery",
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Kam%20Hing%20Coffee%20Shop&query_place_id=ChIJkTIj34lZwokR-nmGDf9Cn_Q",
+  "description": "Chinese-style sponge cakes in many flavors & other pastries plus coffee served in an unfussy locale.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ2aiPz3lZwokRjwjKg-ZkCOs": {
+  "placeId": "ChIJ2aiPz3lZwokRjwjKg-ZkCOs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 245.6,
+  "segmentDistanceM": 15.4,
+  "address": "143 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Cocktail bar",
+   "Gluten-free restaurant",
+   "Pizza restaurant",
+   "Vegan restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sofia's%20of%20Little%20Italy&query_place_id=ChIJ2aiPz3lZwokRjwjKg-ZkCOs",
+  "description": null,
+  "price": "$20–40",
+  "reviewsScraped": 60
+ },
+ "ChIJTy8URohZwokRB9YYYDHYBKM": {
+  "placeId": "ChIJTy8URohZwokRB9YYYDHYBKM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 204.1,
+  "segmentDistanceM": 18.9,
+  "address": "195 Grand St, New York, NY 10013",
+  "categories": [
+   "Bakery",
+   "Italian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Ferrara%20Bakery%20%26%20Cafe&query_place_id=ChIJTy8URohZwokRB9YYYDHYBKM",
+  "description": "Venerable outfit offering its famed cannoli & other Italian desserts, plus espresso, since 1892.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJJd8XwcpZwokRKVTqFenQbt4": {
+  "placeId": "ChIJJd8XwcpZwokRKVTqFenQbt4",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 216.2,
+  "segmentDistanceM": 15.7,
+  "address": "174 Mott St, New York, NY 10012",
+  "categories": [
+   "New American restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Oriana%20Restaurant&query_place_id=ChIJJd8XwcpZwokRKVTqFenQbt4",
+  "description": null,
+  "price": "$100+",
+  "reviewsScraped": 0
+ },
+ "ChIJ8xkQR35bwokRkAj4VvljguA": {
+  "placeId": "ChIJ8xkQR35bwokRkAj4VvljguA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 244.0,
+  "segmentDistanceM": 10.3,
+  "address": "105 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Coffee shop",
+   "Dessert shop",
+   "Pizza restaurant",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Caffe%20Venezia&query_place_id=ChIJ8xkQR35bwokRkAj4VvljguA",
+  "description": null,
+  "price": "$10–40",
+  "reviewsScraped": 60
+ },
+ "ChIJ3VMIfohZwokRxx2Nv7un3ME": {
+  "placeId": "ChIJ3VMIfohZwokRxx2Nv7un3ME",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 138.8,
+  "segmentDistanceM": 11.7,
+  "address": "351 Broome St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Pizza restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Piacere&query_place_id=ChIJ3VMIfohZwokRxx2Nv7un3ME",
+  "description": "This rustic-chic place with sidewalk seating offers individual brick-oven pizzas plus pastas & wine.",
+  "price": "$20–80",
+  "reviewsScraped": 60
+ },
+ "ChIJkRBXYC1ZwokRdUjnELX8_J0": {
+  "placeId": "ChIJkRBXYC1ZwokRdUjnELX8_J0",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 270.0,
+  "segmentDistanceM": 19.2,
+  "address": "171 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=L%E2%80%99Amore%20Restaurant&query_place_id=ChIJkRBXYC1ZwokRdUjnELX8_J0",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJCxhnSohZwokRxmUkfrQWLfs": {
+  "placeId": "ChIJCxhnSohZwokRxmUkfrQWLfs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 204.6,
+  "segmentDistanceM": 25.6,
+  "address": "Between Hester &, 146 Mulberry Street, Grand St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Fine dining restaurant",
+   "Gluten-free restaurant",
+   "Mediterranean restaurant",
+   "Northern Italian restaurant",
+   "Pasta shop",
+   "Pizza restaurant",
+   "Seafood restaurant",
+   "Southern Italian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Casa%20D'angelo%20New%20York&query_place_id=ChIJCxhnSohZwokRxmUkfrQWLfs",
+  "description": "White-jacketed waiters serve Southern Italian specialties at this restaurant dating to 1902.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJt_HATrRbwokREfGhs1PnzwQ": {
+  "placeId": "ChIJt_HATrRbwokREfGhs1PnzwQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 17.3,
+  "address": "33 Cortlandt Alley, New York, NY 10013",
+  "categories": [
+   "New American restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Au%20Cheval&query_place_id=ChIJt_HATrRbwokREfGhs1PnzwQ",
+  "description": "Restaurant featuring leather booths and a zinc bar, serving creative American fare.",
+  "price": "$40–100",
+  "reviewsScraped": 60
+ },
+ "ChIJQboT7ohZwokRZ0_yz6vztjY": {
+  "placeId": "ChIJQboT7ohZwokRZ0_yz6vztjY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 287.7,
+  "segmentDistanceM": 10.0,
+  "address": "178 Mulberry St, New York, NY 10012",
+  "categories": [
+   "Italian restaurant",
+   "Pizza restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Marcellino&query_place_id=ChIJQboT7ohZwokRZ0_yz6vztjY",
+  "description": "Wood-fired Italian cuisine made using family recipes is served in a classic space.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJm7QTo_lZwokRRnjGuJABJPQ": {
+  "placeId": "ChIJm7QTo_lZwokRRnjGuJABJPQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 219.0,
+  "segmentDistanceM": 11.5,
+  "address": "138 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Cocktail bar",
+   "Dessert restaurant",
+   "Pasta shop",
+   "Pizza restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Zia%20Maria%20Little%20Italy&query_place_id=ChIJm7QTo_lZwokRRnjGuJABJPQ",
+  "description": "Comfortable option featuring housemade pasta, pizza, and other Italian classics.",
+  "price": "$20–80",
+  "reviewsScraped": 60
+ },
+ "ChIJK0YQvsRZwokR9r2ubFZRd7E": {
+  "placeId": "ChIJK0YQvsRZwokR9r2ubFZRd7E",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 252.7,
+  "segmentDistanceM": 22.0,
+  "address": "133 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Italian restaurant",
+   "Bar",
+   "Dessert restaurant",
+   "Family restaurant",
+   "Ice cream shop",
+   "Delivery Restaurant",
+   "Takeout Restaurant",
+   "Pasta shop",
+   "Pizza restaurant",
+   "Sports bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Osteria%20Barocca&query_place_id=ChIJK0YQvsRZwokR9r2ubFZRd7E",
+  "description": null,
+  "price": "$20–80",
+  "reviewsScraped": 60
+ },
+ "ChIJzdVRpolZwokRD0zM5dURxsQ": {
+  "placeId": "ChIJzdVRpolZwokRD0zM5dURxsQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 14.6,
+  "address": "227 Centre St, New York, NY 10013",
+  "categories": [
+   "Thai restaurant",
+   "Delivery Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Lan%20Larb%20Chiang%20Mai%2C%20Soho&query_place_id=ChIJzdVRpolZwokRD0zM5dURxsQ",
+  "description": "Restaurant serving street food and Thai home kitchen-inspired fare.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJg0ZHaSRZwokRHymWtw9gKJk": {
+  "placeId": "ChIJg0ZHaSRZwokRHymWtw9gKJk",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 24.4,
+  "segmentDistanceM": 24.4,
+  "address": "103 Bowery, New York, NY 10002",
+  "categories": [
+   "Chinese restaurant",
+   "Mandarin restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Jiang%20Nan%20NYC&query_place_id=ChIJg0ZHaSRZwokRHymWtw9gKJk",
+  "description": "Contemporary takes on Chinese classics artfully presented in a chic, streamlined space.",
+  "price": "$20–70",
+  "reviewsScraped": 60
+ },
+ "ChIJY45j3SdZwokR9nY49zH3Poo": {
+  "placeId": "ChIJY45j3SdZwokR9nY49zH3Poo",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 82.0,
+  "segmentDistanceM": 13.9,
+  "address": "111 Chrystie St, New York, NY 10002",
+  "categories": [
+   "Coffee shop",
+   "Latin American restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cafecito&query_place_id=ChIJY45j3SdZwokR9nY49zH3Poo",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJsycofKtZwokRMnP3uMRsu20": {
+  "placeId": "ChIJsycofKtZwokRMnP3uMRsu20",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 75.5,
+  "segmentDistanceM": 10.7,
+  "address": "97 Chrystie St, New York, NY 10002",
+  "categories": [
+   "Cafe",
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Jook%20Sing%20Panda&query_place_id=ChIJsycofKtZwokRMnP3uMRsu20",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 39
+ },
+ "ChIJ5eg8WQBbwokRR6Z_pk3F2o4": {
+  "placeId": "ChIJ5eg8WQBbwokRR6Z_pk3F2o4",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 33.1,
+  "segmentDistanceM": 33.1,
+  "address": "37 Bowery, New York, NY 10002",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cafe%20Diem%20NYC&query_place_id=ChIJ5eg8WQBbwokRR6Z_pk3F2o4",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJL8_mB4lZwokR9RPJzSCMrmw": {
+  "placeId": "ChIJL8_mB4lZwokR9RPJzSCMrmw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 21.8,
+  "address": "239 Centre St, New York, NY 10013",
+  "categories": [
+   "Coffee shop",
+   "Breakfast restaurant",
+   "Brunch restaurant",
+   "Cafe",
+   "Delivery service",
+   "Dessert shop",
+   "European restaurant",
+   "Family restaurant",
+   "French restaurant",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=maman&query_place_id=ChIJL8_mB4lZwokR9RPJzSCMrmw",
+  "description": "Rustic storefront showcasing classic French & American baked goods, plus soups, sandwiches & salads.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJXQzMABtZwokRzQOuqFYxgUY": {
+  "placeId": "ChIJXQzMABtZwokRzQOuqFYxgUY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 11.9,
+  "address": "177 Lafayette St, New York, NY 10013",
+  "categories": [
+   "Coffee shop",
+   "Bakery",
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Butler%20Bakeshop%20%26%20Espresso%20Bar&query_place_id=ChIJXQzMABtZwokRzQOuqFYxgUY",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJXdVeWAhZwokRXSt8ih_hr_s": {
+  "placeId": "ChIJXdVeWAhZwokRXSt8ih_hr_s",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 17.6,
+  "address": "409 Broome St, New York, NY 10013",
+  "categories": [
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Toby's%20Estate%20(SoHo)&query_place_id=ChIJXdVeWAhZwokRXSt8ih_hr_s",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 48
+ },
+ "ChIJVSOf0WxZwokR2FLJTrs2AsI": {
+  "placeId": "ChIJVSOf0WxZwokR2FLJTrs2AsI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 291.8,
+  "segmentDistanceM": 16.9,
+  "address": "121 Baxter St, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Spongies%20Cafe&query_place_id=ChIJVSOf0WxZwokR2FLJTrs2AsI",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJTXOfvSlZwokRN_ZPNFLRDdY": {
+  "placeId": "ChIJTXOfvSlZwokRN_ZPNFLRDdY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 236.6,
+  "segmentDistanceM": 25.9,
+  "address": "379 Broome St, New York, NY 10013",
+  "categories": [
+   "Coffee shop",
+   "Brunch restaurant",
+   "Coffee store",
+   "Lunch restaurant",
+   "Pastry shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Stone%20Street%20Caf%C3%A9&query_place_id=ChIJTXOfvSlZwokRN_ZPNFLRDdY",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJyxnN7YFZwokRCxFHN_H8az0": {
+  "placeId": "ChIJyxnN7YFZwokRCxFHN_H8az0",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 60.9,
+  "segmentDistanceM": 20.7,
+  "address": "132 Bowery, New York, NY 10013",
+  "categories": [
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Matcha%20Cafe%20Maiko&query_place_id=ChIJyxnN7YFZwokRCxFHN_H8az0",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ1-MbwQVZwokRbrY05Hi72SU": {
+  "placeId": "ChIJ1-MbwQVZwokRbrY05Hi72SU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 182.3,
+  "segmentDistanceM": 10.5,
+  "address": "358 Broome St, New York, NY 10013",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=on%20Broome&query_place_id=ChIJ1-MbwQVZwokRbrY05Hi72SU",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJu_Jf-DlZwokRI571t58-ebw": {
+  "placeId": "ChIJu_Jf-DlZwokRI571t58-ebw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 182.4,
+  "segmentDistanceM": 19.0,
+  "address": "365 Broome St, New York, NY 10013",
+  "categories": [
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cafe%20Fig&query_place_id=ChIJu_Jf-DlZwokRI571t58-ebw",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 37
+ },
+ "ChIJ68CshahZwokR7bpCVWPDK_I": {
+  "placeId": "ChIJ68CshahZwokR7bpCVWPDK_I",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 21.3,
+  "address": "255A Canal St, New York, NY 10013",
+  "categories": [
+   "Art cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Noise%20NYC&query_place_id=ChIJ68CshahZwokR7bpCVWPDK_I",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJZ77sUzxbwokR_tqJzDm3zDs": {
+  "placeId": "ChIJZ77sUzxbwokR_tqJzDm3zDs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 78.4,
+  "segmentDistanceM": 9.9,
+  "address": "26A Elizabeth St, New York, NY 10013",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Kor%C3%A9%20Coffee&query_place_id=ChIJZ77sUzxbwokR_tqJzDm3zDs",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ1-gCLABZwokRWwBFGp2LxYY": {
+  "placeId": "ChIJ1-gCLABZwokRWwBFGp2LxYY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 176.2,
+  "segmentDistanceM": 13.2,
+  "address": "166 Mott St B, New York, NY 10013",
+  "categories": [
+   "Coffee shop",
+   "Coffee roastery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Milkweed%20Studio&query_place_id=ChIJ1-gCLABZwokRWwBFGp2LxYY",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJv6INkhtZwokR5Ol7iuc6TJc": {
+  "placeId": "ChIJv6INkhtZwokR5Ol7iuc6TJc",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 295.2,
+  "segmentDistanceM": 15.6,
+  "address": "180 Mulberry St, New York, NY 10012",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Urban%20Backyard%20-%20Nolita&query_place_id=ChIJv6INkhtZwokR5Ol7iuc6TJc",
+  "description": "Café with classic drinks and ornamental cupcakes in a verdant, rustic space.",
+  "price": "$1–20",
+  "reviewsScraped": 60
+ },
+ "ChIJHcFFXH9ZwokR_QKedPacLiQ": {
+  "placeId": "ChIJHcFFXH9ZwokR_QKedPacLiQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 17.3,
+  "address": "398 Broome St, New York, NY 10013",
+  "categories": [
+   "Cafe",
+   "Espresso bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Lost%20Draft&query_place_id=ChIJHcFFXH9ZwokR_QKedPacLiQ",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ0_wAErVZwokRwTV5DjVy3FE": {
+  "placeId": "ChIJ0_wAErVZwokRwTV5DjVy3FE",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 16.5,
+  "address": "183 Lafayette St, New York, NY 10013",
+  "categories": [
+   "Women's clothing store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Apiece%20Apart%20Store&query_place_id=ChIJ0_wAErVZwokRwTV5DjVy3FE",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 20
+ },
+ "ChIJ35ScothZwokRak_L82A07yw": {
+  "placeId": "ChIJ35ScothZwokRak_L82A07yw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 224.4,
+  "segmentDistanceM": 7.8,
+  "address": "191 Hester St, New York, NY 10013",
+  "categories": [
+   "Pastry shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Napoli%20Pastry%20Co.&query_place_id=ChIJ35ScothZwokRak_L82A07yw",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 16
+ },
+ "ChIJOZwzEwBZwokRfbOtKtRYAZc": {
+  "placeId": "ChIJOZwzEwBZwokRfbOtKtRYAZc",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 279.6,
+  "segmentDistanceM": 12.9,
+  "address": "41 Kenmare St, New York, NY 10012",
+  "categories": [
+   "Coffee shop",
+   "Breakfast restaurant",
+   "Brunch restaurant",
+   "Cafe",
+   "Wine club"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Frame%20Cafe%20Soho&query_place_id=ChIJOZwzEwBZwokRfbOtKtRYAZc",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJU4XPH4hZwokRYmUU3Q0KE50": {
+  "placeId": "ChIJU4XPH4hZwokRYmUU3Q0KE50",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 59.8,
+  "segmentDistanceM": 11.1,
+  "address": "157 Hester St, New York, NY 10013",
+  "categories": [
+   "Asian grocery store",
+   "Chinese supermarket",
+   "Grocery store",
+   "Supermarket"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Hong%20Kong%20Supermarket&query_place_id=ChIJU4XPH4hZwokRYmUU3Q0KE50",
+  "description": "Bustling Asian grocery store selling imported dry goods alongside fresh meat, seafood & produce.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJJWY834lZwokRamN-INPv7Yk": {
+  "placeId": "ChIJJWY834lZwokRamN-INPv7Yk",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 292.0,
+  "segmentDistanceM": 16.8,
+  "address": "119 Baxter St, New York, NY 10013",
+  "categories": [
+   "Ice cream shop",
+   "Bakery",
+   "Dessert restaurant",
+   "Dessert shop",
+   "Japanese restaurant",
+   "Japanese sweets restaurant",
+   "Pastry shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Taiyaki%20NYC%20Japanese%20Ice%20Cream&query_place_id=ChIJJWY834lZwokRamN-INPv7Yk",
+  "description": "A Japanese ice cream shop serving inventive flavors in a fish-shaped waffle cone.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ95G7WYhZwokRCjOpyxYTZ-8": {
+  "placeId": "ChIJ95G7WYhZwokRCjOpyxYTZ-8",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 243.8,
+  "segmentDistanceM": 6.2,
+  "address": "170 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Boutique",
+   "Fashion accessories store",
+   "Jewelry store",
+   "Sunglasses store",
+   "Women's clothing store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mure%20and%20Grand%20-%20Little%20Italy&query_place_id=ChIJ95G7WYhZwokRCjOpyxYTZ-8",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJB-f4FSdawokRYMxFAzL8ApM": {
+  "placeId": "ChIJB-f4FSdawokRYMxFAzL8ApM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 147.4,
+  "segmentDistanceM": 8.9,
+  "address": "75 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Asian grocery store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sun%20Vin%20Grocery%20Store&query_place_id=ChIJB-f4FSdawokRYMxFAzL8ApM",
+  "description": "Bare-bones grocery store in a small space stocking the shelves with Asian products.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJXeKmN4ZZwokRfy_RcPedDvs": {
+  "placeId": "ChIJXeKmN4ZZwokRfy_RcPedDvs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 191.8,
+  "segmentDistanceM": 17.2,
+  "address": "5 Delancey St, New York, NY 10002",
+  "categories": [
+   "Vintage clothing store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Procell&query_place_id=ChIJXeKmN4ZZwokRfy_RcPedDvs",
+  "description": "Vintage store spotlighting 80s & 90s apparel & accessories for men & women, including concert tees.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJGUyckohZwokRhkdwp3GpxCg": {
+  "placeId": "ChIJGUyckohZwokRhkdwp3GpxCg",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 244.9,
+  "segmentDistanceM": 14.6,
+  "address": "372 Broome St, New York, NY 10013",
+  "categories": [
+   "Lingerie store",
+   "Bridal shop",
+   "Clothing store",
+   "Dress store",
+   "Swimwear store",
+   "Women's clothing store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Fleur%20du%20Mal%20NYC%20Nolita%20Boutique&query_place_id=ChIJGUyckohZwokRhkdwp3GpxCg",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJHXLdlohZwokRVXsk6PyFyew": {
+  "placeId": "ChIJHXLdlohZwokRVXsk6PyFyew",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 14.0,
+  "address": "180 Lafayette St, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Hair%20Bar%20NYC%20Soho&query_place_id=ChIJHXLdlohZwokRVXsk6PyFyew",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJKQWE8UZZwokRUFB32gGhH-Q": {
+  "placeId": "ChIJKQWE8UZZwokRUFB32gGhH-Q",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 11.7,
+  "address": "181 Mulberry St, New York, NY 10012",
+  "categories": [
+   "Bagel shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Leon%E2%80%99s%20Bagels&query_place_id=ChIJKQWE8UZZwokRUFB32gGhH-Q",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJWzjgyPFZwokRhhjgms2SAaA": {
+  "placeId": "ChIJWzjgyPFZwokRhhjgms2SAaA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 264.1,
+  "segmentDistanceM": 21.8,
+  "address": "181 Grand St, New York, NY 10013",
+  "categories": [
+   "Bagel shop",
+   "Breakfast restaurant",
+   "Brunch restaurant",
+   "Cafe",
+   "Caterer",
+   "Coffee shop",
+   "Deli",
+   "Gluten-free restaurant",
+   "Sandwich shop",
+   "Vegetarian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Go%20Bagels&query_place_id=ChIJWzjgyPFZwokRhhjgms2SAaA",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJUegsmSdawokRyTZpuUXJSZw": {
+  "placeId": "ChIJUegsmSdawokRyTZpuUXJSZw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 111.0,
+  "segmentDistanceM": 24.0,
+  "address": "170 Canal St 2nd floor, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mian%20Tian%20Sing%20Hair%20Salon&query_place_id=ChIJUegsmSdawokRyTZpuUXJSZw",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJb6qAbrNZwokRg4_SLLcih-A": {
+  "placeId": "ChIJb6qAbrNZwokRg4_SLLcih-A",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 180.6,
+  "segmentDistanceM": 5.1,
+  "address": "164 Mott St, New York, NY 10013",
+  "categories": [
+   "Pizza restaurant",
+   "Bakery",
+   "Italian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Ceres&query_place_id=ChIJb6qAbrNZwokRg4_SLLcih-A",
+  "description": null,
+  "price": "$20–70",
+  "reviewsScraped": 60
+ },
+ "ChIJ5WcwMIhZwokRVevxrs92WCU": {
+  "placeId": "ChIJ5WcwMIhZwokRVevxrs92WCU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 168.4,
+  "segmentDistanceM": 14.7,
+  "address": "125 Mott St, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Manna%20House&query_place_id=ChIJ5WcwMIhZwokRVevxrs92WCU",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJW_bfDYlZwokRhs3SVQ-E_AI": {
+  "placeId": "ChIJW_bfDYlZwokRhs3SVQ-E_AI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 25.4,
+  "address": "184B Lafayette St, New York, NY 10013",
+  "categories": [
+   "Hair salon",
+   "Nail salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=ATO%20COLOR%20SALON&query_place_id=ChIJW_bfDYlZwokRhs3SVQ-E_AI",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJA4h4gGNZwokRoKuGLu3GEo0": {
+  "placeId": "ChIJA4h4gGNZwokRoKuGLu3GEo0",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 19.2,
+  "address": "247 Centre St 3rd floor, New York, NY 10013",
+  "categories": [
+   "Hair salon",
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Beauty%20Supply&query_place_id=ChIJA4h4gGNZwokRoKuGLu3GEo0",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 38
+ },
+ "ChIJD83QEohZwokROElddghM0TE": {
+  "placeId": "ChIJD83QEohZwokROElddghM0TE",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 71.0,
+  "segmentDistanceM": 10.7,
+  "address": "223 Grand St, New York, NY 10002",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Fox%20%26%20Jane%20Bowery&query_place_id=ChIJD83QEohZwokROElddghM0TE",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ-TSYGQBbwokR4fAnGATFMD0": {
+  "placeId": "ChIJ-TSYGQBbwokR4fAnGATFMD0",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 183.4,
+  "segmentDistanceM": 16.0,
+  "address": "85 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Convenience store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Dollar%20more%20store&query_place_id=ChIJ-TSYGQBbwokR4fAnGATFMD0",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 1
+ },
+ "ChIJxT9vVn9ZwokRns_0l3xZQ-Y": {
+  "placeId": "ChIJxT9vVn9ZwokRns_0l3xZQ-Y",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 60.2,
+  "segmentDistanceM": 19.6,
+  "address": "246 Grand St, New York, NY 10002",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Beautiful%20Hair%20Salon&query_place_id=ChIJxT9vVn9ZwokRns_0l3xZQ-Y",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ509JH4ZZwokRl_3L5V5vozo": {
+  "placeId": "ChIJ509JH4ZZwokRl_3L5V5vozo",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 276.6,
+  "segmentDistanceM": 23.4,
+  "address": "6 Spring St, New York, NY 10012",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Yama%20Hair%20Salon&query_place_id=ChIJ509JH4ZZwokRl_3L5V5vozo",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ7YasBqNZwokR-ADKyitm7aw": {
+  "placeId": "ChIJ7YasBqNZwokR-ADKyitm7aw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 74.8,
+  "segmentDistanceM": 27.3,
+  "address": "116 Elizabeth St 2 FL, New York, NY 10013",
+  "categories": [
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Second%20Floor%20Salon&query_place_id=ChIJ7YasBqNZwokR-ADKyitm7aw",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ5-EesadZwokRGI6cgOIWjgE": {
+  "placeId": "ChIJ5-EesadZwokRGI6cgOIWjgE",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 0.5,
+  "segmentDistanceM": 0.5,
+  "address": "104 Bowery, New York, NY 10013",
+  "categories": [
+   "Hairdresser",
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Ricky%20Ren%20%7C%20Asian%20Blonde%20Specialist%20NYC&query_place_id=ChIJ5-EesadZwokRGI6cgOIWjgE",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJLVMtLIhZwokRAVNvpgrYbLA": {
+  "placeId": "ChIJLVMtLIhZwokRAVNvpgrYbLA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 74.8,
+  "segmentDistanceM": 27.3,
+  "address": "116 Elizabeth St 2 FL, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cutting%20Edge%20Salon&query_place_id=ChIJLVMtLIhZwokRAVNvpgrYbLA",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ5Q99ANZZwokRZAsYh7US44Q": {
+  "placeId": "ChIJ5Q99ANZZwokRZAsYh7US44Q",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 68.2,
+  "segmentDistanceM": 26.2,
+  "address": "136 Bowery, New York, NY 10013",
+  "categories": [
+   "Hair salon",
+   "Barber shop",
+   "Make-up artist",
+   "Nail salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=District%2087%20Salon&query_place_id=ChIJ5Q99ANZZwokRZAsYh7US44Q",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJUb5kVYhZwokRP5DHegKhqmI": {
+  "placeId": "ChIJUb5kVYhZwokRP5DHegKhqmI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 296.1,
+  "segmentDistanceM": 14.0,
+  "address": "8 Centre Market Pl, New York, NY 10013",
+  "categories": [
+   "Women's clothing store",
+   "Clothing store",
+   "Fashion accessories store",
+   "Fashion designer",
+   "Shoe store",
+   "Vintage clothing store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=No.6&query_place_id=ChIJUb5kVYhZwokRP5DHegKhqmI",
+  "description": "On a Little Italy side street, this shop offers goods from European designers plus its own clogs.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJKz-ZJohZwokRSbnhIos0QTs": {
+  "placeId": "ChIJKz-ZJohZwokRSbnhIos0QTs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 180.4,
+  "segmentDistanceM": 12.5,
+  "address": "201 Grand St 2nd floor, New York, NY 10013",
+  "categories": [
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Toto%20Hair&query_place_id=ChIJKz-ZJohZwokRSbnhIos0QTs",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJpw-ZBYhZwokRlAt_v1Vrol4": {
+  "placeId": "ChIJpw-ZBYhZwokRlAt_v1Vrol4",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 26.0,
+  "segmentDistanceM": 26.0,
+  "address": "104 Bowery, New York, NY 10013",
+  "categories": [
+   "Hair salon",
+   "Spa"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=MESSLOOK%20%E4%BA%82%E5%89%AA%C2%AE%20HAIR%20%26%20SPA&query_place_id=ChIJpw-ZBYhZwokRlAt_v1Vrol4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJn4K4s4lZwokR6UiRr62g0F4": {
+  "placeId": "ChIJn4K4s4lZwokR6UiRr62g0F4",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 152.4,
+  "segmentDistanceM": 8.2,
+  "address": "152 Mott St, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Third%20Prince%20Salon%20Inc.&query_place_id=ChIJn4K4s4lZwokR6UiRr62g0F4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJy9JpCYlZwokRHMblpHlvdhA": {
+  "placeId": "ChIJy9JpCYlZwokRHMblpHlvdhA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 31.5,
+  "address": "87 Walker St #6A, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=SalonHQ%20Inc&query_place_id=ChIJy9JpCYlZwokRHMblpHlvdhA",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJC1yW-YhZwokRjBrg7iPiQoo": {
+  "placeId": "ChIJC1yW-YhZwokRjBrg7iPiQoo",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 276.4,
+  "segmentDistanceM": 8.9,
+  "address": "177A Mulberry St, New York, NY 10013",
+  "categories": [
+   "Wine store",
+   "Liquor store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mulberry%20Wine%20and%20Liquor%20Store&query_place_id=ChIJC1yW-YhZwokRjBrg7iPiQoo",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 28
+ },
+ "ChIJ9f9leENbwokRVhhTVPApyUg": {
+  "placeId": "ChIJ9f9leENbwokRVhhTVPApyUg",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 165.6,
+  "segmentDistanceM": 14.8,
+  "address": "75 Mott St, New York, NY 10013",
+  "categories": [
+   "Asian grocery store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=TESOmini&query_place_id=ChIJ9f9leENbwokRVhhTVPApyUg",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJoZsxJfVbwokRZVUfecWg154": {
+  "placeId": "ChIJoZsxJfVbwokRZVUfecWg154",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 222.7,
+  "segmentDistanceM": 10.6,
+  "address": "118 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Tobacco shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Smoke%20Gift%20%26%20Convenience&query_place_id=ChIJoZsxJfVbwokRZVUfecWg154",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJsQKkeYdbwokR0d1zHGxRH-A": {
+  "placeId": "ChIJsQKkeYdbwokR0d1zHGxRH-A",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 134.3,
+  "segmentDistanceM": 16.8,
+  "address": "217 Canal St, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Xiang%20Mini%20Cake&query_place_id=ChIJsQKkeYdbwokR0d1zHGxRH-A",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 12
+ },
+ "ChIJbVpPFCdawokRNPUQhDba3DQ": {
+  "placeId": "ChIJbVpPFCdawokRNPUQhDba3DQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 155.5,
+  "segmentDistanceM": 6.9,
+  "address": "78 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Discount store",
+   "Appliance store",
+   "Bathroom supply store",
+   "Home goods store",
+   "Kitchen supply store",
+   "Restaurant supply store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=K.%20K.%20Discount%20Store&query_place_id=ChIJbVpPFCdawokRNPUQhDba3DQ",
+  "description": "No-frills stalwart stocking a variety of home goods & Asian decor, from teapots to small furniture.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJa128pIhZwokRnoPKJguYBCA": {
+  "placeId": "ChIJa128pIhZwokRnoPKJguYBCA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 9.3,
+  "address": "202 Mott St, New York, NY 10012",
+  "categories": [
+   "Mediterranean restaurant",
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Balzem&query_place_id=ChIJa128pIhZwokRnoPKJguYBCA",
+  "description": "Restaurant and wine bar serving Mediterranean small plates and entrees in a rustic, brick-walled space.",
+  "price": "$30–90",
+  "reviewsScraped": 60
+ },
+ "ChIJ4equ8olZwokRHEn8MagHhkw": {
+  "placeId": "ChIJ4equ8olZwokRHEn8MagHhkw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 9.8,
+  "address": "11 Howard St, New York, NY 10013",
+  "categories": [
+   "Bar",
+   "Night club"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Blond&query_place_id=ChIJ4equ8olZwokRHEn8MagHhkw",
+  "description": "Upscale, stylish nightspot at 11 Howard hotel featuring cocktails, DJs & an eclectic bar-bites menu.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJJzoD4YdZwokR0eU-prYkY3A": {
+  "placeId": "ChIJJzoD4YdZwokR0eU-prYkY3A",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 27.7,
+  "segmentDistanceM": 11.2,
+  "address": "239 Grand St, New York, NY 10002",
+  "categories": [
+   "Bakery",
+   "Dessert restaurant",
+   "Dessert shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Go%20Believe&query_place_id=ChIJJzoD4YdZwokR0eU-prYkY3A",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJyz_46yFZwokR8X62fDIyyUs": {
+  "placeId": "ChIJyz_46yFZwokR8X62fDIyyUs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 93.4,
+  "segmentDistanceM": 15.9,
+  "address": "145 Bowery, New York, NY 10002",
+  "categories": [
+   "Lounge bar",
+   "Night club"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Highlight%20Room&query_place_id=ChIJyz_46yFZwokR8X62fDIyyUs",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJpWd1R4hZwokRqZIYQCRHjkE": {
+  "placeId": "ChIJpWd1R4hZwokRqZIYQCRHjkE",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 170.2,
+  "segmentDistanceM": 17.3,
+  "address": "143A Mott St, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Golden%20Steamer&query_place_id=ChIJpWd1R4hZwokRqZIYQCRHjkE",
+  "description": "Basic joint specializing in Chinese steamed buns with varied fillings from BBQ pork to pumpkin.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJu72rPwBZwokRb_yHiC2rVIM": {
+  "placeId": "ChIJu72rPwBZwokRb_yHiC2rVIM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 181.6,
+  "segmentDistanceM": 23.3,
+  "address": "76 Forsyth St, New York, NY 10002",
+  "categories": [
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Lai%20Rai&query_place_id=ChIJu72rPwBZwokRb_yHiC2rVIM",
+  "description": null,
+  "price": "$20–70",
+  "reviewsScraped": 60
+ },
+ "ChIJRZ92HIpZwokRn-hmnpqtplU": {
+  "placeId": "ChIJRZ92HIpZwokRn-hmnpqtplU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 238.5,
+  "segmentDistanceM": 10.1,
+  "address": "263 Canal St B, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Ling's%20Fresh%20Made%20Sweet%20Mini%20Cakes&query_place_id=ChIJRZ92HIpZwokRn-hmnpqtplU",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 22
+ },
+ "ChIJtVCVH4ZZwokRyfkmpj7Qk5g": {
+  "placeId": "ChIJtVCVH4ZZwokRyfkmpj7Qk5g",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 282.7,
+  "segmentDistanceM": 6.5,
+  "address": "174 Elizabeth St, New York, NY 10012",
+  "categories": [
+   "Cocktail bar",
+   "Italian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Pietro%20Nolita&query_place_id=ChIJtVCVH4ZZwokRyfkmpj7Qk5g",
+  "description": "Cozy bar/eatery with a pink motif inspired by 1980s design, serving Italian fare & weekend brunch.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJ38eBUG1bwokRWf2wBK2Fss8": {
+  "placeId": "ChIJ38eBUG1bwokRWf2wBK2Fss8",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 21.7,
+  "address": "96 Lafayette St, New York, NY 10013",
+  "categories": [
+   "Bar",
+   "Event venue"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Live%20Axe&query_place_id=ChIJ38eBUG1bwokRWf2wBK2Fss8",
+  "description": "Axe throwing sessions in a Viking-themed lounge, plus craft beers, cocktails & bar snacks.",
+  "price": "$40–100",
+  "reviewsScraped": 60
+ },
+ "ChIJM2pF4YdZwokR6GyK6OK4gGM": {
+  "placeId": "ChIJM2pF4YdZwokR6GyK6OK4gGM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 41.4,
+  "segmentDistanceM": 20.1,
+  "address": "243 Grand St, New York, NY 10002",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Van%20Cafe&query_place_id=ChIJM2pF4YdZwokR6GyK6OK4gGM",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJc7XVlcVZwokRst-0eWnIrvw": {
+  "placeId": "ChIJc7XVlcVZwokRst-0eWnIrvw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 217.7,
+  "segmentDistanceM": 8.9,
+  "address": "370 Broome St, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Frenchette%20Bakery&query_place_id=ChIJc7XVlcVZwokRst-0eWnIrvw",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 21
+ },
+ "ChIJUyyldZpbwokRpqP39gsEGQc": {
+  "placeId": "ChIJUyyldZpbwokRpqP39gsEGQc",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 96.9,
+  "segmentDistanceM": 12.6,
+  "address": "167 Canal St, New York, NY 10013",
+  "categories": [
+   "Bubble tea store",
+   "Bakery",
+   "Coffee shop",
+   "Health food restaurant",
+   "Pastry shop",
+   "Tea house"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Teapulse&query_place_id=ChIJUyyldZpbwokRpqP39gsEGQc",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ5zrk6OdbwokRmCcl_dYLEiQ": {
+  "placeId": "ChIJ5zrk6OdbwokRmCcl_dYLEiQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 13.8,
+  "address": "77 Walker St, New York, NY 10013",
+  "categories": [
+   "Restaurant",
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mostrador%20NYC&query_place_id=ChIJ5zrk6OdbwokRmCcl_dYLEiQ",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJUekTvYhZwokRkaWEMslVxkw": {
+  "placeId": "ChIJUekTvYhZwokRkaWEMslVxkw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 295.5,
+  "segmentDistanceM": 14.5,
+  "address": "198 Mott St, New York, NY 10012",
+  "categories": [
+   "Bakery",
+   "Deli"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Parisi%20Bakery%20%26%20Deli&query_place_id=ChIJUekTvYhZwokRkaWEMslVxkw",
+  "description": "Family-run since 1903, this bakery is known for fresh bread & big sandwiches with Italian cold cuts.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJiRV6agBZwokR3mxL9Ydct_k": {
+  "placeId": "ChIJiRV6agBZwokR3mxL9Ydct_k",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 98.3,
+  "segmentDistanceM": 12.9,
+  "address": "220 Grand St, New York, NY 10013",
+  "categories": [
+   "Convenience store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=220%20Grand%20Grab%20%26%20GO%20Convenience%20Shop&query_place_id=ChIJiRV6agBZwokR3mxL9Ydct_k",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJ4bjOHopZwokRSjm9T2RlcRk": {
+  "placeId": "ChIJ4bjOHopZwokRSjm9T2RlcRk",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 26.3,
+  "address": "269 Canal St #4, New York, NY 10013",
+  "categories": [
+   "Electronics store",
+   "Watch store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Canal%20%26%20Broadway%20General%20Merchandise&query_place_id=ChIJ4bjOHopZwokRSjm9T2RlcRk",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 30
+ },
+ "ChIJuRpYs-hZwokREf3DZ8KVHIA": {
+  "placeId": "ChIJuRpYs-hZwokREf3DZ8KVHIA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 22.4,
+  "address": "100 Kenmare St, New York, NY 10281",
+  "categories": [
+   "Restaurant",
+   "Açaí shop",
+   "Bakery",
+   "Breakfast restaurant",
+   "Brunch restaurant",
+   "Coffee shop",
+   "Juice shop",
+   "Lunch restaurant",
+   "Salad shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=CARROT&query_place_id=ChIJuRpYs-hZwokREf3DZ8KVHIA",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJqz6xTwBZwokRNvAKvJE8RV4": {
+  "placeId": "ChIJqz6xTwBZwokRNvAKvJE8RV4",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 241.6,
+  "segmentDistanceM": 18.1,
+  "address": "183 Bowery, New York, NY 10002",
+  "categories": [
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Ripple%20Room&query_place_id=ChIJqz6xTwBZwokRNvAKvJE8RV4",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 0
+ },
+ "ChIJcRFYrhlZwokRX7GQixFVDKA": {
+  "placeId": "ChIJcRFYrhlZwokRX7GQixFVDKA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 218.8,
+  "segmentDistanceM": 13.8,
+  "address": "180 Hester St, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Capy%20Tres%20Leches%20Cake&query_place_id=ChIJcRFYrhlZwokRX7GQixFVDKA",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJsScHFt1bwokRevicjY3BIpE": {
+  "placeId": "ChIJsScHFt1bwokRevicjY3BIpE",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 24.3,
+  "address": "242 Canal St, New York, NY 10013",
+  "categories": [
+   "Chinese bakery",
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=New%20Cameron%20Bakery&query_place_id=ChIJsScHFt1bwokRevicjY3BIpE",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ7xGlXCdawokRYSh7mUfhXPg": {
+  "placeId": "ChIJ7xGlXCdawokRYSh7mUfhXPg",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 259.9,
+  "segmentDistanceM": 19.6,
+  "address": "135 Walker St, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sweets%20Bakery&query_place_id=ChIJ7xGlXCdawokRYSh7mUfhXPg",
+  "description": "No-frills destination for stuffed Asian buns (savory & sweet), assorted cakes & premade sandwiches.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ01nLKYhZwokR59aeGeGrmq0": {
+  "placeId": "ChIJ01nLKYhZwokR59aeGeGrmq0",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 147.0,
+  "segmentDistanceM": 8.6,
+  "address": "106 Mott St Frnt P, New York, NY 10013",
+  "categories": [
+   "Cafe",
+   "Bakery",
+   "Brunch restaurant",
+   "Coffee shop",
+   "Dessert shop",
+   "Espresso bar",
+   "Ice cream shop",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sweet%20Moment%20NYC&query_place_id=ChIJ01nLKYhZwokR59aeGeGrmq0",
+  "description": "Funky dessert cafe with creative shaved ice concoctions and waffles, plus craft coffee drinks and tea.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJC8xDg3BZwokRww8uuzFensI": {
+  "placeId": "ChIJC8xDg3BZwokRww8uuzFensI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 244.0,
+  "segmentDistanceM": 13.2,
+  "address": "19 Kenmare St, New York, NY 10012",
+  "categories": [
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Only%20The%20Wild%20Ones&query_place_id=ChIJC8xDg3BZwokRww8uuzFensI",
+  "description": null,
+  "price": "$10–50",
+  "reviewsScraped": 23
+ },
+ "ChIJo_RcQ4hZwokRv6MONmPoRtE": {
+  "placeId": "ChIJo_RcQ4hZwokRv6MONmPoRtE",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 168.2,
+  "segmentDistanceM": 10.7,
+  "address": "200 Grand St, New York, NY 10013",
+  "categories": [
+   "Italian grocery store",
+   "Grocery store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Di%20Palo's%20Fine%20Foods&query_place_id=ChIJo_RcQ4hZwokRv6MONmPoRtE",
+  "description": "Family-owned Italian shop offering artisanal cheeses & cured meats plus pasta, sauce & pantry items.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJEUf6rIlZwokRHhWVMHCKqCY": {
+  "placeId": "ChIJEUf6rIlZwokRHhWVMHCKqCY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 293.8,
+  "segmentDistanceM": 6.7,
+  "address": "174 Grand St, New York, NY 10013",
+  "categories": [
+   "Bar & grill",
+   "Function room facility",
+   "Hamburger restaurant",
+   "Irish pub",
+   "Karaoke bar",
+   "Live music bar",
+   "Lounge bar",
+   "Takeout Restaurant",
+   "Pub",
+   "Taco restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Onieal's&query_place_id=ChIJEUf6rIlZwokRHhWVMHCKqCY",
+  "description": "New American dishes, oysters, and cocktails offered in an intimate, tavern-style atmosphere.",
+  "price": "$20–70",
+  "reviewsScraped": 60
+ },
+ "ChIJqbrbt1VZwokR9GY2X4i2kMk": {
+  "placeId": "ChIJqbrbt1VZwokR9GY2X4i2kMk",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 276.4,
+  "segmentDistanceM": 8.9,
+  "address": "177 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Bar",
+   "Beer store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Grotta%20Local&query_place_id=ChIJqbrbt1VZwokR9GY2X4i2kMk",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 36
+ },
+ "ChIJZQ4NQmFZwokRCBy1HZVH_ew": {
+  "placeId": "ChIJZQ4NQmFZwokRCBy1HZVH_ew",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 23.6,
+  "address": "27 Howard St 1st Floor, New York, NY 10013",
+  "categories": [
+   "Second hand store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=2nd%20STREET%20SoHo&query_place_id=ChIJZQ4NQmFZwokRCBy1HZVH_ew",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJv244dSBZwokRsqbqt52SsuA": {
+  "placeId": "ChIJv244dSBZwokRsqbqt52SsuA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 260.9,
+  "segmentDistanceM": 30.4,
+  "address": "189 Bowery, New York, NY 10002",
+  "categories": [
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=cloudM%20New%20York%20Bowery&query_place_id=ChIJv244dSBZwokRsqbqt52SsuA",
+  "description": "Chic venue serving libations & snacks complemented by city views & a spacious terrace.",
+  "price": "$10–60",
+  "reviewsScraped": 60
+ },
+ "ChIJe12LcydawokRzJ4oOyWqxaQ": {
+  "placeId": "ChIJe12LcydawokRzJ4oOyWqxaQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 167.6,
+  "segmentDistanceM": 10.3,
+  "address": "83 Mott St, New York, NY 10013",
+  "categories": [
+   "Chinese bakery",
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Fay%20Da%20Bakery&query_place_id=ChIJe12LcydawokRzJ4oOyWqxaQ",
+  "description": "Chinese bakery for cakes, cookies & breads also offering hot & cold specialty drinks.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ7-up5Q5ZwokRggzXc71DxmU": {
+  "placeId": "ChIJ7-up5Q5ZwokRggzXc71DxmU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 172.9,
+  "segmentDistanceM": 10.8,
+  "address": "151 Mott St, New York, NY 10013",
+  "categories": [
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=C.%20Di%20Palo&query_place_id=ChIJ7-up5Q5ZwokRggzXc71DxmU",
+  "description": "Wine bar from Di Palo’s Fine Foods pairing the shop's iconic cheeses with Italian goods.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJ3Txm9IhZwokRRY4xvgSFsBs": {
+  "placeId": "ChIJ3Txm9IhZwokRRY4xvgSFsBs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 231.3,
+  "segmentDistanceM": 23.2,
+  "address": "377 Broome St, New York, NY 10013",
+  "categories": [
+   "Vintage clothing store",
+   "Antique store",
+   "Used clothing store",
+   "Women's clothing store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Ritual%20Vintage%20Clothing&query_place_id=ChIJ3Txm9IhZwokRRY4xvgSFsBs",
+  "description": "Cozy vintage shop carrying historical & designer women's clothing, along with shoes & accessories.",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJLaA0MR9awokRawXfsGdy-mo": {
+  "placeId": "ChIJLaA0MR9awokRawXfsGdy-mo",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 13.6,
+  "address": "110 Lafayette St, New York, NY 10013",
+  "categories": [
+   "Convenience store",
+   "Beer store",
+   "Coffee shop",
+   "Pizza restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=7-Eleven&query_place_id=ChIJLaA0MR9awokRawXfsGdy-mo",
+  "description": "Pit stop for snacks, drinks & daily essentials",
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJF_I2YsVZwokRp-Q1focBJpw": {
+  "placeId": "ChIJF_I2YsVZwokRp-Q1focBJpw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 15.4,
+  "address": "390 Broome St, New York, NY 10013",
+  "categories": [
+   "Restaurant",
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Wooly&query_place_id=ChIJF_I2YsVZwokRp-Q1focBJpw",
+  "description": null,
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJb6KTyodZwokRX2TgJbvvvKg": {
+  "placeId": "ChIJb6KTyodZwokRX2TgJbvvvKg",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 166.3,
+  "segmentDistanceM": 15.0,
+  "address": "131 Chrystie St #1, New York, NY 10002",
+  "categories": [
+   "Bar",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Home%20Sweet%20Home&query_place_id=ChIJb6KTyodZwokRX2TgJbvvvKg",
+  "description": "Music & assorted knickknacks enliven this underground, off-the-beaten-path barroom.",
+  "price": "$1–30",
+  "reviewsScraped": 60
+ },
+ "ChIJgUJE-SdawokRVJrTfI7CZO4": {
+  "placeId": "ChIJgUJE-SdawokRVJrTfI7CZO4",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 31.1,
+  "segmentDistanceM": 17.6,
+  "address": "93 Bowery, New York, NY 10002",
+  "categories": [
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Rooftop93&query_place_id=ChIJgUJE-SdawokRVJrTfI7CZO4",
+  "description": "Bi-level lounge atop the Wyndham Garden Hotel, featuring spirits & panoramic views of NYC.",
+  "price": "$10–50",
+  "reviewsScraped": 60
+ },
+ "ChIJ8e42YvRbwokRkPKxzriHURI": {
+  "placeId": "ChIJ8e42YvRbwokRkPKxzriHURI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 48.5,
+  "segmentDistanceM": 10.9,
+  "address": "143 Hester St, New York, NY 10002",
+  "categories": [
+   "Coffee shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Lamoone&query_place_id=ChIJ8e42YvRbwokRkPKxzriHURI",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJc4zj94hZwokRTUlDTVS0rik": {
+  "placeId": "ChIJc4zj94hZwokRTUlDTVS0rik",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 250.9,
+  "segmentDistanceM": 8.9,
+  "address": "176 1/2 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Pizza restaurant",
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mulberry%20Street%20Bar&query_place_id=ChIJc4zj94hZwokRTUlDTVS0rik",
+  "description": "Old-school venue with wooden tables, offering pub food and karaoke nights.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJ01SnXohZwokRp7G92puOKzU": {
+  "placeId": "ChIJ01SnXohZwokRp7G92puOKzU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 190.9,
+  "segmentDistanceM": 18.7,
+  "address": "161 Mott St, New York, NY 10013",
+  "categories": [
+   "Chinese bakery",
+   "Bakery",
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Chiu%20Hong%20Bakery&query_place_id=ChIJ01SnXohZwokRp7G92puOKzU",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJdeg6_4dZwokREfyUpdXAOpE": {
+  "placeId": "ChIJdeg6_4dZwokREfyUpdXAOpE",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 63.9,
+  "segmentDistanceM": 23.9,
+  "address": "79 Chrystie St, New York, NY 10002",
+  "categories": [
+   "Chinese bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Tao%20Hong&query_place_id=ChIJdeg6_4dZwokREfyUpdXAOpE",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJo_K26pBbwokRYl8YkJ6I_9k": {
+  "placeId": "ChIJo_K26pBbwokRYl8YkJ6I_9k",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 126.7,
+  "segmentDistanceM": 24.8,
+  "address": "174 Canal St, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Audrey&query_place_id=ChIJo_K26pBbwokRYl8YkJ6I_9k",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJMZiTWENZwokRD-s1gkEVies": {
+  "placeId": "ChIJMZiTWENZwokRD-s1gkEVies",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 295.2,
+  "segmentDistanceM": 15.6,
+  "address": "180 Mulberry St, New York, NY 10012",
+  "categories": [
+   "Bakery",
+   "Espresso bar",
+   "Hoagie restaurant",
+   "South American restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Goat%20Bakeshop&query_place_id=ChIJMZiTWENZwokRD-s1gkEVies",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJdayQF4BZwokRfxmiw2qp89E": {
+  "placeId": "ChIJdayQF4BZwokRfxmiw2qp89E",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 54.8,
+  "segmentDistanceM": 27.0,
+  "address": "244 Grand St, New York, NY 10002",
+  "categories": [
+   "Bakery",
+   "Cafe",
+   "Cake shop",
+   "Coffee shop",
+   "Pastry shop",
+   "Patisserie"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Paris%20Baguette&query_place_id=ChIJdayQF4BZwokRfxmiw2qp89E",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ1Rjr43FZwokREygQK3GiqnU": {
+  "placeId": "ChIJ1Rjr43FZwokREygQK3GiqnU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 15.9,
+  "address": "161 Lafayette St, New York, NY 10013",
+  "categories": [
+   "Karaoke bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=161%20Lafayette&query_place_id=ChIJ1Rjr43FZwokREygQK3GiqnU",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJo9oWc4hZwokR3_u61F1rh9o": {
+  "placeId": "ChIJo9oWc4hZwokR3_u61F1rh9o",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 36.7,
+  "segmentDistanceM": 15.3,
+  "address": "230 Grand St, New York, NY 10013",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Double%20Crispy%20Bakery&query_place_id=ChIJo9oWc4hZwokR3_u61F1rh9o",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJb-R6YVhZwokR0G353ivsIRc": {
+  "placeId": "ChIJb-R6YVhZwokR0G353ivsIRc",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 18.8,
+  "address": "191 Centre St, New York, NY 10013",
+  "categories": [
+   "Restaurant",
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Soso's&query_place_id=ChIJb-R6YVhZwokR0G353ivsIRc",
+  "description": null,
+  "price": "$50–100",
+  "reviewsScraped": 60
+ },
+ "ChIJo5Bb-SdawokRTp0S2N06Aj8": {
+  "placeId": "ChIJo5Bb-SdawokRTp0S2N06Aj8",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 18.7,
+  "segmentDistanceM": 11.2,
+  "address": "93 Bowery, New York, NY 10002",
+  "categories": [
+   "Beer garden",
+   "Restaurant",
+   "Sports bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Bowery%20Beer%20Garden&query_place_id=ChIJo5Bb-SdawokRTp0S2N06Aj8",
+  "description": "Lively hotel bar with ample outdoor space offering beer, oysters, casual eats & many TVs for sports.",
+  "price": "$10–70",
+  "reviewsScraped": 60
+ },
+ "ChIJq7Nu54dZwokRnGUApOXZuqI": {
+  "placeId": "ChIJq7Nu54dZwokRnGUApOXZuqI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 59.9,
+  "segmentDistanceM": 19.9,
+  "address": "246 Grand St, New York, NY 10002",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Daronghua%20Bakery&query_place_id=ChIJq7Nu54dZwokRnGUApOXZuqI",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJc7WndCdawokRbiQANHIchnI": {
+  "placeId": "ChIJc7WndCdawokRbiQANHIchnI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 169.0,
+  "segmentDistanceM": 8.6,
+  "address": "79 Mott St, New York, NY 10013",
+  "categories": [
+   "Bakery",
+   "Cake shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Keki%20Modern%20Cakes&query_place_id=ChIJc7WndCdawokRbiQANHIchnI",
+  "description": "Tiny bakeshop specializing in treats including artisanal Japanese-style cheesecakes & tarts.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJLdUjBIlZwokRE7GSMUrqovY": {
+  "placeId": "ChIJLdUjBIlZwokRE7GSMUrqovY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 19.9,
+  "address": "249 Centre St, New York, NY 10013",
+  "categories": [
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=La%20Compagnie%2C%20Centre%20Street&query_place_id=ChIJLdUjBIlZwokRE7GSMUrqovY",
+  "description": "A French-heavy wine list is paired with French & Mediterranean small plates in this rustic-chic bar.",
+  "price": "$30–90",
+  "reviewsScraped": 60
+ },
+ "ChIJ40x5Ny9ZwokRxfBjjnRctug": {
+  "placeId": "ChIJ40x5Ny9ZwokRxfBjjnRctug",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 184.0,
+  "segmentDistanceM": 30.1,
+  "address": "139 Chrystie St, New York, NY 10002",
+  "categories": [
+   "Cocktail bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Jade%20%26%20Clover&query_place_id=ChIJ40x5Ny9ZwokRxfBjjnRctug",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJx0BPHoZZwokRC2StKa5ECts": {
+  "placeId": "ChIJx0BPHoZZwokRC2StKa5ECts",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 291.2,
+  "segmentDistanceM": 11.7,
+  "address": "12 Spring St, New York, NY 10012",
+  "categories": [
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Vig%20Bar&query_place_id=ChIJx0BPHoZZwokRC2StKa5ECts",
+  "description": "DJs spin on weekends at this sleek, candle-lit nook attracting a varied crowd.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJv0qKlqxZwokRmvaWbZ3R2qU": {
+  "placeId": "ChIJv0qKlqxZwokRmvaWbZ3R2qU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 174.1,
+  "segmentDistanceM": 15.8,
+  "address": "76 Forsyth St, New York, NY 10002",
+  "categories": [
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=David's%20Bar&query_place_id=ChIJv0qKlqxZwokRmvaWbZ3R2qU",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJly6URJJZwokRD7v3hQyN-Tc": {
+  "placeId": "ChIJly6URJJZwokRD7v3hQyN-Tc",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 251.0,
+  "segmentDistanceM": 23.5,
+  "address": "10 Delancey St, New York, NY 10002",
+  "categories": [
+   "Bar",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Lancey&query_place_id=ChIJly6URJJZwokRD7v3hQyN-Tc",
+  "description": null,
+  "price": "$40–50",
+  "reviewsScraped": 60
+ },
+ "ChIJY-JJoYhZwokRF8FY6XrJo34": {
+  "placeId": "ChIJY-JJoYhZwokRF8FY6XrJo34",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 13.9,
+  "address": "18 Spring St, New York, NY 10012",
+  "categories": [
+   "Cocktail bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mother's%20Ruin&query_place_id=ChIJY-JJoYhZwokRF8FY6XrJo34",
+  "description": "Bespoke cocktails, bar snacks & booze-filled slushies keep this neighborhood lounge bustling.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJPezLOSdawokROjWJSsqLdZg": {
+  "placeId": "ChIJPezLOSdawokROjWJSsqLdZg",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 180.8,
+  "segmentDistanceM": 17.1,
+  "address": "79 Baxter St A, New York, NY 10013",
+  "categories": [
+   "Bar",
+   "Bar & grill",
+   "Restaurant",
+   "Sports bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Whiskey%20Tavern&query_place_id=ChIJPezLOSdawokROjWJSsqLdZg",
+  "description": "Local saloon chasing whiskies with pickle juice & other drinks in a laid-back space.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJVdZS_DFZwokR9Q_81lSTcZg": {
+  "placeId": "ChIJVdZS_DFZwokR9Q_81lSTcZg",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": null,
+  "corridorDistanceM": null,
+  "segmentDistanceM": 15.2,
+  "address": "155 Grand St, New York, NY 10013",
+  "categories": [
+   "Bar",
+   "Brunch restaurant",
+   "Cocktail bar",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Grand%20Street%20Social&query_place_id=ChIJVdZS_DFZwokR9Q_81lSTcZg",
+  "description": null,
+  "price": "$10–50",
+  "reviewsScraped": 60
+ },
+ "ChIJL1nI3wpbwokRrS44z2k5l-Y": {
+  "placeId": "ChIJL1nI3wpbwokRrS44z2k5l-Y",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 6.9,
+  "segmentDistanceM": 6.9,
+  "address": "9 Pell St, New York, NY 10013",
+  "categories": [
+   "Malaysian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Curry%20House&query_place_id=ChIJL1nI3wpbwokRrS44z2k5l-Y",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJqwvF8CZawokRwi6ijQhRGD0": {
+  "placeId": "ChIJqwvF8CZawokRwi6ijQhRGD0",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 5.2,
+  "segmentDistanceM": 5.2,
+  "address": "13 Doyers St, New York, NY 10013",
+  "categories": [
+   "Dim sum restaurant",
+   "Chinese restaurant",
+   "Restaurant",
+   "Tea house"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Nom%20Wah%20Tea%20Parlor&query_place_id=ChIJqwvF8CZawokRwi6ijQhRGD0",
+  "description": "Vintage dim sum parlor dating back to 1920 with a drink menu that includes tea, beer & wine.",
+  "price": "$10–30",
+  "reviewsScraped": 60
+ },
+ "ChIJ38mKXiZawokR42PF3_13jw8": {
+  "placeId": "ChIJ38mKXiZawokR42PF3_13jw8",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 14.8,
+  "segmentDistanceM": 14.4,
+  "address": "12 Chatham Square, New York, NY 10038",
+  "categories": [
+   "Chinese bakery",
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Audrey%20Bakery%20and%20Cafe&query_place_id=ChIJ38mKXiZawokR42PF3_13jw8",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJ6ZjSHCdawokRCKiVXvK41ak": {
+  "placeId": "ChIJ6ZjSHCdawokRCKiVXvK41ak",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 52.0,
+  "segmentDistanceM": 8.9,
+  "address": "51 Bayard St, New York, NY 10013",
+  "categories": [
+   "Cantonese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Cafe%20Hong%20Kong&query_place_id=ChIJ6ZjSHCdawokRCKiVXvK41ak",
+  "description": "Chinese diner providing Hong Kong–style dishes & clay pot casseroles, plus an espresso bar.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJOy-j4IdZwokRNqJruSGwcwI": {
+  "placeId": "ChIJOy-j4IdZwokRNqJruSGwcwI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 41.6,
+  "segmentDistanceM": 23.7,
+  "address": "55 Bayard St Store B, New York, NY 10013",
+  "categories": [
+   "Chinese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Chang%20Lai&query_place_id=ChIJOy-j4IdZwokRNqJruSGwcwI",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJVSw7ErJbwokRbEGYByeINDk": {
+  "placeId": "ChIJVSw7ErJbwokRbEGYByeINDk",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 78.8,
+  "segmentDistanceM": 16.2,
+  "address": "11 Mott St, New York, NY 10013",
+  "categories": [
+   "Pastry shop",
+   "Bakery",
+   "Bubble tea store",
+   "Cafe",
+   "Cake shop",
+   "Cheese shop",
+   "Japanese sweets restaurant",
+   "Juice shop",
+   "Southeast Asian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Pinklady%20Cheese%20Tart&query_place_id=ChIJVSw7ErJbwokRbEGYByeINDk",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJx2wl8W1bwokRhjiCXvtJ_Tg": {
+  "placeId": "ChIJx2wl8W1bwokRhjiCXvtJ_Tg",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 47.9,
+  "segmentDistanceM": 38.5,
+  "address": "50 Bowery, New York, NY 10013",
+  "categories": [
+   "Internet cafe",
+   "Bar",
+   "Coworking space",
+   "Event venue",
+   "Video arcade"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=OS%20NYC&query_place_id=ChIJx2wl8W1bwokRhjiCXvtJ_Tg",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJK6q6oFpbwokRSW29icJ0GRE": {
+  "placeId": "ChIJK6q6oFpbwokRSW29icJ0GRE",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 4.4,
+  "segmentDistanceM": 4.4,
+  "address": "18 Doyers St, New York, NY 10013",
+  "categories": [
+   "Hong Kong style fast food restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mabu&query_place_id=ChIJK6q6oFpbwokRSW29icJ0GRE",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJeahk5SZawokRogP8W1SqjWQ": {
+  "placeId": "ChIJeahk5SZawokRogP8W1SqjWQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 28.8,
+  "segmentDistanceM": 8.6,
+  "address": "30 Mott St, New York, NY 10013",
+  "categories": [
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Silk%20Road%20Cafe&query_place_id=ChIJeahk5SZawokRogP8W1SqjWQ",
+  "description": "Casual coffeehouse with a social vibe, offering pastries & light bites along with tea & lattes.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJozWfLQBbwokR14_YQjaLSzU": {
+  "placeId": "ChIJozWfLQBbwokR14_YQjaLSzU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 84.0,
+  "segmentDistanceM": 11.4,
+  "address": "60 Bayard St, New York, NY 10013",
+  "categories": [
+   "Cha chaan teng (Hong Kong-style cafe)",
+   "Chinese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Joys'%20Cafe&query_place_id=ChIJozWfLQBbwokR14_YQjaLSzU",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJPVgzhiZawokRTPAg2SZbPQQ": {
+  "placeId": "ChIJPVgzhiZawokRTPAg2SZbPQQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 94.0,
+  "segmentDistanceM": 20.0,
+  "address": "22 Chatham Square, New York, NY 10038",
+  "categories": [
+   "Diner",
+   "Bakery",
+   "Breakfast restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Tria%20Bakery%20Cafe%20Diner&query_place_id=ChIJPVgzhiZawokRTPAg2SZbPQQ",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJix2pGCdawokRX6CvqiIp-vo": {
+  "placeId": "ChIJix2pGCdawokRX6CvqiIp-vo",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 94.4,
+  "segmentDistanceM": 6.3,
+  "address": "89A Bayard St, New York, NY 10013",
+  "categories": [
+   "Cafe",
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Alimama%20Tea&query_place_id=ChIJix2pGCdawokRX6CvqiIp-vo",
+  "description": "Popular cafe serving a variety of mochi donuts and cream puffs, along with cold brewed teas.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJM3elBidawokRJKPC55N6pQI": {
+  "placeId": "ChIJM3elBidawokRJKPC55N6pQI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 20.0,
+  "segmentDistanceM": 11.1,
+  "address": "41 Mott St, New York, NY 10013",
+  "categories": [
+   "Chinese bakery",
+   "Asian restaurant",
+   "Bakery",
+   "Chinese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Mei%20Lai%20Wah&query_place_id=ChIJM3elBidawokRJKPC55N6pQI",
+  "description": "No-frills, cozy Chinese restaurant & bakery serving traditional buns, congee & rice noodle rolls.",
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJuxFpJjVbwokR6Y47VCV0z9Q": {
+  "placeId": "ChIJuxFpJjVbwokR6Y47VCV0z9Q",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 69.2,
+  "segmentDistanceM": 18.1,
+  "address": "83 Bayard St, New York, NY 10013",
+  "categories": [
+   "Sushi restaurant",
+   "Japanese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Bayard%20Sushi&query_place_id=ChIJuxFpJjVbwokR6Y47VCV0z9Q",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ___DlCZawokRHb_wCTtIQPQ": {
+  "placeId": "ChIJ___DlCZawokRHb_wCTtIQPQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 73.5,
+  "segmentDistanceM": 9.7,
+  "address": "11 Mott St, New York, NY 10013",
+  "categories": [
+   "Malaysian restaurant",
+   "Chinese restaurant",
+   "Noodle shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Wok%20Wok%20Malaysian%20Cuisine&query_place_id=ChIJ___DlCZawokRHb_wCTtIQPQ",
+  "description": "Casual hangout serving an extensive menu of Southeast Asian street snacks and entrees.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ45qzIv9bwokRtdvAuQxHYrQ": {
+  "placeId": "ChIJ45qzIv9bwokRtdvAuQxHYrQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 47.2,
+  "segmentDistanceM": 37.6,
+  "address": "46 Bowery, New York, NY 10013",
+  "categories": [
+   "Yakitori restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Kono&query_place_id=ChIJ45qzIv9bwokRtdvAuQxHYrQ",
+  "description": null,
+  "price": "$100+",
+  "reviewsScraped": 0
+ },
+ "ChIJyW-u9iZawokRY1sHXGzZHGI": {
+  "placeId": "ChIJyW-u9iZawokRY1sHXGzZHGI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 5.5,
+  "segmentDistanceM": 5.5,
+  "address": "5 Doyers St, New York, NY 10013",
+  "categories": [
+   "Chinese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Chinese%20Tuxedo&query_place_id=ChIJyW-u9iZawokRY1sHXGzZHGI",
+  "description": "Two-story spot in a former opera house, offering contemporary Chinese dishes & stylish touches.",
+  "price": "$50–100",
+  "reviewsScraped": 60
+ },
+ "ChIJdchGBSdawokRrNBainqPr-I": {
+  "placeId": "ChIJdchGBSdawokRrNBainqPr-I",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 6.0,
+  "segmentDistanceM": 6.0,
+  "address": "23 Pell St, New York, NY 10038",
+  "categories": [
+   "Chinese restaurant",
+   "Cantonese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Wonton%20Noodle%20Garden&query_place_id=ChIJdchGBSdawokRrNBainqPr-I",
+  "description": "Small, simple joint serving fried rice, dumplings & other everyday Chinese eats, plus imported beer.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ96ZaW9RZwokR_9w0VNf-5lw": {
+  "placeId": "ChIJ96ZaW9RZwokR_9w0VNf-5lw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 64.4,
+  "segmentDistanceM": 8.5,
+  "address": "69 Bayard St, New York, NY 10013",
+  "categories": [
+   "Malaysian restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=West%20New%20Malaysia&query_place_id=ChIJ96ZaW9RZwokR_9w0VNf-5lw",
+  "description": null,
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJAePV6MBbwokRPe3jsoiobq8": {
+  "placeId": "ChIJAePV6MBbwokRPe3jsoiobq8",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 40.5,
+  "segmentDistanceM": 7.5,
+  "address": "43 Bayard St, New York, NY 10013",
+  "categories": [
+   "Chinese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Xi%20Ne%20Du&query_place_id=ChIJAePV6MBbwokRPe3jsoiobq8",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJT_0oqlpbwokR6wjYsXzMWL8": {
+  "placeId": "ChIJT_0oqlpbwokR6wjYsXzMWL8",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 53.5,
+  "segmentDistanceM": 14.9,
+  "address": "51 Mott St, New York, NY 10013",
+  "categories": [
+   "Thai restaurant",
+   "Asian restaurant",
+   "Chicken restaurant",
+   "Chicken shop",
+   "Chicken wings restaurant",
+   "Fast food restaurant",
+   "Fried chicken takeaway"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Gai%20Kitchen&query_place_id=ChIJT_0oqlpbwokR6wjYsXzMWL8",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJmZTuWtBbwokRWxbraRwj8xA": {
+  "placeId": "ChIJmZTuWtBbwokRWxbraRwj8xA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 4.6,
+  "segmentDistanceM": 4.6,
+  "address": "1 Doyers St, New York, NY 10013",
+  "categories": [
+   "Chinese noodle restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Tasty%20Hand%20-%20Pulled%20Noodles&query_place_id=ChIJmZTuWtBbwokRWxbraRwj8xA",
+  "description": "Unpretentious eatery dishing up Chinese pan-fried noodles & soups, dumplings & typical entrees.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ_2GkXcdbwokR07cBLmAz1ok": {
+  "placeId": "ChIJ_2GkXcdbwokR07cBLmAz1ok",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 71.3,
+  "segmentDistanceM": 14.2,
+  "address": "15 Mott St, New York, NY 10013",
+  "categories": [
+   "Chinese restaurant",
+   "Cantonese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Wo%20Hop%20Next%20Door&query_place_id=ChIJ_2GkXcdbwokR07cBLmAz1ok",
+  "description": "Longtime restaurant serving Chinese eats in bright, no-frills digs amid customer photos. Open late.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJJXgZmSZawokRRV9GtBpodUw": {
+  "placeId": "ChIJJXgZmSZawokRRV9GtBpodUw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 127.7,
+  "segmentDistanceM": 18.8,
+  "address": "225 Park Row, New York, NY 10038",
+  "categories": [
+   "Pizza restaurant",
+   "Italian restaurant",
+   "Pizza Takeout",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Luna%20Pizza&query_place_id=ChIJJXgZmSZawokRRV9GtBpodUw",
+  "description": "Simple eatery serving a range of classic Italian dishes including NYC-style pizza & sandwiches.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ4UWmVCZawokRPDcL0zB0dGs": {
+  "placeId": "ChIJ4UWmVCZawokRPDcL0zB0dGs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 42.4,
+  "segmentDistanceM": 15.1,
+  "address": "45 Bayard St, New York, NY 10013",
+  "categories": [
+   "Chinese noodle restaurant",
+   "Chinese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Xi'an%20Famous%20Foods%20%E8%A5%BF%E5%AE%89%E5%90%8D%E5%90%83%20%7C%20Chinatown&query_place_id=ChIJ4UWmVCZawokRPDcL0zB0dGs",
+  "description": "Local counter-serve chain offering Xi'an-style Chinese food, including noodles, soups, and sandwiches.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJBfjMbPJbwokRrcQD5YX1LEI": {
+  "placeId": "ChIJBfjMbPJbwokRrcQD5YX1LEI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 69.6,
+  "segmentDistanceM": 13.6,
+  "address": "17 Mott St, New York, NY 10013",
+  "categories": [
+   "Chinese restaurant",
+   "Cantonese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Wo%20Hop&query_place_id=ChIJBfjMbPJbwokRrcQD5YX1LEI",
+  "description": "Lo mein, dumplings & other Szechuan specialties in a basement nook that has sidewalk seating.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJeezZS4tbwokRjLkpQk2sLyA": {
+  "placeId": "ChIJeezZS4tbwokRjLkpQk2sLyA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 57.2,
+  "segmentDistanceM": 11.6,
+  "address": "10 Mott St, New York, NY 10013",
+  "categories": [
+   "Coffee shop",
+   "Cafe",
+   "Coffee stand"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Paper%20Sons%20Cafe&query_place_id=ChIJeezZS4tbwokRjLkpQk2sLyA",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJ6yklDClbwokRCkzWbLPz1yY": {
+  "placeId": "ChIJ6yklDClbwokRCkzWbLPz1yY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 49.5,
+  "segmentDistanceM": 16.1,
+  "address": "46 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Coffee shop",
+   "Sandwich shop",
+   "Vietnamese restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Banh%20mi%20Cafe&query_place_id=ChIJ6yklDClbwokRCkzWbLPz1yY",
+  "description": null,
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJhdMgf3FbwokRpFnvaayOxKI": {
+  "placeId": "ChIJhdMgf3FbwokRpFnvaayOxKI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 64.9,
+  "segmentDistanceM": 20.6,
+  "address": "24 E Broadway, New York, NY 10002",
+  "categories": [
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Jessie's%20Hair%20Studio&query_place_id=ChIJhdMgf3FbwokRpFnvaayOxKI",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 2
+ },
+ "ChIJM_TyrSdawokRdHAeQa94K68": {
+  "placeId": "ChIJM_TyrSdawokRdHAeQa94K68",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 59.7,
+  "segmentDistanceM": 22.6,
+  "address": "50 Bayard St, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=V1%20Hair%20Salon&query_place_id=ChIJM_TyrSdawokRdHAeQa94K68",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 0
+ },
+ "ChIJGygl_yZawokR7O_T4wDRgOs": {
+  "placeId": "ChIJGygl_yZawokR7O_T4wDRgOs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 15.8,
+  "segmentDistanceM": 15.8,
+  "address": "16 Pell St, New York, NY 10013",
+  "categories": [
+   "Bar",
+   "Social services organization"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": true,
+  "url": "https://www.google.com/maps/search/?api=1&query=Pell%20Street%20Social%20Club&query_place_id=ChIJGygl_yZawokR7O_T4wDRgOs",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 2
+ },
+ "ChIJrVUnwEpbwokRMF5r-ds2kro": {
+  "placeId": "ChIJrVUnwEpbwokRMF5r-ds2kro",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 40.9,
+  "segmentDistanceM": 31.2,
+  "address": "44 Bowery, New York, NY 10013",
+  "categories": [
+   "Karaoke bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Tokyo%20Karaoke%20Lounge%20and%20Sake%20Club&query_place_id=ChIJrVUnwEpbwokRMF5r-ds2kro",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 1
+ },
+ "ChIJS2RX_yZawokRlnN3IxhGqTg": {
+  "placeId": "ChIJS2RX_yZawokRlnN3IxhGqTg",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 20.0,
+  "segmentDistanceM": 20.0,
+  "address": "12 Pell St #4, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Lee%20Lee%20Beauty%26Hair%20Salon%20Inc.&query_place_id=ChIJS2RX_yZawokRlnN3IxhGqTg",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJe5A9k8ZbwokRgdccyrMz6FM": {
+  "placeId": "ChIJe5A9k8ZbwokRgdccyrMz6FM",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 5.0,
+  "segmentDistanceM": 5.0,
+  "address": "19 Doyers St, New York, NY 10013",
+  "categories": [
+   "Coffee shop",
+   "Art gallery",
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Artbean%20Coffee%20Roasters&query_place_id=ChIJe5A9k8ZbwokRgdccyrMz6FM",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJCcWr8CZawokR6I3gm2YdcYA": {
+  "placeId": "ChIJCcWr8CZawokR6I3gm2YdcYA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 5.6,
+  "segmentDistanceM": 5.6,
+  "address": "16 Doyers St, New York, NY 10013",
+  "categories": [
+   "Barber shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Toy%20Apple%20Beauty%20%26%20Barber%20Salon&query_place_id=ChIJCcWr8CZawokR6I3gm2YdcYA",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 56
+ },
+ "ChIJXczCZSZawokR8qdSbbU6zvs": {
+  "placeId": "ChIJXczCZSZawokR8qdSbbU6zvs",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 45.4,
+  "segmentDistanceM": 14.5,
+  "address": "18 E Broadway #603, New York, NY 10002",
+  "categories": [
+   "Beauty salon",
+   "Day spa",
+   "Skin care clinic"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=You%20%26%20Her%20Spa&query_place_id=ChIJXczCZSZawokR8qdSbbU6zvs",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ6bsWdCdawokR38IEq5GTkE0": {
+  "placeId": "ChIJ6bsWdCdawokR38IEq5GTkE0",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 60.4,
+  "segmentDistanceM": 25.8,
+  "address": "6 1/2 Elizabeth St, New York, NY 10013",
+  "categories": [
+   "Hair salon",
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=AC%20Hair%20Salon%20%E6%98%9F%E9%AB%AA&query_place_id=ChIJ6bsWdCdawokR38IEq5GTkE0",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJJSJe2yZawokRcgJtyBLBVIA": {
+  "placeId": "ChIJJSJe2yZawokRcgJtyBLBVIA",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 48.8,
+  "segmentDistanceM": 18.3,
+  "address": "40 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Asian restaurant",
+   "Bar",
+   "Italian restaurant",
+   "Karaoke"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Asia%20Roma&query_place_id=ChIJJSJe2yZawokRcgJtyBLBVIA",
+  "description": "Bi-level, vibrant space offering Italian-Asian cuisine, plus karaoke on both floors.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJo1gfsSdawokRYWwPm1U4PjU": {
+  "placeId": "ChIJo1gfsSdawokRYWwPm1U4PjU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 21.4,
+  "segmentDistanceM": 11.7,
+  "address": "40 Bowery, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Focus%20Beauty%20Salon&query_place_id=ChIJo1gfsSdawokRYWwPm1U4PjU",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 59
+ },
+ "ChIJXczCZSZawokRerIzds-K5e0": {
+  "placeId": "ChIJXczCZSZawokRerIzds-K5e0",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 43.2,
+  "segmentDistanceM": 13.9,
+  "address": "18 E Broadway, New York, NY 10002",
+  "categories": [
+   "Dim sum restaurant",
+   "Bar",
+   "Cantonese restaurant",
+   "Chinese restaurant",
+   "Chinese tea house",
+   "Fine dining restaurant",
+   "Tea house",
+   "Wedding service",
+   "Wedding venue"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Golden%20Unicorn&query_place_id=ChIJXczCZSZawokRerIzds-K5e0",
+  "description": "Massive, bustling Cantonese mainstay ferrying a wide variety of dim sum via fast-moving carts.",
+  "price": "$20–30",
+  "reviewsScraped": 60
+ },
+ "ChIJX7lz_HlbwokRbEm2ZEd1rq4": {
+  "placeId": "ChIJX7lz_HlbwokRbEm2ZEd1rq4",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 95.0,
+  "segmentDistanceM": 18.9,
+  "address": "25 E Broadway, New York, NY 10002",
+  "categories": [
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=M%26W%20Bakery&query_place_id=ChIJX7lz_HlbwokRbEm2ZEd1rq4",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 24
+ },
+ "ChIJJ9tqQP9bwokRRTqCpVJmdJw": {
+  "placeId": "ChIJJ9tqQP9bwokRRTqCpVJmdJw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 63.1,
+  "segmentDistanceM": 14.4,
+  "address": "32 Mulberry St, New York, NY 10013",
+  "categories": [
+   "Bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Gosh&query_place_id=ChIJJ9tqQP9bwokRRTqCpVJmdJw",
+  "description": null,
+  "price": "$100+",
+  "reviewsScraped": 60
+ },
+ "ChIJKeOVGSdawokRP0nqCXGacaw": {
+  "placeId": "ChIJKeOVGSdawokRP0nqCXGacaw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 97.1,
+  "segmentDistanceM": 13.8,
+  "address": "84 Bayard St, New York, NY 10013",
+  "categories": [
+   "Barber shop",
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=New%20York%20Beauty%20Salon&query_place_id=ChIJKeOVGSdawokRP0nqCXGacaw",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 51
+ },
+ "ChIJJX81ViZawokRtoru3VzMM2c": {
+  "placeId": "ChIJJX81ViZawokRtoru3VzMM2c",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 11.0,
+  "segmentDistanceM": 11.0,
+  "address": "7 Pell St, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Sunny%20City%20Beauty%20Salon%20(%E5%90%8D%E5%8F%91%E5%9F%8E%EF%BC%89&query_place_id=ChIJJX81ViZawokRtoru3VzMM2c",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJi1aDVyZawokR4znd1nTfc1E": {
+  "placeId": "ChIJi1aDVyZawokR4znd1nTfc1E",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 16.3,
+  "segmentDistanceM": 14.6,
+  "address": "16 Bowery, New York, NY 10013",
+  "categories": [
+   "Chinese bakery",
+   "Bakery",
+   "Cafe"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Golden%20Manna%20Bakery&query_place_id=ChIJi1aDVyZawokR4znd1nTfc1E",
+  "description": null,
+  "price": "$1–10",
+  "reviewsScraped": 60
+ },
+ "ChIJWVl1-yZawokRvLeZn5-dXHQ": {
+  "placeId": "ChIJWVl1-yZawokRvLeZn5-dXHQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 6.1,
+  "segmentDistanceM": 6.1,
+  "address": "22 Pell St B, New York, NY 10013",
+  "categories": [
+   "Hair salon",
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=22%20Pell%20Hair%20Salon%20Inc.&query_place_id=ChIJWVl1-yZawokRvLeZn5-dXHQ",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ0z59-SZawokRbfdyLzuBWKY": {
+  "placeId": "ChIJ0z59-SZawokRbfdyLzuBWKY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 6.0,
+  "segmentDistanceM": 6.0,
+  "address": "19 Pell St A, New York, NY 10013",
+  "categories": [
+   "Barber shop"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Kelly%20Hair%20Salon&query_place_id=ChIJ0z59-SZawokRbfdyLzuBWKY",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJaVYiWCZawokRPC8GgbhGvB4": {
+  "placeId": "ChIJaVYiWCZawokRPC8GgbhGvB4",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 25.9,
+  "segmentDistanceM": 21.1,
+  "address": "10 Bowery Store B, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=New%20City%20One%20Salon&query_place_id=ChIJaVYiWCZawokRPC8GgbhGvB4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJNxEu8SZawokRARkMLjXhyBY": {
+  "placeId": "ChIJNxEu8SZawokRARkMLjXhyBY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 6.0,
+  "segmentDistanceM": 6.0,
+  "address": "9 Doyers St, New York, NY 10013",
+  "categories": [
+   "Cocktail bar",
+   "Bar",
+   "Event venue",
+   "Lounge bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Apotheke%20Chinatown&query_place_id=ChIJNxEu8SZawokRARkMLjXhyBY",
+  "description": "Mixologists in pharmacist-style garb whip up complex cocktails at this off-the-beaten path hideaway.",
+  "price": "$20–60",
+  "reviewsScraped": 60
+ },
+ "ChIJ__8OsCdawokRLgMZI2Ja0Mw": {
+  "placeId": "ChIJ__8OsCdawokRLgMZI2Ja0Mw",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 28.1,
+  "segmentDistanceM": 18.5,
+  "address": "44 Bowery, New York, NY 10013",
+  "categories": [
+   "Sushi restaurant",
+   "Cocktail bar",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Shinsen&query_place_id=ChIJ__8OsCdawokRLgMZI2Ja0Mw",
+  "description": "Minimalist design Japanese restaurant, sushi bar & sake lounge in Chinatown.",
+  "price": "$10–20",
+  "reviewsScraped": 60
+ },
+ "ChIJCfeBXSZawokRHfPSLosVmvY": {
+  "placeId": "ChIJCfeBXSZawokRHfPSLosVmvY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 27.7,
+  "segmentDistanceM": 14.6,
+  "address": "5 Division St Ground Floor, New York, NY 10002",
+  "categories": [
+   "Beauty salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=B's%20Beauty%20Salon&query_place_id=ChIJCfeBXSZawokRHfPSLosVmvY",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJsxmv_yZawokRCSnCCtZ8FHU": {
+  "placeId": "ChIJsxmv_yZawokRCSnCCtZ8FHU",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 5.6,
+  "segmentDistanceM": 5.6,
+  "address": "18 Pell St, New York, NY 10013",
+  "categories": [
+   "Hair salon"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=18%20Pell%20Hair&query_place_id=ChIJsxmv_yZawokRCSnCCtZ8FHU",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJ5Q8Bl1NbwokRjuIXKz8OfRQ": {
+  "placeId": "ChIJ5Q8Bl1NbwokRjuIXKz8OfRQ",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 31.0,
+  "segmentDistanceM": 23.7,
+  "address": "9 Chatham Square, New York, NY 10038",
+  "categories": [
+   "French restaurant",
+   "Restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Bridges&query_place_id=ChIJ5Q8Bl1NbwokRjuIXKz8OfRQ",
+  "description": null,
+  "price": "$100+",
+  "reviewsScraped": 60
+ },
+ "ChIJfwZdSgBbwokRrgS-htx8rR4": {
+  "placeId": "ChIJfwZdSgBbwokRrgS-htx8rR4",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 81.6,
+  "segmentDistanceM": 13.5,
+  "address": "64 Bayard St, New York, NY 10013",
+  "categories": [
+   "Dessert shop",
+   "Bakery"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Bibble%20%26%20Sip&query_place_id=ChIJfwZdSgBbwokRrgS-htx8rR4",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJwbQ3yVBbwokRlA1d-X6kV4s": {
+  "placeId": "ChIJwbQ3yVBbwokRlA1d-X6kV4s",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 34.5,
+  "segmentDistanceM": 20.7,
+  "address": "45 Mott St, New York, NY 10013",
+  "categories": [
+   "Cocktail bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Basement&query_place_id=ChIJwbQ3yVBbwokRlA1d-X6kV4s",
+  "description": "Cocktails, beer & wine served in a unique, dimly lit bar that has beer pong, dice games & darts.",
+  "price": "$10–70",
+  "reviewsScraped": 60
+ },
+ "ChIJX97UMwBbwokRIFRlD1YzSRc": {
+  "placeId": "ChIJX97UMwBbwokRIFRlD1YzSRc",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 12.2,
+  "segmentDistanceM": 12.2,
+  "address": "15-17 Doyers St, New York, NY 10013",
+  "categories": [
+   "Wine bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Lei&query_place_id=ChIJX97UMwBbwokRIFRlD1YzSRc",
+  "description": null,
+  "price": "$100+",
+  "reviewsScraped": 60
+ },
+ "ChIJkbqcNbJbwokR1P11jcSTZg8": {
+  "placeId": "ChIJkbqcNbJbwokR1P11jcSTZg8",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 41.5,
+  "segmentDistanceM": 10.3,
+  "address": "46 Mott St, New York, NY 10013",
+  "categories": [
+   "Asian grocery store",
+   "Chinese supermarket",
+   "Deli",
+   "Grocery store"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=46%20Mott%20Deli&query_place_id=ChIJkbqcNbJbwokR1P11jcSTZg8",
+  "description": null,
+  "price": null,
+  "reviewsScraped": 60
+ },
+ "ChIJDdQ2uidawokRf7aaXtFMWAI": {
+  "placeId": "ChIJDdQ2uidawokRf7aaXtFMWAI",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers_control",
+  "corridorDistanceM": 78.0,
+  "segmentDistanceM": 10.6,
+  "address": "18 Elizabeth St, New York, NY 10013",
+  "categories": [
+   "Japanese restaurant",
+   "Bar",
+   "Barbecue restaurant",
+   "Yakiniku restaurant"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Yakiniku%20Toraji%20An&query_place_id=ChIJDdQ2uidawokRf7aaXtFMWAI",
+  "description": null,
+  "price": "$100+",
+  "reviewsScraped": 60
+ },
+ "ChIJFS5dV2NbwokRJyH_DN-WwoY": {
+  "placeId": "ChIJFS5dV2NbwokRJyH_DN-WwoY",
+  "area": "chinatown",
+  "city": "NYC",
+  "corridorId": "pell_doyers",
+  "corridorDistanceM": 18.1,
+  "segmentDistanceM": 18.1,
+  "address": "5 Doyers St, New York, NY 10013",
+  "categories": [
+   "Cocktail bar"
+  ],
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "url": "https://www.google.com/maps/search/?api=1&query=Opera%20House&query_place_id=ChIJFS5dV2NbwokRJyH_DN-WwoY",
+  "description": null,
+  "price": "$20–80",
+  "reviewsScraped": 60
+ }
+}

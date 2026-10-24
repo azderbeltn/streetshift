@@ -1,0 +1,746 @@
+{
+ "area": "hayes_valley",
+ "census": {
+  "source": "ACS 2024 5-year (B01003_001E, B11001_001E); TIGERweb ACS2024 block groups",
+  "radiusM": 1500,
+  "blockGroups": [
+   {
+    "geoid": "060750202011",
+    "population": 723,
+    "households": 537,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750202012",
+    "population": 1182,
+    "households": 439,
+    "shareInCircle": 0.998
+   },
+   {
+    "geoid": "060750201023",
+    "population": 244,
+    "households": 117,
+    "shareInCircle": 0.998
+   },
+   {
+    "geoid": "060750207021",
+    "population": 1026,
+    "households": 537,
+    "shareInCircle": 0.086
+   },
+   {
+    "geoid": "060750201022",
+    "population": 1460,
+    "households": 486,
+    "shareInCircle": 0.848
+   },
+   {
+    "geoid": "060750208021",
+    "population": 888,
+    "households": 501,
+    "shareInCircle": 0.029
+   },
+   {
+    "geoid": "060750203002",
+    "population": 955,
+    "households": 689,
+    "shareInCircle": 0.473
+   },
+   {
+    "geoid": "060750203003",
+    "population": 995,
+    "households": 639,
+    "shareInCircle": 0.625
+   },
+   {
+    "geoid": "060750159003",
+    "population": 881,
+    "households": 605,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750124041",
+    "population": 1462,
+    "households": 902,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750152022",
+    "population": 1409,
+    "households": 582,
+    "shareInCircle": 0.546
+   },
+   {
+    "geoid": "060750122031",
+    "population": 806,
+    "households": 598,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750122043",
+    "population": 1010,
+    "households": 560,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750124042",
+    "population": 612,
+    "households": 298,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750155004",
+    "population": 742,
+    "households": 484,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750152012",
+    "population": 575,
+    "households": 387,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750155003",
+    "population": 867,
+    "households": 517,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750151001",
+    "population": 908,
+    "households": 475,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750111021",
+    "population": 1312,
+    "households": 693,
+    "shareInCircle": 0.094
+   },
+   {
+    "geoid": "060750120011",
+    "population": 982,
+    "households": 505,
+    "shareInCircle": 0.979
+   },
+   {
+    "geoid": "060750120012",
+    "population": 764,
+    "households": 497,
+    "shareInCircle": 0.22
+   },
+   {
+    "geoid": "060750120021",
+    "population": 1419,
+    "households": 985,
+    "shareInCircle": 0.964
+   },
+   {
+    "geoid": "060750201021",
+    "population": 1759,
+    "households": 703,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750202023",
+    "population": 1219,
+    "households": 718,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750201012",
+    "population": 2300,
+    "households": 1065,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750124032",
+    "population": 1016,
+    "households": 495,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750159004",
+    "population": 668,
+    "households": 322,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750164002",
+    "population": 773,
+    "households": 405,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750169003",
+    "population": 859,
+    "households": 421,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750161022",
+    "population": 1702,
+    "households": 765,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750161021",
+    "population": 1287,
+    "households": 427,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750163004",
+    "population": 830,
+    "households": 406,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750164003",
+    "population": 1047,
+    "households": 585,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750161012",
+    "population": 1035,
+    "households": 531,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750160002",
+    "population": 1572,
+    "households": 1101,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750122042",
+    "population": 700,
+    "households": 366,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750124031",
+    "population": 1465,
+    "households": 727,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750122022",
+    "population": 1629,
+    "households": 722,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750168013",
+    "population": 1678,
+    "households": 829,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750168023",
+    "population": 1537,
+    "households": 602,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750151002",
+    "population": 1134,
+    "households": 704,
+    "shareInCircle": 0.854
+   },
+   {
+    "geoid": "060750153001",
+    "population": 789,
+    "households": 342,
+    "shareInCircle": 0.064
+   },
+   {
+    "geoid": "060750155002",
+    "population": 664,
+    "households": 269,
+    "shareInCircle": 0.014
+   },
+   {
+    "geoid": "060750159001",
+    "population": 2279,
+    "households": 740,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750159002",
+    "population": 1033,
+    "households": 414,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750151003",
+    "population": 599,
+    "households": 387,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750120022",
+    "population": 707,
+    "households": 378,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750111022",
+    "population": 895,
+    "households": 628,
+    "shareInCircle": 0.491
+   },
+   {
+    "geoid": "060750122032",
+    "population": 718,
+    "households": 460,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750122041",
+    "population": 861,
+    "households": 593,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750124062",
+    "population": 1092,
+    "households": 725,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750169002",
+    "population": 717,
+    "households": 457,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750202021",
+    "population": 1408,
+    "households": 798,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750202022",
+    "population": 1352,
+    "households": 679,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750124061",
+    "population": 437,
+    "households": 226,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750124051",
+    "population": 1179,
+    "households": 718,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750201011",
+    "population": 1643,
+    "households": 836,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750176034",
+    "population": 1930,
+    "households": 1052,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750176033",
+    "population": 1270,
+    "households": 498,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750124052",
+    "population": 1979,
+    "households": 1411,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750124053",
+    "population": 606,
+    "households": 450,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750152021",
+    "population": 1004,
+    "households": 541,
+    "shareInCircle": 0.872
+   },
+   {
+    "geoid": "060750152011",
+    "population": 1040,
+    "households": 676,
+    "shareInCircle": 0.99
+   },
+   {
+    "geoid": "060750158021",
+    "population": 1417,
+    "households": 706,
+    "shareInCircle": 0.851
+   },
+   {
+    "geoid": "060750169001",
+    "population": 1313,
+    "households": 629,
+    "shareInCircle": 0.621
+   },
+   {
+    "geoid": "060750170001",
+    "population": 766,
+    "households": 436,
+    "shareInCircle": 0.298
+   },
+   {
+    "geoid": "060750131021",
+    "population": 1316,
+    "households": 830,
+    "shareInCircle": 0.001
+   },
+   {
+    "geoid": "060750158011",
+    "population": 425,
+    "households": 239,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750158012",
+    "population": 1756,
+    "households": 802,
+    "shareInCircle": 0.569
+   },
+   {
+    "geoid": "060750158022",
+    "population": 1678,
+    "households": 864,
+    "shareInCircle": 0.855
+   },
+   {
+    "geoid": "060750168011",
+    "population": 1328,
+    "households": 604,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750168012",
+    "population": 1217,
+    "households": 628,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750168021",
+    "population": 1181,
+    "households": 801,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750168022",
+    "population": 1225,
+    "households": 521,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750167002",
+    "population": 658,
+    "households": 355,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750158013",
+    "population": 1203,
+    "households": 486,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750122021",
+    "population": 1286,
+    "households": 652,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750155001",
+    "population": 1738,
+    "households": 939,
+    "shareInCircle": 0.907
+   },
+   {
+    "geoid": "060750167004",
+    "population": 1597,
+    "households": 693,
+    "shareInCircle": 0.882
+   },
+   {
+    "geoid": "060750160001",
+    "population": 1320,
+    "households": 665,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750162001",
+    "population": 1356,
+    "households": 805,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750162002",
+    "population": 995,
+    "households": 657,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750162003",
+    "population": 858,
+    "households": 548,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750163001",
+    "population": 523,
+    "households": 305,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750163002",
+    "population": 1108,
+    "households": 623,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750163003",
+    "population": 1464,
+    "households": 660,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750164001",
+    "population": 1751,
+    "households": 763,
+    "shareInCircle": 0.901
+   },
+   {
+    "geoid": "060750167001",
+    "population": 1474,
+    "households": 759,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750167003",
+    "population": 1123,
+    "households": 585,
+    "shareInCircle": 0.256
+   },
+   {
+    "geoid": "060750177002",
+    "population": 2499,
+    "households": 1057,
+    "shareInCircle": 0.882
+   },
+   {
+    "geoid": "060750203001",
+    "population": 1469,
+    "households": 904,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750161011",
+    "population": 1391,
+    "households": 965,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750125024",
+    "population": 1511,
+    "households": 651,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750176042",
+    "population": 1662,
+    "households": 1078,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750125033",
+    "population": 2489,
+    "households": 1040,
+    "shareInCircle": 0.984
+   },
+   {
+    "geoid": "060750176041",
+    "population": 942,
+    "households": 612,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750176032",
+    "population": 1040,
+    "households": 446,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750176043",
+    "population": 1361,
+    "households": 611,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750125023",
+    "population": 1080,
+    "households": 495,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750123013",
+    "population": 197,
+    "households": 186,
+    "shareInCircle": 0.007
+   },
+   {
+    "geoid": "060750125032",
+    "population": 1349,
+    "households": 512,
+    "shareInCircle": 0.176
+   },
+   {
+    "geoid": "060750121003",
+    "population": 1300,
+    "households": 731,
+    "shareInCircle": 0.072
+   },
+   {
+    "geoid": "060750123024",
+    "population": 738,
+    "households": 515,
+    "shareInCircle": 0.294
+   },
+   {
+    "geoid": "060750124043",
+    "population": 640,
+    "households": 341,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750178031",
+    "population": 1226,
+    "households": 661,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750125031",
+    "population": 934,
+    "households": 672,
+    "shareInCircle": 0.415
+   },
+   {
+    "geoid": "060750178041",
+    "population": 1762,
+    "households": 714,
+    "shareInCircle": 0.82
+   },
+   {
+    "geoid": "060750178032",
+    "population": 1189,
+    "households": 547,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750180004",
+    "population": 1205,
+    "households": 465,
+    "shareInCircle": 0.289
+   },
+   {
+    "geoid": "060750176023",
+    "population": 552,
+    "households": 305,
+    "shareInCircle": 0.009
+   },
+   {
+    "geoid": "060750176031",
+    "population": 724,
+    "households": 521,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750176022",
+    "population": 942,
+    "households": 519,
+    "shareInCircle": 0.34
+   },
+   {
+    "geoid": "060750125041",
+    "population": 693,
+    "households": 342,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750176021",
+    "population": 2066,
+    "households": 722,
+    "shareInCircle": 0.983
+   },
+   {
+    "geoid": "060750178043",
+    "population": 759,
+    "households": 417,
+    "shareInCircle": 0.511
+   },
+   {
+    "geoid": "060750123011",
+    "population": 989,
+    "households": 548,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750177001",
+    "population": 447,
+    "households": 239,
+    "shareInCircle": 0.21
+   },
+   {
+    "geoid": "060750123012",
+    "population": 738,
+    "households": 456,
+    "shareInCircle": 0.902
+   },
+   {
+    "geoid": "060750123021",
+    "population": 583,
+    "households": 371,
+    "shareInCircle": 0.797
+   },
+   {
+    "geoid": "060750125022",
+    "population": 1013,
+    "households": 656,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750123022",
+    "population": 762,
+    "households": 588,
+    "shareInCircle": 1.0
+   },
+   {
+    "geoid": "060750125021",
+    "population": 913,
+    "households": 448,
+    "shareInCircle": 1.0
+   }
+  ],
+  "populationInCircle": 119200,
+  "householdsInCircle": 62591
+ },
+ "counts": {
+  "note": "No NYC counts outside NYC; SF has no ped/vehicle counts for Hayes St (docs/corridor-candidates.md). Volumes are estimated and flagged."
+ }
+}

@@ -7,7 +7,7 @@
 //   POST /scenario/trips              ScenarioRequest -> TripsLayer payload
 //   POST /backtest/predict            {area, treatedId, controlId} -> predicted gap (no ground truth here)
 import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { listAreas, loadNetwork } from "./network.ts";
@@ -16,6 +16,8 @@ import { runScenario, predictGap, type ScenarioRequest } from "./model.ts";
 import { runTraffic } from "./traffic.ts";
 import { buildTrips } from "./trips.ts";
 import { startLive, liveStatus } from "./live.ts";
+import { search } from "./search.ts";
+import { merchantReport } from "./report.ts";
 
 const envFile = join(dirname(fileURLToPath(import.meta.url)), "..", "..", ".env");
 if (existsSync(envFile)) process.loadEnvFile(envFile);
@@ -64,6 +66,19 @@ const server = createServer(async (req, res) => {
       const s = { closedSegmentIds: body.closedSegmentIds ?? [], addedSeating: !!body.addedSeating, programming: body.programming ?? "none", segmentMods: body.segmentMods, businessMods: body.businessMods };
       const econ = runEconomy(net, loadBusinesses(body.area), s, runTraffic(net, s.closedSegmentIds, "mid"), "mid");
       return send(res, 200, buildTrips(net, s.closedSegmentIds, econ.pedAt));
+    }
+    if (req.method === "GET" && url.pathname === "/backtest/results") {
+      // Output of validation/score.ts (predictions + scores). /sim never reads ground_truth.json itself.
+      const f = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "validation", "backtest_results.json");
+      if (!existsSync(f)) return send(res, 404, { error: "run validation/score.ts first" });
+      return send(res, 200, JSON.parse(readFileSync(f, "utf8")));
+    }
+    if (req.method === "GET" && url.pathname === "/search") {
+      return send(res, 200, await search(url.searchParams.get("q") ?? "", url.searchParams.get("area") ?? undefined));
+    }
+    if (req.method === "POST" && url.pathname === "/report/merchant") {
+      const b = await readJson(req);
+      return send(res, 200, await merchantReport(b));
     }
     if (req.method === "POST" && url.pathname === "/backtest/predict") {
       const b = await readJson(req);

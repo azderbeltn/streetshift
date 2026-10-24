@@ -4,7 +4,7 @@ import { join } from "node:path";
 import type { Business } from "../../contracts/index.ts";
 import { ASSETS, type Network, haversineM } from "./network.ts";
 import { P, type Level, pedUpliftBase } from "./params.ts";
-import type { TrafficResult } from "./traffic.ts";
+import { normStreet, type TrafficResult } from "./traffic.ts";
 
 export type Group = "restaurant" | "cafe" | "bar" | "bakery" | "food_other" | "retail" | "grocery" | "service" | "other";
 export const FOOD: Group[] = ["restaurant", "cafe", "bar", "bakery", "food_other"];
@@ -46,7 +46,33 @@ export function densityPerKm2(area: string, radiusM = 1500): number | null {
   const pop = ctx?.census?.populationInCircle;
   return typeof pop === "number" ? pop / (Math.PI * (radiusM / 1000) ** 2) : null;
 }
-const REF_DENSITY = 15000; // residents/km^2 for which baseVolumeByClassPph applies (dense NYC neighbourhood)
+const REF_DENSITY = 15000;
+
+/**
+ * Measured weekday-evening pedestrians/hour (NYC Bi-Annual Pedestrian Counts, 2015-2019 mean, both
+ * sidewalks) applied to segments of the same street within 250 m of a count location.
+ */
+const pedCountCache = new Map<string, Map<string, { pph: number; loc: string }>>();
+export function pedCountOverrides(net: Network): Map<string, { pph: number; loc: string }> {
+  const hit = pedCountCache.get(net.area);
+  if (hit) return hit;
+  const out = new Map<string, { pph: number; loc: string }>();
+  const ctx = loadContext(net.area);
+  const seen = new Set<string>();
+  for (const c of Object.values<any>(ctx?.counts ?? {})) {
+    for (const pc of c.pedestrianCounts ?? []) {
+      if (seen.has(pc.loc) || !pc.coords || !pc.hourlyPreCovid?.pm) continue;
+      seen.add(pc.loc);
+      const street = normStreet(pc.street ?? "");
+      for (const s of net.segments) {
+        if (normStreet(s.name) !== street) continue;
+        if (s.coords.some((pt) => haversineM(pt, pc.coords) < 250)) out.set(s.id, { pph: pc.hourlyPreCovid.pm, loc: `NYC ped count #${pc.loc} ${pc.street} (${pc.from}–${pc.to})` });
+      }
+    }
+  }
+  pedCountCache.set(net.area, out);
+  return out;
+} // residents/km^2 for which baseVolumeByClassPph applies (dense NYC neighbourhood)
 
 export type ScenarioInput = {
   closedSegmentIds: string[];
@@ -110,7 +136,8 @@ export function runEconomy(net: Network, biz0: Biz[], s: ScenarioInput, traffic:
     const mod = s.segmentMods?.[seg.id];
     // Each added resident/worker makes ~3 walk trips a day, ~10% in the busy hour (assumption).
     const added = ((mod?.extraResidents ?? 0) + (mod?.extraWorkers ?? 0)) * 3 * 0.1 + (mod?.park ? 60 : 0);
-    pedBase.set(seg.id, seg.baselinePedVolume ?? classVal<number>(P.pedestrians.baseVolumeByClassPph.value, seg.highway) * densityF + n * P.pedestrians.perBusinessPph[level] + added);
+    const measured = pedCountOverrides(net).get(seg.id)?.pph;
+    pedBase.set(seg.id, measured !== undefined ? measured + added : seg.baselinePedVolume ?? classVal<number>(P.pedestrians.baseVolumeByClassPph.value, seg.highway) * densityF + n * P.pedestrians.perBusinessPph[level] + added);
   }
 
   // Closure intensity: how much the street changes. Removing a busy car street transforms it;
@@ -177,7 +204,7 @@ export function runEconomy(net: Network, biz0: Biz[], s: ScenarioInput, traffic:
       const b0 = sum(before, ids);
       return b0 > 0 ? ((sum(after, ids) / b0) - 1) * 100 : null;
     },
-    pedEstimated: !net.segments.some((x) => x.baselinePedVolume !== null),
+    pedEstimated: !s.closedSegmentIds.some((id) => pedCountOverrides(net).has(id)),
   };
 }
 

@@ -13,6 +13,7 @@ Formula:
      "nice spot" from "parking spot", and the Jina reranker scored short generic reviews ("Bad experience")
      as high as real parking reviews, so neither alone was usable; BM25-gated semantic >= 0.575 was.
   2. m_i = car mentions among business i's reviews; n_i = its reviews with text.
+     (Computed with one query per area, so the Jina query embedding is made once per area.)
   3. Smoothed share  s_i = (m_i + ALPHA * p) / (n_i + ALPHA), with p = pooled share over every review in
      every area and ALPHA = 5 (additive smoothing so a business with 2 reviews can't jump to 0 or 1).
   4. carDependence_i = min(1, s_i / s_95), s_95 = 95th percentile of s over all businesses.
@@ -24,6 +25,7 @@ import argparse
 import json
 import statistics
 import sys
+import time
 
 from elasticsearch import helpers
 
@@ -33,7 +35,7 @@ ASSETS = ROOT / "sim" / "assets"
 PROCESSED = ROOT / "data" / "processed"
 AREAS = ["astoria", "park_slope", "chinatown", "koreatown", "prospect_heights", "hayes_valley"]
 CAR_QUERY = "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic."
-CAR_TERMS = "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento"
+CAR_TERMS = "parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento"
 TAU = 0.575  # semantic score threshold, chosen with --calibrate (see module docstring)
 ALPHA = 5.0
 
@@ -52,9 +54,27 @@ def calibrate(client, size=200):
         print(f"{rank:3d} {h['_score']:.4f} {mark} {h['_source']['area']:12s} {h['_source']['business_name'][:24]:24s} {t[:110]}")
 
 
-def score_business(client, bid, n):
-    resp = client.search(index=REVIEWS, query=car_query([{"term": {"business_id": bid}}]), size=max(n, 1), source=False)
-    return [h["_score"] for h in resp["hits"]["hits"]]
+def with_retry(fn, tries=8):
+    """Jina on the free Serverless trial returns 429 when the per-minute quota is used up; wait it out."""
+    for i in range(tries):
+        try:
+            return fn()
+        except Exception as e:
+            if "429" not in str(e) or i == tries - 1:
+                raise
+            time.sleep(10 * (i + 1))
+
+
+def car_mentions_in_area(client, area, tau):
+    """ONE query per area (one query embedding): BM25-gated semantic search, count hits >= tau per business."""
+    resp = with_retry(lambda: client.search(index=REVIEWS, query=car_query([{"term": {"area": area}}]),
+                                            size=10000, source=["business_id"]))
+    counts = {}
+    for h in resp["hits"]["hits"]:
+        if h["_score"] >= tau:
+            bid = h["_source"]["business_id"]
+            counts[bid] = counts.get(bid, 0) + 1
+    return counts
 
 
 def main():
@@ -78,10 +98,9 @@ def main():
         n_by = {}
         for r in revs:
             n_by[r["businessId"]] = n_by.get(r["businessId"], 0) + 1
+        counts = car_mentions_in_area(client, area, a.tau)
         for b in json.loads((ASSETS / area / "businesses.json").read_text(encoding="utf-8")):
-            n = n_by.get(b["id"], 0)
-            m = sum(1 for s in score_business(client, b["id"], n) if s >= a.tau) if n else 0
-            stats[b["id"]] = (area, n, m)
+            stats[b["id"]] = (area, n_by.get(b["id"], 0), counts.get(b["id"], 0))
         print(f"  {area}: scored {sum(1 for v in stats.values() if v[0] == area)} businesses")
 
     # 3-4: smoothing + relative scaling

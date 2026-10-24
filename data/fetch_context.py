@@ -10,6 +10,7 @@ Per area, writes sim/assets/<area>/context.json:
 Run:  uv run python fetch_context.py [area ...]
 """
 import json
+import re
 import os
 import statistics
 import sys
@@ -102,18 +103,28 @@ def nyc(dataset, params, cache_key):
 def ped_counts(lat, lng, key):
     rows = nyc("cqsj-cfgu", {"$where": f"within_circle(the_geom, {lat}, {lng}, {COUNT_RADIUS_M})", "$limit": 50},
                f"ped_{key}")
+    # Units (NYC DOT readme, bi-annual-ped-count-readme.pdf): AM = weekday 7-9am (2 h), PM = weekday
+    # 4-7pm (3 h), MD = Saturday 12-2pm (2 h); screenline on both sidewalks; 0 = not collected.
+    hours = {"am": 2, "pm": 3, "md": 2}
     out = []
     for r in rows:
-        vals = []
+        per = {"am": [], "pm": [], "md": []}
         for k, v in r.items():
-            if k[:3] in ("may", "sep", "oct", "jun") and any(t in k for t in ("_am", "_pm", "_md")):
-                try:
-                    vals.append(float(v))
-                except (TypeError, ValueError):
-                    pass
+            m = re.match(r"^(may|sept|oct|jun)_?(\d{2})_(am|pm|md)$", k)
+            if not m:
+                continue
+            year = 2000 + int(m.group(2))
+            try:
+                x = float(v)
+            except (TypeError, ValueError):
+                continue
+            if x > 0 and 2015 <= year <= 2019:  # pre-COVID baseline years only
+                per[m.group(3)].append(x / hours[m.group(3)])
+        hourly = {p: round(statistics.mean(v), 1) if v else None for p, v in per.items()}
         out.append({"loc": r.get("loc"), "street": r.get("street_nam"), "from": r.get("from_stree"),
                     "to": r.get("to_street"), "coords": r.get("the_geom", {}).get("coordinates"),
-                    "meanPeriodCount": round(statistics.mean(vals), 1) if vals else None, "nPeriods": len(vals)})
+                    "hourlyPreCovid": hourly, "nCounts": {p: len(v) for p, v in per.items()},
+                    "units": "pedestrians/hour, both sidewalks, 2015-2019 mean"})
     return out
 
 
