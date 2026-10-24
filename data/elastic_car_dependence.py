@@ -1,17 +1,18 @@
-"""Compute carDependence (0-1) per business from its reviews with Elastic (semantic retrieval + Jina
-reranker), then write it back into sim/assets/<area>/businesses.json, data/processed/business_meta_<area>.json
-and the `businesses` index.
+"""Compute carDependence (0-1) per business from its reviews with an Elastic hybrid query, then write it
+back into sim/assets/<area>/businesses.json, data/processed/business_meta_<area>.json and the
+`businesses` index.
 
-    uv run python elastic_car_dependence.py --calibrate      # show score distribution, pick the threshold
+    uv run python elastic_car_dependence.py --calibrate      # show the matched reviews + scores
     uv run python elastic_car_dependence.py                  # all areas with data
 
 Formula:
-  1. For business i, ONE search over its reviews: a `semantic` query on reviews.content (Jina embeddings)
-     with CAR_QUERY, re-scored by the `text_similarity_reranker` retriever (Jina reranker, found with
-     GET _inference/rerank) against RERANK_TEXT. Calibration on Astoria (data/elastic_verification.md)
-     showed raw semantic scores can't separate "nice spot" from "parking spot", while reranker scores
-     >= TAU (1.11) are almost all genuinely about parking/driving/traffic.
-  2. m_i = number of its reviews with reranker score >= TAU; n_i = number of its reviews with text.
+  1. Car mention = a review that (a) matches the car vocabulary CAR_TERMS with BM25 on reviews.text (recall)
+     AND (b) scores >= TAU on a `semantic` query (Jina embeddings on reviews.content) for CAR_QUERY
+     (precision: drops "Astoria Park", "drive off customers", "used car dealership", "drove the experience").
+     Calibration on Astoria (evidence in data/elastic_verification.md): pure semantic scores couldn't separate
+     "nice spot" from "parking spot", and the Jina reranker scored short generic reviews ("Bad experience")
+     as high as real parking reviews, so neither alone was usable; BM25-gated semantic >= 0.575 was.
+  2. m_i = car mentions among business i's reviews; n_i = its reviews with text.
   3. Smoothed share  s_i = (m_i + ALPHA * p) / (n_i + ALPHA), with p = pooled share over every review in
      every area and ALPHA = 5 (additive smoothing so a business with 2 reviews can't jump to 0 or 1).
   4. carDependence_i = min(1, s_i / s_95), s_95 = 95th percentile of s over all businesses.
@@ -26,38 +27,33 @@ import sys
 
 from elasticsearch import helpers
 
-from elastic_common import BUSINESSES, REVIEWS, ROOT, es, find_reranker
+from elastic_common import BUSINESSES, REVIEWS, ROOT, es
 
 ASSETS = ROOT / "sim" / "assets"
 PROCESSED = ROOT / "data" / "processed"
 AREAS = ["astoria", "park_slope", "chinatown", "koreatown", "prospect_heights", "hayes_valley"]
 CAR_QUERY = "Is it easy or hard to park a car here? Parking lot, street parking, garage, driving here by car, traffic."
-RERANK_TEXT = "The review talks about parking, driving a car to get here, or traffic."
-TAU = 1.11  # reranker score threshold, chosen with --calibrate (see module docstring)
+CAR_TERMS = "park parking parked drive drove driving car cars traffic garage valet parqueo estacionamiento"
+TAU = 0.575  # semantic score threshold, chosen with --calibrate (see module docstring)
 ALPHA = 5.0
-KW = ("park", "drive", "drove", "car ", "cars", "traffic", "garage", "valet", " lot")
 
 
-def retriever(reranker, flt, window):
-    sem = {"standard": {"query": {"bool": {"filter": flt, "must": {"semantic": {"field": "content", "query": CAR_QUERY}}}}}}
-    return {"text_similarity_reranker": {"retriever": sem, "field": "text", "inference_id": reranker,
-                                         "inference_text": RERANK_TEXT, "rank_window_size": window}}
+def car_query(flt):
+    return {"bool": {"filter": flt + [{"match": {"text": CAR_TERMS}}],
+                     "must": {"semantic": {"field": "content", "query": CAR_QUERY}}}}
 
 
 def calibrate(client, size=200):
-    reranker = find_reranker(client)
-    resp = client.search(index=REVIEWS, retriever=retriever(reranker, [], size), size=size,
-                         source=["business_name", "text"])
+    resp = client.search(index=REVIEWS, query=car_query([]), size=size, source=["business_name", "text", "area"])
+    print(f"BM25-gated reviews: {resp['hits']['total']}")
     for rank, h in enumerate(resp["hits"]["hits"]):
         t = h["_source"]["text"].replace("\n", " ")
-        flag = "KW" if any(k in t.lower() for k in KW) else "  "
-        print(f"{rank:3d} {h['_score']:.4f} {flag} {h['_source']['business_name'][:28]:28s} {t[:110]}")
-    print(f"reranker {reranker}; total reviews {client.count(index=REVIEWS)['count']}")
+        mark = ">=TAU" if h["_score"] >= TAU else "     "
+        print(f"{rank:3d} {h['_score']:.4f} {mark} {h['_source']['area']:12s} {h['_source']['business_name'][:24]:24s} {t[:110]}")
 
 
-def score_business(client, reranker, bid, n):
-    resp = client.search(index=REVIEWS, retriever=retriever(reranker, [{"term": {"business_id": bid}}], max(n, 1)),
-                         size=max(n, 1), source=False)
+def score_business(client, bid, n):
+    resp = client.search(index=REVIEWS, query=car_query([{"term": {"business_id": bid}}]), size=max(n, 1), source=False)
     return [h["_score"] for h in resp["hits"]["hits"]]
 
 
@@ -74,9 +70,6 @@ def main():
     if a.tau <= 0:
         raise SystemExit("set --tau (run --calibrate first)")
     areas = a.areas or [x for x in AREAS if (PROCESSED / f"reviews_{x}.json").exists()]
-    reranker = find_reranker(client)
-    if not reranker:
-        raise SystemExit("no rerank inference endpoint found")
 
     # 1-2: counts per business
     stats = {}
@@ -87,7 +80,7 @@ def main():
             n_by[r["businessId"]] = n_by.get(r["businessId"], 0) + 1
         for b in json.loads((ASSETS / area / "businesses.json").read_text(encoding="utf-8")):
             n = n_by.get(b["id"], 0)
-            m = sum(1 for s in score_business(client, reranker, b["id"], n) if s >= a.tau) if n else 0
+            m = sum(1 for s in score_business(client, b["id"], n) if s >= a.tau) if n else 0
             stats[b["id"]] = (area, n, m)
         print(f"  {area}: scored {sum(1 for v in stats.values() if v[0] == area)} businesses")
 
@@ -114,7 +107,7 @@ def main():
         for bid, m in meta.items():
             _, n, k = stats[bid]
             m.update({"carDependence": car[bid], "carMentions": k, "reviewsWithText": n,
-                      "carDependenceMethod": {"query": CAR_QUERY, "rerankText": RERANK_TEXT, "reranker": reranker, "tau": a.tau, "alpha": ALPHA,
+                      "carDependenceMethod": {"query": CAR_QUERY, "terms": CAR_TERMS, "tau": a.tau, "alpha": ALPHA,
                                               "prior": round(prior, 5), "s95": round(s95, 5)}})
         mp.write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
         ok, err = helpers.bulk(client, ({"_op_type": "update", "_index": BUSINESSES, "_id": bid,

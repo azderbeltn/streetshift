@@ -20,3 +20,5 @@ cache/
 /data/raw/
 /sim/assets/**/trips_*.json
 /data/processed/reviews_*.json
+/sim/.spacetime_token
+sim_server.log

@@ -3,7 +3,7 @@
     uv run python build_businesses.py astoria
     uv run python build_businesses.py --all
 
-Inputs:  data/raw/apify/<area>.json (scrape_apify.py), sim/assets/<area>/network.json
+Inputs:  data/raw/apify/<area>.json and <area>__<corridor>.json (scrape_apify.py), sim/assets/<area>/network.json
 Outputs: sim/assets/<area>/businesses.json          contract Business[] (validated vs contracts/schemas/Business.json)
          data/processed/business_meta_<area>.json   extras the contract has no room for (placeId, corridorId,
                                                     address, categories, closed flag, url, car-dependence stats)
@@ -70,7 +70,9 @@ def build(area: str) -> dict | None:
     if not raw_p.exists():
         print(f"[{area}] no raw Apify cache, skipping")
         return None
-    raw = json.loads(raw_p.read_text(encoding="utf-8"))
+    items = json.loads(raw_p.read_text(encoding="utf-8"))["items"]
+    for extra in sorted(RAW.glob(f"{area}__*.json")):  # supplemental per-corridor scrapes
+        items += json.loads(extra.read_text(encoding="utf-8"))["items"]
     net = json.loads((ASSETS / area / "network.json").read_text(encoding="utf-8"))
     lng0, lat0 = net["center"]
     fwd = Transformer.from_crs("EPSG:4326", f"+proj=aeqd +lat_0={lat0} +lon_0={lng0} +units=m +datum=WGS84",
@@ -93,7 +95,7 @@ def build(area: str) -> dict | None:
 
     businesses, meta, reviews, seen = [], {}, [], set()
     skipped = {"duplicate": 0, "no_location": 0, "no_name": 0}
-    for it in raw["items"]:
+    for it in items:
         pid = it.get("placeId")
         if not pid or pid in seen:
             skipped["duplicate"] += 1

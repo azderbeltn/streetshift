@@ -6,10 +6,14 @@
   "scripts": {
     "build": "tsc --noEmit",
     "test": "node --test --experimental-strip-types test/*.test.ts",
-    "serve": "node --experimental-strip-types src/server.ts"
+    "serve": "tsx src/server.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
+    "tsx": "^4.23.15",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "spacetimedb": "^2.13.0"
   }
 }
