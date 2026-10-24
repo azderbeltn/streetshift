@@ -63,7 +63,7 @@ export default function App() {
   const pedShare = useMemo(() => {
     const curves = businesses.map((b) => b.popularTimes).filter(Boolean) as number[][][];
     if (!curves.length) return 1;
-    const day = 5; // Saturday
+    const day = 6; // Saturday (popularTimes day 0 = Sunday)
     const at = (h: number) => curves.reduce((a, c) => a + (c[day]?.[h] ?? 0), 0) / curves.length;
     const peak = Math.max(...Array.from({ length: 24 }, (_, h) => at(h))) || 1;
     return Math.max(0.12, at(hour) / peak);
