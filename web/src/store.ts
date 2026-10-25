@@ -28,8 +28,11 @@ const me = (() => {
   return { name: NAMES[i % NAMES.length], color: COLORS[i % COLORS.length] };
 })();
 
+// Deep links from the ASI:One Analyst: /?area=astoria&corridor=ditmars
+const qs = new URLSearchParams(typeof location !== "undefined" ? location.search : "");
+const startArea = qs.get("area") ?? "hayes_valley", startCorridor = qs.get("corridor") ?? (qs.get("area") ? "" : "hayes");
 let state: State = {
-  mode: "connecting", area: "hayes_valley", corridorId: "hayes", scenarioId: "hayes_valley:hayes",
+  mode: "connecting", area: startArea, corridorId: startCorridor || "hayes", scenarioId: `${startArea}:${startCorridor || "hayes"}`,
   closed: new Set(), addedSeating: true, programming: "light", edits: new Map(),
   summary: null, seg: new Map(), biz: new Map(), computing: false, revision: 0, presence: [], hearing: [],
 };
@@ -85,7 +88,8 @@ let syncQueued = false;
 function queueSync() { if (syncQueued) return; syncQueued = true; requestAnimationFrame(() => { syncQueued = false; syncFromDb(); }); }
 
 export function connect() {
-  if (import.meta.env.USE_MOCK_SPACETIME === "true") { set({ mode: "local" }); runLocal(); return; }
+  // DEMO_MODE / no SpacetimeDB: everything runs against the local sim (works without internet).
+  if (import.meta.env.USE_MOCK_SPACETIME === "true" || import.meta.env.DEMO_MODE === "true") { set({ mode: "local" }); runLocal(); return; }
   const uri = (import.meta.env.SPACETIMEDB_URI || "https://maincloud.spacetimedb.com").replace(/^http/, "ws");
   const db = import.meta.env.SPACETIMEDB_DB_NAME || "streetshift-qf01o";
   let token: string | undefined;

@@ -1,0 +1,138 @@
+{
+  "rows": [
+    {
+      "corridorId": "ditmars",
+      "corridorName": "Ditmars Blvd (Astoria, Queens)",
+      "split": "calibration",
+      "predictedGapPct": 38.9,
+      "actualGapPct": 51,
+      "directionCorrect": true,
+      "absErrorPts": 12.1,
+      "predictedRange": [
+        20,
+        66
+      ],
+      "predictedTreatedPct": 44.219089586401836,
+      "predictedControlPct": 5.343514090399348,
+      "actualTreatedPct": 44,
+      "actualControlPct": -7,
+      "source": "streets-for-recovery-report-data.pdf, page 5",
+      "foodBusinesses": {
+        "treated": 19,
+        "control": 8
+      },
+      "available": true
+    },
+    {
+      "corridorId": "park_slope_5th",
+      "corridorName": "5th Ave (Park Slope, Brooklyn)",
+      "split": "calibration",
+      "predictedGapPct": 51.4,
+      "actualGapPct": 44,
+      "directionCorrect": true,
+      "absErrorPts": 7.4,
+      "predictedRange": [
+        25,
+        89
+      ],
+      "predictedTreatedPct": 50.55960822208796,
+      "predictedControlPct": -0.8032757180977401,
+      "actualTreatedPct": 27,
+      "actualControlPct": -17,
+      "source": "streets-for-recovery-report-data.pdf, page 3",
+      "foodBusinesses": {
+        "treated": 6,
+        "control": 18
+      },
+      "available": true
+    },
+    {
+      "corridorId": "pell_doyers",
+      "corridorName": "Pell & Doyers Sts (Chinatown, Manhattan)",
+      "split": "holdout",
+      "predictedGapPct": 34.1,
+      "actualGapPct": 23,
+      "directionCorrect": true,
+      "absErrorPts": 11.1,
+      "predictedRange": [
+        19,
+        54
+      ],
+      "predictedTreatedPct": 33.5334854990051,
+      "predictedControlPct": -0.589182340676786,
+      "actualTreatedPct": -8,
+      "actualControlPct": -31,
+      "source": "streets-for-recovery-report-data.pdf, page 7",
+      "foodBusinesses": {
+        "treated": 14,
+        "control": 5
+      },
+      "available": true
+    },
+    {
+      "corridorId": "e32nd",
+      "corridorName": "E 32nd St (Koreatown, Manhattan)",
+      "split": "holdout",
+      "predictedGapPct": 41.1,
+      "actualGapPct": 64,
+      "directionCorrect": true,
+      "absErrorPts": 22.9,
+      "predictedRange": [
+        22,
+        68
+      ],
+      "predictedTreatedPct": 40.976030649631824,
+      "predictedControlPct": -0.16988203368070165,
+      "actualTreatedPct": 15,
+      "actualControlPct": -49,
+      "source": "streets-for-recovery-report-data.pdf, page 9",
+      "foodBusinesses": {
+        "treated": 14,
+        "control": 15
+      },
+      "available": true
+    },
+    {
+      "corridorId": "vanderbilt",
+      "corridorName": "Vanderbilt Ave (Prospect Heights, Brooklyn)",
+      "split": "holdout",
+      "predictedGapPct": 62.8,
+      "actualGapPct": 60,
+      "directionCorrect": true,
+      "absErrorPts": 2.8,
+      "predictedRange": [
+        29,
+        109
+      ],
+      "predictedTreatedPct": 60.096157148427906,
+      "predictedControlPct": -2.751360672145542,
+      "actualTreatedPct": 20,
+      "actualControlPct": -40,
+      "source": "streets-for-recovery-report-data.pdf, page 1",
+      "foodBusinesses": {
+        "treated": 17,
+        "control": 6
+      },
+      "available": true
+    }
+  ],
+  "summary": {
+    "corridorsScored": 5,
+    "directionAccuracy": 1,
+    "maeAll": 11.26,
+    "maeHoldout": 12.266666666666666,
+    "maeCalibration": 9.75,
+    "spearmanAll": 0.5,
+    "holdoutInRange": 3,
+    "holdoutScored": 3,
+    "calibration": {
+      "pedUpliftBase": 0.12,
+      "fitOn": [
+        "ditmars",
+        "park_slope_5th"
+      ],
+      "fittedAt": "2026-10-24T22:32:23.955Z",
+      "note": "Grid search 0.02..2.00 step 0.01 minimising squared error of the mid predicted gap on calibration corridors only."
+    }
+  }
+}

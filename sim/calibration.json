@@ -1,9 +1,9 @@
 {
-  "pedUpliftBase": 0.12,
+  "pedUpliftBase": 0.1,
   "fitOn": [
     "ditmars",
     "park_slope_5th"
   ],
-  "fittedAt": "2026-10-24T22:32:23.955Z",
+  "fittedAt": "2026-10-25T03:08:53.111Z",
   "note": "Grid search 0.02..2.00 step 0.01 minimising squared error of the mid predicted gap on calibration corridors only."
 }

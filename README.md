@@ -78,7 +78,8 @@ Live state goes through **SpacetimeDB**: every edit is a reducer, the sim server
 - **Ground truth:** NYC DOT *Streets for Recovery* (2022) data appendix: restaurant & bar taxable sales on each Open Street and its control corridor, summer 2021 vs the pre-pandemic baseline. Extracted programmatically with page citations (`validation/extract_ground_truth.py`); sanity-checked against press figures (Astoria +44% vs −7%, Chinatown −8% vs −31%, averages +19.6% vs −28.8%).
 - **Target:** the gap between treated and control (difference-in-differences; COVID hit both).
 - **Split:** calibration = Ditmars Blvd, 5th Ave Park Slope; holdout = Pell & Doyers, E 32nd St, Vanderbilt Ave. One parameter (base pedestrian uplift) is fit on calibration only. `ground_truth.json` is read only by `validation/score.ts`; the calibrator can only request calibration rows.
-- **Result:** direction 5/5; MAE 9.8 pts calibration, **12.3 pts holdout**; 3/3 holdout actuals inside the predicted range; Spearman 0.50.
+- **Result (v1, the only truly blind run):** direction 5/5; MAE 9.8 pts calibration, **12.3 pts holdout**; 3/3 holdout actuals inside the predicted range; Spearman 0.50.
+- **After a data fix** (businesses matched to their street by address, re-fit on calibration only, no longer strictly blind): direction 5/5; holdout MAE 12.6 pts; 2/3 inside range; Spearman 0.30. Both runs are in the report.
 
 ## Honest limits
 

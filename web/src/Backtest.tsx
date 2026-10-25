@@ -4,7 +4,7 @@ import { api } from "./api";
 type Row = { corridorId: string; corridorName: string; split: string; predictedGapPct: number; actualGapPct: number; directionCorrect: boolean | null;
   absErrorPts: number | null; predictedRange: [number, number] | null; predictedTreatedPct: number | null; predictedControlPct: number | null;
   actualTreatedPct: number; actualControlPct: number; source: string; available: boolean; foodBusinesses: { treated: number; control: number } | null };
-type Results = { rows: Row[]; summary: any; generatedAt?: string };
+type Results = { rows: Row[]; summary: any; generatedAt?: string; v1Summary?: any };
 
 const sgn = (x: number | null | undefined, d = 0) => (x === null || x === undefined || Number.isNaN(x) ? "—" : `${x > 0 ? "+" : ""}${x.toFixed(d)}`);
 
@@ -94,6 +94,12 @@ export default function Backtest({ onClose }: { onClose: () => void }) {
               <div className="stat"><div className="lbl">Holdout mean error</div><div className="big mono">{res.summary.maeHoldout?.toFixed(1) ?? "—"}<span className="unit">pts</span></div></div>
               <div className="stat"><div className="lbl">Holdout inside range</div><div className="big mono">{res.summary.holdoutInRange}/{res.summary.holdoutScored}</div></div>
               <div className="stat"><div className="lbl">Rank correlation</div><div className="big mono">{res.summary.spearmanAll === null ? "—" : res.summary.spearmanAll.toFixed(2)}</div></div>
+            </div>
+          )}
+          {done && res.v1Summary && (
+            <div className="muted" style={{ fontSize: 11.5, marginTop: 10, lineHeight: 1.45 }}>
+              <b>First blind run (v1):</b> direction {Math.round(res.v1Summary.directionAccuracy * 100)}%, holdout error {res.v1Summary.maeHoldout.toFixed(1)} pts, {res.v1Summary.holdoutInRange}/{res.v1Summary.holdoutScored} inside range, rank correlation {res.v1Summary.spearmanAll.toFixed(2)}.
+              Shown above: the current model after we fixed a business-to-street matching bug and re-fit on the calibration streets only (no longer strictly blind).
             </div>
           )}
           <div className="note"><span className="dot" />Five streets is a small sample. All five also had outdoor dining; a 2026 NY State Comptroller report found jobs had not recovered on most Open Streets.</div>

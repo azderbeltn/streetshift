@@ -76,7 +76,8 @@ const server = createServer(async (req, res) => {
       // Output of validation/score.ts (predictions + scores). /sim never reads ground_truth.json itself.
       const f = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "validation", "backtest_results.json");
       if (!existsSync(f)) return send(res, 404, { error: "run validation/score.ts first" });
-      return send(res, 200, JSON.parse(readFileSync(f, "utf8")));
+      const v1 = join(dirname(f), "backtest_results_v1.json");
+      return send(res, 200, { ...JSON.parse(readFileSync(f, "utf8")), v1Summary: existsSync(v1) ? JSON.parse(readFileSync(v1, "utf8")).summary : null });
     }
     if (req.method === "GET" && url.pathname === "/search") {
       return send(res, 200, await search(url.searchParams.get("q") ?? "", url.searchParams.get("area") ?? undefined));

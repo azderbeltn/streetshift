@@ -308,7 +308,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 63.1,
-  "segmentDistanceM": 16.5,
+  "segmentDistanceM": 30.0,
   "address": "960 6th Ave, New York, NY 10018",
   "categories": [
    "Coffee shop"
@@ -404,7 +404,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 14.5,
-  "segmentDistanceM": 14.5,
+  "segmentDistanceM": 16.7,
   "address": "980 6th Ave, New York, NY 10018",
   "categories": [
    "Japanese restaurant",
@@ -561,7 +561,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 133.9,
-  "segmentDistanceM": 18.5,
+  "segmentDistanceM": 28.3,
   "address": "53 W 34th St., New York, NY 10001",
   "categories": [
    "Coffee shop",
@@ -863,7 +863,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 274.5,
-  "segmentDistanceM": 35.8,
+  "segmentDistanceM": 40.6,
   "address": "1407 Broadway, New York, NY 10018",
   "categories": [
    "Seafood restaurant",
@@ -1053,7 +1053,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 256.4,
-  "segmentDistanceM": 19.9,
+  "segmentDistanceM": 26.2,
   "address": "499 7th Ave, New York, NY 10018",
   "categories": [
    "Bakery",
@@ -1118,7 +1118,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 135.1,
-  "segmentDistanceM": 20.9,
+  "segmentDistanceM": 21.5,
   "address": "1014 6th Ave, New York, NY 10018",
   "categories": [
    "Dessert shop"
@@ -1271,7 +1271,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 111.4,
-  "segmentDistanceM": 14.0,
+  "segmentDistanceM": 68.6,
   "address": "151 W 34th St., New York, NY 10001",
   "categories": [
    "Italian restaurant",
@@ -1303,7 +1303,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 13.0,
+  "segmentDistanceM": 64.1,
   "address": "1440 Broadway, New York, NY 10018",
   "categories": [
    "Coffee shop"
@@ -1593,7 +1593,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 212.2,
-  "segmentDistanceM": 23.3,
+  "segmentDistanceM": 56.2,
   "address": "63 W 38th St, New York, NY 10018",
   "categories": [
    "American restaurant",
@@ -1990,7 +1990,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 8.5,
-  "segmentDistanceM": 8.5,
+  "segmentDistanceM": 18.6,
   "address": "385 5th Ave, New York, NY 10016",
   "categories": [
    "Vitamin & supplements store",
@@ -2148,7 +2148,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 298.8,
-  "segmentDistanceM": 12.3,
+  "segmentDistanceM": 44.2,
   "address": "1407 Broadway, New York, NY 10018",
   "categories": [
    "Cake shop"
@@ -2208,7 +2208,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 64.8,
-  "segmentDistanceM": 12.4,
+  "segmentDistanceM": 20.2,
   "address": "990 6th Ave, New York, NY 10018",
   "categories": [
    "Bakery",
@@ -2559,7 +2559,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 33.3,
-  "segmentDistanceM": 33.3,
+  "segmentDistanceM": 35.2,
   "address": "400 5th Ave, New York, NY 10017",
   "categories": [
    "Restaurant",
@@ -2658,7 +2658,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 192.3,
-  "segmentDistanceM": 36.3,
+  "segmentDistanceM": 56.5,
   "address": "424 5th Ave, New York, NY 10018",
   "categories": [
    "Bagel shop"
@@ -2725,7 +2725,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 206.8,
-  "segmentDistanceM": 16.0,
+  "segmentDistanceM": 20.3,
   "address": "1400 Broadway, New York, NY 10018",
   "categories": [
    "Restaurant",
@@ -2759,7 +2759,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 240.7,
-  "segmentDistanceM": 16.8,
+  "segmentDistanceM": 65.8,
   "address": "151 W 34th St., New York, NY 10001",
   "categories": [
    "Bakery"
@@ -3245,7 +3245,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 94.7,
-  "segmentDistanceM": 14.9,
+  "segmentDistanceM": 18.1,
   "address": "1001 6th Ave, New York, NY 10018",
   "categories": [
    "Bakery",
@@ -3278,7 +3278,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 192.3,
-  "segmentDistanceM": 36.3,
+  "segmentDistanceM": 56.5,
   "address": "424 5th Ave, New York, NY 10018",
   "categories": [
    "Japanese restaurant"
@@ -3373,7 +3373,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 34.8,
+  "segmentDistanceM": 41.2,
   "address": "525 7th Ave, New York, NY 10018",
   "categories": [
    "Bakery",
@@ -3962,7 +3962,7 @@
   "city": "NYC",
   "corridorId": "e32nd",
   "corridorDistanceM": 123.3,
-  "segmentDistanceM": 31.9,
+  "segmentDistanceM": 66.9,
   "address": "901 6th Ave, New York, NY 10001",
   "categories": [
    "Convenience store"
@@ -3992,7 +3992,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 35.2,
+  "segmentDistanceM": 35.4,
   "address": "1412 Broadway, New York, NY 10018",
   "categories": [
    "Drug store"
@@ -4198,7 +4198,7 @@
   "city": "NYC",
   "corridorId": "e32nd_control",
   "corridorDistanceM": 146.4,
-  "segmentDistanceM": 11.9,
+  "segmentDistanceM": 25.0,
   "address": "1017 6th Ave, New York, NY 10018",
   "categories": [
    "Deli",
@@ -5043,7 +5043,7 @@
   "city": "NYC",
   "corridorId": "e32nd",
   "corridorDistanceM": 248.2,
-  "segmentDistanceM": 12.9,
+  "segmentDistanceM": 21.8,
   "address": "1196 Broadway, New York, NY 10001",
   "categories": [
    "Dessert shop",
@@ -5077,7 +5077,7 @@
   "city": "NYC",
   "corridorId": "e32nd",
   "corridorDistanceM": 252.7,
-  "segmentDistanceM": 17.4,
+  "segmentDistanceM": 19.2,
   "address": "261 5th Ave, New York, NY 10016",
   "categories": [
    "Brazilian restaurant",
@@ -5968,7 +5968,7 @@
   "city": "NYC",
   "corridorId": "e32nd",
   "corridorDistanceM": 68.3,
-  "segmentDistanceM": 11.6,
+  "segmentDistanceM": 13.8,
   "address": "167 Madison Ave, New York, NY 10016",
   "categories": [
    "Bakery"
@@ -6029,7 +6029,7 @@
   "city": "NYC",
   "corridorId": "e32nd",
   "corridorDistanceM": 98.1,
-  "segmentDistanceM": 17.6,
+  "segmentDistanceM": 20.2,
   "address": "171 Madison Ave, New York, NY 10016",
   "categories": [
    "Convenience store",
@@ -6213,7 +6213,7 @@
   "city": "NYC",
   "corridorId": "e32nd",
   "corridorDistanceM": 98.7,
-  "segmentDistanceM": 15.4,
+  "segmentDistanceM": 28.4,
   "address": "131 Madison Ave, New York, NY 10016",
   "categories": [
    "Bar"
@@ -6280,7 +6280,7 @@
   "city": "NYC",
   "corridorId": "e32nd",
   "corridorDistanceM": 295.3,
-  "segmentDistanceM": 19.1,
+  "segmentDistanceM": 24.1,
   "address": "253 5th Ave, New York, NY 10016",
   "categories": [
    "Bar",

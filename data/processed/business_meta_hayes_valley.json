@@ -742,7 +742,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 170.5,
-  "segmentDistanceM": 11.2,
+  "segmentDistanceM": 11.8,
   "address": "511 Laguna St, San Francisco, CA 94102",
   "categories": [
    "Sushi restaurant",
@@ -844,7 +844,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 254.2,
-  "segmentDistanceM": 7.4,
+  "segmentDistanceM": 9.3,
   "address": "131 Gough St, San Francisco, CA 94102",
   "categories": [
    "Restaurant"
@@ -874,7 +874,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 135.2,
-  "segmentDistanceM": 13.6,
+  "segmentDistanceM": 17.3,
   "address": "231 Franklin St, San Francisco, CA 94102",
   "categories": [
    "Ramen restaurant",
@@ -937,7 +937,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 182.9,
-  "segmentDistanceM": 10.7,
+  "segmentDistanceM": 11.2,
   "address": "500 Fell St, San Francisco, CA 94102",
   "categories": [
    "Italian restaurant",
@@ -1101,7 +1101,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 222.1,
-  "segmentDistanceM": 12.4,
+  "segmentDistanceM": 12.7,
   "address": "392 Fulton St, San Francisco, CA 94102",
   "categories": [
    "Breakfast restaurant",
@@ -1164,7 +1164,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 223.5,
-  "segmentDistanceM": 13.1,
+  "segmentDistanceM": 16.6,
   "address": "198 Gough St, San Francisco, CA 94102",
   "categories": [
    "Bakery",
@@ -1226,7 +1226,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 57.4,
-  "segmentDistanceM": 4.9,
+  "segmentDistanceM": 31.0,
   "address": "315 Linden St, San Francisco, CA 94102",
   "categories": [
    "Coffee shop"
@@ -1288,7 +1288,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 17.2,
-  "segmentDistanceM": 11.5,
+  "segmentDistanceM": 12.7,
   "address": "500 Hayes St, San Francisco, CA 94102",
   "categories": [
    "Cafe",
@@ -1511,7 +1511,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 140.1,
-  "segmentDistanceM": 16.7,
+  "segmentDistanceM": 24.9,
   "address": "201 Franklin St, San Francisco, CA 94102",
   "categories": [
    "Restaurant"
@@ -1666,7 +1666,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 260.1,
-  "segmentDistanceM": 12.5,
+  "segmentDistanceM": 13.1,
   "address": "101 Oak St, San Francisco, CA 94102",
   "categories": [
    "Chicken restaurant",
@@ -1736,7 +1736,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 44.9,
-  "segmentDistanceM": 9.0,
+  "segmentDistanceM": 10.9,
   "address": "330 Gough St, San Francisco, CA 94102",
   "categories": [
    "Fine dining restaurant",
@@ -1960,7 +1960,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 223.8,
-  "segmentDistanceM": 14.0,
+  "segmentDistanceM": 23.0,
   "address": "199 Gough St, San Francisco, CA 94102",
   "categories": [
    "New American restaurant",
@@ -2212,7 +2212,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 273.4,
-  "segmentDistanceM": 11.6,
+  "segmentDistanceM": 12.9,
   "address": "646 Gough St, San Francisco, CA 94102",
   "categories": [
    "Hair salon"
@@ -2517,7 +2517,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 40.2,
-  "segmentDistanceM": 12.3,
+  "segmentDistanceM": 13.2,
   "address": "524 Octavia St, San Francisco, CA 94102",
   "categories": [
    "Barber shop"
@@ -2547,7 +2547,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 139.7,
-  "segmentDistanceM": 10.1,
+  "segmentDistanceM": 13.4,
   "address": "534 Laguna St, San Francisco, CA 94102",
   "categories": [
    "Massage spa",
@@ -2670,7 +2670,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 43.0,
-  "segmentDistanceM": 9.5,
+  "segmentDistanceM": 66.1,
   "address": "344 Linden St, San Francisco, CA 94102",
   "categories": [
    "Fashion accessories store"
@@ -2959,7 +2959,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 28.7,
-  "segmentDistanceM": 20.1,
+  "segmentDistanceM": 28.7,
   "address": "411 Hayes St, San Francisco, CA 94102",
   "categories": [
    "Clothing store"
@@ -3270,7 +3270,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 52.8,
-  "segmentDistanceM": 13.2,
+  "segmentDistanceM": 51.7,
   "address": "50 Fell St, San Francisco, CA 94102",
   "categories": [
    "City park",
@@ -3301,7 +3301,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 272.2,
-  "segmentDistanceM": 10.5,
+  "segmentDistanceM": 11.5,
   "address": "646 Gough St, San Francisco, CA 94102",
   "categories": [
    "Hair salon"
@@ -3527,7 +3527,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 57.3,
-  "segmentDistanceM": 4.8,
+  "segmentDistanceM": 47.5,
   "address": "327 Linden St, San Francisco, CA 94102",
   "categories": [
    "Home goods store"
@@ -3618,7 +3618,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 288.1,
-  "segmentDistanceM": 6.3,
+  "segmentDistanceM": 13.2,
   "address": "41 Franklin St, San Francisco, CA 94102",
   "categories": [
    "Sushi restaurant"
@@ -3680,7 +3680,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 255.4,
-  "segmentDistanceM": 6.4,
+  "segmentDistanceM": 12.3,
   "address": "620 Gough St, San Francisco, CA 94102",
   "categories": [
    "Sushi restaurant",
@@ -3712,7 +3712,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 66.2,
-  "segmentDistanceM": 9.9,
+  "segmentDistanceM": 22.5,
   "address": "535 Octavia St, San Francisco, CA 94102",
   "categories": [
    "Dessert restaurant"
@@ -3837,7 +3837,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 280.2,
-  "segmentDistanceM": 13.6,
+  "segmentDistanceM": 21.6,
   "address": "698 Hayes St, San Francisco, CA 94102",
   "categories": [
    "Grocery store",
@@ -3965,7 +3965,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 13.5,
-  "segmentDistanceM": 13.2,
+  "segmentDistanceM": 13.5,
   "address": "498 Hayes St, San Francisco, CA 94102",
   "categories": [
    "Clothing store"
@@ -4086,7 +4086,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 213.6,
-  "segmentDistanceM": 22.6,
+  "segmentDistanceM": 30.9,
   "address": "788 Laguna St, San Francisco, CA 94102",
   "categories": [
    "Grocery store",
@@ -4252,7 +4252,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 142.7,
-  "segmentDistanceM": 13.1,
+  "segmentDistanceM": 37.2,
   "address": "205 Franklin St, San Francisco, CA 94102",
   "categories": [
    "Bar"
@@ -4403,7 +4403,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 42.9,
-  "segmentDistanceM": 9.4,
+  "segmentDistanceM": 15.1,
   "address": "429 Gough St, San Francisco, CA 94102",
   "categories": [
    "Cannabis store",
@@ -4629,7 +4629,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 219.4,
-  "segmentDistanceM": 50.3,
+  "segmentDistanceM": 72.5,
   "address": "201 Van Ness Ave, San Francisco, CA 94102",
   "categories": [
    "Orchestra",
@@ -4693,7 +4693,7 @@
   "city": "SF",
   "corridorId": "hayes",
   "corridorDistanceM": 130.5,
-  "segmentDistanceM": 16.2,
+  "segmentDistanceM": 35.9,
   "address": "201 Franklin St, San Francisco, CA 94102",
   "categories": [
    "Live music venue"

@@ -16,7 +16,9 @@ Mapping notes:
   from `popularTimesHistogram` = {"Su": [{"hour": h, "occupancyPercent": p}, ...], "Mo": ...}
   (structure verified against the cached astoria run). Hours Google doesn't list -> 0 (closed / no data
   for that hour); a business with no histogram at all -> null.
-- segmentId = nearest drive segment in the area's network.json (local metric projection).
+- segmentId = nearest segment of the street named in the business's address (within 120 m), else the
+  nearest drive segment (local metric projection). Address matching stops corner shops on W 32nd St
+  being assigned to the avenue they happen to be closest to.
 - corridorId = nearest corridor whose segments are within CORRIDOR_MAX_M, else null.
 - carDependence: 0 placeholder here; elastic_car_dependence.py fills it from review signals. Existing
   values are preserved when this script is re-run.
@@ -43,6 +45,33 @@ DAYS = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"]
 CORRIDOR_MAX_M = 300
 
 
+
+ADDRESS_MATCH_M = 120
+_ABBR = [(r"\bAVENUE\b|\bAV\b", "AVE"), (r"\bSTREET\b", "ST"), (r"\bBOULEVARD\b", "BLVD"), (r"\bROAD\b", "RD"),
+         (r"\bPLACE\b", "PL"), (r"\bEAST\b", "E"), (r"\bWEST\b", "W"), (r"\bNORTH\b", "N"), (r"\bSOUTH\b", "S")]
+
+
+def norm_street(s: str | None) -> str:
+    """Same normalisation as sim/src/traffic.ts normStreet: "West 32nd Street" -> "W 32 ST"."""
+    import re
+    x = re.sub(r"[.,]", " ", (s or "").upper())
+    x = re.sub(r"\b(\d+)(ST|ND|RD|TH)\b", r"\1", x)
+    for pat, rep in _ABBR:
+        x = re.sub(pat, rep, x)
+    return " ".join(x.split())
+
+
+def address_street(addr: str | None) -> str | None:
+    """'55 W 35th St, New York, NY 10001' -> 'W 35 ST'; '1250 Broadway, ...' -> 'BROADWAY'."""
+    import re
+    if not addr:
+        return None
+    first = addr.split(",")[0].strip()
+    m = re.match(r"^[\dA-Za-z\-]*\d[\dA-Za-z\-]*\s+(.+)$", first)  # drop the house number
+    return norm_street(m.group(1)) if m else None
+
+
+
 def popular_times(hist):
     if not hist or not isinstance(hist, dict):
         return None
@@ -55,7 +84,6 @@ def popular_times(hist):
                 grid[di][h] = max(0, min(100, p))
                 seen = True
     return grid if seen else None
-
 
 def review_id(place_id, r):
     rid = r.get("reviewId")
@@ -82,6 +110,7 @@ def build(area: str) -> dict | None:
         seg_ids.append(s["id"])
         lines.append(LineString([fwd(x, y) for x, y in s["coords"]]))
     tree = STRtree(lines)
+    seg_norm = [norm_street(s["name"]) for s in net["segments"]]
     seg_idx = {sid: i for i, sid in enumerate(seg_ids)}
     corridors = {cid: [lines[seg_idx[s]] for s in c["segmentIds"] if s in seg_idx]
                  for cid, c in net["corridors"].items()}
@@ -110,6 +139,11 @@ def build(area: str) -> dict | None:
         seen.add(pid)
         p = Point(fwd(loc["lng"], loc["lat"]))
         ni = int(tree.query_nearest(p)[0])
+        street = address_street(it.get("address"))
+        if street:
+            same = [i for i, n in enumerate(seg_norm) if n == street and lines[i].distance(p) <= ADDRESS_MATCH_M]
+            if same:
+                ni = min(same, key=lambda i: lines[i].distance(p))
         dists = {cid: min(l.distance(p) for l in ls) for cid, ls in corridors.items() if ls}
         cid = min(dists, key=dists.get) if dists else None
         if cid is not None and dists[cid] > CORRIDOR_MAX_M:

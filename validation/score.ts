@@ -86,6 +86,24 @@ export function scoreAll() {
   return { rows, summary };
 }
 
+/**
+ * Run history. v1 was the first and only truly blind holdout run. After it we fixed a data bug
+ * (businesses were assigned to the nearest road segment ignoring their street address), re-fit the
+ * one parameter on the calibration corridors only, and re-scored. Because we had already seen v1's
+ * holdout results, the current run is no longer strictly blind; both are reported.
+ */
+function runHistory(cur: any): string[] {
+  const f = join(HERE, "backtest_results_v1.json");
+  if (!existsSync(f)) return [];
+  const v1 = JSON.parse(readFileSync(f, "utf8")).summary;
+  const row = (name: string, s: any) => `| ${name} | ${s.calibration?.pedUpliftBase ?? "—"} | ${Math.round(s.directionAccuracy * 100)}% | ${s.maeHoldout.toFixed(1)} | ${s.maeCalibration.toFixed(1)} | ${s.holdoutInRange}/${s.holdoutScored} | ${s.spearmanAll?.toFixed(2) ?? "—"} |`;
+  return ["## Run history", "",
+    "**v1 is the headline result: it is the only run where the holdout streets were truly blind.** After v1 we fixed a data bug (businesses were assigned to the nearest road segment without checking their street address, so corner shops could land on the avenue), re-fit the single parameter on the calibration corridors only, and re-scored. We had already seen v1's holdout results, so the current run is no longer strictly blind. It scored slightly worse on the holdout.", "",
+    "| Run | pedUpliftBase | Direction | Holdout MAE (pts) | Calibration MAE (pts) | Holdout in range | Spearman |", "|---|---|---|---|---|---|---|",
+    row("v1, blind (headline)", v1), row("current, after address fix", cur), "",
+    "Remaining data limit: the Google Maps scrape gathered ~60 places in a 300 m circle per corridor, and only a fraction front the corridor itself (e.g. 15 on E 32nd St). Busy Manhattan blocks are under-counted, which is the most likely reason E 32nd St is the worst miss.", ""];
+}
+
 export function writeReport(res: ReturnType<typeof scoreAll>) {
   const { rows, summary: s } = res;
   const lines = [
@@ -108,6 +126,7 @@ export function writeReport(res: ReturnType<typeof scoreAll>) {
     `- Mean absolute error, holdout: **${s.maeHoldout === null ? "—" : s.maeHoldout.toFixed(1) + " pts"}** (calibration: ${s.maeCalibration === null ? "—" : s.maeCalibration.toFixed(1) + " pts"})`,
     `- Holdout actuals inside the predicted range: **${s.holdoutInRange} / ${s.holdoutScored}**`,
     `- Rank correlation (Spearman) across scored corridors: **${s.spearmanAll === null ? "— (need ≥ 3)" : s.spearmanAll.toFixed(2)}**`, "",
+    ...runHistory(s),
     "## Honest limits", "",
     "- Five corridors is a tiny sample; treat these as a sanity check, not proof.",
     "- Open Streets corridors also had Open Restaurants roadway dining, so the model's effect is closure + seating together.",

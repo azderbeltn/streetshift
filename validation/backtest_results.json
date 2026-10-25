@@ -4,21 +4,21 @@
       "corridorId": "ditmars",
       "corridorName": "Ditmars Blvd (Astoria, Queens)",
       "split": "calibration",
-      "predictedGapPct": 38.9,
+      "predictedGapPct": 41.2,
       "actualGapPct": 51,
       "directionCorrect": true,
-      "absErrorPts": 12.1,
+      "absErrorPts": 9.8,
       "predictedRange": [
-        20,
-        66
+        21,
+        70
       ],
-      "predictedTreatedPct": 44.219089586401836,
-      "predictedControlPct": 5.343514090399348,
+      "predictedTreatedPct": 40.747444755283404,
+      "predictedControlPct": -0.4787386562482343,
       "actualTreatedPct": 44,
       "actualControlPct": -7,
       "source": "streets-for-recovery-report-data.pdf, page 5",
       "foodBusinesses": {
-        "treated": 19,
+        "treated": 21,
         "control": 8
       },
       "available": true
@@ -27,21 +27,21 @@
       "corridorId": "park_slope_5th",
       "corridorName": "5th Ave (Park Slope, Brooklyn)",
       "split": "calibration",
-      "predictedGapPct": 51.4,
+      "predictedGapPct": 49.9,
       "actualGapPct": 44,
       "directionCorrect": true,
-      "absErrorPts": 7.4,
+      "absErrorPts": 5.9,
       "predictedRange": [
-        25,
-        89
+        24,
+        87
       ],
-      "predictedTreatedPct": 50.55960822208796,
-      "predictedControlPct": -0.8032757180977401,
+      "predictedTreatedPct": 48.1695862510642,
+      "predictedControlPct": -1.7300908836220819,
       "actualTreatedPct": 27,
       "actualControlPct": -17,
       "source": "streets-for-recovery-report-data.pdf, page 3",
       "foodBusinesses": {
-        "treated": 6,
+        "treated": 10,
         "control": 18
       },
       "available": true
@@ -50,22 +50,22 @@
       "corridorId": "pell_doyers",
       "corridorName": "Pell & Doyers Sts (Chinatown, Manhattan)",
       "split": "holdout",
-      "predictedGapPct": 34.1,
+      "predictedGapPct": 32.2,
       "actualGapPct": 23,
       "directionCorrect": true,
-      "absErrorPts": 11.1,
+      "absErrorPts": 9.2,
       "predictedRange": [
-        19,
-        54
+        18,
+        51
       ],
-      "predictedTreatedPct": 33.5334854990051,
-      "predictedControlPct": -0.589182340676786,
+      "predictedTreatedPct": 31.698226619005144,
+      "predictedControlPct": -0.5254984055081402,
       "actualTreatedPct": -8,
       "actualControlPct": -31,
       "source": "streets-for-recovery-report-data.pdf, page 7",
       "foodBusinesses": {
         "treated": 14,
-        "control": 5
+        "control": 6
       },
       "available": true
     },
@@ -73,22 +73,22 @@
       "corridorId": "e32nd",
       "corridorName": "E 32nd St (Koreatown, Manhattan)",
       "split": "holdout",
-      "predictedGapPct": 41.1,
+      "predictedGapPct": 37.9,
       "actualGapPct": 64,
       "directionCorrect": true,
-      "absErrorPts": 22.9,
+      "absErrorPts": 26.1,
       "predictedRange": [
-        22,
-        68
+        20,
+        62
       ],
-      "predictedTreatedPct": 40.976030649631824,
-      "predictedControlPct": -0.16988203368070165,
+      "predictedTreatedPct": 37.73252856963183,
+      "predictedControlPct": -0.13825337706097063,
       "actualTreatedPct": 15,
       "actualControlPct": -49,
       "source": "streets-for-recovery-report-data.pdf, page 9",
       "foodBusinesses": {
         "treated": 14,
-        "control": 15
+        "control": 14
       },
       "available": true
     },
@@ -96,21 +96,21 @@
       "corridorId": "vanderbilt",
       "corridorName": "Vanderbilt Ave (Prospect Heights, Brooklyn)",
       "split": "holdout",
-      "predictedGapPct": 62.8,
+      "predictedGapPct": 57.6,
       "actualGapPct": 60,
       "directionCorrect": true,
-      "absErrorPts": 2.8,
+      "absErrorPts": 2.4,
       "predictedRange": [
-        29,
-        109
+        27,
+        100
       ],
-      "predictedTreatedPct": 60.096157148427906,
-      "predictedControlPct": -2.751360672145542,
+      "predictedTreatedPct": 54.65573604148122,
+      "predictedControlPct": -2.9063063692335023,
       "actualTreatedPct": 20,
       "actualControlPct": -40,
       "source": "streets-for-recovery-report-data.pdf, page 1",
       "foodBusinesses": {
-        "treated": 17,
+        "treated": 20,
         "control": 6
       },
       "available": true
@@ -119,19 +119,19 @@
   "summary": {
     "corridorsScored": 5,
     "directionAccuracy": 1,
-    "maeAll": 11.26,
-    "maeHoldout": 12.266666666666666,
-    "maeCalibration": 9.75,
-    "spearmanAll": 0.5,
-    "holdoutInRange": 3,
+    "maeAll": 10.68,
+    "maeHoldout": 12.566666666666665,
+    "maeCalibration": 7.8500000000000005,
+    "spearmanAll": 0.30000000000000004,
+    "holdoutInRange": 2,
     "holdoutScored": 3,
     "calibration": {
-      "pedUpliftBase": 0.12,
+      "pedUpliftBase": 0.1,
       "fitOn": [
         "ditmars",
         "park_slope_5th"
       ],
-      "fittedAt": "2026-10-24T22:32:23.955Z",
+      "fittedAt": "2026-10-25T03:08:53.111Z",
       "note": "Grid search 0.02..2.00 step 0.01 minimising squared error of the mid predicted gap on calibration corridors only."
     }
   }

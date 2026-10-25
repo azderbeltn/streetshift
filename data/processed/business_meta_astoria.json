@@ -5,7 +5,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 21.6,
-  "segmentDistanceM": 19.7,
+  "segmentDistanceM": 21.6,
   "address": "35-04 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Açaí shop",
@@ -97,7 +97,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 24.9,
-  "segmentDistanceM": 12.7,
+  "segmentDistanceM": 21.7,
   "address": "36-02 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "New American restaurant"
@@ -219,7 +219,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 173.9,
-  "segmentDistanceM": 11.6,
+  "segmentDistanceM": 13.2,
   "address": "38-01 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Irish pub",
@@ -319,7 +319,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 75.8,
-  "segmentDistanceM": 7.8,
+  "segmentDistanceM": 20.0,
   "address": "36-20 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Pizza restaurant",
@@ -484,7 +484,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 254.0,
-  "segmentDistanceM": 12.3,
+  "segmentDistanceM": 14.2,
   "address": "31-31B 23rd Ave, Astoria, NY 11105",
   "categories": [
    "Pizza restaurant"
@@ -582,7 +582,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 26.6,
-  "segmentDistanceM": 19.1,
+  "segmentDistanceM": 26.6,
   "address": "33-18 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Ramen restaurant",
@@ -685,7 +685,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 20.9,
-  "segmentDistanceM": 13.9,
+  "segmentDistanceM": 20.9,
   "address": "35-01 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Italian restaurant"
@@ -1021,7 +1021,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 64.8,
-  "segmentDistanceM": 21.1,
+  "segmentDistanceM": 24.9,
   "address": "36-16 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Mexican restaurant"
@@ -1376,7 +1376,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 13.5,
-  "segmentDistanceM": 12.7,
+  "segmentDistanceM": 13.5,
   "address": "33-02 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Cafe",
@@ -1474,7 +1474,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 20.7,
-  "segmentDistanceM": 13.8,
+  "segmentDistanceM": 15.5,
   "address": "36-01 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Greek restaurant",
@@ -1538,7 +1538,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 281.2,
-  "segmentDistanceM": 12.5,
+  "segmentDistanceM": 34.2,
   "address": "23-02 31st St, Queens, NY 11105",
   "categories": [
    "Pizza restaurant",
@@ -1629,7 +1629,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 32.0,
-  "segmentDistanceM": 20.3,
+  "segmentDistanceM": 24.8,
   "address": "36-03 Ditmars Blvd, Long Island City, NY 11105",
   "categories": [
    "Mexican restaurant"
@@ -1786,7 +1786,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 290.2,
-  "segmentDistanceM": 21.2,
+  "segmentDistanceM": 43.1,
   "address": "38-01 23rd Ave, Astoria, NY 11105",
   "categories": [
    "Caterer",
@@ -1825,7 +1825,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 24.9,
-  "segmentDistanceM": 12.7,
+  "segmentDistanceM": 21.7,
   "address": "36-02 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Bistro",
@@ -2316,7 +2316,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 295.8,
-  "segmentDistanceM": 17.1,
+  "segmentDistanceM": 32.8,
   "address": "38-01 23rd Ave, Astoria, NY 11105",
   "categories": [
    "Nail salon"
@@ -2744,7 +2744,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 226.9,
-  "segmentDistanceM": 13.0,
+  "segmentDistanceM": 19.1,
   "address": "22-02 Steinway St, Astoria, NY 11105",
   "categories": [
    "Greek restaurant",
@@ -3117,7 +3117,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 146.8,
-  "segmentDistanceM": 16.4,
+  "segmentDistanceM": 20.4,
   "address": "3723 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Coffee shop",
@@ -3252,7 +3252,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 20.3,
-  "segmentDistanceM": 17.4,
+  "segmentDistanceM": 20.3,
   "address": "33-01 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Ice cream shop",
@@ -3344,7 +3344,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 36.5,
-  "segmentDistanceM": 14.2,
+  "segmentDistanceM": 36.5,
   "address": "35-19 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Mediterranean restaurant",
@@ -3412,7 +3412,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 70.6,
-  "segmentDistanceM": 13.1,
+  "segmentDistanceM": 19.4,
   "address": "36-21 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Bakery"
@@ -3502,7 +3502,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 248.3,
-  "segmentDistanceM": 12.8,
+  "segmentDistanceM": 20.3,
   "address": "28-01 23rd Ave, Astoria, NY 11105",
   "categories": [
    "Bakery",
@@ -3566,7 +3566,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 289.5,
-  "segmentDistanceM": 20.8,
+  "segmentDistanceM": 25.5,
   "address": "23-02 31st St, Astoria, NY 11105",
   "categories": [
    "Cake shop"
@@ -3913,7 +3913,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 244.3,
-  "segmentDistanceM": 23.7,
+  "segmentDistanceM": 24.3,
   "address": "31-01 23rd Ave, Astoria, NY 11105",
   "categories": [
    "Cell phone store",
@@ -4202,7 +4202,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 295.8,
-  "segmentDistanceM": 17.1,
+  "segmentDistanceM": 32.8,
   "address": "38-01 23rd Ave, Astoria, NY 11105",
   "categories": [
    "Event venue",
@@ -4266,7 +4266,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 18.4,
-  "segmentDistanceM": 9.7,
+  "segmentDistanceM": 18.4,
   "address": "31-01 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Drug store",
@@ -4335,7 +4335,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 243.3,
-  "segmentDistanceM": 19.8,
+  "segmentDistanceM": 25.4,
   "address": "29-03 23rd Ave, Astoria, NY 11105",
   "categories": [
    "Tobacco shop",
@@ -4366,7 +4366,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 282.4,
-  "segmentDistanceM": 10.0,
+  "segmentDistanceM": 13.8,
   "address": "27-20 23rd Ave, Astoria, NY 11105",
   "categories": [
    "Bar"
@@ -4396,7 +4396,7 @@
   "city": "NYC",
   "corridorId": "ditmars",
   "corridorDistanceM": 91.8,
-  "segmentDistanceM": 10.0,
+  "segmentDistanceM": 11.8,
   "address": "37-11 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Supermarket"
@@ -4589,7 +4589,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 29.4,
-  "segmentDistanceM": 24.7,
+  "segmentDistanceM": 29.4,
   "address": "31-17 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Bar"
@@ -4619,7 +4619,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 21.7,
-  "segmentDistanceM": 12.9,
+  "segmentDistanceM": 21.7,
   "address": "29-02 Ditmars Blvd, Astoria, NY 11105",
   "categories": [
    "Sandwich shop",
@@ -4690,7 +4690,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 224.7,
-  "segmentDistanceM": 13.5,
+  "segmentDistanceM": 24.1,
   "address": "25-03 Ditmars Blvd, Long Island City, NY 11105",
   "categories": [
    "Donut shop",
@@ -4721,7 +4721,7 @@
   "city": "NYC",
   "corridorId": "ditmars_control",
   "corridorDistanceM": 258.6,
-  "segmentDistanceM": 13.7,
+  "segmentDistanceM": 17.8,
   "address": "27-01 23rd Ave, Astoria, NY 11105",
   "categories": [
    "Bar"

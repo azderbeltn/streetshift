@@ -203,7 +203,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 277.8,
-  "segmentDistanceM": 21.2,
+  "segmentDistanceM": 22.0,
   "address": "384 Broome St, New York, NY 10013",
   "categories": [
    "Japanese restaurant",
@@ -238,7 +238,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 246.7,
-  "segmentDistanceM": 11.3,
+  "segmentDistanceM": 24.5,
   "address": "186 Grand St, New York, NY 10013",
   "categories": [
    "Italian restaurant",
@@ -472,7 +472,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 17.9,
+  "segmentDistanceM": 23.5,
   "address": "187 Mulberry St, New York, NY 10012",
   "categories": [
    "Italian restaurant",
@@ -718,7 +718,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 210.0,
-  "segmentDistanceM": 27.3,
+  "segmentDistanceM": 31.7,
   "address": "192 Grand St, New York, NY 10013",
   "categories": [
    "Spanish restaurant",
@@ -752,7 +752,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 257.3,
-  "segmentDistanceM": 11.7,
+  "segmentDistanceM": 25.6,
   "address": "385 Broome St, New York, NY 10013",
   "categories": [
    "Coffee shop"
@@ -1526,7 +1526,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 11.9,
+  "segmentDistanceM": 15.3,
   "address": "177 Lafayette St, New York, NY 10013",
   "categories": [
    "Coffee shop",
@@ -1558,7 +1558,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 17.6,
+  "segmentDistanceM": 18.7,
   "address": "409 Broome St, New York, NY 10013",
   "categories": [
    "Cafe"
@@ -1742,7 +1742,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 21.3,
+  "segmentDistanceM": 25.0,
   "address": "255A Canal St, New York, NY 10013",
   "categories": [
    "Art cafe"
@@ -1924,7 +1924,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 224.4,
-  "segmentDistanceM": 7.8,
+  "segmentDistanceM": 8.1,
   "address": "191 Hester St, New York, NY 10013",
   "categories": [
    "Pastry shop"
@@ -2151,7 +2151,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 244.9,
-  "segmentDistanceM": 14.6,
+  "segmentDistanceM": 23.6,
   "address": "372 Broome St, New York, NY 10013",
   "categories": [
    "Lingerie store",
@@ -2439,7 +2439,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 71.0,
-  "segmentDistanceM": 10.7,
+  "segmentDistanceM": 21.4,
   "address": "223 Grand St, New York, NY 10002",
   "categories": [
    "Hair salon"
@@ -3089,7 +3089,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 93.4,
-  "segmentDistanceM": 15.9,
+  "segmentDistanceM": 24.4,
   "address": "145 Bowery, New York, NY 10002",
   "categories": [
    "Lounge bar",
@@ -3302,7 +3302,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 217.7,
-  "segmentDistanceM": 8.9,
+  "segmentDistanceM": 13.2,
   "address": "370 Broome St, New York, NY 10013",
   "categories": [
    "Bakery"
@@ -3332,7 +3332,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 96.9,
-  "segmentDistanceM": 12.6,
+  "segmentDistanceM": 17.2,
   "address": "167 Canal St, New York, NY 10013",
   "categories": [
    "Bubble tea store",
@@ -3429,7 +3429,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 98.3,
-  "segmentDistanceM": 12.9,
+  "segmentDistanceM": 13.9,
   "address": "220 Grand St, New York, NY 10013",
   "categories": [
    "Convenience store"
@@ -3490,7 +3490,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 22.4,
+  "segmentDistanceM": 22.9,
   "address": "100 Kenmare St, New York, NY 10281",
   "categories": [
    "Restaurant",
@@ -3528,7 +3528,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 241.6,
-  "segmentDistanceM": 18.1,
+  "segmentDistanceM": 28.3,
   "address": "183 Bowery, New York, NY 10002",
   "categories": [
    "Bar"
@@ -3558,7 +3558,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 218.8,
-  "segmentDistanceM": 13.8,
+  "segmentDistanceM": 15.3,
   "address": "180 Hester St, New York, NY 10013",
   "categories": [
    "Bakery"
@@ -3588,7 +3588,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 24.3,
+  "segmentDistanceM": 25.0,
   "address": "242 Canal St, New York, NY 10013",
   "categories": [
    "Chinese bakery",
@@ -3619,7 +3619,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers",
   "corridorDistanceM": 259.9,
-  "segmentDistanceM": 19.6,
+  "segmentDistanceM": 20.7,
   "address": "135 Walker St, New York, NY 10013",
   "categories": [
    "Bakery"
@@ -3716,7 +3716,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 168.2,
-  "segmentDistanceM": 10.7,
+  "segmentDistanceM": 14.8,
   "address": "200 Grand St, New York, NY 10013",
   "categories": [
    "Italian grocery store",
@@ -3747,7 +3747,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 293.8,
-  "segmentDistanceM": 6.7,
+  "segmentDistanceM": 17.7,
   "address": "174 Grand St, New York, NY 10013",
   "categories": [
    "Bar & grill",
@@ -4066,7 +4066,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 31.1,
-  "segmentDistanceM": 17.6,
+  "segmentDistanceM": 31.1,
   "address": "93 Bowery, New York, NY 10002",
   "categories": [
    "Bar"
@@ -4408,7 +4408,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 18.7,
-  "segmentDistanceM": 11.2,
+  "segmentDistanceM": 18.7,
   "address": "93 Bowery, New York, NY 10002",
   "categories": [
    "Beer garden",
@@ -4531,7 +4531,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 184.0,
-  "segmentDistanceM": 30.1,
+  "segmentDistanceM": 34.8,
   "address": "139 Chrystie St, New York, NY 10002",
   "categories": [
    "Cocktail bar"
@@ -4561,7 +4561,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 291.2,
-  "segmentDistanceM": 11.7,
+  "segmentDistanceM": 18.5,
   "address": "12 Spring St, New York, NY 10012",
   "categories": [
    "Bar"
@@ -5034,7 +5034,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers",
   "corridorDistanceM": 84.0,
-  "segmentDistanceM": 11.4,
+  "segmentDistanceM": 17.9,
   "address": "60 Bayard St, New York, NY 10013",
   "categories": [
    "Cha chaan teng (Hong Kong-style cafe)",
@@ -5065,7 +5065,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 94.0,
-  "segmentDistanceM": 20.0,
+  "segmentDistanceM": 45.3,
   "address": "22 Chatham Square, New York, NY 10038",
   "categories": [
    "Diner",
@@ -5970,7 +5970,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers_control",
   "corridorDistanceM": 43.2,
-  "segmentDistanceM": 13.9,
+  "segmentDistanceM": 24.7,
   "address": "18 E Broadway, New York, NY 10002",
   "categories": [
    "Dim sum restaurant",
@@ -6038,7 +6038,7 @@
   "city": "NYC",
   "corridorId": "pell_doyers",
   "corridorDistanceM": 63.1,
-  "segmentDistanceM": 14.4,
+  "segmentDistanceM": 16.3,
   "address": "32 Mulberry St, New York, NY 10013",
   "categories": [
    "Bar"

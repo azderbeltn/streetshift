@@ -131,7 +131,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 31.5,
-  "segmentDistanceM": 12.9,
+  "segmentDistanceM": 17.2,
   "address": "80 6th Ave, Brooklyn, NY 11217",
   "categories": [
    "Restaurant"
@@ -161,7 +161,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 26.7,
-  "segmentDistanceM": 22.8,
+  "segmentDistanceM": 26.5,
   "address": "267 Flatbush Ave, Brooklyn, NY 11217",
   "categories": [
    "Barbecue restaurant",
@@ -200,7 +200,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 164.3,
-  "segmentDistanceM": 11.3,
+  "segmentDistanceM": 16.4,
   "address": "70 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Japanese restaurant"
@@ -230,7 +230,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 272.4,
-  "segmentDistanceM": 19.6,
+  "segmentDistanceM": 21.4,
   "address": "884 Pacific St, Brooklyn, NY 11238",
   "categories": [
    "Bar",
@@ -294,7 +294,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 103.0,
-  "segmentDistanceM": 11.4,
+  "segmentDistanceM": 18.7,
   "address": "50 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Restaurant"
@@ -420,7 +420,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 164.1,
-  "segmentDistanceM": 11.2,
+  "segmentDistanceM": 16.4,
   "address": "63 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Thai restaurant",
@@ -737,7 +737,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 168.0,
-  "segmentDistanceM": 13.8,
+  "segmentDistanceM": 18.7,
   "address": "605 Carlton Ave, Brooklyn, NY 11238",
   "categories": [
    "Restaurant",
@@ -828,7 +828,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 240.7,
-  "segmentDistanceM": 12.2,
+  "segmentDistanceM": 24.1,
   "address": "755 Dean St, Brooklyn, NY 11238",
   "categories": [
    "American restaurant",
@@ -932,7 +932,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 18.5,
-  "segmentDistanceM": 15.0,
+  "segmentDistanceM": 18.5,
   "address": "550 Vanderbilt Ave, Brooklyn, NY 11238",
   "categories": [
    "Bar",
@@ -1023,7 +1023,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 11.9,
+  "segmentDistanceM": 29.6,
   "address": "148 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Bar",
@@ -1119,7 +1119,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 25.1,
-  "segmentDistanceM": 14.8,
+  "segmentDistanceM": 25.1,
   "address": "583 Vanderbilt Ave, Brooklyn, NY 11238",
   "categories": [
    "Bar"
@@ -1179,7 +1179,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 21.1,
-  "segmentDistanceM": 14.8,
+  "segmentDistanceM": 21.1,
   "address": "570 Vanderbilt Ave, Brooklyn, NY 11238",
   "categories": [
    "American restaurant",
@@ -1245,7 +1245,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 95.0,
-  "segmentDistanceM": 12.6,
+  "segmentDistanceM": 25.5,
   "address": "47 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Sports bar"
@@ -1494,7 +1494,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 15.1,
-  "segmentDistanceM": 15.0,
+  "segmentDistanceM": 15.1,
   "address": "601 Vanderbilt Ave, Brooklyn, NY 11238",
   "categories": [
    "Coffee shop"
@@ -1524,7 +1524,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 222.8,
-  "segmentDistanceM": 12.3,
+  "segmentDistanceM": 13.9,
   "address": "79 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Middle Eastern restaurant",
@@ -1595,7 +1595,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 48.0,
-  "segmentDistanceM": 9.7,
+  "segmentDistanceM": 13.0,
   "address": "82 6th Ave, Brooklyn, NY 11217",
   "categories": [
    "Mediterranean restaurant"
@@ -1655,7 +1655,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 31.3,
-  "segmentDistanceM": 21.8,
+  "segmentDistanceM": 23.9,
   "address": "253 Flatbush Ave, Brooklyn, NY 11217",
   "categories": [
    "Coffee shop",
@@ -1753,7 +1753,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 269.2,
-  "segmentDistanceM": 15.9,
+  "segmentDistanceM": 16.0,
   "address": "760 Dean St, Brooklyn, NY 11238",
   "categories": [
    "Greek restaurant",
@@ -1854,7 +1854,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 152.0,
-  "segmentDistanceM": 9.4,
+  "segmentDistanceM": 11.5,
   "address": "847 Atlantic Ave, Brooklyn, NY 11238",
   "categories": [
    "Coffee shop"
@@ -2033,7 +2033,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 253.7,
-  "segmentDistanceM": 16.2,
+  "segmentDistanceM": 18.3,
   "address": "60 7th Ave, Brooklyn, NY 11217",
   "categories": [
    "Bakery",
@@ -2106,7 +2106,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 18.9,
-  "segmentDistanceM": 13.9,
+  "segmentDistanceM": 18.9,
   "address": "594 Vanderbilt Ave, Brooklyn, NY 11238",
   "categories": [
    "Middle Eastern restaurant",
@@ -2138,7 +2138,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 267.5,
-  "segmentDistanceM": 18.1,
+  "segmentDistanceM": 22.7,
   "address": "949 Fulton St, Brooklyn, NY 11238",
   "categories": [
    "Bagel shop",
@@ -2260,7 +2260,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 14.8,
+  "segmentDistanceM": 18.4,
   "address": "117 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Nail salon"
@@ -2290,7 +2290,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 229.3,
-  "segmentDistanceM": 12.0,
+  "segmentDistanceM": 16.8,
   "address": "90 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Cheese shop"
@@ -2357,7 +2357,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 25.6,
-  "segmentDistanceM": 12.6,
+  "segmentDistanceM": 25.6,
   "address": "603 Vanderbilt Ave, Brooklyn, NY 11238",
   "categories": [
    "Bar & grill",
@@ -2580,7 +2580,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 23.4,
-  "segmentDistanceM": 23.1,
+  "segmentDistanceM": 23.4,
   "address": "568 Vanderbilt Ave, Brooklyn, NY 11238",
   "categories": [
    "Indian restaurant",
@@ -2613,7 +2613,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 11.6,
+  "segmentDistanceM": 12.3,
   "address": "689 Washington Ave, Brooklyn, NY 11238",
   "categories": [
    "Thai restaurant",
@@ -2816,7 +2816,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 98.3,
-  "segmentDistanceM": 18.3,
+  "segmentDistanceM": 18.4,
   "address": "48 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Bakery"
@@ -2977,7 +2977,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 79.8,
-  "segmentDistanceM": 18.0,
+  "segmentDistanceM": 19.9,
   "address": "32 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Dessert shop",
@@ -3009,7 +3009,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 211.7,
-  "segmentDistanceM": 18.8,
+  "segmentDistanceM": 19.9,
   "address": "905 Fulton St, Brooklyn, NY 11238",
   "categories": [
    "Wine store"
@@ -3039,7 +3039,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 201.5,
-  "segmentDistanceM": 10.6,
+  "segmentDistanceM": 17.7,
   "address": "77 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Creperie",
@@ -3235,7 +3235,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 255.8,
-  "segmentDistanceM": 42.0,
+  "segmentDistanceM": 78.9,
   "address": "139 Flatbush Ave, Brooklyn, NY 11217",
   "categories": [
    "Cosmetics store",
@@ -3297,7 +3297,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 221.0,
-  "segmentDistanceM": 29.8,
+  "segmentDistanceM": 35.6,
   "address": "625 Atlantic Ave, Brooklyn, NY 11217",
   "categories": [
    "Clothing store",
@@ -3397,7 +3397,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 140.4,
-  "segmentDistanceM": 16.1,
+  "segmentDistanceM": 18.4,
   "address": "61 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Deli"
@@ -3577,7 +3577,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 150.5,
-  "segmentDistanceM": 36.4,
+  "segmentDistanceM": 82.3,
   "address": "18 6th Ave, Brooklyn, NY 11217",
   "categories": [
    "Facial spa",
@@ -4121,7 +4121,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 288.3,
-  "segmentDistanceM": 34.3,
+  "segmentDistanceM": 43.8,
   "address": "590 Atlantic Ave, Brooklyn, NY 11217",
   "categories": [
    "Appliance store",
@@ -4220,7 +4220,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 23.4,
-  "segmentDistanceM": 19.8,
+  "segmentDistanceM": 23.4,
   "address": "296 Flatbush Ave, Brooklyn, NY 11217",
   "categories": [
    "Convenience store",
@@ -4448,7 +4448,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt_control",
   "corridorDistanceM": 26.6,
-  "segmentDistanceM": 14.0,
+  "segmentDistanceM": 19.1,
   "address": "245 Flatbush Ave, Brooklyn, NY 11217",
   "categories": [
    "Donut shop",
@@ -4765,7 +4765,7 @@
   "city": "NYC",
   "corridorId": "vanderbilt",
   "corridorDistanceM": 18.2,
-  "segmentDistanceM": 12.8,
+  "segmentDistanceM": 18.2,
   "address": "622 Vanderbilt Ave, Brooklyn, NY 11238",
   "categories": [
    "Bakery",

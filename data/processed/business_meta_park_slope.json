@@ -229,7 +229,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 18.0,
-  "segmentDistanceM": 13.2,
+  "segmentDistanceM": 18.0,
   "address": "170 7th Ave, Brooklyn, NY 11215",
   "categories": [
    "Cafe"
@@ -323,7 +323,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 16.3,
-  "segmentDistanceM": 10.9,
+  "segmentDistanceM": 16.3,
   "address": "156 7th Ave, Brooklyn, NY 11215",
   "categories": [
    "Coffee shop"
@@ -353,7 +353,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 22.9,
-  "segmentDistanceM": 18.4,
+  "segmentDistanceM": 22.9,
   "address": "247 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Bar"
@@ -383,7 +383,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 17.9,
-  "segmentDistanceM": 16.8,
+  "segmentDistanceM": 17.9,
   "address": "243 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Bar",
@@ -546,7 +546,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 16.6,
+  "segmentDistanceM": 24.6,
   "address": "78 Prospect Park W, Brooklyn, NY 11215",
   "categories": [
    "Jewelry store"
@@ -981,7 +981,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 24.0,
-  "segmentDistanceM": 10.8,
+  "segmentDistanceM": 24.0,
   "address": "189 7th Ave, Brooklyn, NY 11215",
   "categories": [
    "Pharmacy"
@@ -1011,7 +1011,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 18.0,
-  "segmentDistanceM": 13.1,
+  "segmentDistanceM": 18.0,
   "address": "154 7th Ave, Brooklyn, NY 11215",
   "categories": [
    "Home goods store",
@@ -1244,7 +1244,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 16.4,
-  "segmentDistanceM": 16.4,
+  "segmentDistanceM": 17.0,
   "address": "204 Garfield Pl, Brooklyn, NY 11215",
   "categories": [
    "Cannabis store",
@@ -1398,7 +1398,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 21.7,
-  "segmentDistanceM": 20.5,
+  "segmentDistanceM": 21.7,
   "address": "256 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Restaurant"
@@ -1552,7 +1552,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 69.6,
-  "segmentDistanceM": 12.6,
+  "segmentDistanceM": 20.5,
   "address": "75 7th Ave, Brooklyn, NY 11217",
   "categories": [
    "Gourmet grocery store",
@@ -1587,7 +1587,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 22.5,
-  "segmentDistanceM": 19.5,
+  "segmentDistanceM": 22.5,
   "address": "264 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Dessert shop",
@@ -1618,7 +1618,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 24.4,
-  "segmentDistanceM": 22.4,
+  "segmentDistanceM": 24.4,
   "address": "310 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Bakery",
@@ -1685,7 +1685,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 143.2,
-  "segmentDistanceM": 16.2,
+  "segmentDistanceM": 18.3,
   "address": "60 7th Ave, Brooklyn, NY 11217",
   "categories": [
    "Bakery",
@@ -2059,7 +2059,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 92.9,
-  "segmentDistanceM": 12.8,
+  "segmentDistanceM": 14.2,
   "address": "73 7th Ave, Brooklyn, NY 11217",
   "categories": [
    "Chinese restaurant",
@@ -2192,7 +2192,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 12.3,
+  "segmentDistanceM": 20.7,
   "address": "25 8th Ave, Brooklyn, NY 11217",
   "categories": [
    "Social club",
@@ -2228,7 +2228,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 224.6,
-  "segmentDistanceM": 13.4,
+  "segmentDistanceM": 24.1,
   "address": "752 Union St, Brooklyn, NY 11215",
   "categories": [
    "Chinese restaurant",
@@ -2807,7 +2807,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 30.2,
-  "segmentDistanceM": 26.6,
+  "segmentDistanceM": 30.2,
   "address": "177 7th Ave, Brooklyn, NY 11215",
   "categories": [
    "Beauty salon",
@@ -3154,7 +3154,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 219.3,
-  "segmentDistanceM": 19.0,
+  "segmentDistanceM": 20.6,
   "address": "399 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Chinese restaurant",
@@ -3186,7 +3186,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 62.6,
-  "segmentDistanceM": 21.7,
+  "segmentDistanceM": 25.7,
   "address": "355 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Coffee shop",
@@ -3308,7 +3308,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 134.9,
-  "segmentDistanceM": 25.9,
+  "segmentDistanceM": 26.8,
   "address": "376 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Colombian restaurant",
@@ -3409,7 +3409,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 250.6,
-  "segmentDistanceM": 12.3,
+  "segmentDistanceM": 20.2,
   "address": "294 7th Ave, Brooklyn, NY 11215",
   "categories": [
    "Deli",
@@ -3537,7 +3537,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 168.3,
-  "segmentDistanceM": 9.7,
+  "segmentDistanceM": 12.1,
   "address": "381 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Sushi restaurant",
@@ -3787,7 +3787,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 30.2,
-  "segmentDistanceM": 19.2,
+  "segmentDistanceM": 23.3,
   "address": "341 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Ice cream shop"
@@ -3817,7 +3817,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 214.0,
-  "segmentDistanceM": 14.2,
+  "segmentDistanceM": 24.3,
   "address": "204 6th Ave, Brooklyn, NY 11217",
   "categories": [
    "Cafe"
@@ -3847,7 +3847,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 175.3,
-  "segmentDistanceM": 14.9,
+  "segmentDistanceM": 27.8,
   "address": "383 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Chicken restaurant",
@@ -3883,7 +3883,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 220.5,
-  "segmentDistanceM": 18.0,
+  "segmentDistanceM": 21.4,
   "address": "399 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Chinese restaurant"
@@ -4005,7 +4005,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 145.6,
-  "segmentDistanceM": 13.5,
+  "segmentDistanceM": 17.1,
   "address": "384 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Chinese restaurant",
@@ -4036,7 +4036,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 228.2,
-  "segmentDistanceM": 12.1,
+  "segmentDistanceM": 18.4,
   "address": "356 6th Ave, Brooklyn, NY 11215",
   "categories": [
    "American restaurant",
@@ -4104,7 +4104,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 170.8,
-  "segmentDistanceM": 11.7,
+  "segmentDistanceM": 18.1,
   "address": "386 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "Thai restaurant",
@@ -4237,7 +4237,7 @@
   "city": "NYC",
   "corridorId": null,
   "corridorDistanceM": null,
-  "segmentDistanceM": 13.1,
+  "segmentDistanceM": 20.7,
   "address": "396 6th Ave, Brooklyn, NY 11215",
   "categories": [
    "Mexican restaurant",
@@ -4270,7 +4270,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 22.5,
-  "segmentDistanceM": 15.2,
+  "segmentDistanceM": 22.5,
   "address": "111 7th Ave, Brooklyn, NY 11215",
   "categories": [
    "Barber shop",
@@ -4332,7 +4332,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 27.8,
-  "segmentDistanceM": 15.8,
+  "segmentDistanceM": 27.8,
   "address": "324 5th Ave, Brooklyn, NY 11215",
   "categories": [
    "New American restaurant",
@@ -4549,7 +4549,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th",
   "corridorDistanceM": 226.8,
-  "segmentDistanceM": 11.9,
+  "segmentDistanceM": 29.6,
   "address": "148 5th Ave, Brooklyn, NY 11217",
   "categories": [
    "Bar",
@@ -4679,7 +4679,7 @@
   "city": "NYC",
   "corridorId": "park_slope_5th_control",
   "corridorDistanceM": 173.4,
-  "segmentDistanceM": 13.6,
+  "segmentDistanceM": 21.0,
   "address": "57 7th Ave, Brooklyn, NY 11217",
   "categories": [
    "Bagel shop"
