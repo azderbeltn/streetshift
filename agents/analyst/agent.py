@@ -46,8 +46,10 @@ INTENT_SCHEMA = {
         "programming": {"type": "string", "enum": ["none", "light", "heavy"]},
         "wants_backtest": {"type": "boolean", "description": "Asks how accurate the model is / how it did on real streets"},
         "unmatched_street": {"type": "string", "description": "Street the user named that is not in the list, else empty"},
+        "schedules": {"type": "array", "items": {"type": "string", "enum": ["full_time", "weekends_only"]},
+                      "description": "Closure schedules to report; both when the user asks to compare. Default ['full_time']."},
     },
-    "required": ["on_topic", "corridor_id", "added_seating", "programming", "wants_backtest", "unmatched_street"],
+    "required": ["on_topic", "corridor_id", "added_seating", "programming", "wants_backtest", "unmatched_street", "schedules"],
     "additionalProperties": False,
 }
 
@@ -58,7 +60,7 @@ def corridors():
         for c in a["corridors"]:
             if c["role"] in ("treated", "forward"):
                 out.append({"id": c["id"], "name": c["name"], "area": a["area"], "city": a["city"], "role": c["role"],
-                            "segmentIds": c["segmentIds"], "businesses": a["businesses"]})
+                            "segmentIds": c["segmentIds"], "businesses": a["businesses"], "lengthM": c.get("lengthM")})
     return out
 
 
@@ -70,6 +72,16 @@ def backtest_line():
                 f"{s['maeHoldout']:.0f} percentage points.")
     except Exception:
         return ""
+
+
+def weekend_share(area: str, segment_ids: list[str]) -> float | None:
+    """Share of weekly visits that happen Sat+Sun on the closed street (Google popular times, day 0 = Sunday)."""
+    biz = [b for b in sim_get(f"/areas/{area}/businesses") if b["segmentId"] in set(segment_ids) and b.get("popularTimes")]
+    if not biz:
+        return None
+    week = sum(sum(sum(day) for day in b["popularTimes"]) for b in biz)
+    wkend = sum(sum(b["popularTimes"][0]) + sum(b["popularTimes"][6]) for b in biz)
+    return round(wkend / week, 3) if week else None
 
 
 def answer(question: str) -> str:
@@ -97,20 +109,43 @@ def answer(question: str) -> str:
         "connection": {"verdict": m["interaction"]["verdict"], "conversationsPerHour": con["conversationsPerHour"],
                        "range": con["range"]["conversationsPerHour"], "before": base["encountersPerHour"],
                        "lingerMinutes": con["lingerMinutes"], "lingerBefore": base["dwellMinutes"],
-                       "newConnectionsPerDay": con["newConnectionsPerDay"], "note": "model output, not validated"},
+                       "newConnectionsPerDay": con["newConnectionsPerDay"], "note": "model output, not validated",
+                       "verdictRule": f"verdict uses people present per 100 m ({m['interaction']['lingerIndex']}); below 8 = dies off, 25+ = thrives (Whyte's empty-plaza effect). A long closure spreads the crowd thin.",
+                       "closedLengthM": round(c.get("lengthM") or 0)},
         "economy": {"revenueChangePctAffectedBusinesses": m["economy"]["totalRevenueChangePct"], "range": m["economy"]["range"],
                     "restaurantBarChangePctOnStreet": run.get("corridor", {}).get("restaurantBarChangePct", {}).get("mid")},
         "traffic": {"addedVehicleHoursPerDay": m["traffic"]["addedVehicleHours"], "range": m["traffic"]["range"],
                     "carsReroutedPerPeakHour": run["traffic"]["reroutedVehPerHour"]},
         "flags": run["flags"], "trackRecord": backtest_line(),
+        "schedules": schedules(intent.get("schedules") or ["full_time"], m, con, c),
         "link": f"{APP_URL}/?area={c['area']}&corridor={c['id']}",
     }
     return claude(
         "You are the StreetShift Analyst. Explain a simulation result to a city planner or resident in under 170 words. "
-        "Lead with the human-connection outcome, then business revenue, then traffic. Always give ranges. Say plainly "
+        "Lead with the human-connection outcome (explain the verdict with verdictRule when it seems to contradict the conversation numbers), then business revenue, then traffic. Always give ranges. If more than one schedule is given, compare them side by side (weekly numbers). Say plainly "
         "that interaction is model output, not validated. Use only the numbers provided; never invent facts. End with "
         "the track record sentence and the link on its own line. Plain text, short paragraphs, no markdown headings.",
         json.dumps(facts), max_tokens=900)
+
+
+def schedules(names, m, con, c):
+    """Full-time vs weekends-only. A weekends-only closure only changes the weekend share of visits
+    (Google popular times on the closed street) and adds traffic delay on 2 days a week, not 7."""
+    out = {}
+    share = weekend_share(c["area"], c["segmentIds"]) if "weekends_only" in names else None
+    for s in names:
+        if s == "full_time":
+            out[s] = {"closedDaysPerWeek": 7, "revenueChangePctOfWeeklySales": m["economy"]["totalRevenueChangePct"],
+                      "addedVehicleHoursPerWeek": round(m["traffic"]["addedVehicleHours"] * 7, 1),
+                      "conversationsPerHourWhenClosed": con["conversationsPerHour"], "newConnectionsPerWeek": con["newConnectionsPerDay"] * 7}
+        elif s == "weekends_only":
+            k = share if share is not None else 2 / 7
+            out[s] = {"closedDaysPerWeek": 2, "weekendShareOfVisits": share, "weekendShareSource": "Google popular times of businesses on the street" if share is not None else "assumed 2/7 (no popular-times data)",
+                      "revenueChangePctOfWeeklySales": round(m["economy"]["totalRevenueChangePct"] * k, 1),
+                      "revenueRange": [round(x * k, 1) for x in m["economy"]["range"]],
+                      "addedVehicleHoursPerWeek": round(m["traffic"]["addedVehicleHours"] * 2, 1),
+                      "conversationsPerHourWhenClosed": con["conversationsPerHour"], "newConnectionsPerWeek": con["newConnectionsPerDay"] * 2}
+    return out
 
 
 @protocol.on_message(ChatMessage)

@@ -181,7 +181,9 @@ async function main() {
   const once = process.argv.includes("--once");
   console.log(`[droid] worker polling ${process.env.CONVEX_URL} for queued runs`);
   for (;;) {
-    const run = (await convex.mutation(api.droid.claimNext, { secret: SECRET })) as Run | null;
+    let run: Run | null = null;
+    try { run = (await convex.mutation(api.droid.claimNext, { secret: SECRET })) as Run | null; }
+    catch (e) { console.error("[droid] poll failed (will retry):", String(e).slice(0, 120)); await new Promise((r) => setTimeout(r, 10000)); continue; }
     if (run) { console.log(`[droid] claimed ${run.kind} run ${run._id}`); await execute(run); if (once) return; }
     else if (once) { console.log("[droid] nothing queued"); return; }
     await new Promise((r) => setTimeout(r, 3000));
