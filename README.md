@@ -71,7 +71,12 @@ Live state goes through **SpacetimeDB**: every edit is a reducer, the sim server
 |---|---|---|
 | StreetShift Analyst | `agent1qd4qtakflx6z29sy6m5m6vsv486hke5xnw3k2dvmghqed2tf2pnkgq67f58` | Fetch.ai uAgents 0.25.5, mailbox, Agent Chat Protocol; Claude reasoning |
 | streetshift-analyst (Elastic) | Agent Builder in Kibana | Elastic Agent Builder (5 tools incl. Workflow) |
-| Hearing stakeholders: Maya (café owner), Dev (commuter), Rosa (overflow-street resident), Sam (parent) | in `/sim` | Claude + Moss/Elastic retrieval; fictional composites |
+| Maya, café owner (stakeholder) | `agent1q2kp484c542e3r5s9u4gxrvf8k0unltcc6rlu853sdmqclhn0k8cgauwl9n` | uAgents, Agent Chat Protocol; answers via the `/sim` hearing (Claude + retrieval) |
+| Dev, commuter (stakeholder) | `agent1qwcmvq3utu7qxf86ft9sl2pzukda9c5u9gr20gk2uuatp4anz9cmg26v8er` | same |
+| Rosa, overflow-street resident (stakeholder) | `agent1qf0w5u5eqn3gjdghy0d440w8ygxs679hy3q752f7lah947up3gg7qaluefx` | same |
+| Sam, parent (stakeholder) | `agent1q2xth6jd6sawnylvryj3772zdec9wsw54z5pcljsvpz8q5whxc4lx79hhn0` | same |
+
+**Multi-agent:** ask the Analyst in ASI:One "What would people on Hayes Street think if it went car-free?" and it consults the four stakeholder agents over the Agent Chat Protocol, waits for their replies, and answers with the simulation plus each one's view and where they agree. Their turns also appear live in the app's hearing panel. Stakeholders are fictional composites grounded in real data.
 
 ## Validation protocol
 

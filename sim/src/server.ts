@@ -59,6 +59,11 @@ const server = createServer(async (req, res) => {
         segments: net.segments.map((s) => ({ id: s.id, name: s.name, coords: s.coords, highway: s.highway, lengthM: s.lengthM })) });
     }
     if (req.method === "GET" && parts[0] === "areas" && parts[2] === "businesses") return send(res, 200, loadBusinesses(parts[1]));
+    if (req.method === "GET" && parts[0] === "areas" && parts[2] === "buildings") {
+      // OSM footprints for the offline basemap (data/fetch_buildings.py).
+      const f = join(dirname(fileURLToPath(import.meta.url)), "..", "assets", parts[1], "buildings.json");
+      return send(res, 200, existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : []);
+    }
     if (req.method === "POST" && url.pathname === "/scenario/run") {
       const body: ScenarioRequest = await readJson(req);
       return send(res, 200, runScenario(body));

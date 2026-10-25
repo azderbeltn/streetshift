@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type JSX } from "react";
-import MapView, { type FloorBlock, type Pick } from "./MapView";
+import MapView, { type FloorBlock, type OfflineBuilding, type Pick } from "./MapView";
 import { ConnectionPanel, EconomyPanel, TrafficPanel } from "./Panels";
 import { api, type AreaSummary, type Business, type NetworkPayload, type SearchHit, type TripsPayload } from "./api";
 import { actions, connect, myself, scenarioInput, useStore } from "./store";
@@ -23,6 +23,8 @@ export default function App() {
   const [areas, setAreas] = useState<AreaSummary[]>([]);
   const [network, setNetwork] = useState<NetworkPayload | null>(null);
   const [businesses, setBusinesses] = useState<Business[]>([]);
+  const [offlineBuildings, setOfflineBuildings] = useState<OfflineBuilding[]>([]);
+  const [basemap, setBasemap] = useState<"tiles" | "fallback" | "offline">("tiles");
   const [trips, setTrips] = useState<TripsPayload | null>(null);
   const [beforeTrips, setBeforeTrips] = useState<TripsPayload | null>(null);
   const [tool, setTool] = useState<Tool>("pedestrianize");
@@ -49,6 +51,7 @@ export default function App() {
   useEffect(() => {
     setNetwork(null); setBusinesses([]); setTrips(null); setBeforeTrips(null); setFloors([]); setHistory([]);
     api.network(st.area).then(setNetwork); api.businesses(st.area).then(setBusinesses);
+    api.buildings(st.area).then(setOfflineBuildings).catch(() => setOfflineBuildings([]));
     api.trips({ area: st.area, closedSegmentIds: [], addedSeating: false, programming: "none" }).then((t) => { setBeforeTrips(t); setTrips((x) => x ?? t); });
   }, [st.area]);
   // Re-fetch animated trips when the set of closed streets changes.
@@ -118,13 +121,14 @@ export default function App() {
       <MapView network={network} businesses={businesses} closed={st.closed} seg={st.seg} biz={st.biz} trips={showBefore ? beforeTrips : trips}
         pedShare={pedShare} showBefore={showBefore} floors={floors} presence={st.presence} onPick={onPick} onHover={setHover}
         onFeed={(text) => setFeed((f) => [...f.slice(-5), { id: Math.random(), text, at: `${String(hour).padStart(2, "0")}:${String(Math.floor(Math.random() * 60)).padStart(2, "0")}` }])}
-        onPointer={onPointer} onConnections={setLiveConnections} preferBuildings={tool === "floors"} />
+        onPointer={onPointer} onConnections={setLiveConnections} preferBuildings={tool === "floors"} offlineBuildings={offlineBuildings} onBasemap={setBasemap} />
 
       <div className="topbar glass">
         <div className="brand"><b>STREETSHIFT</b><span>Predict what happens when a street goes car-free — and see how wrong we were on five real ones.</span></div>
         <div className="spacer" />
         <span className="pill"><span className={`status-dot ${st.mode === "live" ? "on" : ""}`} />{st.mode === "live" ? `SpacetimeDB live · ${st.presence.length || 1} planner${st.presence.length === 1 ? "" : "s"}` : st.mode === "local" ? "Local mode" : "Connecting…"}</span>
         {st.computing && <span className="pill">Recomputing…</span>}
+        {basemap !== "tiles" && <span className="pill" title="Map tiles unreachable; buildings from OpenStreetMap via our own data">{basemap === "offline" ? "Offline map" : "Backup tiles"}</span>}
         <span className="pill" style={{ borderColor: myself.color, color: myself.color }}>{myself.name}</span>
         <button className={`pill ${mode === "plan" ? "active" : ""}`} onClick={() => setMode("plan")}>Plan</button>
         <button className={`pill ${mode === "backtest" ? "active" : ""}`} onClick={() => setMode("backtest")}>Backtest challenge</button>

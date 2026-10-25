@@ -12,6 +12,10 @@ setWorkerUrl(workerUrl);
 
 const DARK_STYLE = "https://tiles.openfreemap.org/styles/dark";
 const FALLBACK_STYLE = import.meta.env.MAP_STYLE_URL || "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
+/** Last resort when no tile server is reachable: dark background; roads and buildings come from our own data. */
+const OFFLINE_STYLE: any = { version: 8, sources: {}, layers: [{ id: "bg", type: "background", paint: { "background-color": "#070a10" } }] };
+const FORCE_OFFLINE = typeof location !== "undefined" && new URLSearchParams(location.search).has("offline");
+export type OfflineBuilding = { id: string; polygon: [number, number][]; height: number; estimated: boolean };
 const SPEED = 5; // simulated seconds per real second
 
 // Additive blending for glowing trails (luma.gl 9 parameters, docs/frontend.md).
@@ -57,6 +61,8 @@ type Props = {
   onPick: (p: Pick) => void; onHover: (h: { kind: "segment" | "business"; id: string; x: number; y: number } | null) => void;
   onFeed: (text: string) => void; onPointer: (lngLat: [number, number]) => void; onConnections: (n: number) => void;
   preferBuildings?: boolean;
+  offlineBuildings: OfflineBuilding[];
+  onBasemap?: (b: "tiles" | "fallback" | "offline") => void;
 };
 
 type Pause = { t0: number; t1: number; pos: [number, number]; trip: number };
@@ -92,12 +98,13 @@ export default function MapView(props: Props) {
   const talkRef = useRef<{ key: string; a: [number, number]; b: [number, number]; ta: number; tb: number }[]>([]);
   const bondsRef = useRef<Map<string, [number, number]>>(new Map()); // pair key -> [tripA, tripB]
   const lastFeed = useRef(0);
+  const offlineRef = useRef(false);
 
   useEffect(() => { pausesRef.current = pausesOf(props.trips?.peds ?? []); talkRef.current = []; bondsRef.current = new Map(); }, [props.trips]);
 
   // Init map once.
   useEffect(() => {
-    const map = new MLMap({ container: el.current!, style: DARK_STYLE, center: [-122.4237, 37.7768], zoom: 16.2, pitch: 52, bearing: -20, maxPitch: 70, attributionControl: { compact: true } });
+    const map = new MLMap({ container: el.current!, style: FORCE_OFFLINE ? OFFLINE_STYLE : DARK_STYLE, center: [-122.4237, 37.7768], zoom: 16.2, pitch: 52, bearing: -20, maxPitch: 70, attributionControl: { compact: true } });
     mapRef.current = map;
     let styled = false;
     const addBuildings = () => {
@@ -110,12 +117,22 @@ export default function MapView(props: Props) {
         paint: { "fill-extrusion-color": ["interpolate", ["linear"], ["coalesce", ["get", "render_height"], 8], 0, "#11151d", 40, "#1a2030", 120, "#232b3f"],
           "fill-extrusion-height": ["coalesce", ["get", "render_height"], 8], "fill-extrusion-base": ["coalesce", ["get", "render_min_height"], 0], "fill-extrusion-opacity": 0.88 } });
     };
-    map.on("style.load", () => { styled = true; addBuildings(); });
-    const fb = setTimeout(() => { if (!styled) map.setStyle(FALLBACK_STYLE); }, 8000);
-    map.on("error", (e: any) => { if (!styled && String(e?.error?.message ?? "").match(/style|fetch/i)) { clearTimeout(fb); map.setStyle(FALLBACK_STYLE); } });
+    // Basemap tiers: OpenFreeMap -> Carto -> offline (our own OSM buildings + roads via deck.gl).
+    let tier: "tiles" | "fallback" | "offline" = FORCE_OFFLINE ? "offline" : "tiles";
+    offlineRef.current = tier === "offline";
+    const goOffline = () => { if (tier === "offline") return; tier = "offline"; offlineRef.current = true; map.setStyle(OFFLINE_STYLE); p.current.onBasemap?.("offline"); };
+    const goFallback = () => {
+      if (tier !== "tiles") return goOffline();
+      tier = "fallback"; map.setStyle(FALLBACK_STYLE); p.current.onBasemap?.("fallback");
+      setTimeout(() => { if (!styled) goOffline(); }, 8000);
+    };
+    map.on("style.load", () => { styled = tier !== "offline"; addBuildings(); });
+    const fb = setTimeout(() => { if (!styled) goFallback(); }, 8000);
+    map.on("error", (e: any) => { if (!styled && String(e?.error?.message ?? "").match(/style|fetch|load/i)) { clearTimeout(fb); goFallback(); } });
+    if (FORCE_OFFLINE) p.current.onBasemap?.("offline");
 
     (window as any).__map = map; // for scripted UI tests (web/scripts/tour.mjs)
-    const PICKABLE = ["talk-dots", "businesses", "peds", "segments"];
+    const PICKABLE = ["talk-dots", "businesses", "peds", "segments", "offline-buildings"];
     const deckPick = (x: number, y: number) => overlayRef.current?.pickObject({ x, y, radius: 5, layerIds: PICKABLE }) ?? null;
     const personFrom = (trip: Trip, x: number, y: number): Pick | null => {
       const peds = p.current.trips?.peds; if (!peds) return null;
@@ -136,11 +153,14 @@ export default function MapView(props: Props) {
     map.on("click", (e) => {
       lastInteract.current = performance.now();
       const { x, y } = e.point, ll = e.lngLat.toArray() as [number, number];
-      const buildings = map.getLayer("ss-buildings") ? map.queryRenderedFeatures(e.point, { layers: ["ss-buildings"] }) : [];
+      const offlineHit = offlineRef.current ? overlayRef.current?.pickObject({ x: e.point.x, y: e.point.y, radius: 2, layerIds: ["offline-buildings"] }) : null;
+      const buildings: any[] = offlineHit?.object
+        ? [{ geometry: { type: "Polygon", coordinates: [offlineHit.object.polygon] }, properties: { render_height: offlineHit.object.height } }]
+        : map.getLayer("ss-buildings") ? map.queryRenderedFeatures(e.point, { layers: ["ss-buildings"] }) : [];
       // With the "Add floors" tool, a building under the cursor wins over the street on top of it.
       if (p.current.preferBuildings && buildings.length) return p.current.onPick({ kind: "building", feature: buildings[0], lngLat: ll, x, y });
       const info = deckPick(x, y);
-      const id = info?.layer?.id;
+      const id = info?.layer?.id === "offline-buildings" ? undefined : info?.layer?.id;
       if (id === "talk-dots" && p.current.trips) { const pk = personFrom(p.current.trips.peds[info!.object.trip], x, y); if (pk) return p.current.onPick(pk); }
       if (id === "businesses") return p.current.onPick({ kind: "business", id: info!.object.id, x, y });
       if (id === "peds") { const pk = personFrom(info!.object as Trip, x, y); if (pk) return p.current.onPick(pk); }
@@ -215,6 +235,12 @@ export default function MapView(props: Props) {
       const closedSegs = net ? net.segments.filter((s) => closed.has(s.id)) : [];
       const bonds = q.trips ? [...bondsRef.current.values()].slice(-160).map(([a, b]) => [posAt(q.trips!.peds[a], t), posAt(q.trips!.peds[b], t)]).filter(([a, b]) => a && b) as [number, number][][] : [];
       return [
+        ...(offlineRef.current ? [new PolygonLayer({
+          id: "offline-buildings", data: q.offlineBuildings, extruded: true, pickable: true,
+          getPolygon: (d: OfflineBuilding) => d.polygon, getElevation: (d: OfflineBuilding) => d.height,
+          getFillColor: (d: OfflineBuilding) => { const k = Math.min(1, d.height / 120); return [17 + 18 * k, 21 + 22 * k, 29 + 34 * k, 235]; },
+          getLineColor: [40, 50, 70, 160], material: { ambient: 0.5, diffuse: 0.6 } as any,
+        })] : []),
         new PathLayer({
           id: "segments", data: net?.segments ?? [], pickable: true, autoHighlight: true, highlightColor: [255, 255, 255, 110],
           getPath: (s: any) => s.coords, capRounded: true, jointRounded: true, widthUnits: "meters", widthMinPixels: 1.2,

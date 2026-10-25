@@ -7,9 +7,11 @@ outcomes (each with a range), the backtest track record, and a link to the live 
 
 Run (from /agents):  uv run python analyst/agent.py
 """
+import asyncio
 import json
 import os
 import sys
+import uuid
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -22,6 +24,8 @@ from uagents_core.contrib.protocols.chat import (  # noqa: E402
     TextContent,
     chat_protocol_spec,
 )
+
+from uagents_core.identity import Identity  # noqa: E402
 
 from common import APP_URL, claude, sim_get, sim_post  # noqa: E402
 
@@ -37,6 +41,12 @@ agent = Agent(
 )
 protocol = Protocol(spec=chat_protocol_spec)
 
+# Hearing stakeholder uAgents (agents/stakeholders/agent.py); addresses derive from their seeds.
+STAKEHOLDERS = {Identity.from_seed(os.environ[v], 0).address: k for k, v in
+                [("cafe", "AGENT_SEED_CAFE"), ("commuter", "AGENT_SEED_COMMUTER"), ("resident", "AGENT_SEED_RESIDENT"), ("parent", "AGENT_SEED_PARENT")]}
+CONSULT_TIMEOUT_S = 45
+pending: dict[str, dict] = {}  # ref -> {sender, facts, question, replies}
+
 INTENT_SCHEMA = {
     "type": "object",
     "properties": {
@@ -46,10 +56,11 @@ INTENT_SCHEMA = {
         "programming": {"type": "string", "enum": ["none", "light", "heavy"]},
         "wants_backtest": {"type": "boolean", "description": "Asks how accurate the model is / how it did on real streets"},
         "unmatched_street": {"type": "string", "description": "Street the user named that is not in the list, else empty"},
+        "wants_stakeholders": {"type": "boolean", "description": "Asks what local people / businesses / residents / parents / drivers would think, or for a debate or hearing"},
         "schedules": {"type": "array", "items": {"type": "string", "enum": ["full_time", "weekends_only"]},
                       "description": "Closure schedules to report; both when the user asks to compare. Default ['full_time']."},
     },
-    "required": ["on_topic", "corridor_id", "added_seating", "programming", "wants_backtest", "unmatched_street", "schedules"],
+    "required": ["on_topic", "corridor_id", "added_seating", "programming", "wants_backtest", "unmatched_street", "schedules", "wants_stakeholders"],
     "additionalProperties": False,
 }
 
@@ -66,10 +77,11 @@ def corridors():
 
 def backtest_line():
     try:
-        s = sim_get("/backtest/results")["summary"]
+        res = sim_get("/backtest/results")
+        s = res.get("v1Summary") or res["summary"]  # v1 is the only truly blind run
         return (f"Track record: on {s['corridorsScored']} real 2020 NYC Open Streets the model called the direction "
-                f"{round((s['directionAccuracy'] or 0) * 100)}% of the time; mean error on blind holdout streets "
-                f"{s['maeHoldout']:.0f} percentage points.")
+                f"{round((s['directionAccuracy'] or 0) * 100)}% of the time; mean error on the blind holdout streets "
+                f"{s['maeHoldout']:.1f} percentage points (first blind run).")
     except Exception:
         return ""
 
@@ -85,6 +97,12 @@ def weekend_share(area: str, segment_ids: list[str]) -> float | None:
 
 
 def answer(question: str) -> str:
+    out = plan(question)
+    return out if isinstance(out, str) else explain(out["facts"])
+
+
+def plan(question: str):
+    """Route the question and run the scenario. Returns a reply string, or {facts, corridor, consult}."""
     cs = corridors()
     listing = "\n".join(f"- {c['id']}: {c['name']} ({c['city']}, {'backtest' if c['role'] == 'treated' else 'live demo'})" for c in cs)
     intent = json.loads(claude(
@@ -120,6 +138,18 @@ def answer(question: str) -> str:
         "schedules": schedules(intent.get("schedules") or ["full_time"], m, con, c),
         "link": f"{APP_URL}/?area={c['area']}&corridor={c['id']}",
     }
+    return {"facts": facts, "corridor": c, "consult": bool(intent.get("wants_stakeholders"))}
+
+
+def explain(facts: dict, voices: list[dict] | None = None) -> str:
+    if voices:
+        return claude(
+            "You are the StreetShift Analyst. A user asked what people on this street would think. Summarise the simulation in "
+            "3 sentences (connection first, then revenue, then traffic, with ranges), then give each stakeholder's view as a short "
+            "quote with their name and role, then one sentence on where they agree. The stakeholders are fictional composites "
+            "grounded in real data; say so in one short clause. Use only the facts and quotes provided. End with the track "
+            "record sentence and the link on its own line. Plain text, no markdown headings.",
+            json.dumps({"facts": facts, "stakeholders": voices}), max_tokens=1400)
     return claude(
         "You are the StreetShift Analyst. Explain a simulation result to a city planner or resident in under 170 words. "
         "Lead with the human-connection outcome (explain the verdict with verdictRule when it seems to contradict the conversation numbers), then business revenue, then traffic. Always give ranges. If more than one schedule is given, compare them side by side (weekly numbers). Say plainly "
@@ -148,13 +178,59 @@ def schedules(names, m, con, c):
     return out
 
 
+async def finish_consult(ctx: Context, ref: str):
+    job = pending.pop(ref, None)
+    if not job:
+        return
+    try:
+        reply = explain(job["facts"], job["replies"]) if job["replies"] else explain(job["facts"])
+    except Exception as err:
+        ctx.logger.exception("consult summary failed: %s", err)
+        reply = "Sorry, I couldn't put the stakeholders' views together just now."
+    await ctx.send(job["sender"], ChatMessage(content=[TextContent(type="text", text=reply), EndSessionContent(type="end-session")]))
+
+
+async def consult_timeout(ctx: Context, ref: str):
+    await asyncio.sleep(CONSULT_TIMEOUT_S)
+    if ref in pending:
+        ctx.logger.warning(f"consult {ref}: {len(pending[ref]['replies'])}/{len(STAKEHOLDERS)} replies before timeout")
+        await finish_consult(ctx, ref)
+
+
 @protocol.on_message(ChatMessage)
 async def handle_message(ctx: Context, sender: str, msg: ChatMessage):
     await ctx.send(sender, ChatAcknowledgement(acknowledged_msg_id=msg.msg_id))
     text = "".join(item.text for item in msg.content if isinstance(item, TextContent))
+    if sender in STAKEHOLDERS:  # a stakeholder answering our consultation
+        try:
+            r = json.loads(text)
+            job = pending.get(r.get("ref"))
+            if job is not None:
+                job["replies"].append({"name": r["speaker"], "role": r["role"], "said": r["text"]})
+                ctx.logger.info(f"consult {r['ref']}: {r['speaker']} replied ({len(job['replies'])}/{len(STAKEHOLDERS)})")
+                if len(job["replies"]) >= len(STAKEHOLDERS):
+                    await finish_consult(ctx, r["ref"])
+        except Exception as err:
+            ctx.logger.exception("bad stakeholder reply: %s", err)
+        return
     ctx.logger.info(f"question from {sender[:16]}…: {text[:200]}")
     try:
-        reply = answer(text)
+        out = plan(text)
+        if isinstance(out, str):
+            reply = out
+        elif out["consult"]:
+            # Multi-agent: ask the four hearing stakeholders, then answer with their views.
+            ref = uuid.uuid4().hex[:10]
+            c = out["corridor"]
+            pending[ref] = {"sender": sender, "facts": out["facts"], "replies": []}
+            for addr in STAKEHOLDERS:
+                await ctx.send(addr, ChatMessage(content=[TextContent(type="text", text=json.dumps(
+                    {"ref": ref, "area": c["area"], "corridorId": c["id"], "question": text}))]))
+            ctx.logger.info(f"consult {ref}: asked {len(STAKEHOLDERS)} stakeholders about {c['id']}")
+            asyncio.create_task(consult_timeout(ctx, ref))
+            return
+        else:
+            reply = explain(out["facts"])
     except Exception as err:  # keep the chat alive with an honest error
         ctx.logger.exception("analyst failed: %s", err)
         reply = "Sorry, the StreetShift simulator is not reachable right now. Please try again in a minute."

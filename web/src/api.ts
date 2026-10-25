@@ -41,6 +41,7 @@ export const api = {
   areas: () => j<AreaSummary[]>("/areas"),
   network: (area: string) => j<NetworkPayload>(`/areas/${area}/network`),
   businesses: (area: string) => j<Business[]>(`/areas/${area}/businesses`),
+  buildings: (area: string) => j<{ id: string; polygon: [number, number][]; height: number; estimated: boolean }[]>(`/areas/${area}/buildings`),
   trips: (s: ScenarioInput) => j<TripsPayload>("/scenario/trips", s),
   run: (s: ScenarioInput) => j<any>("/scenario/run", s),
   search: (q: string, area?: string) => j<{ hits: SearchHit[]; mode: string }>(`/search?q=${encodeURIComponent(q)}${area ? `&area=${area}` : ""}`),

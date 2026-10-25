@@ -25,3 +25,4 @@ sim_server.log
 /sim/.cache/
 /agents/.cache/
 /reports/
+.agent_*.log
