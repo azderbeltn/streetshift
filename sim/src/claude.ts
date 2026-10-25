@@ -31,6 +31,7 @@ export async function claude(system: string, user: string, opts: ClaudeOpts = {}
     ? await client.beta.messages.create({ ...params, betas: ["server-side-fallback-2026-07-01"], fallbacks: "default" })
     : await client.messages.create(params);
   if (res.stop_reason === "refusal") throw new Error(`claude refused (${res.stop_details?.category ?? "unknown"})`);
+  if (res.stop_reason === "max_tokens") console.warn(`[claude] ${model} hit max_tokens (${params.max_tokens}); reply may be cut off`);
   const text = res.content.filter((b: any) => b.type === "text").map((b: any) => b.text).join("\n").trim();
   writeFileSync(f, JSON.stringify({ model: res.model, text, usage: res.usage }), "utf8");
   return text;

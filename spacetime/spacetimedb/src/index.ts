@@ -136,8 +136,26 @@ const hearingMessage = table(
   }
 );
 
+/** What a hearing character looked up before speaking (Moss / Elastic retrieval). */
+const Lookup = t.object('Lookup', { source: t.string(), text: t.string(), score: t.f64() });
+
+/** One turn in the simulated public hearing, with the retrieval that grounded it. */
+const hearingTurn = table(
+  { name: 'hearing_turn', public: true },
+  {
+    id: t.u64().primaryKey().autoInc(),
+    scenarioId: t.string().index('btree'),
+    speaker: t.string(),
+    role: t.string(),
+    text: t.string(),
+    lookups: t.array(Lookup),
+    retrievalMs: t.f64(),
+    createdAt: t.timestamp(),
+  }
+);
+
 const spacetimedb = schema({
-  scenario, closedSegment, scenarioEdit, scenarioResult, segmentMetric, businessMetric, presence, hearingMessage,
+  scenario, closedSegment, scenarioEdit, scenarioResult, segmentMetric, businessMetric, presence, hearingMessage, hearingTurn,
 });
 export default spacetimedb;
 
@@ -259,4 +277,13 @@ export const postHearingMessage = spacetimedb.reducer(
 
 export const clearHearing = spacetimedb.reducer({ scenarioId: t.string() }, (ctx, { scenarioId }) => {
   for (const m of [...ctx.db.hearingMessage.scenarioId.filter(scenarioId)]) ctx.db.hearingMessage.id.delete(m.id);
+  for (const m of [...ctx.db.hearingTurn.scenarioId.filter(scenarioId)]) ctx.db.hearingTurn.id.delete(m.id);
 });
+
+export const postHearingTurn = spacetimedb.reducer(
+  { scenarioId: t.string(), speaker: t.string(), role: t.string(), text: t.string(), lookups: t.array(Lookup), retrievalMs: t.f64() },
+  (ctx, a) => {
+    if (a.text.length > 6000) throw new SenderError('turn too long');
+    ctx.db.hearingTurn.insert({ id: 0n, ...a, lookups: a.lookups.slice(0, 6), createdAt: ctx.timestamp });
+  }
+);

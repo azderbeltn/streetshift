@@ -7,7 +7,7 @@ import { api, fromRunResult, type ScenarioInput, type SegMetric, type Summary } 
 
 export type Presence = { id: string; name: string; color: string; lng: number; lat: number; tool: string; me: boolean };
 export type Edit = { kind: "floors" | "land_use" | "park" | "param"; targetId: string; value: string };
-export type HearingMsg = { id: string; speaker: string; role: string; text: string; at: number };
+export type HearingMsg = { id: string; speaker: string; role: string; text: string; at: number; lookups: { source: string; text: string; score: number }[]; retrievalMs: number };
 
 export type State = {
   mode: "connecting" | "live" | "local";
@@ -69,8 +69,9 @@ function syncFromDb() {
   const myId = conn.identity?.toHexString();
   const presence: Presence[] = [...conn.db.presence.iter()].filter((p) => p.online && p.scenarioId === id).map((p) => ({
     id: p.identity.toHexString(), name: p.name, color: p.color, lng: p.lng, lat: p.lat, tool: p.tool, me: p.identity.toHexString() === myId }));
-  const hearing: HearingMsg[] = [...conn.db.hearingMessage.iter()].filter((m) => m.scenarioId === id)
-    .map((m) => ({ id: String(m.id), speaker: m.speaker, role: m.role, text: m.text, at: Number(m.createdAt.microsSinceUnixEpoch / 1000n) })).sort((a, b) => a.at - b.at);
+  const hearing: HearingMsg[] = [...conn.db.hearingTurn.iter()].filter((m) => m.scenarioId === id)
+    .map((m) => ({ id: String(m.id), speaker: m.speaker, role: m.role, text: m.text, at: Number(m.createdAt.microsSinceUnixEpoch / 1000n), lookups: m.lookups, retrievalMs: m.retrievalMs }))
+    .sort((a, b) => a.at - b.at);
   const revision = sc?.revision ?? 0;
   set({
     closed, edits, seg, biz, presence, hearing, revision,
@@ -99,11 +100,11 @@ export function connect() {
         set({ mode: "live" });
         ensureScenario();
         syncFromDb();
-      }).subscribe([tables.scenario, tables.closedSegment, tables.scenarioEdit, tables.scenarioResult, tables.segmentMetric, tables.businessMetric, tables.presence, tables.hearingMessage]);
+      }).subscribe([tables.scenario, tables.closedSegment, tables.scenarioEdit, tables.scenarioResult, tables.segmentMetric, tables.businessMetric, tables.presence, tables.hearingTurn]);
     })
     .onConnectError(() => { clearTimeout(fallback); set({ mode: "local" }); runLocal(); })
     .build();
-  for (const t of [conn.db.scenario, conn.db.closedSegment, conn.db.scenarioEdit, conn.db.scenarioResult, conn.db.segmentMetric, conn.db.businessMetric, conn.db.presence, conn.db.hearingMessage] as any[]) {
+  for (const t of [conn.db.scenario, conn.db.closedSegment, conn.db.scenarioEdit, conn.db.scenarioResult, conn.db.segmentMetric, conn.db.businessMetric, conn.db.presence, conn.db.hearingTurn] as any[]) {
     t.onInsert(queueSync); t.onDelete(queueSync); t.onUpdate?.(queueSync);
   }
 }
@@ -162,8 +163,9 @@ export const actions = {
   },
   postHearing(speaker: string, role: string, text: string) {
     if (state.mode === "live" && conn) conn.reducers.postHearingMessage({ scenarioId: state.scenarioId, speaker, role, text });
-    else set({ hearing: [...state.hearing, { id: String(Date.now()), speaker, role, text, at: Date.now() }] });
+    else set({ hearing: [...state.hearing, { id: String(Date.now()), speaker, role, text, at: Date.now(), lookups: [], retrievalMs: 0 }] });
   },
+  setLocalHearing(h: HearingMsg[]) { if (state.mode !== "live") set({ hearing: h }); },
   clearHearing() {
     if (state.mode === "live" && conn) conn.reducers.clearHearing({ scenarioId: state.scenarioId });
     else set({ hearing: [] });

@@ -19,6 +19,7 @@ import { startLive, liveStatus } from "./live.ts";
 import { search } from "./search.ts";
 import { merchantReport } from "./report.ts";
 import { KNOBS, withAssumptions } from "./assumptions.ts";
+import { CHARACTERS, askCharacter, localTranscript, startHearing, warmHearing } from "./hearing.ts";
 
 const envFile = join(dirname(fileURLToPath(import.meta.url)), "..", "..", ".env");
 if (existsSync(envFile)) process.loadEnvFile(envFile);
@@ -84,6 +85,18 @@ const server = createServer(async (req, res) => {
       const b = await readJson(req);
       return send(res, 200, await withAssumptions(b.assumptions, () => merchantReport(b)));
     }
+    if (req.method === "GET" && url.pathname === "/hearing/characters") return send(res, 200, CHARACTERS.map(({ key, name, role }) => ({ key, name, role })));
+    if (req.method === "GET" && url.pathname === "/hearing/local") return send(res, 200, localTranscript(url.searchParams.get("scenarioId") ?? ""));
+    if (req.method === "POST" && url.pathname === "/hearing/start") {
+      const b = await readJson(req);
+      // Runs in the background; turns stream to SpacetimeDB (hearing_turn) as they are produced.
+      void withAssumptions(b.assumptions, () => startHearing(b.scenarioId, b)).catch((e) => console.error("[hearing]", e));
+      return send(res, 202, { started: true });
+    }
+    if (req.method === "POST" && url.pathname === "/hearing/ask") {
+      const b = await readJson(req);
+      return send(res, 200, await withAssumptions(b.assumptions, () => askCharacter(b.scenarioId, b, b.character, b.question, b.history ?? [])));
+    }
     if (req.method === "POST" && url.pathname === "/backtest/predict") {
       const b = await readJson(req);
       return send(res, 200, predictGap(b.treatedId, b.controlId, b.area, b.programming ?? "light"));
@@ -96,6 +109,7 @@ const server = createServer(async (req, res) => {
 
 server.listen(PORT, () => {
   console.log(`[sim] http://localhost:${PORT}  areas: ${listAreas().join(", ")}`);
+  warmHearing();
   if (process.argv.includes("--no-live")) return;
   startLive();
 });

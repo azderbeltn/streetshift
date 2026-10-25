@@ -38,6 +38,7 @@ import ClearHearingReducer from "./clear_hearing_reducer";
 import ClearScenarioReducer from "./clear_scenario_reducer";
 import EnsureScenarioReducer from "./ensure_scenario_reducer";
 import PostHearingMessageReducer from "./post_hearing_message_reducer";
+import PostHearingTurnReducer from "./post_hearing_turn_reducer";
 import PublishResultsReducer from "./publish_results_reducer";
 import SetEditReducer from "./set_edit_reducer";
 import SetOptionsReducer from "./set_options_reducer";
@@ -50,6 +51,7 @@ import UpdatePresenceReducer from "./update_presence_reducer";
 import BusinessMetricRow from "./business_metric_table";
 import ClosedSegmentRow from "./closed_segment_table";
 import HearingMessageRow from "./hearing_message_table";
+import HearingTurnRow from "./hearing_turn_table";
 import PresenceRow from "./presence_table";
 import ScenarioRow from "./scenario_table";
 import ScenarioEditRow from "./scenario_edit_table";
@@ -102,6 +104,20 @@ const tablesSchema = __schema({
       { name: 'hearing_message_id_key', constraint: 'unique', columns: ['id'] },
     ],
   }, HearingMessageRow),
+  hearingTurn: __table({
+    name: 'hearing_turn',
+    indexes: [
+      { accessor: 'id', name: 'hearing_turn_id_idx_btree', algorithm: 'btree', columns: [
+        'id',
+      ] },
+      { accessor: 'scenarioId', name: 'hearing_turn_scenario_id_idx_btree', algorithm: 'btree', columns: [
+        'scenarioId',
+      ] },
+    ],
+    constraints: [
+      { name: 'hearing_turn_id_key', constraint: 'unique', columns: ['id'] },
+    ],
+  }, HearingTurnRow),
   presence: __table({
     name: 'presence',
     indexes: [
@@ -171,6 +187,7 @@ const reducersSchema = __reducers(
   __reducerSchema("clear_scenario", ClearScenarioReducer),
   __reducerSchema("ensure_scenario", EnsureScenarioReducer),
   __reducerSchema("post_hearing_message", PostHearingMessageReducer),
+  __reducerSchema("post_hearing_turn", PostHearingTurnReducer),
   __reducerSchema("publish_results", PublishResultsReducer),
   __reducerSchema("set_edit", SetEditReducer),
   __reducerSchema("set_options", SetOptionsReducer),

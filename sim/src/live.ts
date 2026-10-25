@@ -9,6 +9,7 @@ const TOKEN_FILE = join(dirname(fileURLToPath(import.meta.url)), "..", ".spaceti
 
 export type LiveStatus = { connected: boolean; identity?: string; lastPublish?: { scenarioId: string; revision: number; ms: number }; error?: string };
 export const liveStatus: LiveStatus = { connected: false };
+export let liveConn: DbConnection | null = null;
 
 export function startLive(): DbConnection | null {
   if (process.env.USE_MOCK_SPACETIME === "true") { liveStatus.error = "USE_MOCK_SPACETIME=true"; return null; }
@@ -70,6 +71,7 @@ export function startLive(): DbConnection | null {
     .onConnectError((_c, err) => { liveStatus.error = String(err); console.error("[live] connect error", err); })
     .build();
 
+  liveConn = conn;
   conn.db.scenario.onInsert((_ctx, s) => schedule(conn, s.id));
   conn.db.scenario.onUpdate((_ctx, a, b) => { if (a.revision !== b.revision) schedule(conn, b.id); });
   return conn;

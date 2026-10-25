@@ -7,6 +7,7 @@ import Backtest from "./Backtest";
 import Side from "./Side";
 import Assumptions from "./Assumptions";
 import Chain from "./Chain";
+import Hearing from "./Hearing";
 
 type Tool = "pedestrianize" | "floors" | "land_use" | "park" | "inspect";
 const TOOLS: { id: Tool; label: string; key: string; icon: JSX.Element }[] = [
@@ -14,7 +15,6 @@ const TOOLS: { id: Tool; label: string; key: string; icon: JSX.Element }[] = [
   { id: "floors", label: "Add floors", key: "2", icon: <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="5" width="8" height="10" /><path d="M6 2h4M8 2v3M6 8h1M9 8h1M6 11h1M9 11h1" /></svg> },
   { id: "land_use", label: "Change use", key: "3", icon: <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 6l2-4h8l2 4M2 6v8h12V6M2 6h12M6 14v-4h4v4" /></svg> },
   { id: "park", label: "Add park", key: "4", icon: <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 14V8M8 2c-3 2-4 4-2 6h4c2-2 1-4-2-6zM3 14h10" /></svg> },
-  { id: "inspect", label: "Merchant report", key: "5", icon: <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 2h6l3 3v9H4z M10 2v3h3 M6 8h5M6 11h5" /></svg> },
 ];
 const USES = ["Café", "Restaurant", "Bar", "Clothing store", "Grocery store", "Hair salon", "Bank"];
 
@@ -39,7 +39,10 @@ export default function App() {
   const [hits, setHits] = useState<SearchHit[] | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const [report, setReport] = useState<string | null>(null);
-  const [showAssumptions, setShowAssumptions] = useState(false);
+  const [showAssumptions, setShowAssumptionsRaw] = useState(false);
+  const [showHearing, setShowHearingRaw] = useState(false);
+  const setShowAssumptions = (f: (v: boolean) => boolean) => setShowAssumptionsRaw((v) => { const n = f(v); if (n) setShowHearingRaw(false); return n; });
+  const setShowHearing = (f: (v: boolean) => boolean) => setShowHearingRaw((v) => { const n = f(v); if (n) setShowAssumptionsRaw(false); return n; });
   const lastPresence = useRef(0);
 
   useEffect(() => { connect(); api.areas().then(setAreas).catch((e) => setToast(`Sim API unreachable: ${e.message}`)); }, []);
@@ -189,6 +192,9 @@ export default function App() {
         <button className={`tool ${showAssumptions ? "active" : ""}`} onClick={() => setShowAssumptions((v) => !v)}>
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 4h7M12 4h2M2 8h2M7 8h7M2 12h9M14 12h0" /><circle cx="10.5" cy="4" r="1.5" /><circle cx="5.5" cy="8" r="1.5" /><circle cx="12.5" cy="12" r="1.5" /></svg>Assumptions{[...st.edits.values()].some((e) => e.kind === "param") && <span className="k" style={{ color: "var(--ped)" }}>●</span>}
         </button>
+        <button className={`tool ${showHearing ? "active" : ""}`} onClick={() => setShowHearing((v) => !v)}>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 3h12v8H7l-3 3v-3H2z" /><path d="M5 6h6M5 8.5h4" /></svg>Hearing{st.hearing.length > 0 && <span className="k">{st.hearing.length}</span>}
+        </button>
       </div>
 
       <div className="bottom glass">
@@ -246,7 +252,8 @@ export default function App() {
         </div>
       )}
 
-      {showAssumptions && <Assumptions onClose={() => setShowAssumptions(false)} />}
+      {showAssumptions && <Assumptions onClose={() => setShowAssumptions(() => false)} />}
+      {showHearing && <Hearing onClose={() => setShowHearing(() => false)} />}
       <Chain s={active ? st.summary : null} seg={st.seg} closed={st.closed} network={network} />
 
       {pick && pick.kind === "person" && (() => {

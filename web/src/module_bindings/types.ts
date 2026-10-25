@@ -42,6 +42,27 @@ export const HearingMessage = __t.object("HearingMessage", {
 });
 export type HearingMessage = __Infer<typeof HearingMessage>;
 
+export const HearingTurn = __t.object("HearingTurn", {
+  id: __t.u64(),
+  scenarioId: __t.string(),
+  speaker: __t.string(),
+  role: __t.string(),
+  text: __t.string(),
+  get lookups() {
+    return __t.array(Lookup);
+  },
+  retrievalMs: __t.f64(),
+  createdAt: __t.timestamp(),
+});
+export type HearingTurn = __Infer<typeof HearingTurn>;
+
+export const Lookup = __t.object("Lookup", {
+  source: __t.string(),
+  text: __t.string(),
+  score: __t.f64(),
+});
+export type Lookup = __Infer<typeof Lookup>;
+
 export const Presence = __t.object("Presence", {
   identity: __t.identity(),
   name: __t.string(),

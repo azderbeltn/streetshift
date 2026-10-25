@@ -173,3 +173,18 @@ button { font: inherit; color: inherit; }
 /* ---------- person card ---------- */
 .person h4 { display: flex; align-items: center; gap: 8px; }
 .person .avatar { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ffd79a, #ff9f2e); box-shadow: 0 0 10px rgba(255,170,60,.6); }
+
+/* ---------- hearing ---------- */
+.hearing { position: absolute; left: 316px; top: 70px; bottom: 118px; width: 430px; z-index: 6; display: flex; flex-direction: column; }
+.hearing .transcript { flex: 1; overflow: auto; margin: 4px -4px 8px; padding: 0 4px; }
+.turn { padding: 8px 0; border-top: 1px solid var(--line); animation: feedIn .4s ease; }
+.turn .who { display: flex; align-items: center; gap: 7px; font-size: 12px; }
+.turn .who .dim { font-size: 11px; }
+.turn .av { width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #05070b; font-weight: 700; font-size: 11px; flex: none; }
+.turn .said { margin: 4px 0 0 27px; line-height: 1.45; font-size: 12.5px; }
+.turn .looked { margin: 4px 0 0 27px; font-size: 11px; }
+.turn .looked a { color: var(--accent); cursor: pointer; }
+.turn .lk { margin-top: 5px; padding: 5px 7px; border-radius: 5px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); color: var(--muted); line-height: 1.35; }
+.hearing .ask select, .hearing .ask input { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid var(--line-strong); color: var(--text); border-radius: 6px; padding: 6px 8px; font: inherit; margin-bottom: 6px; }
+.hearing .ask input { margin-bottom: 0; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
