@@ -1,9 +1,9 @@
 # StreetShift: Progress
 
-**Updated:** 2026-10-24 ~4:20 pm PT
-**Current phase:** 6, Agents and hearing. Phases 0–5 are done and verified.
+**Updated:** 2026-10-24 ~8:15 pm PT
+**Current phase:** 7, Polish. Phases 0–6 are done and verified (voice pending LiveKit keys).
 **Repo:** https://github.com/azderbeltn/streetshift · local `C:\Users\azizd\CalHacks\streetshift`
-**Next:** stakeholder hearing (Claude + Fetch.ai uAgents), Analyst on ASI:One (needs the human's mailbox click), then Phase 7 (DEMO_MODE, README, DEVPOST, DEMO).
+**Next:** human saves the ASI:One shared chat link + posts DEVPOST.md; optional voice (LiveKit login); record the demo video; final push by 8:30 am.
 
 ## How to run (4 terminals)
 ```
@@ -20,11 +20,11 @@ cd agents && uv run python analyst/agent.py        # Fetch.ai StreetShift Analys
 | 0 Setup | ✅ | Keys checked, toolchain, contracts (6/6 schema tests), Convex + SpacetimeDB login, docs in `/docs` |
 | 1 Data | ✅ | 6 OSM areas (`sim/assets/*/network.json`), ground truth from the DOT PDF with page cites + press sanity check, Census ACS 2024, NYC ATR + pedestrian counts (units from DOT readme), 1,010 businesses / 36,416 reviews (Apify, $31.55), Elastic indexes + Agent Builder + Workflow (`data/elastic_verification.md`) |
 | 2 Simulation | ✅ | `npm test` in `/sim`: Ditmars closure → valid Metrics in 808 ms; quiet residential street → DIES_OFF |
-| 3 Backtest | ✅ (STOP GATE 2 shown) | `validation/backtest_report.md`: 5/5 direction, holdout MAE 12.3 pts, 3/3 holdout inside range, Spearman 0.50. Calibrated on Ditmars + Park Slope only |
+| 3 Backtest | ✅ (STOP GATE 2 shown) | v1 (blind, headline): 5/5 direction, holdout MAE 12.3 pts, 3/3 in range, Spearman 0.50. Current (after address-matching data fix, re-fit on calibration only): 5/5, holdout MAE 12.6, 2/3, 0.30. Both in `validation/backtest_report.md` |
 | 4 Frontend | ✅ | Screens in `web/screenshots/`: idle, pedestrianized, tour-1..4 (assumptions, floors, person card). Backtest screen still to screenshot |
 | 5 Droid | ✅ | Backtest run: plan + 9 steps streamed to Convex, report in Convex file storage, results in `backtestResults`. Sweep run: 19 Hayes Valley blocks evaluated, top block THRIVES 10→44 conversations/h |
-| 6 Agents & voice | 🔄 | Analyst uAgent runs (`agent1qd4qtakflx6z29sy6m5m6vsv486hke5xnw3k2dvmghqed2tf2pnkgq67f58`) and answers locally; **mailbox needs the human's Connect click**. Hearing not built yet. Voice: LiveKit keys missing |
-| 7 Polish | ⏳ | |
+| 6 Agents & voice | ✅ (voice ⏳) | Analyst on Agentverse via mailbox; 6 real ASI:One questions answered (incl. full-time vs weekends-only). Hearing: 4 Claude stakeholders + judge Q&A, screenshot `web/screenshots/hearing.png`. Moss index Ready but `loadIndex` hangs on venue network → Elastic fallback. Voice: LiveKit keys missing |
+| 7 Polish | 🔄 | README, DEVPOST.md, DEMO.md written; DEMO_MODE (local mode) + `sim/scripts/prewarm.ts` (all corridors, merchant reports, hearing Q&A cached) |
 
 ## What works in the UI
 - Real 3D Hayes Valley + 5 NYC corridors; cars/people (Census-sized crowd) animated with TripsLayer
